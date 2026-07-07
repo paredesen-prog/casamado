@@ -22,10 +22,12 @@ class CD_Admin {
     }
 
     public function register_settings(): void {
-        register_setting( 'cd_settings', 'cd_defontana_token' );
+        register_setting( 'cd_settings', 'cd_defontana_email' );
+        register_setting( 'cd_settings', 'cd_defontana_password' );
         register_setting( 'cd_settings', 'cd_invoice_trigger' );
         register_setting( 'cd_settings', 'cd_default_doc_type' );
         register_setting( 'cd_settings', 'cd_sync_interval' );
+        register_setting( 'cd_settings', 'cd_price_list_code' );
     }
 
     public function render_page(): void {
@@ -39,15 +41,24 @@ class CD_Admin {
             <form method="post" action="options.php">
                 <?php settings_fields( 'cd_settings' ); ?>
 
-                <h2>API Defontana</h2>
+                <h2>Credenciales Defontana</h2>
                 <table class="form-table">
                     <tr>
-                        <th>Token API</th>
+                        <th>Email de acceso</th>
                         <td>
-                            <input type="password" name="cd_defontana_token"
-                                   value="<?php echo esc_attr( get_option( 'cd_defontana_token' ) ); ?>"
+                            <input type="email" name="cd_defontana_email"
+                                   value="<?php echo esc_attr( get_option( 'cd_defontana_email' ) ); ?>"
                                    class="regular-text" autocomplete="off" />
-                            <p class="description">Obtén el token en Defontana → Configuración → API.</p>
+                            <p class="description">El mismo email con que ingresas a Defontana ERP.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Contraseña de acceso</th>
+                        <td>
+                            <input type="password" name="cd_defontana_password"
+                                   value="<?php echo esc_attr( get_option( 'cd_defontana_password' ) ); ?>"
+                                   class="regular-text" autocomplete="off" />
+                            <p class="description">Contraseña de acceso al ERP (se guarda cifrada en la base de datos de WordPress).</p>
                         </td>
                     </tr>
                 </table>
@@ -76,6 +87,15 @@ class CD_Admin {
 
                 <h2>Sincronización de precios</h2>
                 <table class="form-table">
+                    <tr>
+                        <th>Lista de precios (código)</th>
+                        <td>
+                            <input type="text" name="cd_price_list_code"
+                                   value="<?php echo esc_attr( get_option( 'cd_price_list_code' ) ); ?>"
+                                   class="regular-text" placeholder="Ej: LISTA1" />
+                            <p class="description">Código de lista de precios en Defontana. Si se deja vacío, se usan los precios del catálogo general.</p>
+                        </td>
+                    </tr>
                     <tr>
                         <th>Frecuencia de sincronización</th>
                         <td>

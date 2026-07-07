@@ -15,39 +15,57 @@ class CD_PriceSync {
     }
 
     public function run(): void {
-        $api  = new CD_Defontana_API();
-        $page = 1;
-        $updated = 0;
+        $api             = new CD_Defontana_API();
+        $price_list_code = get_option( 'cd_price_list_code', '' );
+        $updated         = 0;
 
-        do {
-            $response = $api->get_products( $page );
-            $items    = $response['items'] ?? $response['data'] ?? [];
-
+        if ( $price_list_code ) {
+            // Sincronizar desde lista de precios específica
+            $response = $api->get_price_list_detail( $price_list_code );
+            $items    = $response['productList'] ?? $response['items'] ?? [];
             foreach ( $items as $item ) {
-                $sku   = $item['code'] ?? $item['itemCode'] ?? '';
-                $price = $item['salePrice'] ?? $item['price'] ?? null;
-
-                if ( ! $sku || $price === null ) continue;
-
-                $product_id = wc_get_product_id_by_sku( $sku );
-                if ( ! $product_id ) continue;
-
-                $product = wc_get_product( $product_id );
-                if ( ! $product ) continue;
-
-                $product->set_regular_price( (string) $price );
-                $product->save();
-                $updated++;
+                $updated += $this->update_wc_product(
+                    $item['productCode'] ?? $item['code'] ?? '',
+                    $item['price'] ?? $item['salePrice'] ?? null
+                );
             }
+        } else {
+            // Sincronizar desde catálogo general de productos
+            $page = 1;
+            do {
+                $response = $api->get_products( $page );
+                $items    = $response['productList'] ?? $response['items'] ?? $response['data'] ?? [];
 
-            $total_pages = $response['totalPages'] ?? $response['pages'] ?? 1;
-            $page++;
-        } while ( $page <= $total_pages );
+                foreach ( $items as $item ) {
+                    $updated += $this->update_wc_product(
+                        $item['productCode'] ?? $item['code'] ?? '',
+                        $item['salePrice'] ?? $item['price'] ?? null
+                    );
+                }
+
+                $total_pages = $response['totalPages'] ?? $response['pages'] ?? 1;
+                $page++;
+            } while ( $page <= $total_pages );
+        }
 
         update_option( 'cd_last_sync', [
             'time'    => current_time( 'mysql' ),
             'updated' => $updated,
         ] );
+    }
+
+    private function update_wc_product( string $sku, $price ): int {
+        if ( ! $sku || $price === null ) return 0;
+
+        $product_id = wc_get_product_id_by_sku( $sku );
+        if ( ! $product_id ) return 0;
+
+        $product = wc_get_product( $product_id );
+        if ( ! $product ) return 0;
+
+        $product->set_regular_price( (string) $price );
+        $product->save();
+        return 1;
     }
 
     public static function clear_schedule(): void {
