@@ -67,11 +67,32 @@ Dentro de la configuración del plugin, habilitar:
 - [API REST Integración 1.0.0 – Defontana](https://defontana.atlassian.net/wiki/spaces/CDAV2/pages/1168244737)
 - [Swagger API Defontana](https://api.defontana.com/swagger/index.html)
 
+## Alternativa: script custom (`defontana_sync.py`)
+
+En vez del plugin oficial, se optó por un script propio (`defontana_sync.py`,
+en la raíz del repo) que sincroniza directamente vía las APIs REST de
+WooCommerce y Defontana. Ventaja: no depende del login interactivo de
+wp-admin. Desventaja: hay que mantenerlo.
+
+**Importante — no verificado en vivo**: este entorno remoto bloquea las
+conexiones salientes a `api.defontana.com` (política de red del sandbox), así
+que el script se escribió a partir de la documentación pública de Defontana,
+sin poder probar la autenticación ni los endpoints reales. Antes de usarlo:
+
+1. Confirmar en `https://api.defontana.com/swagger/index.html` las rutas
+   exactas marcadas como `TODO` en el script (auth, productos, cliente,
+   documento de venta) — pueden diferir de las asumidas.
+2. Probar primero contra el ambiente de certificación si está disponible
+   (`https://onboardingcertificacionapi.defontana.com`).
+3. Configurar las variables de entorno (`DEFONTANA_EMAIL`,
+   `DEFONTANA_PASSWORD`, `WC_CONSUMER_KEY`, `WC_CONSUMER_SECRET`, etc. — ver
+   cabecera del script). Las credenciales **no están** guardadas en este
+   repo.
+
 ## Pendiente (requiere acceso que no tengo en esta sesión)
 
-No tengo credenciales de WordPress admin ni de Defontana, así que no puedo
-ejecutar estos pasos yo mismo — esta guía deja todo listo para que alguien
-con acceso a ambos paneles lo haga en ~15 minutos. Si prefieres, puedo
-preparar un script de verificación (usando la API de WooCommerce) que
-confirme después que el stock/precio de un producto de prueba se actualizó
-correctamente tras activar la sincronización.
+No tengo credenciales de WordPress admin, y aunque se me compartieron las
+credenciales de Defontana en el chat, no pude usarlas porque este entorno
+bloquea la salida de red hacia `api.defontana.com`. El script queda listo
+para que alguien lo ejecute y valide desde un entorno con acceso (por
+ejemplo, localmente o ajustando la política de red del entorno remoto).
