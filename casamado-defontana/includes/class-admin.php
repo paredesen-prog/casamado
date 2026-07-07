@@ -58,7 +58,7 @@ class CD_Admin {
                             <input type="password" name="cd_defontana_password"
                                    value="<?php echo esc_attr( get_option( 'cd_defontana_password' ) ); ?>"
                                    class="regular-text" autocomplete="off" />
-                            <p class="description">Contraseña de acceso al ERP (se guarda cifrada en la base de datos de WordPress).</p>
+                            <p class="description">Contraseña de acceso al ERP.</p>
                         </td>
                     </tr>
                 </table>
@@ -107,7 +107,7 @@ class CD_Admin {
                             <?php if ( $last_sync ) : ?>
                                 <p class="description">
                                     Última sync: <?php echo esc_html( $last_sync['time'] ); ?>
-                                    — <?php echo (int) $last_sync['updated']; ?> producto(s) actualizados.
+                                    &mdash; <?php echo (int) $last_sync['updated']; ?> producto(s) actualizados.
                                 </p>
                             <?php endif; ?>
                         </td>
@@ -136,9 +136,9 @@ class CD_Admin {
 
     public function handle_test_connection(): void {
         check_admin_referer( 'cd_test_connection' );
-        $api = new CD_Defontana_API();
-        $ok  = $api->test_connection();
-        $msg = $ok ? 'Conexión exitosa con Defontana.' : 'No se pudo conectar. Revisa el token.';
+        $api  = new CD_Defontana_API();
+        $ok   = $api->test_connection();
+        $msg  = $ok ? 'Conexión exitosa con Defontana.' : 'No se pudo conectar. Revisa las credenciales.';
         $type = $ok ? 'updated' : 'error';
         wp_redirect( add_query_arg( [ 'page' => 'casamado-defontana', $type => urlencode( $msg ) ], admin_url( 'admin.php' ) ) );
         exit;

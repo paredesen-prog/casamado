@@ -32,7 +32,6 @@ class CD_Defontana_API {
         $token = $data['token'] ?? '';
 
         if ( $token ) {
-            // Token válido por 50 minutos (Defontana expira en 60)
             set_transient( 'cd_defontana_session_token', $token, 50 * MINUTE_IN_SECONDS );
         }
 
@@ -75,7 +74,6 @@ class CD_Defontana_API {
         return $data ?? [];
     }
 
-    /** Obtiene productos con precios desde Defontana */
     public function get_products( int $page = 1, int $per_page = 100 ): array {
         return $this->request( 'GET', '/Sale/Getproducts', [], [
             'page'         => $page,
@@ -83,36 +81,30 @@ class CD_Defontana_API {
         ] );
     }
 
-    /** Obtiene detalle de precios de una lista de precios específica */
     public function get_price_list_detail( string $price_list_code ): array {
         return $this->request( 'GET', '/Sale/GetPriceListDetail', [], [
             'priceListCode' => $price_list_code,
         ] );
     }
 
-    /** Obtiene las listas de precios disponibles */
     public function get_price_lists(): array {
         return $this->request( 'GET', '/Sale/GetPriceList' );
     }
 
-    /** Busca un cliente por RUT en el SII */
     public function search_client_by_rut( string $rut ): array {
         return $this->request( 'GET', '/Sale/SearchClientByLegalCode', [], [
             'legalCode' => $rut,
         ] );
     }
 
-    /** Registra un cliente en Defontana */
     public function save_client( array $client_data ): array {
         return $this->request( 'POST', '/Sale/SaveClient', $client_data );
     }
 
-    /** Genera un documento de venta (boleta/factura electrónica) */
     public function save_sale( array $payload ): array {
         return $this->request( 'POST', '/Sale/SaveSale', $payload );
     }
 
-    /** Descarga el PDF del DTE en base64 */
     public function get_sale_pdf( string $document_id ): array {
         return $this->request( 'GET', '/Sale/GetEcommercePDFDocumentBase64', [], [
             'documentID' => $document_id,

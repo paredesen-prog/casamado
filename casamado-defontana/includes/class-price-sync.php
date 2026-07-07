@@ -20,7 +20,6 @@ class CD_PriceSync {
         $updated         = 0;
 
         if ( $price_list_code ) {
-            // Sincronizar desde lista de precios específica
             $response = $api->get_price_list_detail( $price_list_code );
             $items    = $response['productList'] ?? $response['items'] ?? [];
             foreach ( $items as $item ) {
@@ -30,7 +29,6 @@ class CD_PriceSync {
                 );
             }
         } else {
-            // Sincronizar desde catálogo general de productos
             $page = 1;
             do {
                 $response = $api->get_products( $page );

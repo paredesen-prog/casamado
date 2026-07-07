@@ -10,7 +10,7 @@ class CD_Invoice {
 
     public function send_to_defontana( int $order_id, WC_Order $order ): void {
         if ( $order->get_meta( '_cd_defontana_doc_id' ) ) {
-            return; // ya fue enviada
+            return;
         }
 
         $api     = new CD_Defontana_API();
@@ -36,9 +36,8 @@ class CD_Invoice {
 
         $details = [];
         foreach ( $order->get_items() as $item ) {
-            /** @var WC_Order_Item_Product $item */
-            $product   = $item->get_product();
-            $unit_net  = round( $item->get_subtotal() / $item->get_quantity(), 2 );
+            $product  = $item->get_product();
+            $unit_net = round( $item->get_subtotal() / $item->get_quantity(), 2 );
 
             $details[] = [
                 'productCode' => $product ? ( $product->get_sku() ?: (string) $product->get_id() ) : 'SIN-SKU',
@@ -48,7 +47,6 @@ class CD_Invoice {
             ];
         }
 
-        // Shipping como línea adicional si existe
         $shipping_total = (float) $order->get_shipping_total();
         if ( $shipping_total > 0 ) {
             $details[] = [
@@ -63,11 +61,11 @@ class CD_Invoice {
             'documentType' => (int) $doc_type,
             'issueDate'    => current_time( 'Y-m-d' ),
             'client'       => [
-                'legalName'  => trim( $order->get_billing_first_name() . ' ' . $order->get_billing_last_name() ),
-                'legalCode'  => $billing_rut ?: '66666666-6', // RUT genérico para boletas sin RUT
-                'email'      => $order->get_billing_email(),
-                'address'    => $order->get_billing_address_1(),
-                'district'   => $order->get_billing_city(),
+                'legalName' => trim( $order->get_billing_first_name() . ' ' . $order->get_billing_last_name() ),
+                'legalCode' => $billing_rut ?: '66666666-6',
+                'email'     => $order->get_billing_email(),
+                'address'   => $order->get_billing_address_1(),
+                'district'  => $order->get_billing_city(),
             ],
             'details'      => $details,
             'comment'      => 'Pedido WooCommerce #' . $order->get_order_number(),
@@ -75,10 +73,8 @@ class CD_Invoice {
     }
 
     private function resolve_document_type( WC_Order $order ): string {
-        $default = get_option( 'cd_default_doc_type', '39' ); // 39 = Boleta, 33 = Factura
+        $default = get_option( 'cd_default_doc_type', '39' );
         $rut     = $order->get_meta( '_billing_rut' ) ?: $order->get_meta( 'billing_rut' );
-
-        // Si el cliente ingresó RUT y eligió factura, usar código 33
         $wants_invoice = $order->get_meta( '_billing_invoice_type' ) === 'factura';
 
         if ( $wants_invoice && $rut ) {
