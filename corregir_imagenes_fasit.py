@@ -54,6 +54,19 @@ def normalizar_sku(s):
     return re.sub(r"[^a-z0-9]", "", s.lower())
 
 
+def request_con_reintento(metodo, url, intentos=3, **kwargs):
+    """Reintenta ante errores transitorios de red (SSL, conexión cortada, timeout)
+    en vez de dejar que la excepción tumbe todo el script a mitad de la corrida."""
+    for intento in range(intentos):
+        try:
+            return requests.request(metodo, url, timeout=kwargs.pop("timeout", 30), **kwargs)
+        except Exception as e:
+            if intento == intentos - 1:
+                return None
+            time.sleep(2 * (intento + 1))
+    return None
+
+
 def buscar_producto_por_sku(sku):
     """Busca en Fasit por SKU y devuelve la URL de imagen SOLO si confirma
     el SKU en la página del producto encontrado. None si no hay match."""
@@ -129,51 +142,49 @@ def descargar_y_verificar(img_url):
 def subir_imagen(img_data, nombre_archivo, sku):
     ext = "jpg"
     fname = re.sub(r"[^a-z0-9]", "-", nombre_archivo.lower())[:50] + f"-sku-{sku}.{ext}"
-    r = requests.post(
-        f"{WC_BASE}/wp/v2/media",
+    r = request_con_reintento(
+        "post", f"{WC_BASE}/wp/v2/media",
         auth=(WC_USER, WC_PASS),
         headers={"Content-Disposition": f'attachment; filename="{fname}"', "Content-Type": "image/jpeg"},
         data=img_data,
-        timeout=30,
     )
-    if r.status_code in (200, 201):
+    if r is not None and r.status_code in (200, 201):
         return r.json()["id"]
     return None
 
 
 def reemplazar_imagen_producto(product_id, media_id):
-    r = requests.put(
-        f"{WC_BASE}/wc/v3/products/{product_id}",
+    r = request_con_reintento(
+        "put", f"{WC_BASE}/wc/v3/products/{product_id}",
         auth=(WC_USER, WC_PASS),
         json={"images": [{"id": media_id}]},
-        timeout=30,
     )
-    return r.status_code == 200
+    return r is not None and r.status_code == 200
 
 
 def imagen_final_es_valida(product_id):
-    r = requests.get(f"{WC_BASE}/wc/v3/products/{product_id}", auth=(WC_USER, WC_PASS),
-                      params={"_": "nocache"}, timeout=20)
-    if r.status_code != 200:
+    r = request_con_reintento(
+        "get", f"{WC_BASE}/wc/v3/products/{product_id}",
+        auth=(WC_USER, WC_PASS), params={"_": "nocache"},
+    )
+    if r is None or r.status_code != 200:
         return True  # no se pudo verificar, no bloquear por un error de red puntual
     imgs = r.json().get("images", [])
     if not imgs:
         return False
-    try:
-        img_bytes = requests.get(imgs[0]["src"], timeout=20).content
-    except Exception:
+    ir = request_con_reintento("get", imgs[0]["src"])
+    if ir is None:
         return True
-    return hashlib.md5(img_bytes).hexdigest() not in HASHES_PROHIBIDOS
+    return hashlib.md5(ir.content).hexdigest() not in HASHES_PROHIBIDOS
 
 
 def quitar_imagen_producto(product_id):
-    r = requests.put(
-        f"{WC_BASE}/wc/v3/products/{product_id}",
+    r = request_con_reintento(
+        "put", f"{WC_BASE}/wc/v3/products/{product_id}",
         auth=(WC_USER, WC_PASS),
         json={"images": []},
-        timeout=30,
     )
-    return r.status_code == 200
+    return r is not None and r.status_code == 200
 
 
 def cargar_progreso():
