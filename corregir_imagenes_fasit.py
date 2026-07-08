@@ -151,6 +151,21 @@ def reemplazar_imagen_producto(product_id, media_id):
     return r.status_code == 200
 
 
+def imagen_final_es_valida(product_id):
+    r = requests.get(f"{WC_BASE}/wc/v3/products/{product_id}", auth=(WC_USER, WC_PASS),
+                      params={"_": "nocache"}, timeout=20)
+    if r.status_code != 200:
+        return True  # no se pudo verificar, no bloquear por un error de red puntual
+    imgs = r.json().get("images", [])
+    if not imgs:
+        return False
+    try:
+        img_bytes = requests.get(imgs[0]["src"], timeout=20).content
+    except Exception:
+        return True
+    return hashlib.md5(img_bytes).hexdigest() not in HASHES_PROHIBIDOS
+
+
 def quitar_imagen_producto(product_id):
     r = requests.put(
         f"{WC_BASE}/wc/v3/products/{product_id}",
@@ -243,8 +258,19 @@ def main():
 
         media_id = subir_imagen(img_data, nombre, sku)
         if media_id and reemplazar_imagen_producto(pid, media_id):
-            print(f"  -> OK, imagen corregida y verificada por SKU {sku}")
-            corregidos += 1
+            # WordPress puede reprocesar/recomprimir la imagen al subirla (el hash
+            # antes de subir no siempre coincide con el resultado final), así que
+            # se vuelve a chequear el archivo YA subido antes de dar por bueno.
+            if imagen_final_es_valida(pid):
+                print(f"  -> OK, imagen corregida y verificada por SKU {sku}")
+                corregidos += 1
+            else:
+                print("  -> La imagen subida resultó ser un placeholder conocido tras subirla. Se quita.")
+                quitar_imagen_producto(pid)
+                quitados += 1
+                sin_match.append({"id": pid, "sku": sku, "nombre": nombre, "motivo": "placeholder tras subir a WordPress"})
+                with open(SIN_MATCH_FILE, "w", encoding="utf-8") as f:
+                    json.dump(sin_match, f, ensure_ascii=False, indent=2)
         else:
             print("  -> Error subiendo/asignando la imagen en WooCommerce")
             errores += 1
