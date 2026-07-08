@@ -43,14 +43,20 @@ def main():
     faltantes = skus_objetivo - encontrados_skus
 
     if faltantes:
-        print(f"{len(faltantes)} SKU no estaban en {base.INPUT_FILE}, buscando directo en WooCommerce...")
-        for sku in list(faltantes):
+        pendientes_lookup = list(faltantes)
+        print(f"{len(pendientes_lookup)} SKU no estaban en {base.INPUT_FILE}, buscando directo en WooCommerce...")
+        for i, sku in enumerate(pendientes_lookup):
+            print(f"  [{i+1}/{len(pendientes_lookup)}] buscando SKU {sku}...", flush=True)
             prod = buscar_producto_en_woocommerce(sku)
             if prod:
                 objetivo.append(prod)
                 faltantes.discard(sku)
+                print(f"    -> encontrado: {prod['nombre'][:50]}")
+            else:
+                print("    -> no encontrado en WooCommerce")
         if faltantes:
             print(f"AVISO: estos SKU no se encontraron ni en el archivo ni en WooCommerce: {faltantes}")
+        print()
 
     print(f"Procesando {len(objetivo)} productos puntuales...\n")
 
