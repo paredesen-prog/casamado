@@ -40,7 +40,32 @@ for sel in selectores:
     print(f"{sel!r}: {len(encontrados)} elementos")
 
 print()
-print("--- Guardando el HTML completo en fasit_debug.html para revisarlo ---")
+print("--- Siguiendo los links de producto encontrados ---")
+links = soup.select("a.product-item-link, .product-item-photo a, .product-item-info a")
+urls_vistas = []
+for a in links:
+    href = a.get("href")
+    if href and href not in urls_vistas:
+        urls_vistas.append(href)
+
+print(f"URLs de producto encontradas: {len(urls_vistas)}")
+for url_prod in urls_vistas[:5]:
+    print(f"\n--- {url_prod} ---")
+    pr = session.get(url_prod, timeout=20)
+    psoup = BeautifulSoup(pr.text, "html.parser")
+
+    sku_el = psoup.select_one(".product-info-stock-sku .value, [itemprop='sku'], .sku .value")
+    page_sku = sku_el.get_text(strip=True) if sku_el else "(no encontrado con esos selectores)"
+    print("SKU detectado en la página:", repr(page_sku))
+
+    meta_sku = psoup.find("meta", {"property": "product:retailer_item_id"})
+    print("meta product:retailer_item_id:", meta_sku.get("content") if meta_sku else "(no existe)")
+
+    og = psoup.find("meta", {"property": "og:image"})
+    print("og:image:", og.get("content") if og else "(no existe)")
+
+print()
+print("--- Guardando el HTML de la búsqueda en fasit_debug.html para revisarlo ---")
 with open("fasit_debug.html", "w", encoding="utf-8") as f:
     f.write(r.text)
 print("Listo. Revisa si 'fasit_debug.html' contiene el nombre del producto buscando manualmente (Ctrl+F) el texto del producto.")
