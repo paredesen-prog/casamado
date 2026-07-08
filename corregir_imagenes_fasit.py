@@ -38,7 +38,8 @@ SIN_MATCH_FILE = "corregir_imagenes_sin_match.json"
 HASHES_PROHIBIDOS = {
     "8b64d2a0729aaa4cc0265d72f8dfcf3d",  # foto de toallas de papel Elite
     "4eb8e89ce8b23a28e3fc3acc5c15cf1f",  # foto de ambientador Sani-Air
-    "80275d1e8c3b068158444a9960228b0e",  # ícono de "cargando"
+    "80275d1e8c3b068158444a9960228b0e",  # ícono de "cargando" (variante 1)
+    "2abd5f35f34f27ce4afc50e0da8966df",  # ícono de "cargando" (variante 2, GIF animado)
 }
 
 session = requests.Session()
@@ -89,7 +90,14 @@ def buscar_producto_por_sku(sku):
         img_el = psoup.select_one(".fotorama__img, .gallery-placeholder img, img.gallery-image, [data-main-image]")
         img_url = ""
         if img_el:
-            img_url = img_el.get("src") or img_el.get("data-src") or ""
+            # Fasit carga las imágenes de forma diferida: "src" suele apuntar a un GIF
+            # de "cargando" genérico y la foto real queda en data-src/data-original/etc.
+            # Por eso data-* tiene prioridad sobre src, no al revés.
+            for attr in ("data-src", "data-original", "data-zoom-image", "data-large_image", "data-full", "src"):
+                val = img_el.get(attr)
+                if val and "loader" not in val and "loading" not in val:
+                    img_url = val
+                    break
         if not img_url:
             og = psoup.find("meta", {"property": "og:image"})
             img_url = og.get("content", "") if og else ""
