@@ -13,6 +13,22 @@ import json
 import corregir_imagenes_fasit as base
 
 
+def buscar_producto_en_woocommerce(sku):
+    """Si el SKU no está en productos_imagen_incorrecta.json (porque viene de
+    un descubrimiento posterior), se busca directo en WooCommerce por SKU."""
+    r = base.request_con_reintento(
+        "get", f"{base.WC_BASE}/wc/v3/products",
+        auth=(base.WC_USER, base.WC_PASS), params={"sku": sku},
+    )
+    if r is None or r.status_code != 200:
+        return None
+    resultados = r.json()
+    if not resultados:
+        return None
+    p = resultados[0]
+    return {"id": p["id"], "sku": p.get("sku", ""), "nombre": p["name"]}
+
+
 def main():
     skus_objetivo = {s.strip() for s in sys.argv[1:]}
     if not skus_objetivo:
@@ -25,8 +41,16 @@ def main():
     objetivo = [p for p in productos if p.get("sku") in skus_objetivo]
     encontrados_skus = {p["sku"] for p in objetivo}
     faltantes = skus_objetivo - encontrados_skus
+
     if faltantes:
-        print(f"AVISO: estos SKU no están en {base.INPUT_FILE}, se omiten: {faltantes}")
+        print(f"{len(faltantes)} SKU no estaban en {base.INPUT_FILE}, buscando directo en WooCommerce...")
+        for sku in list(faltantes):
+            prod = buscar_producto_en_woocommerce(sku)
+            if prod:
+                objetivo.append(prod)
+                faltantes.discard(sku)
+        if faltantes:
+            print(f"AVISO: estos SKU no se encontraron ni en el archivo ni en WooCommerce: {faltantes}")
 
     print(f"Procesando {len(objetivo)} productos puntuales...\n")
 
