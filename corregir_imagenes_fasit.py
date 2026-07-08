@@ -1,0 +1,236 @@
+"""
+Corrige imágenes incorrectas en productos de casamado.cl buscando la foto
+real en Fasit por SKU, con verificación explícita de que el SKU de la
+página encontrada coincide con el SKU del producto.
+
+Por qué existe este script: los intentos anteriores (buscar_imagenes_por_nombre.py
+y una v2 hecha aparte) asignaron la MISMA imagen genérica a cientos de
+productos sin relación (confirmado: 354 productos con una foto de toallas
+Elite, 20 con una foto de un ambientador Sani-Air, 11 con un ícono de
+"cargando"). La causa: tomaban la primera imagen encontrada en la página de
+resultados de Fasit sin confirmar que correspondiera al SKU buscado. Este
+script no acepta ninguna imagen sin esa verificación.
+
+Uso:
+  python3 corregir_imagenes_fasit.py
+"""
+import os
+import re
+import json
+import time
+import hashlib
+import requests
+from bs4 import BeautifulSoup
+
+WC_USER = os.environ.get("WC_USER", "paredesen")
+WC_PASS = os.environ.get("WC_PASS", "t99J MTPa Doa8 u2S8 Bwgc Fep2")
+WC_BASE = "https://casamado.cl/wp-json"
+
+FASIT_BASE = "https://fasit.cl"
+
+INPUT_FILE = "productos_imagen_incorrecta.json"
+PROGRESS_FILE = "corregir_imagenes_progreso.json"
+SIN_MATCH_FILE = "corregir_imagenes_sin_match.json"
+
+# MD5 de las imágenes genéricas ya confirmadas como incorrectas. Si Fasit
+# devolviera exactamente uno de estos archivos, lo rechazamos igual aunque
+# el SKU "coincidiera" por error de la página.
+HASHES_PROHIBIDOS = {
+    "8b64d2a0729aaa4cc0265d72f8dfcf3d",  # foto de toallas de papel Elite
+    "4eb8e89ce8b23a28e3fc3acc5c15cf1f",  # foto de ambientador Sani-Air
+    "80275d1e8c3b068158444a9960228b0e",  # ícono de "cargando"
+}
+
+session = requests.Session()
+session.headers.update({
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
+})
+
+
+def normalizar_sku(s):
+    return re.sub(r"[^a-z0-9]", "", s.lower())
+
+
+def buscar_producto_por_sku(sku):
+    """Busca en Fasit por SKU y devuelve la URL de imagen SOLO si confirma
+    el SKU en la página del producto encontrado. None si no hay match."""
+    try:
+        r = session.get(f"{FASIT_BASE}/catalogsearch/result/?q={sku}", timeout=20)
+    except Exception as e:
+        return None, f"error de búsqueda: {e}"
+
+    soup = BeautifulSoup(r.text, "html.parser")
+    links = soup.select("a.product-item-link, .product-item-photo a, .product-item-info a")
+    urls_candidatas = []
+    for a in links:
+        href = a.get("href")
+        if href and href not in urls_candidatas:
+            urls_candidatas.append(href)
+
+    if not urls_candidatas:
+        return None, "sin resultados en la búsqueda"
+
+    for url in urls_candidatas[:5]:
+        try:
+            pr = session.get(url, timeout=20)
+        except Exception:
+            continue
+        psoup = BeautifulSoup(pr.text, "html.parser")
+
+        sku_el = psoup.select_one(".product-info-stock-sku .value, [itemprop='sku'], .sku .value")
+        page_sku = sku_el.get_text(strip=True) if sku_el else ""
+        if not page_sku:
+            meta = psoup.find("meta", {"property": "product:retailer_item_id"})
+            page_sku = meta.get("content", "") if meta else ""
+
+        if normalizar_sku(page_sku) != normalizar_sku(sku):
+            continue  # esta página no es del SKU que buscamos, seguir probando
+
+        img_el = psoup.select_one(".fotorama__img, .gallery-placeholder img, img.gallery-image, [data-main-image]")
+        img_url = ""
+        if img_el:
+            img_url = img_el.get("src") or img_el.get("data-src") or ""
+        if not img_url:
+            og = psoup.find("meta", {"property": "og:image"})
+            img_url = og.get("content", "") if og else ""
+
+        if img_url:
+            return img_url, "ok"
+        return None, f"SKU confirmado ({page_sku}) pero sin imagen en la página"
+
+    return None, "ningún resultado tenía el SKU exacto"
+
+
+def descargar_y_verificar(img_url):
+    try:
+        data = session.get(img_url, timeout=20).content
+    except Exception as e:
+        return None, f"error descargando: {e}"
+    h = hashlib.md5(data).hexdigest()
+    if h in HASHES_PROHIBIDOS:
+        return None, "la imagen encontrada es una de las genéricas ya conocidas, se rechaza"
+    return data, h
+
+
+def subir_imagen(img_data, nombre_archivo, sku):
+    ext = "jpg"
+    fname = re.sub(r"[^a-z0-9]", "-", nombre_archivo.lower())[:50] + f"-sku-{sku}.{ext}"
+    r = requests.post(
+        f"{WC_BASE}/wp/v2/media",
+        auth=(WC_USER, WC_PASS),
+        headers={"Content-Disposition": f'attachment; filename="{fname}"', "Content-Type": "image/jpeg"},
+        data=img_data,
+        timeout=30,
+    )
+    if r.status_code in (200, 201):
+        return r.json()["id"]
+    return None
+
+
+def reemplazar_imagen_producto(product_id, media_id):
+    r = requests.put(
+        f"{WC_BASE}/wc/v3/products/{product_id}",
+        auth=(WC_USER, WC_PASS),
+        json={"images": [{"id": media_id}]},
+        timeout=30,
+    )
+    return r.status_code == 200
+
+
+def quitar_imagen_producto(product_id):
+    r = requests.put(
+        f"{WC_BASE}/wc/v3/products/{product_id}",
+        auth=(WC_USER, WC_PASS),
+        json={"images": []},
+        timeout=30,
+    )
+    return r.status_code == 200
+
+
+def cargar_progreso():
+    if os.path.exists(PROGRESS_FILE):
+        with open(PROGRESS_FILE) as f:
+            return set(json.load(f))
+    return set()
+
+
+def guardar_progreso(hecho):
+    with open(PROGRESS_FILE, "w") as f:
+        json.dump(list(hecho), f)
+
+
+def main():
+    with open(INPUT_FILE, encoding="utf-8") as f:
+        productos = json.load(f)
+
+    hecho = cargar_progreso()
+    sin_match = []
+    if os.path.exists(SIN_MATCH_FILE):
+        with open(SIN_MATCH_FILE, encoding="utf-8") as f:
+            sin_match = json.load(f)
+
+    pendientes = [p for p in productos if str(p["id"]) not in hecho]
+    print(f"Total: {len(productos)} | Ya procesados: {len(hecho)} | Pendientes: {len(pendientes)}\n")
+
+    corregidos = quitados = errores = 0
+
+    for i, p in enumerate(pendientes):
+        pid, sku, nombre = p["id"], p.get("sku", ""), p["nombre"]
+        print(f"[{i+1}/{len(pendientes)}] {nombre[:55]} (SKU: {sku or '(sin SKU)'})")
+
+        if not sku:
+            print("  -> Sin SKU, no se puede verificar en Fasit. Se quita la imagen incorrecta.")
+            if quitar_imagen_producto(pid):
+                quitados += 1
+            hecho.add(str(pid))
+            guardar_progreso(hecho)
+            continue
+
+        img_url, motivo = buscar_producto_por_sku(sku)
+        if not img_url:
+            print(f"  -> No se encontró imagen verificada ({motivo}). Se quita la imagen incorrecta.")
+            quitar_imagen_producto(pid)
+            quitados += 1
+            sin_match.append({"id": pid, "sku": sku, "nombre": nombre, "motivo": motivo})
+            with open(SIN_MATCH_FILE, "w", encoding="utf-8") as f:
+                json.dump(sin_match, f, ensure_ascii=False, indent=2)
+            hecho.add(str(pid))
+            guardar_progreso(hecho)
+            time.sleep(0.5)
+            continue
+
+        img_data, resultado = descargar_y_verificar(img_url)
+        if not img_data:
+            print(f"  -> Imagen rechazada ({resultado}). Se quita la imagen incorrecta.")
+            quitar_imagen_producto(pid)
+            quitados += 1
+            sin_match.append({"id": pid, "sku": sku, "nombre": nombre, "motivo": resultado})
+            with open(SIN_MATCH_FILE, "w", encoding="utf-8") as f:
+                json.dump(sin_match, f, ensure_ascii=False, indent=2)
+            hecho.add(str(pid))
+            guardar_progreso(hecho)
+            time.sleep(0.5)
+            continue
+
+        media_id = subir_imagen(img_data, nombre, sku)
+        if media_id and reemplazar_imagen_producto(pid, media_id):
+            print(f"  -> OK, imagen corregida y verificada por SKU {sku}")
+            corregidos += 1
+        else:
+            print("  -> Error subiendo/asignando la imagen en WooCommerce")
+            errores += 1
+
+        hecho.add(str(pid))
+        guardar_progreso(hecho)
+        time.sleep(0.8)
+
+    print("\n=== RESUMEN ===")
+    print(f"Corregidos con imagen verificada: {corregidos}")
+    print(f"Sin match verificado (imagen quitada, queda para revisar manual): {quitados}")
+    print(f"Errores: {errores}")
+    print(f"\nRevisa '{SIN_MATCH_FILE}' para la lista de productos que quedaron sin imagen"
+          f" por no encontrar el SKU exacto en Fasit.")
+
+
+if __name__ == "__main__":
+    main()
