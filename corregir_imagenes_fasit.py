@@ -13,9 +13,11 @@ script no acepta ninguna imagen sin esa verificación.
 
 Uso:
   python3 corregir_imagenes_fasit.py
+  python3 corregir_imagenes_fasit.py --test 5   # prueba rápida, sin guardar progreso
 """
 import os
 import re
+import sys
 import json
 import time
 import hashlib
@@ -87,20 +89,24 @@ def buscar_producto_por_sku(sku):
         if normalizar_sku(page_sku) != normalizar_sku(sku):
             continue  # esta página no es del SKU que buscamos, seguir probando
 
-        img_el = psoup.select_one(".fotorama__img, .gallery-placeholder img, img.gallery-image, [data-main-image]")
+        # og:image es un metadato server-rendered (para compartir en redes), no
+        # depende de JavaScript. El visor de galería (.fotorama__img y similares)
+        # en Fasit se rellena vía JS después de cargar, así que en el HTML estático
+        # que vemos con requests solo contiene un ícono de "cargando" — por eso
+        # og:image va primero, no como respaldo.
         img_url = ""
-        if img_el:
-            # Fasit carga las imágenes de forma diferida: "src" suele apuntar a un GIF
-            # de "cargando" genérico y la foto real queda en data-src/data-original/etc.
-            # Por eso data-* tiene prioridad sobre src, no al revés.
-            for attr in ("data-src", "data-original", "data-zoom-image", "data-large_image", "data-full", "src"):
-                val = img_el.get(attr)
-                if val and "loader" not in val and "loading" not in val:
-                    img_url = val
-                    break
+        og = psoup.find("meta", {"property": "og:image"})
+        if og and og.get("content"):
+            img_url = og.get("content")
+
         if not img_url:
-            og = psoup.find("meta", {"property": "og:image"})
-            img_url = og.get("content", "") if og else ""
+            img_el = psoup.select_one(".fotorama__img, .gallery-placeholder img, img.gallery-image, [data-main-image]")
+            if img_el:
+                for attr in ("data-src", "data-original", "data-zoom-image", "data-large_image", "data-full", "src"):
+                    val = img_el.get(attr)
+                    if val and "loader" not in val and "loading" not in val:
+                        img_url = val
+                        break
 
         if img_url:
             return img_url, "ok"
@@ -168,16 +174,28 @@ def guardar_progreso(hecho):
 
 
 def main():
+    # Modo prueba: "python corregir_imagenes_fasit.py --test 5" corre solo los
+    # primeros N productos y NO guarda progreso, para verificar rápido que la
+    # extracción de imagen funciona antes de lanzar los 385 completos.
+    modo_prueba = "--test" in sys.argv
+    limite_prueba = None
+    if modo_prueba:
+        idx = sys.argv.index("--test")
+        limite_prueba = int(sys.argv[idx + 1]) if len(sys.argv) > idx + 1 else 5
+
     with open(INPUT_FILE, encoding="utf-8") as f:
         productos = json.load(f)
 
-    hecho = cargar_progreso()
+    hecho = set() if modo_prueba else cargar_progreso()
     sin_match = []
-    if os.path.exists(SIN_MATCH_FILE):
+    if not modo_prueba and os.path.exists(SIN_MATCH_FILE):
         with open(SIN_MATCH_FILE, encoding="utf-8") as f:
             sin_match = json.load(f)
 
     pendientes = [p for p in productos if str(p["id"]) not in hecho]
+    if modo_prueba:
+        pendientes = pendientes[:limite_prueba]
+        print(f"MODO PRUEBA: procesando solo {len(pendientes)} productos, sin guardar progreso.\n")
     print(f"Total: {len(productos)} | Ya procesados: {len(hecho)} | Pendientes: {len(pendientes)}\n")
 
     corregidos = quitados = errores = 0
@@ -191,7 +209,8 @@ def main():
             if quitar_imagen_producto(pid):
                 quitados += 1
             hecho.add(str(pid))
-            guardar_progreso(hecho)
+            if not modo_prueba:
+                guardar_progreso(hecho)
             continue
 
         img_url, motivo = buscar_producto_por_sku(sku)
@@ -203,7 +222,8 @@ def main():
             with open(SIN_MATCH_FILE, "w", encoding="utf-8") as f:
                 json.dump(sin_match, f, ensure_ascii=False, indent=2)
             hecho.add(str(pid))
-            guardar_progreso(hecho)
+            if not modo_prueba:
+                guardar_progreso(hecho)
             time.sleep(0.5)
             continue
 
@@ -216,7 +236,8 @@ def main():
             with open(SIN_MATCH_FILE, "w", encoding="utf-8") as f:
                 json.dump(sin_match, f, ensure_ascii=False, indent=2)
             hecho.add(str(pid))
-            guardar_progreso(hecho)
+            if not modo_prueba:
+                guardar_progreso(hecho)
             time.sleep(0.5)
             continue
 
@@ -229,7 +250,8 @@ def main():
             errores += 1
 
         hecho.add(str(pid))
-        guardar_progreso(hecho)
+        if not modo_prueba:
+            guardar_progreso(hecho)
         time.sleep(0.8)
 
     print("\n=== RESUMEN ===")
