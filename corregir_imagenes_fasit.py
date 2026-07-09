@@ -69,19 +69,25 @@ def request_con_reintento(metodo, url, intentos=3, **kwargs):
 
 def buscar_producto_por_sku(sku):
     """Busca en Fasit por SKU y devuelve la URL de imagen SOLO si confirma
-    el SKU en la página del producto encontrado. None si no hay match."""
-    try:
-        r = session.get(f"{FASIT_BASE}/catalogsearch/result/?q={sku}", timeout=20)
-    except Exception as e:
-        return None, f"error de búsqueda: {e}"
+    el SKU (o su SKU base, para variantes de talla/color tipo "8001055-L")
+    en la página del producto encontrado. None si no hay match."""
+    sku_base = sku.rsplit("-", 1)[0] if "-" in sku else sku
+    skus_validos = {normalizar_sku(sku), normalizar_sku(sku_base)}
 
-    soup = BeautifulSoup(r.text, "html.parser")
-    links = soup.select("a.product-item-link, .product-item-photo a, .product-item-info a")
     urls_candidatas = []
-    for a in links:
-        href = a.get("href")
-        if href and href not in urls_candidatas:
-            urls_candidatas.append(href)
+    for termino in dict.fromkeys([sku, sku_base]):  # sku primero, sin duplicar si son iguales
+        try:
+            r = session.get(f"{FASIT_BASE}/catalogsearch/result/?q={termino}", timeout=20)
+        except Exception as e:
+            continue
+        soup = BeautifulSoup(r.text, "html.parser")
+        links = soup.select("a.product-item-link, .product-item-photo a, .product-item-info a")
+        for a in links:
+            href = a.get("href")
+            if href and href not in urls_candidatas:
+                urls_candidatas.append(href)
+        if urls_candidatas:
+            break
 
     if not urls_candidatas:
         return None, "sin resultados en la búsqueda"
@@ -99,8 +105,8 @@ def buscar_producto_por_sku(sku):
             meta = psoup.find("meta", {"property": "product:retailer_item_id"})
             page_sku = meta.get("content", "") if meta else ""
 
-        if normalizar_sku(page_sku) != normalizar_sku(sku):
-            continue  # esta página no es del SKU que buscamos, seguir probando
+        if normalizar_sku(page_sku) not in skus_validos:
+            continue  # esta página no es del SKU (ni de su variante base) que buscamos
 
         # og:image es un metadato server-rendered (para compartir en redes), no
         # depende de JavaScript. El visor de galería (.fotorama__img y similares)
