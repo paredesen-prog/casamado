@@ -21,24 +21,31 @@ BASES_A_PROBAR = [
 email = input("Email Defontana: ").strip()
 password = getpass.getpass("Password Defontana: ")
 
+def mostrar_respuesta(r):
+    print(f"    HTTP {r.status_code}", "| Allow:", r.headers.get("Allow"), "| Content-Type:", r.headers.get("Content-Type"))
+    try:
+        data = r.json()
+        if "authResult" in data and "access_token" in data.get("authResult", {}):
+            data["authResult"]["access_token"] = data["authResult"]["access_token"][:15] + "...(recortado)"
+        if "access_token" in data:
+            data["access_token"] = data["access_token"][:15] + "...(recortado)"
+        print("    Respuesta:", json.dumps(data, ensure_ascii=False, indent=2)[:1500])
+    except Exception:
+        print("    Respuesta (no-JSON, primeros 300 chars):", r.text[:300])
+
+
 for base in BASES_A_PROBAR:
     print(f"\n=== Probando base: {base} ===")
     for path in ["/api/Auth", "/Auth", "/api/auth", "/api/v1/Auth"]:
         url = f"{base}{path}"
-        try:
-            r = requests.post(url, json={"user": email, "password": password}, timeout=20)
-        except Exception as e:
-            print(f"  {path}: error de conexión ({e})")
-            continue
-        print(f"  {path}: HTTP {r.status_code}")
-        if r.status_code != 404:
+        for metodo in ["POST", "GET", "PUT"]:
             try:
-                data = r.json()
-                # no imprimir el token completo por si acaso
-                if "authResult" in data and "access_token" in data.get("authResult", {}):
-                    data["authResult"]["access_token"] = data["authResult"]["access_token"][:15] + "...(recortado)"
-                if "access_token" in data:
-                    data["access_token"] = data["access_token"][:15] + "...(recortado)"
-                print("   Respuesta:", json.dumps(data, ensure_ascii=False, indent=2)[:1500])
-            except Exception:
-                print("   Respuesta (no-JSON, primeros 300 chars):", r.text[:300])
+                if metodo == "GET":
+                    r = requests.get(url, params={"user": email, "password": password}, timeout=20)
+                else:
+                    r = requests.request(metodo, url, json={"user": email, "password": password}, timeout=20)
+            except Exception as e:
+                print(f"  {path} [{metodo}]: error de conexión ({e})")
+                continue
+            print(f"  {path} [{metodo}]:")
+            mostrar_respuesta(r)
