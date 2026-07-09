@@ -1,0 +1,912 @@
+{
+  "1001013": {
+    "categoria": "PAPEL TISSUE",
+    "marca": "MAXIPAPER",
+    "producto": "TOALLA DE PAPEL ALTO METRAJE H/D PREMIUM",
+    "formato": "200 MT X 2 ROLLOS",
+    "precio_casamado": 8424
+  },
+  "50712": {
+    "categoria": "PAPEL TISSUE",
+    "marca": "CONFORT",
+    "producto": "PAPEL HIGIÉNICO BAJO METRAJE H/D BLANCO",
+    "formato": "50 MT x 4 ROLLOS",
+    "precio_casamado": 3738
+  },
+  "1001041": {
+    "categoria": "PAPEL TISSUE",
+    "marca": "MAXIPAPER",
+    "producto": "SERVILLETA MESA H/S COCTEL  BLANCA 24 x 24 CM",
+    "formato": "300 HJS x 1 PQTE",
+    "precio_casamado": 1080
+  },
+  "5001110": {
+    "categoria": "JABONES",
+    "marca": "BALLERINA",
+    "producto": "SHAMPOO ANTI FRIZZ ACEITE DE COCO Y JAZMÍN",
+    "formato": "750 ML",
+    "precio_casamado": 1622
+  },
+  "5001116": {
+    "categoria": "ASEO Y LIMPIEZA",
+    "marca": "FRESH UP",
+    "producto": "ENJUAGUE BUCAL ADULTO MENTA",
+    "formato": "250 ML",
+    "precio_casamado": 1778
+  },
+  "5001117": {
+    "categoria": "ASEO Y LIMPIEZA",
+    "marca": "CARE UP",
+    "producto": "HISOPOS COTONITOS DE ALGODÓN",
+    "formato": "200 UND",
+    "precio_casamado": 1251
+  },
+  "5001119": {
+    "categoria": "ASEO Y LIMPIEZA",
+    "marca": "CARE UP",
+    "producto": "ESPONJAS JABONOSAS HIPOALERGÉNICAS",
+    "formato": "10 UND",
+    "precio_casamado": 2625
+  },
+  "2001420": {
+    "categoria": "QUÍMICOS",
+    "marca": "IMPEKE",
+    "producto": "CLORO TRADICINONAL CONCENTRADO ULTRA PODER 5%",
+    "formato": "5 LT",
+    "precio_casamado": 4419
+  },
+  "2001132-AJ": {
+    "categoria": "QUÍMICOS",
+    "marca": "SANI-AIR",
+    "producto": "LATA AROMÁTICA CON PAPEL ABSORBENTE 133 ML",
+    "formato": "APPLE JACK",
+    "precio_casamado": 4602
+  },
+  "2001132-VB": {
+    "categoria": "QUÍMICOS",
+    "marca": "SANI-AIR",
+    "producto": "LATA AROMÁTICA CON PAPEL ABSORBENTE 133 ML",
+    "formato": "VERY BERRY",
+    "precio_casamado": 4602
+  },
+  "2001132-GB": {
+    "categoria": "QUÍMICOS",
+    "marca": "SANI-AIR",
+    "producto": "LATA AROMÁTICA CON PAPEL ABSORBENTE 133 ML",
+    "formato": "GRAPE BURST",
+    "precio_casamado": 4602
+  },
+  "2001132-VM": {
+    "categoria": "QUÍMICOS",
+    "marca": "SANI-AIR",
+    "producto": "LATA AROMÁTICA CON PAPEL ABSORBENTE 133 ML",
+    "formato": "VAINILLA MIST",
+    "precio_casamado": 4602
+  },
+  "2001132-MA": {
+    "categoria": "QUÍMICOS",
+    "marca": "SANI-AIR",
+    "producto": "LATA AROMÁTICA CON PAPEL ABSORBENTE 133 ML",
+    "formato": "MANGO",
+    "precio_casamado": 4602
+  },
+  "2001132-FC": {
+    "categoria": "QUÍMICOS",
+    "marca": "SANI-AIR",
+    "producto": "LATA AROMÁTICA CON PAPEL ABSORBENTE 133 ML",
+    "formato": "FRESH CITRUS",
+    "precio_casamado": 4602
+  },
+  "2001132-CH": {
+    "categoria": "QUÍMICOS",
+    "marca": "SANI-AIR",
+    "producto": "LATA AROMÁTICA CON PAPEL ABSORBENTE 133 ML",
+    "formato": "CHERRY",
+    "precio_casamado": 4602
+  },
+  "2001132-LA": {
+    "categoria": "QUÍMICOS",
+    "marca": "SANI-AIR",
+    "producto": "LATA AROMÁTICA CON PAPEL ABSORBENTE 133 ML",
+    "formato": "LAVANDA",
+    "precio_casamado": 4602
+  },
+  "2001386": {
+    "categoria": "QUÍMICOS",
+    "marca": "LYSOFORM",
+    "producto": "DESODORANTE Y DESINFECTANTE AMBIENTAL - LAVANDA",
+    "formato": "360 ML",
+    "precio_casamado": 3527
+  },
+  "4001334": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "BALDE ESTRUJADOR ECONÓMICO",
+    "formato": "14 LT",
+    "precio_casamado": 5224
+  },
+  "4001367": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA SECA RECTANGULAR MICROFIBRA VERDE",
+    "formato": "45 CM",
+    "precio_casamado": 2948
+  },
+  "4001368": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA SECA RECTANGULAR MICROFIBRA ROJA",
+    "formato": "45 CM",
+    "precio_casamado": 2948
+  },
+  "4001369": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA SECA RECTANGULAR MICROFIBRA VERDE",
+    "formato": "60 CM",
+    "precio_casamado": 4040
+  },
+  "4001370": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA SECA RECTANGULAR MICROFIBRA ROJA",
+    "formato": "60 CM",
+    "precio_casamado": 4040
+  },
+  "4001363": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA HÚMEDA RECTANGULAR MICROFIBRA VERDE",
+    "formato": "45 CM",
+    "precio_casamado": 2948
+  },
+  "4001364": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA HÚMEDA RECTANGULAR MICROFIBRA ROJA",
+    "formato": "45 CM",
+    "precio_casamado": 2948
+  },
+  "4001365": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA HÚMEDA RECTANGULAR MICROFIBRA VERDE",
+    "formato": "60 CM",
+    "precio_casamado": 4040
+  },
+  "4001366": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA HÚMEDA RECTANGULAR MICROFIBRA ROJA",
+    "formato": "60 CM",
+    "precio_casamado": 4040
+  },
+  "4001375": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA HÚMEDA RECTANGULAR MICROFIBRA AZUL BÁSICA",
+    "formato": "45 CM",
+    "precio_casamado": 1903
+  },
+  "4001376": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA HÚMEDA RECTANGULAR MICROFIBRA AZUL BÁSICA",
+    "formato": "60 CM",
+    "precio_casamado": 2363
+  },
+  "4001113": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "VIRUTEX PRO",
+    "producto": "ESPONJA CLÁSICA",
+    "formato": "-",
+    "precio_casamado": 215
+  },
+  "4001241": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "VIRUTEX PRO",
+    "producto": "PAÑO ESPONJA ABSORBENTE NATURAL AMARILLO",
+    "formato": "6 UND",
+    "precio_casamado": 2396
+  },
+  "4001265": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "VIRUTEX",
+    "producto": "TRAPERO MULTIUSO ULTRA ABSORBENTE AMARILLO DOBLE C/OJAL",
+    "formato": "40 x 40 CM",
+    "precio_casamado": 2526
+  },
+  "4001090": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "TRAPERO MICROFIBRA DOBLE C/OJAL AZUL",
+    "formato": "40 x 40 CM",
+    "precio_casamado": 1215
+  },
+  "4001106": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "EXCELL",
+    "producto": "TRAPERO HÚMEDO PARA PISO FLOTANTE - PRIMAVERA",
+    "formato": "10 UND x 1 PQTE",
+    "precio_casamado": 2042
+  },
+  "4001165": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "EXCELL",
+    "producto": "TRAPERO HÚMEDO PARA TODO TIPO DE PISO - LAVANDA",
+    "formato": "10 UND x 1 PQTE",
+    "precio_casamado": 2042
+  },
+  "4001039-S": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "GUANTE LATEX DOMESTICO AMARILLO",
+    "formato": "TALLA S",
+    "precio_casamado": 528
+  },
+  "4001039-M": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "GUANTE LATEX DOMESTICO AMARILLO",
+    "formato": "TALLA M",
+    "precio_casamado": 528
+  },
+  "4001039-L": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "GUANTE LATEX DOMESTICO AMARILLO",
+    "formato": "TALLA L",
+    "precio_casamado": 528
+  },
+  "4001115-S": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "VIRUTEX PRO",
+    "producto": "GUANTE LATEX MULTIUSO AMARILLO",
+    "formato": "TALLA S",
+    "precio_casamado": 2246
+  },
+  "4001115-M": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "VIRUTEX PRO",
+    "producto": "GUANTE LATEX MULTIUSO AMARILLO",
+    "formato": "TALLA M",
+    "precio_casamado": 2246
+  },
+  "4001115-L": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "VIRUTEX PRO",
+    "producto": "GUANTE LATEX MULTIUSO AMARILLO",
+    "formato": "TALLA L",
+    "precio_casamado": 2246
+  },
+  "4001228-S": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "IMPEKE",
+    "producto": "GUANTE LATEX MULTIUSO AMARILLO",
+    "formato": "TALLA S",
+    "precio_casamado": 1223
+  },
+  "4001228-M": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "IMPEKE",
+    "producto": "GUANTE LATEX MULTIUSO AMARILLO",
+    "formato": "TALLA M",
+    "precio_casamado": 1223
+  },
+  "4001228-L": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "IMPEKE",
+    "producto": "GUANTE LATEX MULTIUSO AMARILLO",
+    "formato": "TALLA L",
+    "precio_casamado": 1223
+  },
+  "4001042-M": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "GUANTE NITRILO VERDE",
+    "formato": "TALLA M",
+    "precio_casamado": 1113
+  },
+  "4001042-L": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "GUANTE NITRILO VERDE",
+    "formato": "TALLA L",
+    "precio_casamado": 1113
+  },
+  "4001189-M": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "VIRUTEX PRO",
+    "producto": "GUANTE NITRILO VERDE PRO",
+    "formato": "TALLA M",
+    "precio_casamado": 2245
+  },
+  "4001189-L": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "VIRUTEX PRO",
+    "producto": "GUANTE NITRILO VERDE PRO",
+    "formato": "TALLA L",
+    "precio_casamado": 2245
+  },
+  "4001225-S": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "CLEANCARRIER",
+    "producto": "GUANTE EXAMINACIÓN LATEX BLANCO CON POLVO",
+    "formato": "100 UND / TALLA S",
+    "precio_casamado": 4058
+  },
+  "4001225-M": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "CLEANCARRIER",
+    "producto": "GUANTE EXAMINACIÓN LATEX BLANCO CON POLVO",
+    "formato": "100 UND / TALLA M",
+    "precio_casamado": 4058
+  },
+  "4001225-L": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "CLEANCARRIER",
+    "producto": "GUANTE EXAMINACIÓN LATEX BLANCO CON POLVO",
+    "formato": "100 UND / TALLA L",
+    "precio_casamado": 4058
+  },
+  "4001046-S": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "CLEANCARRIER",
+    "producto": "GUANTE EXAMINACIÓN VINILO BLANCO SIN POLVO",
+    "formato": "100 UND / TALLA S",
+    "precio_casamado": 2422
+  },
+  "4001046-M": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "CLEANCARRIER",
+    "producto": "GUANTE EXAMINACIÓN VINILO BLANCO SIN POLVO",
+    "formato": "100 UND / TALLA M",
+    "precio_casamado": 2422
+  },
+  "4001046-L": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "CLEANCARRIER",
+    "producto": "GUANTE EXAMINACIÓN VINILO BLANCO SIN POLVO",
+    "formato": "100 UND / TALLA L",
+    "precio_casamado": 2422
+  },
+  "4001227-S": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "VIRUTEX PRO",
+    "producto": "GUANTE EXAMINACIÓN VINILO BLANCO SIN POLVO",
+    "formato": "100 UND / TALLA S",
+    "precio_casamado": 2808
+  },
+  "4001226-S": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "CLEANCARRIER",
+    "producto": "GUANTE EXAMINACIÓN NITRILO AZUL SIN POLVO",
+    "formato": "100 UND / TALLA S",
+    "precio_casamado": 4389
+  },
+  "4001226-M": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "CLEANCARRIER",
+    "producto": "GUANTE EXAMINACIÓN NITRILO AZUL SIN POLVO",
+    "formato": "100 UND / TALLA M",
+    "precio_casamado": 4389
+  },
+  "4001226-L": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "CLEANCARRIER",
+    "producto": "GUANTE EXAMINACIÓN NITRILO AZUL SIN POLVO",
+    "formato": "100 UND / TALLA L",
+    "precio_casamado": 4389
+  },
+  "4001280-S": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "CLEANCARRIER",
+    "producto": "GUANTE EXAMINACIÓN NITRILO NEGRO SIN POLVO",
+    "formato": "100 UND / TALLA S",
+    "precio_casamado": 3759
+  },
+  "4001280-M": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "CLEANCARRIER",
+    "producto": "GUANTE EXAMINACIÓN NITRILO NEGRO SIN POLVO",
+    "formato": "100 UND / TALLA M",
+    "precio_casamado": 3759
+  },
+  "4001280-L": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "CLEANCARRIER",
+    "producto": "GUANTE EXAMINACIÓN NITRILO NEGRO SIN POLVO",
+    "formato": "100 UND / TALLA L",
+    "precio_casamado": 3759
+  },
+  "4001054-L": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "CLEANCARRIER",
+    "producto": "OVEROL BUZO DESECHABLE LAMINADO BLANCO",
+    "formato": "TALLA L",
+    "precio_casamado": 1369
+  },
+  "4001054-XXL": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "CLEANCARRIER",
+    "producto": "OVEROL BUZO DESECHABLE LAMINADO BLANCO",
+    "formato": "TALLA XXL",
+    "precio_casamado": 1369
+  },
+  "4001377-L": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "BLACKBULL",
+    "producto": "OVEROL BUZO DESECHABLE BLANCO BLACKBULL BASIC",
+    "formato": "TALLA L",
+    "precio_casamado": 1202
+  },
+  "4001377-XL": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "BLACKBULL",
+    "producto": "OVEROL BUZO DESECHABLE BLANCO BLACKBULL BASIC",
+    "formato": "TALLA XL",
+    "precio_casamado": 1202
+  },
+  "4001170": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "PULEX",
+    "producto": "GOMA REPUESTO PARA SQUEEGEE",
+    "formato": "71 CM",
+    "precio_casamado": 4797
+  },
+  "4001223": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "VIRUTEX",
+    "producto": "SOPAPO GRANDE GOMA GRUESA CON MANGO PLÁSTICO",
+    "formato": "-",
+    "precio_casamado": 4863
+  },
+  "4001210": {
+    "categoria": "QUÍMICOS",
+    "marca": "HARPIC",
+    "producto": "PASTILLA ESTANQUE WC",
+    "formato": "5 UND",
+    "precio_casamado": 6743
+  },
+  "4001076": {
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "BOTELLA PLÁSTICA PET TRANSPARENTE C/TAPA PARA ATOMIZADOR",
+    "formato": "1 LT",
+    "precio_casamado": 314
+  },
+  "11592": {
+    "categoria": "OFICINA Y LIBRERÍA",
+    "marca": "TORRE",
+    "producto": "CARPETA PIGMENTADA CARTÓN AMARILLA",
+    "formato": "OFICIO",
+    "precio_casamado": 333
+  },
+  "27908": {
+    "categoria": "OFICINA Y LIBRERÍA",
+    "marca": "AUCA",
+    "producto": "CARPETA ARCHIVADOR PLASTIFICADO CON GUSANO",
+    "formato": "AZUL",
+    "precio_casamado": 642
+  },
+  "KTE-050WH": {
+    "categoria": "COMPUTACIÓN",
+    "marca": "KLIPXTREME",
+    "producto": "AUDÍFONOS TRUE WIRELESS CONNECTION TUNEFIBUDS",
+    "formato": "KTE-050WH BLANCOS",
+    "precio_casamado": 20080
+  },
+  "XTF-MC117": {
+    "categoria": "COMPUTACIÓN",
+    "marca": "XTECH",
+    "producto": "SILLA EJECUTIVA NEGRA",
+    "formato": "VERONA",
+    "precio_casamado": 87230
+  },
+  "8001090": {
+    "categoria": "FERRETERIA",
+    "marca": "MEGABRIGHT",
+    "producto": "PANEL LED REDONDO SOBREPUESTO 18W 4000K",
+    "formato": "LUZ NEUTRA",
+    "precio_casamado": 4062
+  },
+  "8001042": {
+    "categoria": "FERRETERIA",
+    "marca": "US EAGLE",
+    "producto": "LENTES ANTIPARRAS DE SEGURIDAD ECONÓMICO",
+    "formato": "OSCURO",
+    "precio_casamado": 650
+  },
+  "8001017": {
+    "categoria": "FERRETERIA",
+    "marca": "GENÉRICO",
+    "producto": "FAJA LUMBAR ELASTICADA COLOR NEGRO",
+    "formato": "TALLA L",
+    "precio_casamado": 5440
+  },
+  "8001018": {
+    "categoria": "FERRETERIA",
+    "marca": "GENÉRICO",
+    "producto": "FAJA LUMBAR ELASTICADA COLOR NEGRO",
+    "formato": "TALLA XL",
+    "precio_casamado": 5440
+  },
+  "8001058-M": {
+    "categoria": "FERRETERIA",
+    "marca": "LEGEND",
+    "producto": "GUANTES ANTICORTE PALMA PU FLEX LEGEND ULTRA CUT",
+    "formato": "TALLA M",
+    "precio_casamado": 2389
+  },
+  "8001058-L": {
+    "categoria": "FERRETERIA",
+    "marca": "LEGEND",
+    "producto": "GUANTES ANTICORTE PALMA PU FLEX LEGEND ULTRA CUT",
+    "formato": "TALLA L",
+    "precio_casamado": 2389
+  },
+  "8001061-37": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BLACK",
+    "formato": "TALLA 37",
+    "precio_casamado": 14797
+  },
+  "8001061-38": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BLACK",
+    "formato": "TALLA 38",
+    "precio_casamado": 14797
+  },
+  "8001061-39": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BLACK",
+    "formato": "TALLA 39",
+    "precio_casamado": 14797
+  },
+  "8001061-40": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BLACK",
+    "formato": "TALLA 40",
+    "precio_casamado": 14797
+  },
+  "8001061-41": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BLACK",
+    "formato": "TALLA 41",
+    "precio_casamado": 14797
+  },
+  "8001061-42": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BLACK",
+    "formato": "TALLA 42",
+    "precio_casamado": 14797
+  },
+  "8001061-43": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BLACK",
+    "formato": "TALLA 43",
+    "precio_casamado": 14797
+  },
+  "8001061-44": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BLACK",
+    "formato": "TALLA 44",
+    "precio_casamado": 14797
+  },
+  "8001051-37": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BRULE CAFÉ",
+    "formato": "TALLA 37",
+    "precio_casamado": 19762
+  },
+  "8001051-39": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BRULE CAFÉ",
+    "formato": "TALLA 39",
+    "precio_casamado": 19762
+  },
+  "8001051-40": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BRULE CAFÉ",
+    "formato": "TALLA 40",
+    "precio_casamado": 19762
+  },
+  "8001064-36": {
+    "categoria": "FERRETERIA",
+    "marca": "LEGEND",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "formato": "TALLA 36",
+    "precio_casamado": 49626
+  },
+  "8001064-37": {
+    "categoria": "FERRETERIA",
+    "marca": "LEGEND",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "formato": "TALLA 37",
+    "precio_casamado": 49626
+  },
+  "8001064-38": {
+    "categoria": "FERRETERIA",
+    "marca": "LEGEND",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "formato": "TALLA 38",
+    "precio_casamado": 49626
+  },
+  "8001064-39": {
+    "categoria": "FERRETERIA",
+    "marca": "LEGEND",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "formato": "TALLA 39",
+    "precio_casamado": 49626
+  },
+  "8001064-40": {
+    "categoria": "FERRETERIA",
+    "marca": "LEGEND",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "formato": "TALLA 40",
+    "precio_casamado": 49626
+  },
+  "8001064-41": {
+    "categoria": "FERRETERIA",
+    "marca": "LEGEND",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "formato": "TALLA 41",
+    "precio_casamado": 49626
+  },
+  "8001064-42": {
+    "categoria": "FERRETERIA",
+    "marca": "LEGEND",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "formato": "TALLA 42",
+    "precio_casamado": 49626
+  },
+  "8001064-43": {
+    "categoria": "FERRETERIA",
+    "marca": "LEGEND",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "formato": "TALLA 43",
+    "precio_casamado": 49626
+  },
+  "8001064-44": {
+    "categoria": "FERRETERIA",
+    "marca": "LEGEND",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "formato": "TALLA 44",
+    "precio_casamado": 49626
+  },
+  "8001072-38": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "BOTA DE AGUA",
+    "formato": "TALLA 38",
+    "precio_casamado": 6804
+  },
+  "8001072-39": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "BOTA DE AGUA",
+    "formato": "TALLA 39",
+    "precio_casamado": 6804
+  },
+  "8001072-40": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "BOTA DE AGUA",
+    "formato": "TALLA 40",
+    "precio_casamado": 6804
+  },
+  "8001072-41": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "BOTA DE AGUA",
+    "formato": "TALLA 41",
+    "precio_casamado": 6804
+  },
+  "8001072-42": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "BOTA DE AGUA",
+    "formato": "TALLA 42",
+    "precio_casamado": 6804
+  },
+  "8001072-43": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "BOTA DE AGUA",
+    "formato": "TALLA 43",
+    "precio_casamado": 6804
+  },
+  "8001072-44": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "BOTA DE AGUA",
+    "formato": "TALLA 44",
+    "precio_casamado": 6804
+  },
+  "8001052-38": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "BOTA DE AGUA DE SEGURIDAD PUNTA PLANTILLA",
+    "formato": "TALLA 38",
+    "precio_casamado": 7756
+  },
+  "8001052-39": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "BOTA DE AGUA DE SEGURIDAD PUNTA PLANTILLA",
+    "formato": "TALLA 39",
+    "precio_casamado": 7756
+  },
+  "8001052-40": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "BOTA DE AGUA DE SEGURIDAD PUNTA PLANTILLA",
+    "formato": "TALLA 40",
+    "precio_casamado": 7756
+  },
+  "8001052-41": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "BOTA DE AGUA DE SEGURIDAD PUNTA PLANTILLA",
+    "formato": "TALLA 41",
+    "precio_casamado": 7756
+  },
+  "8001052-42": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "BOTA DE AGUA DE SEGURIDAD PUNTA PLANTILLA",
+    "formato": "TALLA 42",
+    "precio_casamado": 7756
+  },
+  "8001052-43": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "BOTA DE AGUA DE SEGURIDAD PUNTA PLANTILLA",
+    "formato": "TALLA 43",
+    "precio_casamado": 7756
+  },
+  "8001052-44": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "BOTA DE AGUA DE SEGURIDAD PUNTA PLANTILLA",
+    "formato": "TALLA 44",
+    "precio_casamado": 7756
+  },
+  "8001055-S": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "PRIMERA CAPA POLIESTER UNISEX NEGRA BLACKBULL BASIC",
+    "formato": "TALLA S",
+    "precio_casamado": 6033
+  },
+  "8001055-M": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "PRIMERA CAPA POLIESTER UNISEX NEGRA BLACKBULL BASIC",
+    "formato": "TALLA M",
+    "precio_casamado": 6033
+  },
+  "8001055-L": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "PRIMERA CAPA POLIESTER UNISEX NEGRA BLACKBULL BASIC",
+    "formato": "TALLA L",
+    "precio_casamado": 6033
+  },
+  "8001055-XL": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "PRIMERA CAPA POLIESTER UNISEX NEGRA BLACKBULL BASIC",
+    "formato": "TALLA XL",
+    "precio_casamado": 6033
+  },
+  "8001059-M": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "PANTALÓN CARGO POPLIN AZUL",
+    "formato": "TALLA M",
+    "precio_casamado": 5574
+  },
+  "8001059-L": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "PANTALÓN CARGO POPLIN AZUL",
+    "formato": "TALLA L",
+    "precio_casamado": 5574
+  },
+  "8001059-XL": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "PANTALÓN CARGO POPLIN AZUL",
+    "formato": "TALLA XL",
+    "precio_casamado": 5574
+  },
+  "8001071-S": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "PANTALÓN CARGO GABARDINA AZUL",
+    "formato": "TALLA S",
+    "precio_casamado": 11164
+  },
+  "8001071-M": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "PANTALÓN CARGO GABARDINA AZUL",
+    "formato": "TALLA M",
+    "precio_casamado": 11164
+  },
+  "8001071-L": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "PANTALÓN CARGO GABARDINA AZUL",
+    "formato": "TALLA L",
+    "precio_casamado": 11164
+  },
+  "8001071-XL": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "PANTALÓN CARGO GABARDINA AZUL",
+    "formato": "TALLA XL",
+    "precio_casamado": 11164
+  },
+  "8001081-M": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "OVEROL POPLIN AZUL",
+    "formato": "TALLA M",
+    "precio_casamado": 6728
+  },
+  "8001081-L": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "OVEROL POPLIN AZUL",
+    "formato": "TALLA L",
+    "precio_casamado": 6728
+  },
+  "8001081-XL": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "OVEROL POPLIN AZUL",
+    "formato": "TALLA XL",
+    "precio_casamado": 6728
+  },
+  "8001082-L": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "TRAJE DE AGUA JARDINERA AMARILLA",
+    "formato": "TALLA L",
+    "precio_casamado": 8109
+  },
+  "8001082-XL": {
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "TRAJE DE AGUA JARDINERA AMARILLA",
+    "formato": "TALLA XL",
+    "precio_casamado": 8109
+  },
+  "8001020": {
+    "categoria": "FERRETERIA",
+    "marca": "ZEBRIK",
+    "producto": "MARTILLO CARPINTERO 27MM CON MANGO ENGOMADO",
+    "formato": "AMARILLO",
+    "precio_casamado": 6090
+  },
+  "8001053": {
+    "categoria": "FERRETERIA",
+    "marca": "STANLEY",
+    "producto": "LINTERNA LED ALUMINIO/GOMA",
+    "formato": "120 Lm",
+    "precio_casamado": 10382
+  }
+}
