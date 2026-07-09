@@ -1,10 +1,8 @@
 """
 Diagnóstico de autenticación con la API de Defontana.
-Ya confirmado: el endpoint correcto es GET https://api.defontana.com/api/Auth
-y requiere además de user/password los campos "client" y "company".
-
-Este script prueba varios formatos del RUT como client/company para ver
-cuál acepta la API (o qué error nuevo aparece).
+Confirmado: GET https://api.defontana.com/api/Auth con user/password/client/company.
+Con client=company=RUT (varios formatos) dio "Login failed" (no error de
+validación), así que se prueban más combinaciones de client/company.
 
 Uso:
   python diagnostico_defontana.py
@@ -15,16 +13,27 @@ import requests
 
 email = input("Email Defontana: ").strip()
 password = getpass.getpass("Password Defontana: ")
-rut = input("RUT (como te lo dieron, ej. 77557072-5): ").strip()
+rut = input("RUT (ej. 77557072-5): ").strip()
 
 url = "https://api.defontana.com/api/Auth"
 
-variantes_rut = {
-    "tal_cual": rut,
-    "sin_guion": rut.replace("-", ""),
-    "sin_guion_ni_puntos": rut.replace("-", "").replace(".", ""),
-    "solo_numero_sin_dv": rut.split("-")[0].replace(".", "") if "-" in rut else rut,
-}
+rut_con_puntos = rut
+rut_sin_guion = rut.replace("-", "").replace(".", "")
+rut_con_puntos_formato = None
+try:
+    numero, dv = rut.replace(".", "").split("-")
+    rut_con_puntos_formato = f"{int(numero):,}".replace(",", ".") + "-" + dv
+except Exception:
+    pass
+
+combinaciones = [
+    ("client=email, company=RUT", email, rut),
+    ("client=RUT, company=email", rut, email),
+    ("client=0, company=RUT", "0", rut),
+    ("client=RUT sin guion, company=RUT sin guion", rut_sin_guion, rut_sin_guion),
+]
+if rut_con_puntos_formato:
+    combinaciones.append(("client=company=RUT con puntos", rut_con_puntos_formato, rut_con_puntos_formato))
 
 def mostrar_respuesta(r):
     print(f"    HTTP {r.status_code}")
@@ -38,9 +47,9 @@ def mostrar_respuesta(r):
     except Exception:
         print("    Respuesta (no-JSON, primeros 300 chars):", r.text[:300])
 
-for nombre, valor in variantes_rut.items():
-    print(f"\n=== client=company='{valor}' ({nombre}) ===")
-    params = {"user": email, "password": password, "client": valor, "company": valor}
+for nombre, client_val, company_val in combinaciones:
+    print(f"\n=== {nombre} (client='{client_val}', company='{company_val}') ===")
+    params = {"user": email, "password": password, "client": client_val, "company": company_val}
     try:
         r = requests.get(url, params=params, timeout=20)
     except Exception as e:
