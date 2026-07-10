@@ -550,26 +550,6 @@
     "nuevo": "Apoya Pies Negro"
   },
   {
-    "id": 2685,
-    "original": "TINTA ORIGINAL YELLOW 48 MLBT5001 Y",
-    "nuevo": "Tinta Original Yellow 48 ML Bt 5001 y"
-  },
-  {
-    "id": 2684,
-    "original": "TINTA ORIGINAL MAGENTA 48 MLBT5001 M",
-    "nuevo": "Tinta Original Magenta 48 ML Bt 5001 M"
-  },
-  {
-    "id": 2683,
-    "original": "TINTA ORIGINAL CYAN 48 MLBT5001 C",
-    "nuevo": "Tinta Original Cyan 48 ML Bt 5001 C"
-  },
-  {
-    "id": 2682,
-    "original": "TINTA ORIGINAL NEGRO 108 MLBT6001 BK",
-    "nuevo": "Tinta Original Negro 108 ML Bt 6001 Bk"
-  },
-  {
     "id": 2681,
     "original": "TAMBOR ORIGINAL PARA 12000 PAGINASDR2340",
     "nuevo": "Tambor Original Para 12000 Paginasdr 2340"
@@ -2762,97 +2742,97 @@
   {
     "id": 2116,
     "original": "SERVILLETA DISPENSADOR HS UNIVERSAL XPRESSNAP SIGNATURE BLANCO250 HJS x 24 PQTES",
-    "nuevo": "Servilleta Dispensador Hs Universal Xpressnap Signature Blanco 250 Hjs x 24 Pqtes"
+    "nuevo": "Servilleta Dispensador HS Universal Xpressnap Signature Blanco 250 Hjs x 24 Pqtes"
   },
   {
     "id": 2115,
     "original": "SERVILLETA DISPENSADOR HS UNIVERSAL XPRESSNAP SIGNATURE NATURAL250 HJS x 24 PQTES",
-    "nuevo": "Servilleta Dispensador Hs Universal Xpressnap Signature Natural 250 Hjs x 24 Pqtes"
+    "nuevo": "Servilleta Dispensador HS Universal Xpressnap Signature Natural 250 Hjs x 24 Pqtes"
   },
   {
     "id": 2113,
     "original": "SERVILLETA DISPENSADOR HS UNIVERSAL XPRESSNAP NATURAL500 HJS x 12 PQTES",
-    "nuevo": "Servilleta Dispensador Hs Universal Xpressnap Natural 500 Hjs x 12 Pqtes"
+    "nuevo": "Servilleta Dispensador HS Universal Xpressnap Natural 500 Hjs x 12 Pqtes"
   },
   {
     "id": 2112,
     "original": "SERVILLETA DISPENSADOR HS UNIVERSAL INTERFOLIADA 24 x 11 CM250 HJS x 24 PQTES",
-    "nuevo": "Servilleta Dispensador Hs Universal Interfoliada 24 x 11 CM 250 Hjs x 24 Pqtes"
+    "nuevo": "Servilleta Dispensador HS Universal Interfoliada 24 x 11 CM 250 Hjs x 24 Pqtes"
   },
   {
     "id": 2111,
     "original": "SERVILLETA DISPENSADOR HS UNIVERSAL XPRESSNAP FIT240 HJS x 18 PQTES",
-    "nuevo": "Servilleta Dispensador Hs Universal Xpressnap Fit 240 Hjs x 18 Pqtes"
+    "nuevo": "Servilleta Dispensador HS Universal Xpressnap Fit 240 Hjs x 18 Pqtes"
   },
   {
     "id": 2110,
     "original": "SERVILLETA DISPENSADOR HD EXT BLANCA EXCELLENCE 216 x 105 CM400 HJS x 18 PQTES",
-    "nuevo": "Servilleta Dispensador Hd Ext Blanca Excellence 216 x 105 CM 400 Hjs x 18 Pqtes"
+    "nuevo": "Servilleta Dispensador HD Ext Blanca Excellence 216 x 105 CM 400 Hjs x 18 Pqtes"
   },
   {
     "id": 2109,
     "original": "SERVILLETA DISPENSADOR HS ECOLOGICA PLUS 216 x 158 CM250 HJS x 30 PQTES",
-    "nuevo": "Servilleta Dispensador Hs Ecologica Plus 216 x 158 CM 250 Hjs x 30 Pqtes"
+    "nuevo": "Servilleta Dispensador HS Ecologica Plus 216 x 158 CM 250 Hjs x 30 Pqtes"
   },
   {
     "id": 2108,
     "original": "SERVILLETA DISPENSADOR HS BLANCA PLUS 216 x 158 CM300 HJS x 30 PQTES",
-    "nuevo": "Servilleta Dispensador Hs Blanca Plus 216 x 158 CM 300 Hjs x 30 Pqtes"
+    "nuevo": "Servilleta Dispensador HS Blanca Plus 216 x 158 CM 300 Hjs x 30 Pqtes"
   },
   {
     "id": 2107,
     "original": "SERVILLETA DISPENSADOR HS EXPRESS CLASSIC 10 x 21 CM250 HJS x 72 PQTES",
-    "nuevo": "Servilleta Dispensador Hs Express Classic 10 x 21 CM 250 Hjs x 72 Pqtes"
+    "nuevo": "Servilleta Dispensador HS Express Classic 10 x 21 CM 250 Hjs x 72 Pqtes"
   },
   {
     "id": 2106,
     "original": "SERVILLETA MESA HD EXT BLANCA EXCELLENCE 40 x 40 CM100 HJS x 1 PQTES",
-    "nuevo": "Servilleta Mesa Hd Ext Blanca Excellence 40 x 40 CM 100 Hjs x 1 Pqtes"
+    "nuevo": "Servilleta Mesa HD Ext Blanca Excellence 40 x 40 CM 100 Hjs x 1 Pqtes"
   },
   {
     "id": 2105,
     "original": "SERVILLETA MESA HS GOURMET BLANCA EXCELLENCE 40 x 40 CM050 HJS x 1 PQTES",
-    "nuevo": "Servilleta Mesa Hs Gourmet Blanca Excellence 40 x 40 CM 050 Hjs x 1 Pqtes"
+    "nuevo": "Servilleta Mesa HS Gourmet Blanca Excellence 40 x 40 CM 050 Hjs x 1 Pqtes"
   },
   {
     "id": 2104,
     "original": "SERVILLETA MESA HS EXT BLANCA EXCELLENCE 33 x 33 CM500 HJS x 1 PQTES",
-    "nuevo": "Servilleta Mesa Hs Ext Blanca Excellence 33 x 33 CM 500 Hjs x 1 Pqtes"
+    "nuevo": "Servilleta Mesa HS Ext Blanca Excellence 33 x 33 CM 500 Hjs x 1 Pqtes"
   },
   {
     "id": 2103,
     "original": "SERVILLETA MESA HS BLANCA PLUS 30 x 33 CM200 HJS x 1 PQTES",
-    "nuevo": "Servilleta Mesa Hs Blanca Plus 30 x 33 CM 200 Hjs x 1 Pqtes"
+    "nuevo": "Servilleta Mesa HS Blanca Plus 30 x 33 CM 200 Hjs x 1 Pqtes"
   },
   {
     "id": 2102,
     "original": "SERVILLETA MESA HS COCTEL  BLANCA 23 x 22 CM50 HJS x 1 PQTES",
-    "nuevo": "Servilleta Mesa Hs Coctel Blanca 23 x 22 CM 50 Hjs x 1 Pqtes"
+    "nuevo": "Servilleta Mesa HS Coctel Blanca 23 x 22 CM 50 Hjs x 1 Pqtes"
   },
   {
     "id": 2101,
     "original": "SERVILLETA MESA HS MESA BLANCA 33 x 33 CM50 HJS x 1 PQTE",
-    "nuevo": "Servilleta Mesa Hs Mesa Blanca 33 x 33 CM 50 Hjs x 1 Pqte"
+    "nuevo": "Servilleta Mesa HS Mesa Blanca 33 x 33 CM 50 Hjs x 1 Pqte"
   },
   {
     "id": 2100,
     "original": "SERVILLETA MESA HS COCTEL BLANCA 24 x 24 CM50 HJS x 1 PQTE",
-    "nuevo": "Servilleta Mesa Hs Coctel Blanca 24 x 24 CM 50 Hjs x 1 Pqte"
+    "nuevo": "Servilleta Mesa HS Coctel Blanca 24 x 24 CM 50 Hjs x 1 Pqte"
   },
   {
     "id": 2099,
     "original": "SERVILLETA MESA HS UNIVERSAL COCKTAIL BLANCA 23 x 22 CM200 HJS x 1 PQTE",
-    "nuevo": "Servilleta Mesa Hs Universal Cocktail Blanca 23 x 22 CM 200 Hjs x 1 Pqte"
+    "nuevo": "Servilleta Mesa HS Universal Cocktail Blanca 23 x 22 CM 200 Hjs x 1 Pqte"
   },
   {
     "id": 2098,
     "original": "SERVILLETA MESA HS BLANCA PLUS 23 x 22 CM160 HJS x 1 PQTES",
-    "nuevo": "Servilleta Mesa Hs Blanca Plus 23 x 22 CM 160 Hjs x 1 Pqtes"
+    "nuevo": "Servilleta Mesa HS Blanca Plus 23 x 22 CM 160 Hjs x 1 Pqtes"
   },
   {
     "id": 2097,
     "original": "SERVILLETA MESA HS ECOLOGICA PLUS 23 x 22 CM150 HJS x 1 PQTES",
-    "nuevo": "Servilleta Mesa Hs Ecologica Plus 23 x 22 CM 150 Hjs x 1 Pqtes"
+    "nuevo": "Servilleta Mesa HS Ecologica Plus 23 x 22 CM 150 Hjs x 1 Pqtes"
   },
   {
     "id": 2096,
@@ -2867,236 +2847,236 @@
   {
     "id": 2094,
     "original": "FACIAL HD EXT BLANCO  216 x 14 CM90 HJS x 1 PQTES",
-    "nuevo": "Facial Hd Ext Blanco 216 x 14 CM 90 Hjs x 1 Pqtes"
+    "nuevo": "Facial HD Ext Blanco 216 x 14 CM 90 Hjs x 1 Pqtes"
   },
   {
     "id": 2093,
     "original": "FACIAL HD EXT BLANCO EXCELLENCE 216 x 14 CM50 HJS x 1 PQTES",
-    "nuevo": "Facial Hd Ext Blanco Excellence 216 x 14 CM 50 Hjs x 1 Pqtes"
+    "nuevo": "Facial HD Ext Blanco Excellence 216 x 14 CM 50 Hjs x 1 Pqtes"
   },
   {
     "id": 2092,
     "original": "SABANILLA CLINICA HS PREPICADA BLANCA48 MT x 2 ROLLOS",
-    "nuevo": "Sabanilla Clinica Hs Prepicada Blanca 48 MT x 2 Rollos"
+    "nuevo": "Sabanilla Clinica HS Prepicada Blanca 48 MT x 2 Rollos"
   },
   {
     "id": 2091,
     "original": "SABANILLA HS BLANCA PLUS48 MT x 2 ROLLOS",
-    "nuevo": "Sabanilla Hs Blanca Plus 48 MT x 2 Rollos"
+    "nuevo": "Sabanilla HS Blanca Plus 48 MT x 2 Rollos"
   },
   {
     "id": 2090,
     "original": "PAPEL HIGIENICO BAJO METRAJE HD PREMIUM50 MT x 4 ROLLOS",
-    "nuevo": "Papel Higienico Bajo Metraje Hd Premium 50 MT x 4 Rollos"
+    "nuevo": "Papel Higienico Bajo Metraje HD Premium 50 MT x 4 Rollos"
   },
   {
     "id": 2089,
     "original": "PAPEL HIGIENICO BAJO METRAJE HD PREMIUM20 MT x 24 ROLLOS",
-    "nuevo": "Papel Higienico Bajo Metraje Hd Premium 20 MT x 24 Rollos"
+    "nuevo": "Papel Higienico Bajo Metraje HD Premium 20 MT x 24 Rollos"
   },
   {
     "id": 2088,
     "original": "PAPEL HIGIENICO BAJO METRAJE HD ULTRA50 MT x 8 ROLLOS",
-    "nuevo": "Papel Higienico Bajo Metraje Hd Ultra 50 MT x 8 Rollos"
+    "nuevo": "Papel Higienico Bajo Metraje HD Ultra 50 MT x 8 Rollos"
   },
   {
     "id": 2085,
     "original": "PAPEL HIGIENICO BAJO METRAJE HD BLANCO30 MT x 4 ROLLOS",
-    "nuevo": "Papel Higienico Bajo Metraje Hd Blanco 30 MT x 4 Rollos"
+    "nuevo": "Papel Higienico Bajo Metraje HD Blanco 30 MT x 4 Rollos"
   },
   {
     "id": 2083,
     "original": "PAPEL HIGIENICO BAJO METRAJE HD EXT BLANCO EXCELLENCE20 MT x 16 ROLLOS",
-    "nuevo": "Papel Higienico Bajo Metraje Hd Ext Blanco Excellence 20 MT x 16 Rollos"
+    "nuevo": "Papel Higienico Bajo Metraje HD Ext Blanco Excellence 20 MT x 16 Rollos"
   },
   {
     "id": 2082,
     "original": "PAPEL HIGIENICO BAJO METRAJE HS BLANCO100 MT x 4 ROLLOS",
-    "nuevo": "Papel Higienico Bajo Metraje Hs Blanco 100 MT x 4 Rollos"
+    "nuevo": "Papel Higienico Bajo Metraje HS Blanco 100 MT x 4 Rollos"
   },
   {
     "id": 2081,
     "original": "PAPEL HIGIENICO BAJO METRAJE HS BLANCO FAJILLA50 MT x 12 ROLLOS",
-    "nuevo": "Papel Higienico Bajo Metraje Hs Blanco Fajilla 50 MT x 12 Rollos"
+    "nuevo": "Papel Higienico Bajo Metraje HS Blanco Fajilla 50 MT x 12 Rollos"
   },
   {
     "id": 2080,
     "original": "PAPEL HIGIENICO BAJO METRAJE HS BLANCO50 MT x 8 ROLLOS",
-    "nuevo": "Papel Higienico Bajo Metraje Hs Blanco 50 MT x 8 Rollos"
+    "nuevo": "Papel Higienico Bajo Metraje HS Blanco 50 MT x 8 Rollos"
   },
   {
     "id": 2079,
     "original": "PAPEL HIGIENICO BAJO METRAJE HS BLANCO PLUS50 MT x 4 ROLLOS",
-    "nuevo": "Papel Higienico Bajo Metraje Hs Blanco Plus 50 MT x 4 Rollos"
+    "nuevo": "Papel Higienico Bajo Metraje HS Blanco Plus 50 MT x 4 Rollos"
   },
   {
     "id": 2078,
     "original": "PAPEL HIGIENICO ALTO METRAJE HD EXT BLANCO EXCELLENCE250 MT x 6 ROLLOS",
-    "nuevo": "Papel Higienico Alto Metraje Hd Ext Blanco Excellence 250 MT x 6 Rollos"
+    "nuevo": "Papel Higienico Alto Metraje HD Ext Blanco Excellence 250 MT x 6 Rollos"
   },
   {
     "id": 2077,
     "original": "PAPEL HIGIENICO ALTO METRAJE HD BLANCO PREMIUM250 MT x 6 ROLLOS",
-    "nuevo": "Papel Higienico Alto Metraje Hd Blanco Premium 250 MT x 6 Rollos"
+    "nuevo": "Papel Higienico Alto Metraje HD Blanco Premium 250 MT x 6 Rollos"
   },
   {
     "id": 2076,
     "original": "PAPEL HIGIENICO ALTO METRAJE HD PREMIUM250 MT x 6 ROLLOS",
-    "nuevo": "Papel Higienico Alto Metraje Hd Premium 250 MT x 6 Rollos"
+    "nuevo": "Papel Higienico Alto Metraje HD Premium 250 MT x 6 Rollos"
   },
   {
     "id": 2075,
     "original": "PAPEL HIGIENICO ALTO METRAJE HS 500 MT x 4 ROLLOS",
-    "nuevo": "Papel Higienico Alto Metraje Hs 500 MT x 4 Rollos"
+    "nuevo": "Papel Higienico Alto Metraje HS 500 MT x 4 Rollos"
   },
   {
     "id": 2074,
     "original": "PAPEL HIGIENICO ALTO METRAJE HS 300 MT x 6 ROLLOS",
-    "nuevo": "Papel Higienico Alto Metraje Hs 300 MT x 6 Rollos"
+    "nuevo": "Papel Higienico Alto Metraje HS 300 MT x 6 Rollos"
   },
   {
     "id": 2073,
     "original": "PAPEL HIGIENICO ALTO METRAJE HD PREMIUM160 MT x 12 ROLLOS",
-    "nuevo": "Papel Higienico Alto Metraje Hd Premium 160 MT x 12 Rollos"
+    "nuevo": "Papel Higienico Alto Metraje HD Premium 160 MT x 12 Rollos"
   },
   {
     "id": 2072,
     "original": "PAPEL HIGIENICO ALTO METRAJE HS UNIVERSAL300 MT x 12 ROLLOS",
-    "nuevo": "Papel Higienico Alto Metraje Hs Universal 300 MT x 12 Rollos"
+    "nuevo": "Papel Higienico Alto Metraje HS Universal 300 MT x 12 Rollos"
   },
   {
     "id": 2071,
     "original": "PAPEL HIGIENICO ALTO METRAJE HS 500 MT x 6 ROLLOS",
-    "nuevo": "Papel Higienico Alto Metraje Hs 500 MT x 6 Rollos"
+    "nuevo": "Papel Higienico Alto Metraje HS 500 MT x 6 Rollos"
   },
   {
     "id": 2070,
     "original": "PAPEL HIGIENICO ALTO METRAJE HS BLANCO500 MT x 6 ROLLOS",
-    "nuevo": "Papel Higienico Alto Metraje Hs Blanco 500 MT x 6 Rollos"
+    "nuevo": "Papel Higienico Alto Metraje HS Blanco 500 MT x 6 Rollos"
   },
   {
     "id": 2069,
     "original": "PAPEL HIGIENICO ALTO METRAJE HS BLANCO500 MT x 4 ROLLOS",
-    "nuevo": "Papel Higienico Alto Metraje Hs Blanco 500 MT x 4 Rollos"
+    "nuevo": "Papel Higienico Alto Metraje HS Blanco 500 MT x 4 Rollos"
   },
   {
     "id": 2068,
     "original": "PAPEL HIGIENICO ALTO METRAJE HS ECONOMICO CLASSIC500 MT x 4 ROLLOS",
-    "nuevo": "Papel Higienico Alto Metraje Hs Economico Classic 500 MT x 4 Rollos"
+    "nuevo": "Papel Higienico Alto Metraje HS Economico Classic 500 MT x 4 Rollos"
   },
   {
     "id": 2067,
     "original": "PAPEL HIGIENICO ALTO METRAJE HS UNIVERSAL500 MT x 6 ROLLOS",
-    "nuevo": "Papel Higienico Alto Metraje Hs Universal 500 MT x 6 Rollos"
+    "nuevo": "Papel Higienico Alto Metraje HS Universal 500 MT x 6 Rollos"
   },
   {
     "id": 2066,
     "original": "TOALLA DE PAPEL INTERFOLIADA HD EXT BLANCA EXCELLENCE200 HJS x 18 PQTES",
-    "nuevo": "Toalla de Papel Interfoliada Hd Ext Blanca Excellence 200 Hjs x 18 Pqtes"
+    "nuevo": "Toalla de Papel Interfoliada HD Ext Blanca Excellence 200 Hjs x 18 Pqtes"
   },
   {
     "id": 2065,
     "original": "TOALLA DE PAPEL INTERFOLIADA HD ADVANCED200 HJS x 16 PQTES",
-    "nuevo": "Toalla de Papel Interfoliada Hd Advanced 200 Hjs x 16 Pqtes"
+    "nuevo": "Toalla de Papel Interfoliada HD Advanced 200 Hjs x 16 Pqtes"
   },
   {
     "id": 2064,
     "original": "TOALLA DE PAPEL INTERFOLIADA HD BLANCA200 HJS x 18 PQTES",
-    "nuevo": "Toalla de Papel Interfoliada Hd Blanca 200 Hjs x 18 Pqtes"
+    "nuevo": "Toalla de Papel Interfoliada HD Blanca 200 Hjs x 18 Pqtes"
   },
   {
     "id": 2063,
     "original": "TOALLA DE PAPEL INTERFOLIADA HS BLANCA250 HJS x 18 PQTES",
-    "nuevo": "Toalla de Papel Interfoliada Hs Blanca 250 Hjs x 18 Pqtes"
+    "nuevo": "Toalla de Papel Interfoliada HS Blanca 250 Hjs x 18 Pqtes"
   },
   {
     "id": 2062,
     "original": "TOALLA DE PAPEL BAJO METRAJE HD BLANCA XL100 MT x 1 ROLLO",
-    "nuevo": "Toalla de Papel Bajo Metraje Hd Blanca Xl 100 MT x 1 Rollo"
+    "nuevo": "Toalla de Papel Bajo Metraje HD Blanca Xl 100 MT x 1 Rollo"
   },
   {
     "id": 2061,
     "original": "TOALLA DE PAPEL BAJO METRAJE HS BLANCA PREPICADA80 MT x 1 ROLLO",
-    "nuevo": "Toalla de Papel Bajo Metraje Hs Blanca Prepicada 80 MT x 1 Rollo"
+    "nuevo": "Toalla de Papel Bajo Metraje HS Blanca Prepicada 80 MT x 1 Rollo"
   },
   {
     "id": 2059,
     "original": "TOALLA DE PAPEL BAJO METRAJE HD UNIVERSAL BLANCA24 MT x 2 ROLLOS",
-    "nuevo": "Toalla de Papel Bajo Metraje Hd Universal Blanca 24 MT x 2 Rollos"
+    "nuevo": "Toalla de Papel Bajo Metraje HD Universal Blanca 24 MT x 2 Rollos"
   },
   {
     "id": 2058,
     "original": "TOALLA DE PAPEL BAJO METRAJE HD EXT BLANCA EXCELLENCE24 MT x 2 ROLLOS",
-    "nuevo": "Toalla de Papel Bajo Metraje Hd Ext Blanca Excellence 24 MT x 2 Rollos"
+    "nuevo": "Toalla de Papel Bajo Metraje HD Ext Blanca Excellence 24 MT x 2 Rollos"
   },
   {
     "id": 2057,
     "original": "TOALLA DE PAPEL ALTO METRAJE HD EVOLUTION EXCELLENCE200 MT x 2 ROLLOS",
-    "nuevo": "Toalla de Papel Alto Metraje Hd Evolution Excellence 200 MT x 2 Rollos"
+    "nuevo": "Toalla de Papel Alto Metraje HD Evolution Excellence 200 MT x 2 Rollos"
   },
   {
     "id": 2056,
     "original": "TOALLA DE PAPEL JUMBO HD PREMIUM150 MT x 6 ROLLOS",
-    "nuevo": "Toalla de Papel Jumbo Hd Premium 150 MT x 6 Rollos"
+    "nuevo": "Toalla de Papel Jumbo HD Premium 150 MT x 6 Rollos"
   },
   {
     "id": 2055,
     "original": "TOALLA DE PAPEL JUMBO HS ADVANCED310 MT x 2 ROLLOS",
-    "nuevo": "Toalla de Papel Jumbo Hs Advanced 310 MT x 2 Rollos"
+    "nuevo": "Toalla de Papel Jumbo HS Advanced 310 MT x 2 Rollos"
   },
   {
     "id": 2054,
     "original": "TOALLA DE PAPEL ALTO METRAJE HS EVOLUTION PLUS250 MT x 2 ROLLOS",
-    "nuevo": "Toalla de Papel Alto Metraje Hs Evolution Plus 250 MT x 2 Rollos"
+    "nuevo": "Toalla de Papel Alto Metraje HS Evolution Plus 250 MT x 2 Rollos"
   },
   {
     "id": 2053,
     "original": "TOALLA DE PAPEL ALTO METRAJE HS EVOLUTION PLUS135 MT x 3 ROLLOS",
-    "nuevo": "Toalla de Papel Alto Metraje Hs Evolution Plus 135 MT x 3 Rollos"
+    "nuevo": "Toalla de Papel Alto Metraje HS Evolution Plus 135 MT x 3 Rollos"
   },
   {
     "id": 2052,
     "original": "TOALLA DE PAPEL ALTO METRAJE HS BLANCA250 MT x 2 ROLLOS",
-    "nuevo": "Toalla de Papel Alto Metraje Hs Blanca 250 MT x 2 Rollos"
+    "nuevo": "Toalla de Papel Alto Metraje HS Blanca 250 MT x 2 Rollos"
   },
   {
     "id": 2051,
     "original": "TOALLA DE PAPEL ALTO METRAJE HS BLANCA180 MT x 2 ROLLOS",
-    "nuevo": "Toalla de Papel Alto Metraje Hs Blanca 180 MT x 2 Rollos"
+    "nuevo": "Toalla de Papel Alto Metraje HS Blanca 180 MT x 2 Rollos"
   },
   {
     "id": 2050,
     "original": "TOALLA DE PAPEL ALTO METRAJE HS250 MT x 2 ROLLOS",
-    "nuevo": "Toalla de Papel Alto Metraje Hs 250 MT x 2 Rollos"
+    "nuevo": "Toalla de Papel Alto Metraje HS 250 MT x 2 Rollos"
   },
   {
     "id": 2049,
     "original": "TOALLA DE PAPEL JUMBO HS ADVANCED250 MT x 6 ROLLOS",
-    "nuevo": "Toalla de Papel Jumbo Hs Advanced 250 MT x 6 Rollos"
+    "nuevo": "Toalla de Papel Jumbo HS Advanced 250 MT x 6 Rollos"
   },
   {
     "id": 2048,
     "original": "TOALLA DE PAPEL ALTO METRAJE HS190 MT x 2 ROLLOS",
-    "nuevo": "Toalla de Papel Alto Metraje Hs 190 MT x 2 Rollos"
+    "nuevo": "Toalla de Papel Alto Metraje HS 190 MT x 2 Rollos"
   },
   {
     "id": 2047,
     "original": "TOALLA DE PAPEL ALTO METRAJE HS BLANCA250 MT x 2 ROLLOS",
-    "nuevo": "Toalla de Papel Alto Metraje Hs Blanca 250 MT x 2 Rollos"
+    "nuevo": "Toalla de Papel Alto Metraje HS Blanca 250 MT x 2 Rollos"
   },
   {
     "id": 2046,
     "original": "TOALLA DE PAPEL ALTO METRAJE HS BLANCA PLUS200 MT x 2 ROLLOS",
-    "nuevo": "Toalla de Papel Alto Metraje Hs Blanca Plus 200 MT x 2 Rollos"
+    "nuevo": "Toalla de Papel Alto Metraje HS Blanca Plus 200 MT x 2 Rollos"
   },
   {
     "id": 2045,
     "original": "TOALLA DE PAPEL ALTO METRAJE HS ECOLOGICA PLUS250 MT x 2 ROLLOS",
-    "nuevo": "Toalla de Papel Alto Metraje Hs Ecologica Plus 250 MT x 2 Rollos"
+    "nuevo": "Toalla de Papel Alto Metraje HS Ecologica Plus 250 MT x 2 Rollos"
   },
   {
     "id": 2044,
     "original": "TOALLA DE PAPEL ALTO METRAJE HS ECONOMICA CLASSIC250 MT x 2 ROLLOS",
-    "nuevo": "Toalla de Papel Alto Metraje Hs Economica Classic 250 MT x 2 Rollos"
+    "nuevo": "Toalla de Papel Alto Metraje HS Economica Classic 250 MT x 2 Rollos"
   }
 ]
