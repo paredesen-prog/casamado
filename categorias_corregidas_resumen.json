@@ -1,0 +1,12 @@
+{
+  "cruce_fasit": 106,
+  "zapatos_legacy_no_en_lista_fasit": 3,
+  "guantes_lentes_bota_en_tapetes_urinarios": 15,
+  "stragglers_categoria_te": 7,
+  "total_productos_recategorizados": 131,
+  "bugs_encontrados": [
+    "Categorías 'Té' y 'Aseo y Limpieza' usadas como cajón de sastre para productos sin categoría real asignada durante importaciones anteriores",
+    "14 productos de guantes cayeron en 'Tapetes Urinarios' sin relación",
+    "Zapatos de seguridad y accesorios eléctricos (enchufes/alargadores) bajo 'Computación y Tecnología' en vez de la nueva categoría 'Ferretería'"
+  ]
+}
