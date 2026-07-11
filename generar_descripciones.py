@@ -81,7 +81,7 @@ CATEGORIAS_WC_USO = [
     (["bolsas de basura"], "para el manejo de residuos", "la recolección y disposición de residuos en oficinas y empresas"),
     (["oficina", "librería", "libreria"], "de oficina y librería", "el trabajo diario en oficinas, colegios e instituciones"),
     (["computación", "computacion", "tecnología", "tecnologia"], "de tecnología y computación", "equipar puestos de trabajo y oficinas"),
-    (["seguridad", "epp", "protección", "proteccion"], "de seguridad e higiene laboral", "proteger a tus colaboradores en el trabajo"),
+    (["seguridad", "epp", "protección", "proteccion", "ferretería", "ferreteria"], "de seguridad e higiene laboral", "proteger a tus colaboradores en el trabajo"),
     (["mobiliario", "silla"], "de mobiliario para oficina", "equipar oficinas y espacios de trabajo"),
 ]
 DEFAULT_USO = ("de distribución Casamado", "abastecer a empresas, instituciones y comercios")
