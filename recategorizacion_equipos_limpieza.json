@@ -1,0 +1,25 @@
+{
+  "fecha": "2026-07-10",
+  "hallazgo": "Los productos de baldes, carros, aspiradoras y contenedores YA existian en el catalogo (publicados, con foto y precio), pero estaban mal categorizados: dumped en 'Aseo y Limpieza' u 'Escobillones y Palas' en vez de sus subcategorias reales. Por eso las subcategorias 'Baldes y Carros', 'Carros de Limpieza', 'Aspiradoras Industriales' y 'Basureros y Contenedores' aparecian con count=0, dando la falsa impresion de un hueco de catalogo cuando en realidad era un bug de categorizacion (mismo patron que los 131 productos corregidos antes en la sesion).",
+  "productos_recategorizados": {
+    "3504": "Baldes y Carros",
+    "6613": "Baldes y Carros",
+    "3507": "Baldes y Carros",
+    "3610": "Baldes y Carros",
+    "3612": "Baldes y Carros",
+    "3614": "Carros de Limpieza",
+    "3531": "Carros de Limpieza",
+    "3492": "Aspiradoras Industriales",
+    "3494": "Aspiradoras Industriales",
+    "3655": "Basureros y Contenedores",
+    "3657": "Basureros y Contenedores",
+    "3673": "Basureros y Contenedores",
+    "3671": "Basureros y Contenedores",
+    "3667": "Basureros y Contenedores",
+    "3669": "Basureros y Contenedores",
+    "3661": "Basureros y Contenedores",
+    "3659": "Basureros y Contenedores",
+    "3665": "Basureros y Contenedores",
+    "3663": "Basureros y Contenedores"
+  }
+}
