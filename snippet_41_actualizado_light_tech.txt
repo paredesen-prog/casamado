@@ -156,7 +156,7 @@ add_action('wp_head', function() {
     .csm-bento-large h2{font-size:26px;line-height:1.2;margin:10px 0 12px;font-weight:800;color:#1a3a5c;max-width:320px;}
     .csm-bento-large p{font-size:14px;color:#4b5563;max-width:320px;line-height:1.5;margin:0 0 20px;}
     .csm-bento-photos{display:flex;gap:10px;}
-    .csm-bento-photos img{width:84px;height:84px;object-fit:contain;background:#fff;border-radius:12px;padding:8px;box-shadow:0 6px 16px rgba(26,58,92,0.10);}
+    .csm-bento-photos .csm-img-bg{width:84px;height:84px;flex-shrink:0;background-color:#fff;background-origin:content-box;border-radius:12px;padding:8px;box-sizing:border-box;box-shadow:0 6px 16px rgba(26,58,92,0.10);}
     .csm-bento-cta{
         align-self:flex-start;color:#fff;padding:11px 22px;border-radius:999px;font-size:13px;font-weight:700;text-decoration:none;
         background:linear-gradient(135deg,#22d3ee 0%,#6366f1 60%,#a78bfa 100%);
@@ -176,7 +176,7 @@ add_action('wp_head', function() {
         transition:all .3s cubic-bezier(0.16,1,0.3,1);will-change:transform;text-decoration:none;
     }
     .csm-bento-small:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(26,58,92,0.10);border-color:transparent;}
-    .csm-bento-small img{width:64px;height:64px;object-fit:contain;flex-shrink:0;}
+    .csm-bento-small .csm-img-bg{width:64px;height:64px;flex-shrink:0;}
     .csm-bento-small-text{flex:1;}
     .csm-bento-small-text .name{font-size:14px;font-weight:700;color:#1a3a5c;line-height:1.25;}
     .csm-bento-small-text .price{margin-top:6px;font-family:"SF Mono","Roboto Mono",Consolas,monospace;font-size:17.5px;font-weight:800;color:#1a3a5c;}
