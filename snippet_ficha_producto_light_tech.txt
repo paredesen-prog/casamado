@@ -1,0 +1,96 @@
+add_action('wp_head', function() {
+    if (!is_product()) return;
+    ?>
+    <style>
+    /* Galeria con globo de cristal detras del producto */
+    .woocommerce-product-gallery {
+        background: #f8fafc;
+        border-radius: 20px;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .woocommerce-product-gallery::before {
+        content: "";
+        position: absolute; inset: 0;
+        background: radial-gradient(circle at 60% 40%, rgba(34,211,238,0.16) 0%, rgba(167,139,250,0.14) 45%, transparent 72%);
+        pointer-events: none;
+    }
+    .woocommerce-product-gallery__image {
+        position: relative; z-index: 1;
+    }
+    .woocommerce-product-gallery img {
+        filter: drop-shadow(0 20px 30px rgba(26,58,92,0.14));
+    }
+
+    /* Precio y titulo grandes */
+    .single-product .summary .price {
+        font-family: "SF Mono","Roboto Mono",Consolas,monospace !important;
+        font-size: 32px !important; font-weight: 800 !important; color: #1a3a5c !important;
+    }
+    .single-product .summary h1.product_title {
+        font-size: 26px !important; font-weight: 800 !important; line-height: 1.2 !important;
+    }
+
+    /* Panel B2B: invitacion a registro, sin exponer precio mayorista */
+    .csm-b2b-panel {
+        background: #0a0a0a; border-radius: 16px; padding: 22px 24px; margin: 20px 0;
+        font-family: -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    }
+    .csm-b2b-panel .label {
+        font-family: "SF Mono","Roboto Mono",Consolas,monospace; font-size: 11px; letter-spacing: 1.5px;
+        text-transform: uppercase; color: #9ca3af; margin-bottom: 8px;
+    }
+    .csm-b2b-panel .msg { color: #fff; font-size: 14px; line-height: 1.5; margin-bottom: 14px; }
+    .csm-b2b-panel .msg strong { color: #22d3ee; }
+    .csm-b2b-panel a {
+        display: inline-block; color: #0a0a0a; background: #22d3ee; font-weight: 700; font-size: 12.5px;
+        padding: 9px 18px; border-radius: 999px; text-decoration: none;
+    }
+
+    /* Selector de cantidad y boton añadir: capsula */
+    .single-product .quantity { display:inline-flex; align-items:center; background:#f4f6f8; border-radius:999px; padding:4px; border:1px solid #e5e9ec; }
+    .single-product .quantity .qty { border:none !important; background:transparent !important; text-align:center; width:44px !important; font-weight:700; }
+    .single-product .single_add_to_cart_button {
+        border-radius: 999px !important;
+        background: linear-gradient(135deg,#22d3ee 0%,#6366f1 60%,#a78bfa 100%) !important;
+        border: none !important; color: #fff !important; font-weight: 700 !important;
+        border-top: 1px solid rgba(255,255,255,0.5) !important;
+        box-shadow: 0 10px 22px rgba(99,102,241,0.28), inset 0 1px 0 rgba(255,255,255,0.4) !important;
+        transition: transform .15s ease;
+    }
+    .single-product .single_add_to_cart_button:active { transform: scale(0.97); }
+    .single-product .casamado-quote-btn { border-top: 1px solid rgba(255,255,255,0.3) !important; }
+
+    /* Acordeon de pestañas (Descripcion / Especificaciones / Valoraciones) */
+    .single-product .woocommerce-tabs.wd-accordion .wc-tab,
+    .single-product .woocommerce-tabs.wd-accordion .wd-active-tab-title {
+        background: #f8fafc !important;
+        border-radius: 12px !important;
+        margin-bottom: 8px !important;
+        border: none !important;
+    }
+    .single-product .woocommerce-tabs.wd-accordion .woocommerce-Tabs-panel {
+        background: #f8fafc !important;
+        border-radius: 12px !important;
+        transition: all .35s cubic-bezier(0.16,1,0.3,1) !important;
+    }
+    </style>
+    <?php
+});
+
+// Panel B2B: invitacion a registro debajo del precio (solo si NO es Cliente Comunidad)
+add_action('woocommerce_single_product_summary', function() {
+    if (is_user_logged_in()) {
+        $user = wp_get_current_user();
+        if (in_array('community_customer', (array) $user->roles)) return;
+    }
+    $registro_url = wc_get_page_permalink('myaccount') . '?action=register';
+    ?>
+    <div class="csm-b2b-panel">
+        <div class="label">Precio empresa</div>
+        <div class="msg">¿Compras para tu <strong>empresa, colegio o institución</strong>? Regístrate como Cliente Comunidad y accede a precio mayorista en este producto.</div>
+        <a href="<?php echo esc_url($registro_url); ?>">Registrarme como empresa →</a>
+    </div>
+    <?php
+}, 25);
