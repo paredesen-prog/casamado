@@ -1,0 +1,192 @@
+add_action('wp_head', function() {
+    ?>
+    <style>
+    /* Header flotante tipo pildora, glassmorphism liviano */
+    .whb-row.whb-general-header {
+        margin: 12px auto 0;
+        max-width: 1400px;
+        border-radius: 999px;
+        background-color: rgba(255,255,255,0.82) !important;
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 2px 16px rgba(26,58,92,0.08);
+    }
+    .whb-header.whb-sticky-clone .whb-row.whb-general-header {
+        margin-top: 0;
+    }
+
+    /* Tarjetas de producto: elevacion suave al pasar el mouse */
+    .wd-product {
+        will-change: transform;
+        transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .wd-product:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(26,58,92,0.12);
+    }
+
+    /* Boton flotante "Categorias" + panel de esferas */
+    #csm-cat-toggle {
+        position: fixed; top: 24px; right: 24px; z-index: 999;
+        background: rgba(255,255,255,0.85);
+        -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+        border: 1px solid rgba(26,58,92,0.10);
+        border-radius: 999px; padding: 10px 18px;
+        font-size: 13px; font-weight: 600; color: #1a3a5c;
+        cursor: pointer; box-shadow: 0 4px 14px rgba(26,58,92,0.10);
+        font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    @media (max-width: 900px) { #csm-cat-toggle { top: auto; bottom: 96px; right: 24px; } }
+
+    #csm-cat-panel {
+        position: fixed; top: 70px; right: 24px; z-index: 999;
+        background: #fff; border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(26,58,92,0.18);
+        padding: 20px; width: 300px;
+        display: grid; grid-template-columns: repeat(3,1fr); gap: 16px;
+        opacity: 0; visibility: hidden; pointer-events: none;
+        transform: translateY(-8px);
+        transition: opacity .25s ease, transform .25s cubic-bezier(0.16,1,0.3,1);
+    }
+    #csm-cat-panel.is-open { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
+    @media (max-width: 900px) { #csm-cat-panel { top: auto; bottom: 148px; } }
+
+    .csm-cat-orb { display:flex; flex-direction:column; align-items:center; gap:6px; text-decoration:none; }
+    .csm-cat-orb-circle {
+        width: 48px; height: 48px; border-radius: 50%;
+        display:flex; align-items:center; justify-content:center; font-size: 18px;
+        background: radial-gradient(circle at 30% 30%, #ffffff 0%, var(--orb-a,#22d3ee) 38%, var(--orb-b,#1a3a5c) 100%);
+        box-shadow: 0 8px 18px rgba(26,58,92,0.18), inset 0 2px 3px rgba(255,255,255,0.6);
+        transition: transform .3s cubic-bezier(0.16,1,0.3,1);
+    }
+    .csm-cat-orb:hover .csm-cat-orb-circle { transform: translateY(-3px) scale(1.05); }
+    .csm-cat-orb-label { font-size: 10px; font-weight: 700; color:#1a3a5c; text-align:center; line-height:1.2; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+
+    /* Isla dinamica: notificacion de "anadido al carrito" */
+    #csm-dyn-island {
+        position: fixed; top: 24px; left: 50%; transform: translateX(-50%) translateY(-16px);
+        background: #0a0a0a; color: #fff; border-radius: 999px;
+        display:flex; align-items:center; gap:8px;
+        font-size: 13px; font-weight: 600;
+        font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        padding: 0; height: 0; opacity: 0; overflow: hidden;
+        z-index: 1000;
+        transition: all .45s cubic-bezier(0.16,1,0.3,1);
+    }
+    #csm-dyn-island.is-active { padding: 12px 22px; height:auto; opacity: 1; transform: translateX(-50%) translateY(0); }
+    #csm-dyn-island .dot { width:7px; height:7px; border-radius:50%; background:#22d3ee; flex-shrink:0; }
+
+    /* Indicador de stock tipo bateria (en tarjetas de producto reales) */
+    .csm-stock-battery { display:flex; align-items:center; gap:6px; margin:6px 0; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .csm-stock-battery .cells { display:flex; gap:2px; width:30px; height:12px; border:1.5px solid #cbd5e1; border-radius:4px; padding:2px; }
+    .csm-stock-battery .cell { flex:1; border-radius:1px; background:#e5e9ec; }
+    .csm-stock-battery.in-stock .cell { background: linear-gradient(90deg,#34d399,#22d3ee); }
+    .csm-stock-battery.out-of-stock .cell { background:#fca5a5; }
+    .csm-stock-battery.out-of-stock .cells .cell:nth-child(2),
+    .csm-stock-battery.out-of-stock .cells .cell:nth-child(3) { background:#e5e9ec; }
+    .csm-stock-battery-label { font-size: 10px; font-weight:700; text-transform:uppercase; letter-spacing:.3px; color:#0f766e; }
+    .csm-stock-battery.out-of-stock .csm-stock-battery-label { color:#b91c1c; }
+
+    /* Boton flotante de cotizacion express B2B */
+    #csm-quote-fab {
+        position: fixed; bottom: 28px; right: 28px; z-index: 999;
+        width: 60px; height: 60px; border-radius: 50%;
+        background: radial-gradient(circle at 30% 30%, #7dd3fc 0%, #6366f1 55%, #4338ca 100%);
+        box-shadow: 0 12px 28px rgba(67,56,202,0.38), inset 0 2px 4px rgba(255,255,255,0.5);
+        border: none; cursor: pointer; color:#fff; font-size:22px;
+        display:flex; align-items:center; justify-content:center;
+        transition: transform .2s cubic-bezier(0.16,1,0.3,1);
+    }
+    #csm-quote-fab:hover { transform: scale(1.06); }
+    #csm-quote-fab:active { transform: scale(0.94); }
+
+    #csm-quote-form {
+        position: fixed; bottom: 100px; right: 28px; z-index: 999;
+        width: 280px; background:#fff; border-radius: 20px;
+        box-shadow: 0 24px 48px rgba(26,58,92,0.22);
+        padding: 22px;
+        font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        opacity: 0; visibility: hidden; transform: translateY(12px) scale(0.96);
+        transition: all .3s cubic-bezier(0.16,1,0.3,1);
+    }
+    #csm-quote-form.is-open { opacity:1; visibility:visible; transform: translateY(0) scale(1); }
+    #csm-quote-form h4 { margin:0 0 4px; font-size:15px; color:#1a3a5c; }
+    #csm-quote-form p { margin:0 0 14px; font-size:12px; color:#6b7280; }
+    #csm-quote-form input {
+        width:100%; padding:10px 12px; margin-bottom:10px; border:1px solid #e2e8f0; border-radius:10px;
+        font-size:13px; font-family:inherit; box-sizing:border-box;
+    }
+    #csm-quote-form button {
+        width:100%; padding:11px; border:none; border-radius:999px; color:#fff; font-weight:700; font-size:13px;
+        background: linear-gradient(135deg, #22d3ee 0%, #6366f1 60%, #a78bfa 100%);
+        cursor:pointer;
+    }
+    #csm-quote-form .csm-quote-msg { font-size:12px; margin-top:8px; text-align:center; }
+    </style>
+    <?php
+    if (is_front_page()) {
+    ?>
+    <style>
+    /* Bento Grid del Kit Bano (solo home) */
+    .csm-bento-section-title{
+        font-family:"SF Mono","Roboto Mono",Consolas,monospace;
+        font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#6b7280;
+        margin:24px 0 14px;
+    }
+    .csm-bento{
+        display:grid;grid-template-columns:1.15fr 1fr;grid-template-rows:repeat(3,130px);
+        gap:16px;margin-bottom:28px;max-width:1300px;margin-left:auto;margin-right:auto;
+        font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    }
+    .csm-bento-large{
+        grid-column:1;grid-row:1 / span 3;
+        background:linear-gradient(160deg,#eef2f4 0%,#e4e9ec 100%);
+        border-radius:20px;padding:34px;
+        display:flex;flex-direction:column;justify-content:space-between;
+        position:relative;overflow:hidden;
+    }
+    .csm-bento-large::after{
+        content:"";position:absolute;z-index:0;bottom:-90px;right:-70px;width:260px;height:260px;
+        border-radius:50%;
+        background:radial-gradient(circle at 30% 30%, rgba(34,211,238,0.35), rgba(167,139,250,0.28) 55%, transparent 78%);
+        pointer-events:none;
+    }
+    .csm-bento-large>*{position:relative;z-index:1;}
+    .csm-bento-large .kicker{font-family:"SF Mono","Roboto Mono",Consolas,monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#6b7280;}
+    .csm-bento-large h2{font-size:26px;line-height:1.2;margin:10px 0 12px;font-weight:800;color:#1a3a5c;max-width:320px;}
+    .csm-bento-large p{font-size:14px;color:#4b5563;max-width:320px;line-height:1.5;margin:0 0 20px;}
+    .csm-bento-photos{display:flex;gap:10px;}
+    .csm-bento-photos img{width:84px;height:84px;object-fit:contain;background:#fff;border-radius:12px;padding:8px;box-shadow:0 6px 16px rgba(26,58,92,0.10);}
+    .csm-bento-cta{
+        align-self:flex-start;color:#fff;padding:11px 22px;border-radius:999px;font-size:13px;font-weight:700;text-decoration:none;
+        background:linear-gradient(135deg,#22d3ee 0%,#6366f1 60%,#a78bfa 100%);
+        border-top:1px solid rgba(255,255,255,0.6);
+        box-shadow:0 8px 18px rgba(99,102,241,0.26), inset 0 1px 0 rgba(255,255,255,0.4);
+        transition:transform .15s ease, box-shadow .2s ease;
+    }
+    .csm-bento-cta:hover{box-shadow:0 12px 22px rgba(99,102,241,0.32), inset 0 1px 0 rgba(255,255,255,0.5);}
+    .csm-bento-cta:active{transform:scale(0.96);}
+    .csm-bento-right{
+        grid-column:2;grid-row:1 / span 3;display:flex;flex-direction:column;gap:16px;
+        background:#fbfcfd;border:1px solid #e7ebee;border-radius:20px;padding:16px;
+    }
+    .csm-bento-small{
+        flex:1;background:#fff;border:1px solid #edf0f2;border-radius:16px;padding:20px 22px;
+        display:flex;align-items:center;gap:18px;
+        transition:all .3s cubic-bezier(0.16,1,0.3,1);will-change:transform;text-decoration:none;
+    }
+    .csm-bento-small:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(26,58,92,0.10);border-color:transparent;}
+    .csm-bento-small img{width:64px;height:64px;object-fit:contain;flex-shrink:0;}
+    .csm-bento-small-text{flex:1;}
+    .csm-bento-small-text .name{font-size:14px;font-weight:700;color:#1a3a5c;line-height:1.25;}
+    .csm-bento-small-text .price{margin-top:6px;font-family:"SF Mono","Roboto Mono",Consolas,monospace;font-size:17.5px;font-weight:800;color:#1a3a5c;}
+    .csm-bento-small-text .price span{font-size:11px;font-weight:600;color:#6b7280;}
+    @media (max-width:860px){
+        .csm-bento{grid-template-columns:1fr;grid-template-rows:auto;}
+        .csm-bento-large{grid-column:1;grid-row:auto;}
+        .csm-bento-right{grid-column:1;grid-row:auto;}
+    }
+    </style>
+    <?php
+    }
+});
