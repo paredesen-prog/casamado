@@ -6,6 +6,7 @@ add_action('wp_footer', function() {
     <div id="csm-quote-form">
         <h4>Cotización express B2B</h4>
         <p>Te contactamos con tu cotización del carro actual.</p>
+        <div id="csm-quote-cart-resumen"></div>
         <input type="text" id="csm-quote-rut" placeholder="RUT empresa">
         <input type="email" id="csm-quote-email" placeholder="Correo">
         <input type="tel" id="csm-quote-phone" placeholder="Teléfono">
@@ -17,8 +18,43 @@ add_action('wp_footer', function() {
     (function() {
         var fab = document.getElementById('csm-quote-fab');
         var form = document.getElementById('csm-quote-form');
+
+        // Trae el contenido real del carro y lo muestra dentro del formulario
+        function cargarResumenCarrito() {
+            var cont = document.getElementById('csm-quote-cart-resumen');
+            cont.innerHTML = '<div class="csm-quote-resumen-loading">Cargando tu carro...</div>';
+            var data = new URLSearchParams();
+            data.append('action', 'csm_resumen_carrito');
+            fetch(csm_ajax.url, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                body: data.toString()
+            })
+            .then(function(r) { return r.json(); })
+            .then(function(res) {
+                if (!res.success) { cont.innerHTML = ''; return; }
+                var d = res.data;
+                if (d.vacio) {
+                    cont.innerHTML = '<div class="csm-quote-resumen-vacio">Tu carro está vacío.</div>';
+                    return;
+                }
+                var html = '<div class="csm-quote-resumen">';
+                d.items.forEach(function(item) {
+                    html += '<div class="csm-quote-resumen-item">'
+                        + '<span class="nombre">' + item.nombre + ' <span class="cant">x' + item.cantidad + '</span></span>'
+                        + '<span class="subtotal">$' + item.subtotal + '</span>'
+                        + '</div>';
+                });
+                html += '<div class="csm-quote-resumen-total"><span>Total</span><span>$' + d.total + '</span></div>';
+                html += '</div>';
+                cont.innerHTML = html;
+            })
+            .catch(function() { cont.innerHTML = ''; });
+        }
+
         fab.addEventListener('click', function() {
             form.classList.toggle('is-open');
+            if (form.classList.contains('is-open')) cargarResumenCarrito();
         });
 
         // Link "Cotizacion express" en la ficha de producto: abre el mismo formulario del boton flotante
@@ -27,6 +63,7 @@ add_action('wp_footer', function() {
             expressLink.addEventListener('click', function(e) {
                 e.preventDefault();
                 form.classList.add('is-open');
+                cargarResumenCarrito();
                 form.scrollIntoView({behavior: 'smooth', block: 'center'});
             });
         }
@@ -111,3 +148,4 @@ add_action('wp_head', function() {
     </script>
     <?php
 });
+

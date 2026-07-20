@@ -85,6 +85,26 @@ add_action('wp_head', function() {
         cursor:pointer;
     }
     #csm-quote-form .csm-quote-msg { font-size:12px; margin-top:8px; text-align:center; }
+
+    /* Resumen real del carro dentro del popup de Cotizacion Express */
+    .csm-quote-resumen-loading, .csm-quote-resumen-vacio { font-size:12px; color:#6b7280; margin-bottom:12px; }
+    .csm-quote-resumen {
+        background:#f4f6f8; border-radius:10px; padding:10px 12px; margin-bottom:14px;
+        max-height:160px; overflow-y:auto;
+    }
+    .csm-quote-resumen-item {
+        display:flex; justify-content:space-between; gap:8px;
+        font-size:11.5px; color:#1a3a5c; padding:4px 0; border-bottom:1px solid #e5e9ec;
+    }
+    .csm-quote-resumen-item:last-child { border-bottom:none; }
+    .csm-quote-resumen-item .nombre { flex:1; }
+    .csm-quote-resumen-item .cant { color:#6b7280; font-weight:600; }
+    .csm-quote-resumen-item .subtotal { font-family:"SF Mono","Roboto Mono",Consolas,monospace; font-weight:700; white-space:nowrap; }
+    .csm-quote-resumen-total {
+        display:flex; justify-content:space-between; margin-top:6px; padding-top:6px; border-top:1px solid #cbd5e1;
+        font-size:12.5px; font-weight:800; color:#1a3a5c;
+    }
+    .csm-quote-resumen-total span:last-child { font-family:"SF Mono","Roboto Mono",Consolas,monospace; }
     </style>
     <?php
     if (is_front_page()) {
@@ -203,3 +223,4 @@ add_action('wp_head', function() {
     <?php
     }
 });
+

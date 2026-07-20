@@ -1,0 +1,104 @@
+// Manejo de la solicitud de cotizacion express B2B (boton flotante)
+add_action('wp_ajax_csm_solicitar_cotizacion', 'csm_manejar_cotizacion');
+add_action('wp_ajax_nopriv_csm_solicitar_cotizacion', 'csm_manejar_cotizacion');
+
+function csm_manejar_cotizacion() {
+    $rut = isset($_POST['rut']) ? sanitize_text_field($_POST['rut']) : '';
+    $email = isset($_POST['email']) ? sanitize_email($_POST['email']) : '';
+    $phone = isset($_POST['phone']) ? sanitize_text_field($_POST['phone']) : '';
+
+    if (empty($rut) || empty($email) || empty($phone) || !is_email($email)) {
+        wp_send_json_error(array('message' => 'Datos incompletos o inválidos.'));
+    }
+
+    $lineas_carrito = array();
+    $total_carrito = 0;
+
+    if (function_exists('WC') && WC()->cart) {
+        foreach (WC()->cart->get_cart() as $item) {
+            $producto = $item['data'];
+            $nombre = $producto ? $producto->get_name() : 'Producto';
+            $cantidad = $item['quantity'];
+            $subtotal = isset($item['line_subtotal']) ? $item['line_subtotal'] : 0;
+            $lineas_carrito[] = sprintf('%s x%d — $%s', $nombre, $cantidad, number_format($subtotal, 0, ',', '.'));
+            $total_carrito += $subtotal;
+        }
+    }
+
+    $cuerpo_carrito = empty($lineas_carrito)
+        ? 'El carro estaba vacío al momento de solicitar la cotización.'
+        : implode("\n", $lineas_carrito) . "\n\nTotal carro: $" . number_format($total_carrito, 0, ',', '.');
+
+    $asunto = 'Nueva solicitud de cotización B2B — Casamado';
+    $mensaje = "Se recibió una nueva solicitud de cotización express desde casamado.cl\n\n"
+        . "RUT empresa: $rut\n"
+        . "Correo: $email\n"
+        . "Teléfono: $phone\n\n"
+        . "Carro de compras al momento de la solicitud:\n"
+        . $cuerpo_carrito;
+
+    $headers = array('Content-Type: text/plain; charset=UTF-8');
+    $enviado = wp_mail('contacto@casamado.cl', $asunto, $mensaje, $headers);
+
+    // Gancho para integraciones futuras (ej. Google Sheets via Zapier/Make webhook)
+    do_action('csm_quote_submitted', array(
+        'rut' => $rut,
+        'email' => $email,
+        'phone' => $phone,
+        'cart_items' => $lineas_carrito,
+        'cart_total' => $total_carrito,
+        'date' => current_time('mysql'),
+    ));
+
+    if ($enviado) {
+        wp_send_json_success(array('message' => 'Cotización enviada.'));
+    } else {
+        wp_send_json_error(array('message' => 'No se pudo enviar el correo.'));
+    }
+}
+
+// Resumen del carrito real, para mostrar en el popup de Cotizacion Express antes de enviar
+add_action('wp_ajax_csm_resumen_carrito', 'csm_obtener_resumen_carrito');
+add_action('wp_ajax_nopriv_csm_resumen_carrito', 'csm_obtener_resumen_carrito');
+
+function csm_obtener_resumen_carrito() {
+    $items = array();
+    $total = 0;
+
+    if (function_exists('WC') && WC()->cart) {
+        foreach (WC()->cart->get_cart() as $item) {
+            $producto = $item['data'];
+            if (!$producto) continue;
+            $subtotal = isset($item['line_subtotal']) ? (float) $item['line_subtotal'] : 0;
+            $items[] = array(
+                'nombre' => $producto->get_name(),
+                'cantidad' => (int) $item['quantity'],
+                'subtotal' => number_format($subtotal, 0, ',', '.'),
+            );
+            $total += $subtotal;
+        }
+    }
+
+    wp_send_json_success(array(
+        'items' => $items,
+        'total' => number_format($total, 0, ',', '.'),
+        'vacio' => empty($items),
+    ));
+}
+
+// Indicador de stock tipo bateria en las tarjetas de producto reales
+add_action('woocommerce_after_shop_loop_item_title', function() {
+    global $product;
+    if (!$product) return;
+
+    $en_stock = $product->is_in_stock();
+    $clase = $en_stock ? 'in-stock' : 'out-of-stock';
+    $etiqueta = $en_stock ? 'En stock' : 'Sin stock';
+    ?>
+    <div class="csm-stock-battery <?php echo esc_attr($clase); ?>">
+        <div class="cells"><div class="cell"></div><div class="cell"></div><div class="cell"></div></div>
+        <span class="csm-stock-battery-label"><?php echo esc_html($etiqueta); ?></span>
+    </div>
+    <?php
+}, 15);
+
