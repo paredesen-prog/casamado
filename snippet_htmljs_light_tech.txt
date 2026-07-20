@@ -2,7 +2,7 @@ add_action('wp_footer', function() {
     ?>
     <div id="csm-dyn-island"><span class="dot"></span><span id="csm-dyn-island-text">Añadido al carrito</span></div>
 
-    <button id="csm-quote-fab" title="Cotización express B2B">💬</button>
+    <button id="csm-quote-fab" title="Cotización express B2B"><span class="csm-quote-fab-ic">📄</span> Cotizar</button>
     <div id="csm-quote-form">
         <h4>Cotización express B2B</h4>
         <p>Te enviamos la cotización en PDF a tu correo, al instante.</p>
@@ -149,6 +149,7 @@ add_action('wp_head', function() {
     </script>
     <?php
 });
+
 
 
 
