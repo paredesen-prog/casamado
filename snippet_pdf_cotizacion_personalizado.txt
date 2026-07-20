@@ -5,6 +5,7 @@
 $csm_pdf_general = get_option('wpo_wcpdf_settings_general', array());
 $csm_pdf_general['shop_phone_number'] = array('default' => '+56 9 3466 0081');
 $csm_pdf_general['shop_email_address'] = array('default' => 'contacto@casamado.cl');
+$csm_pdf_general['header_logo'] = array('default' => 2008); // Logo real de Casamado en la biblioteca de medios
 update_option('wpo_wcpdf_settings_general', $csm_pdf_general);
 
 add_filter('wpo_wcpdf_shop_address', function($address, $document) {
@@ -34,3 +35,4 @@ add_action('wpo_wcpdf_after_order_details', function($type, $order) {
         Los precios están sujetos a confirmación de stock al momento de la compra.
     </div>';
 }, 10, 2);
+
