@@ -21,6 +21,7 @@ add_action('wp_footer', function() {
 
         // Trae el contenido real del carro y lo muestra dentro del formulario
         function cargarResumenCarrito() {
+            document.getElementById('csm-quote-msg').textContent = '';
             var cont = document.getElementById('csm-quote-cart-resumen');
             cont.innerHTML = '<div class="csm-quote-resumen-loading">Cargando tu carro...</div>';
             var data = new URLSearchParams();
@@ -148,4 +149,5 @@ add_action('wp_head', function() {
     </script>
     <?php
 });
+
 
