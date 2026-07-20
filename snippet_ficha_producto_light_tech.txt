@@ -63,15 +63,16 @@ add_action('wp_head', function() {
     .single-product .casamado-quote-btn { border-top: 1px solid rgba(255,255,255,0.3) !important; }
 
     /* Link de cotizacion express, bajo los botones de compra */
+    .csm-express-link-wrap { text-align: center; margin-top: 16px; }
     .csm-express-link {
         display: inline-flex; align-items: center; gap: 8px;
-        margin-top: 16px; padding: 10px 18px;
-        background: #f4f6f8; border: 1px solid #e2e8f0; border-radius: 999px;
-        font-size: 15px; font-weight: 700; color: #1a3a5c; text-decoration: none;
+        padding: 11px 22px;
+        background: #eef2ff; border: 1px solid #c7d2fe; border-radius: 999px;
+        font-size: 15px; font-weight: 800; color: #4338ca; text-decoration: none;
         cursor: pointer; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         transition: border-color .2s ease, background .2s ease, transform .15s ease;
     }
-    .csm-express-link:hover { border-color: #22d3ee; background: #eefcff; color: #1a3a5c; }
+    .csm-express-link:hover { border-color: #4338ca; background: #e0e7ff; color: #4338ca; }
     .csm-express-link:active { transform: scale(0.97); }
 
     /* Acordeon de pestañas (Descripcion / Especificaciones / Valoraciones) */
@@ -110,7 +111,7 @@ add_action('woocommerce_single_product_summary', function() {
 // Link de Cotizacion express, bajo los botones de compra (reutiliza el mismo formulario del boton flotante)
 add_action('woocommerce_single_product_summary', function() {
     ?>
-    <a href="#" id="csm-quote-express-link" class="csm-express-link">📄 Cotización express</a>
+    <div class="csm-express-link-wrap"><a href="#" id="csm-quote-express-link" class="csm-express-link">📄 Cotización express</a></div>
     <?php
 }, 31);
 
