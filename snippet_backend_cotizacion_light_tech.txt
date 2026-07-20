@@ -11,47 +11,87 @@ function csm_manejar_cotizacion() {
         wp_send_json_error(array('message' => 'Datos incompletos o inválidos.'));
     }
 
-    $lineas_carrito = array();
-    $total_carrito = 0;
+    if (!function_exists('WC') || !WC()->cart || WC()->cart->is_empty()) {
+        wp_send_json_error(array('message' => 'Tu carro está vacío. Agrega productos antes de cotizar.'));
+    }
 
-    if (function_exists('WC') && WC()->cart) {
-        foreach (WC()->cart->get_cart() as $item) {
-            $producto = $item['data'];
-            $nombre = $producto ? $producto->get_name() : 'Producto';
-            $cantidad = $item['quantity'];
-            $subtotal = isset($item['line_subtotal']) ? $item['line_subtotal'] : 0;
-            $lineas_carrito[] = sprintf('%s x%d — $%s', $nombre, $cantidad, number_format($subtotal, 0, ',', '.'));
-            $total_carrito += $subtotal;
+    // Crear un pedido real (mismo mecanismo que el sistema formal de /cotizacion/),
+    // en estado on-hold, para poder generar el PDF con el plugin ya instalado
+    // (PDF Invoices & Packing Slips for WooCommerce).
+    $order = wc_create_order();
+
+    foreach (WC()->cart->get_cart() as $item) {
+        $producto = $item['data'];
+        if (!$producto) continue;
+        $order->add_product($producto, $item['quantity']);
+    }
+
+    $order->set_billing_email($email);
+    $order->set_billing_phone($phone);
+    $order->update_meta_data('_billing_rut', $rut);
+    $order->update_meta_data('_tipo_solicitud', 'cotizacion');
+    $order->update_meta_data('_origen_cotizacion', 'express_anonima');
+    $order->set_status('on-hold', 'Cotización express generada desde el botón flotante (sin cuenta).');
+    $order->calculate_totals();
+    $order->save();
+
+    // Generar el PDF real con el plugin ya instalado en el sitio
+    $pdf_enviado = false;
+    if (function_exists('wcpdf_get_document')) {
+        $document = wcpdf_get_document('invoice', $order, true);
+        if ($document && $document->exists()) {
+            $pdf_data = $document->get_pdf();
+            $tmp_path = trailingslashit(get_temp_dir()) . 'cotizacion-' . $order->get_id() . '.pdf';
+            file_put_contents($tmp_path, $pdf_data);
+
+            $asunto_cliente = 'Tu cotización Casamado n.° ' . $order->get_id();
+            $mensaje_cliente = "Hola,\n\nAdjuntamos tu cotización con los productos de tu carro.\n\n"
+                . "N.° de cotización: " . $order->get_id() . "\n"
+                . "Total: $" . number_format($order->get_total(), 0, ',', '.') . "\n\n"
+                . "Precios sujetos a confirmación de stock al momento de tu pedido.\n"
+                . "Cualquier consulta, respóndenos a este correo o escríbenos por WhatsApp.\n\n"
+                . "Casamado";
+            $headers_cliente = array('Content-Type: text/plain; charset=UTF-8');
+            $pdf_enviado = wp_mail($email, $asunto_cliente, $mensaje_cliente, $headers_cliente, array($tmp_path));
+
+            @unlink($tmp_path);
         }
     }
 
-    $cuerpo_carrito = empty($lineas_carrito)
-        ? 'El carro estaba vacío al momento de solicitar la cotización.'
-        : implode("\n", $lineas_carrito) . "\n\nTotal carro: $" . number_format($total_carrito, 0, ',', '.');
-
-    $asunto = 'Nueva solicitud de cotización B2B — Casamado';
+    // Notificacion interna al equipo (se mantiene igual que antes, mas el numero de pedido)
+    $lineas_carrito = array();
+    foreach ($order->get_items() as $line_item) {
+        $lineas_carrito[] = sprintf('%s x%d — $%s', $line_item->get_name(), $line_item->get_quantity(), number_format($line_item->get_subtotal(), 0, ',', '.'));
+    }
+    $asunto = 'Nueva solicitud de cotización B2B — Casamado (Pedido #' . $order->get_id() . ')';
     $mensaje = "Se recibió una nueva solicitud de cotización express desde casamado.cl\n\n"
+        . "N.° de pedido/cotización: " . $order->get_id() . " (" . admin_url('post.php?post=' . $order->get_id() . '&action=edit') . ")\n"
         . "RUT empresa: $rut\n"
         . "Correo: $email\n"
         . "Teléfono: $phone\n\n"
         . "Carro de compras al momento de la solicitud:\n"
-        . $cuerpo_carrito;
+        . implode("\n", $lineas_carrito)
+        . "\n\nTotal: $" . number_format($order->get_total(), 0, ',', '.')
+        . ($pdf_enviado ? "\n\nSe envió el PDF de la cotización al cliente." : "\n\nNo se pudo generar/enviar el PDF al cliente (revisar plugin de PDF).");
 
     $headers = array('Content-Type: text/plain; charset=UTF-8');
     $enviado = wp_mail('contacto@casamado.cl', $asunto, $mensaje, $headers);
 
     // Gancho para integraciones futuras (ej. Google Sheets via Zapier/Make webhook)
     do_action('csm_quote_submitted', array(
+        'order_id' => $order->get_id(),
         'rut' => $rut,
         'email' => $email,
         'phone' => $phone,
         'cart_items' => $lineas_carrito,
-        'cart_total' => $total_carrito,
+        'cart_total' => $order->get_total(),
         'date' => current_time('mysql'),
     ));
 
-    if ($enviado) {
-        wp_send_json_success(array('message' => 'Cotización enviada.'));
+    if ($pdf_enviado) {
+        wp_send_json_success(array('message' => 'Cotización enviada a tu correo en PDF.'));
+    } elseif ($enviado) {
+        wp_send_json_success(array('message' => 'Cotización recibida, te contactaremos con el detalle.'));
     } else {
         wp_send_json_error(array('message' => 'No se pudo enviar el correo.'));
     }
@@ -101,4 +141,5 @@ add_action('woocommerce_after_shop_loop_item_title', function() {
     </div>
     <?php
 }, 15);
+
 

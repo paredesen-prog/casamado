@@ -5,7 +5,7 @@ add_action('wp_footer', function() {
     <button id="csm-quote-fab" title="Cotización express B2B">💬</button>
     <div id="csm-quote-form">
         <h4>Cotización express B2B</h4>
-        <p>Te contactamos con tu cotización del carro actual.</p>
+        <p>Te enviamos la cotización en PDF a tu correo, al instante.</p>
         <div id="csm-quote-cart-resumen"></div>
         <input type="text" id="csm-quote-rut" placeholder="RUT empresa">
         <input type="email" id="csm-quote-email" placeholder="Correo">
@@ -149,5 +149,6 @@ add_action('wp_head', function() {
     </script>
     <?php
 });
+
 
 
