@@ -1,23 +1,5 @@
 add_action('wp_footer', function() {
-    $categorias = array(
-        array('nombre' => 'Papel Tissue', 'slug' => 'papel-tissue', 'icono' => '🧻', 'a' => '#67e8f9', 'b' => '#0e7490'),
-        array('nombre' => 'Aseo y Limpieza', 'slug' => 'aseo-y-limpieza', 'icono' => '🧴', 'a' => '#a7f3d0', 'b' => '#0f766e'),
-        array('nombre' => 'Oficina', 'slug' => 'oficina-y-libreria', 'icono' => '🗂️', 'a' => '#c4b5fd', 'b' => '#6d28d9'),
-        array('nombre' => 'Tecnología', 'slug' => 'computacion-y-tecnologia', 'icono' => '💻', 'a' => '#93c5fd', 'b' => '#1d4ed8'),
-        array('nombre' => 'Cafetería', 'slug' => 'cafeteria-y-despensa', 'icono' => '☕', 'a' => '#fcd34d', 'b' => '#92400e'),
-        array('nombre' => 'Ferretería', 'slug' => 'ferreteria', 'icono' => '🧤', 'a' => '#fca5a5', 'b' => '#991b1b'),
-    );
     ?>
-    <button id="csm-cat-toggle">🔵 Categorías</button>
-    <div id="csm-cat-panel">
-        <?php foreach ($categorias as $cat): ?>
-        <a class="csm-cat-orb" href="/categoria-producto/<?php echo esc_attr($cat['slug']); ?>/" style="--orb-a:<?php echo esc_attr($cat['a']); ?>;--orb-b:<?php echo esc_attr($cat['b']); ?>;">
-            <div class="csm-cat-orb-circle"><?php echo $cat['icono']; ?></div>
-            <div class="csm-cat-orb-label"><?php echo esc_html($cat['nombre']); ?></div>
-        </a>
-        <?php endforeach; ?>
-    </div>
-
     <div id="csm-dyn-island"><span class="dot"></span><span id="csm-dyn-island-text">Añadido al carrito</span></div>
 
     <button id="csm-quote-fab" title="Cotización express B2B">💬</button>
@@ -33,15 +15,21 @@ add_action('wp_footer', function() {
 
     <script>
     (function() {
-        document.getElementById('csm-cat-toggle').addEventListener('click', function() {
-            document.getElementById('csm-cat-panel').classList.toggle('is-open');
-        });
-
         var fab = document.getElementById('csm-quote-fab');
         var form = document.getElementById('csm-quote-form');
         fab.addEventListener('click', function() {
             form.classList.toggle('is-open');
         });
+
+        // Link "Cotizacion express" en la ficha de producto: abre el mismo formulario del boton flotante
+        var expressLink = document.getElementById('csm-quote-express-link');
+        if (expressLink) {
+            expressLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                form.classList.add('is-open');
+                form.scrollIntoView({behavior: 'smooth', block: 'center'});
+            });
+        }
 
         var island = document.getElementById('csm-dyn-island');
         var islaTimeout;
