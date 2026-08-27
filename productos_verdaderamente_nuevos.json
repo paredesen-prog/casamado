@@ -1,0 +1,290 @@
+[
+  {
+    "sku": "1001013",
+    "categoria": "PAPEL TISSUE",
+    "marca": "MAXIPAPER",
+    "producto": "TOALLA DE PAPEL ALTO METRAJE H/D PREMIUM",
+    "formato": "200 MT X 2 ROLLOS",
+    "precio_casamado": 8424
+  },
+  {
+    "sku": "50712",
+    "categoria": "PAPEL TISSUE",
+    "marca": "CONFORT",
+    "producto": "PAPEL HIGIÉNICO BAJO METRAJE H/D BLANCO",
+    "formato": "50 MT x 4 ROLLOS",
+    "precio_casamado": 3738
+  },
+  {
+    "sku": "1001041",
+    "categoria": "PAPEL TISSUE",
+    "marca": "MAXIPAPER",
+    "producto": "SERVILLETA MESA H/S COCTEL  BLANCA 24 x 24 CM",
+    "formato": "300 HJS x 1 PQTE",
+    "precio_casamado": 1080
+  },
+  {
+    "sku": "5001116",
+    "categoria": "ASEO Y LIMPIEZA",
+    "marca": "FRESH UP",
+    "producto": "ENJUAGUE BUCAL ADULTO MENTA",
+    "formato": "250 ML",
+    "precio_casamado": 1778
+  },
+  {
+    "sku": "5001117",
+    "categoria": "ASEO Y LIMPIEZA",
+    "marca": "CARE UP",
+    "producto": "HISOPOS COTONITOS DE ALGODÓN",
+    "formato": "200 UND",
+    "precio_casamado": 1251
+  },
+  {
+    "sku": "5001119",
+    "categoria": "ASEO Y LIMPIEZA",
+    "marca": "CARE UP",
+    "producto": "ESPONJAS JABONOSAS HIPOALERGÉNICAS",
+    "formato": "10 UND",
+    "precio_casamado": 2625
+  },
+  {
+    "sku": "2001420",
+    "categoria": "QUÍMICOS",
+    "marca": "IMPEKE",
+    "producto": "CLORO TRADICINONAL CONCENTRADO ULTRA PODER 5%",
+    "formato": "5 LT",
+    "precio_casamado": 4419
+  },
+  {
+    "sku": "4001334",
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "BALDE ESTRUJADOR ECONÓMICO",
+    "formato": "14 LT",
+    "precio_casamado": 5224
+  },
+  {
+    "sku": "4001367",
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA SECA RECTANGULAR MICROFIBRA VERDE",
+    "formato": "45 CM",
+    "precio_casamado": 2948
+  },
+  {
+    "sku": "4001368",
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA SECA RECTANGULAR MICROFIBRA ROJA",
+    "formato": "45 CM",
+    "precio_casamado": 2948
+  },
+  {
+    "sku": "4001369",
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA SECA RECTANGULAR MICROFIBRA VERDE",
+    "formato": "60 CM",
+    "precio_casamado": 4040
+  },
+  {
+    "sku": "4001370",
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA SECA RECTANGULAR MICROFIBRA ROJA",
+    "formato": "60 CM",
+    "precio_casamado": 4040
+  },
+  {
+    "sku": "4001363",
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA HÚMEDA RECTANGULAR MICROFIBRA VERDE",
+    "formato": "45 CM",
+    "precio_casamado": 2948
+  },
+  {
+    "sku": "4001364",
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA HÚMEDA RECTANGULAR MICROFIBRA ROJA",
+    "formato": "45 CM",
+    "precio_casamado": 2948
+  },
+  {
+    "sku": "4001365",
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA HÚMEDA RECTANGULAR MICROFIBRA VERDE",
+    "formato": "60 CM",
+    "precio_casamado": 4040
+  },
+  {
+    "sku": "4001366",
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA HÚMEDA RECTANGULAR MICROFIBRA ROJA",
+    "formato": "60 CM",
+    "precio_casamado": 4040
+  },
+  {
+    "sku": "4001375",
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA HÚMEDA RECTANGULAR MICROFIBRA AZUL BÁSICA",
+    "formato": "45 CM",
+    "precio_casamado": 1903
+  },
+  {
+    "sku": "4001376",
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "MOPA HÚMEDA RECTANGULAR MICROFIBRA AZUL BÁSICA",
+    "formato": "60 CM",
+    "precio_casamado": 2363
+  },
+  {
+    "sku": "4001090",
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "TRAPERO MICROFIBRA DOBLE C/OJAL AZUL",
+    "formato": "40 x 40 CM",
+    "precio_casamado": 1215
+  },
+  {
+    "sku": "4001106",
+    "categoria": "ART. LIMPIEZA",
+    "marca": "EXCELL",
+    "producto": "TRAPERO HÚMEDO PARA PISO FLOTANTE - PRIMAVERA",
+    "formato": "10 UND x 1 PQTE",
+    "precio_casamado": 2042
+  },
+  {
+    "sku": "4001170",
+    "categoria": "ART. LIMPIEZA",
+    "marca": "PULEX",
+    "producto": "GOMA REPUESTO PARA SQUEEGEE",
+    "formato": "71 CM",
+    "precio_casamado": 4797
+  },
+  {
+    "sku": "4001223",
+    "categoria": "ART. LIMPIEZA",
+    "marca": "VIRUTEX",
+    "producto": "SOPAPO GRANDE GOMA GRUESA CON MANGO PLÁSTICO",
+    "formato": "-",
+    "precio_casamado": 4863
+  },
+  {
+    "sku": "4001076",
+    "categoria": "ART. LIMPIEZA",
+    "marca": "GENÉRICO",
+    "producto": "BOTELLA PLÁSTICA PET TRANSPARENTE C/TAPA PARA ATOMIZADOR",
+    "formato": "1 LT",
+    "precio_casamado": 314
+  },
+  {
+    "sku": "11592",
+    "categoria": "OFICINA Y LIBRERÍA",
+    "marca": "TORRE",
+    "producto": "CARPETA PIGMENTADA CARTÓN AMARILLA",
+    "formato": "OFICIO",
+    "precio_casamado": 333
+  },
+  {
+    "sku": "8001090",
+    "categoria": "FERRETERIA",
+    "marca": "MEGABRIGHT",
+    "producto": "PANEL LED REDONDO SOBREPUESTO 18W 4000K",
+    "formato": "LUZ NEUTRA",
+    "precio_casamado": 4062
+  },
+  {
+    "sku": "8001042",
+    "categoria": "FERRETERIA",
+    "marca": "US EAGLE",
+    "producto": "LENTES ANTIPARRAS DE SEGURIDAD ECONÓMICO",
+    "formato": "OSCURO",
+    "precio_casamado": 650
+  },
+  {
+    "sku": "8001058-M",
+    "categoria": "FERRETERIA",
+    "marca": "LEGEND",
+    "producto": "GUANTES ANTICORTE PALMA PU FLEX LEGEND ULTRA CUT",
+    "formato": "TALLA M",
+    "precio_casamado": 2389
+  },
+  {
+    "sku": "8001058-L",
+    "categoria": "FERRETERIA",
+    "marca": "LEGEND",
+    "producto": "GUANTES ANTICORTE PALMA PU FLEX LEGEND ULTRA CUT",
+    "formato": "TALLA L",
+    "precio_casamado": 2389
+  },
+  {
+    "sku": "8001051-37",
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BRULE CAFÉ",
+    "formato": "TALLA 37",
+    "precio_casamado": 19762
+  },
+  {
+    "sku": "8001051-39",
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BRULE CAFÉ",
+    "formato": "TALLA 39",
+    "precio_casamado": 19762
+  },
+  {
+    "sku": "8001051-40",
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BRULE CAFÉ",
+    "formato": "TALLA 40",
+    "precio_casamado": 19762
+  },
+  {
+    "sku": "8001055-S",
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "PRIMERA CAPA POLIESTER UNISEX NEGRA BLACKBULL BASIC",
+    "formato": "TALLA S",
+    "precio_casamado": 6033
+  },
+  {
+    "sku": "8001055-M",
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "PRIMERA CAPA POLIESTER UNISEX NEGRA BLACKBULL BASIC",
+    "formato": "TALLA M",
+    "precio_casamado": 6033
+  },
+  {
+    "sku": "8001055-L",
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "PRIMERA CAPA POLIESTER UNISEX NEGRA BLACKBULL BASIC",
+    "formato": "TALLA L",
+    "precio_casamado": 6033
+  },
+  {
+    "sku": "8001055-XL",
+    "categoria": "FERRETERIA",
+    "marca": "BLACKBULL",
+    "producto": "PRIMERA CAPA POLIESTER UNISEX NEGRA BLACKBULL BASIC",
+    "formato": "TALLA XL",
+    "precio_casamado": 6033
+  },
+  {
+    "sku": "8001053",
+    "categoria": "FERRETERIA",
+    "marca": "STANLEY",
+    "producto": "LINTERNA LED ALUMINIO/GOMA",
+    "formato": "120 Lm",
+    "precio_casamado": 10382
+  }
+]

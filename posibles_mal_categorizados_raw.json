@@ -1,0 +1,965 @@
+[
+  {
+    "id": 4761,
+    "sku": "7001142",
+    "nombre": "Tenedores de Acero Inoxidable 6 UND",
+    "categoria_fasit": "CAFETERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4757,
+    "sku": "8001062",
+    "nombre": "Tapones de Oídos de Silicona Naranjo con Cordón Blackbull",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4755,
+    "sku": "4001270",
+    "nombre": "Tapete Urinario Aromático color Rojo Pack 5 UND",
+    "categoria_fasit": "ART. LIMPIEZA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 4753,
+    "sku": "4001272",
+    "nombre": "Tapete Urinario Aromático color Azul Pack 5 UND",
+    "categoria_fasit": "ART. LIMPIEZA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 4751,
+    "sku": "4001009",
+    "nombre": "Tapete Liso Aromático para Urinario Colores",
+    "categoria_fasit": "ART. LIMPIEZA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 4740,
+    "sku": "XTA-375",
+    "nombre": "Soporte de TV de 32\" a 70\" Xtech con Inclinación 10° | XTA-375",
+    "categoria_fasit": "COMPUTACIÓN",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 4738,
+    "sku": "KMM-301",
+    "nombre": "Soporte Monitor de 13\" a 32\" y Laptop hasta 15,6\" KMM-301",
+    "categoria_fasit": "COMPUTACIÓN",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 4736,
+    "sku": "KPM-310",
+    "nombre": "Soporte Monitor de 13\" a 32\" Doble Brazo KPM-310",
+    "categoria_fasit": "COMPUTACIÓN",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 4726,
+    "sku": "25489",
+    "nombre": "Silicona Líquida 30 ML",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4721,
+    "sku": "5001110",
+    "nombre": "Shampoo Anti Frizz Aceite de Coco y Jazmín 750 ML",
+    "categoria_fasit": "JABONES",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 4718,
+    "sku": "PA164",
+    "nombre": "Set de Velas Espirales Colores Surtidos 24 UND",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4716,
+    "sku": "PA604",
+    "nombre": "Set de Globos Lisos de Colores Surtidos 12 UND",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4682,
+    "sku": "SB1145",
+    "nombre": "Sacapuntas Plástico con Depósito",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4324,
+    "sku": "1106",
+    "nombre": "Protector de Cama Sabanilla Tamaño Único 90 x 60 CM 6 UND",
+    "categoria_fasit": "PAPEL TISSUE",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4311,
+    "sku": "8001049",
+    "nombre": "Piso Escalera Plegable Metálico Fuerte 2 Peldaños",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 4242,
+    "sku": "2217",
+    "nombre": "Pañales Adulto Unisex Incontinencia Fuerte Basic Talla XG 8 UND",
+    "categoria_fasit": "PAPEL TISSUE",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 4240,
+    "sku": "2212",
+    "nombre": "Pañales Adulto Unisex Incontinencia Fuerte Basic Talla G 8 UND",
+    "categoria_fasit": "PAPEL TISSUE",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 4238,
+    "sku": "7004",
+    "nombre": "Pañales Adulto Unisex Comodity Pants Incontinencia Fuerte Talla XG 8 UND",
+    "categoria_fasit": "PAPEL TISSUE",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 4236,
+    "sku": "7005",
+    "nombre": "Pañales Adulto Unisex Comodity Pants Incontinencia Fuerte Talla G 8 UND",
+    "categoria_fasit": "PAPEL TISSUE",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 4226,
+    "sku": "23350",
+    "nombre": "Papel Volantín Imagia 10 Pliegos 7 Colores 50,8 x 76,8 CM",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4224,
+    "sku": "36699",
+    "nombre": "Papel Lustre 14 Pliegos 12 Colores 26,5 x 37,5 CM",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4180,
+    "sku": "36698",
+    "nombre": "Papel Entretenido 9 Pliegos 18 Diseños 24 x 32 CM",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4177,
+    "sku": "7001152",
+    "nombre": "Papel Aluminio 100 MT Alufoil",
+    "categoria_fasit": "CAFETERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4147,
+    "sku": "4001335",
+    "nombre": "Pad Café 17\"  5 UND - Genérico",
+    "categoria_fasit": "ART. LIMPIEZA",
+    "categorias_actuales": [
+      "Café y Chocolate"
+    ]
+  },
+  {
+    "id": 4133,
+    "sku": "36648",
+    "nombre": "Notas Adhesivas Amarillas 7,6 x 7,6 CM 100 HJS",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4130,
+    "sku": "DCP-L2540DW",
+    "nombre": "Multifuncional Láser Brother DCP-L2540DW Blanco y Negro",
+    "categoria_fasit": "COMPUTACIÓN",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4128,
+    "sku": "DCP-T730DW",
+    "nombre": "Multifuncional Inkbenefit Tank Color Brother DCP-T730DW",
+    "categoria_fasit": "COMPUTACIÓN",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4121,
+    "sku": "L57822A",
+    "nombre": "Mouse Pad Apoya Muñeca Gel con Base Antideslizante Negro Kensington",
+    "categoria_fasit": "COMPUTACIÓN",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 4087,
+    "sku": "8001020",
+    "nombre": "Martillo Carpintero 27MM con Mango Engomado",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4080,
+    "sku": "36336",
+    "nombre": "Marcador Permanente Punta Redonda Colón Rojo",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 4078,
+    "sku": "36335",
+    "nombre": "Marcador Permanente Punta Redonda Colón Negro",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 4076,
+    "sku": "36334",
+    "nombre": "Marcador Permanente Punta Redonda Colón Azul",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 4049,
+    "sku": "32108",
+    "nombre": "Lápices de Colores Hexagonales Jumbo 12 Und",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4043,
+    "sku": "35327",
+    "nombre": "Lápices Grafito Hexagonales HB N° 2 - Pack 50 UND",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4041,
+    "sku": "30658",
+    "nombre": "Lápices Grafito Hexagonales HB N° 2 - Pack 12 UND",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 4039,
+    "sku": "35160",
+    "nombre": "Lápices Crayones de Cera Jumbo Colón 12 Colores",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Insecticidas"
+    ]
+  },
+  {
+    "id": 4037,
+    "sku": "JV1013",
+    "nombre": "Lápices Crayones de Cera Jumbo 12 Colores",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Insecticidas"
+    ]
+  },
+  {
+    "id": 3981,
+    "sku": "35312",
+    "nombre": "Libro de Correspondencia Torre 100 HJS",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3979,
+    "sku": "30010",
+    "nombre": "Libro de Acta Tapa Dura 400 HJS",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3975,
+    "sku": "8001057",
+    "nombre": "Lentes de Seguridad Blackbull B200 color Claro",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3953,
+    "sku": "8001060",
+    "nombre": "Jockey Legionario Legend color Beige",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3951,
+    "sku": "4001337",
+    "nombre": "Jarro Graduado Transparente 1 LT",
+    "categoria_fasit": "ART. LIMPIEZA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 3906,
+    "sku": "8001092-L",
+    "nombre": "Guante Legend Mechanic Pro Verde Talla L",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Tapetes Urinarios"
+    ]
+  },
+  {
+    "id": 3888,
+    "sku": "8001091-XL",
+    "nombre": "Guante Cabritilla Legend Cromo Blanco sin Forro Talla XL",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Tapetes Urinarios"
+    ]
+  },
+  {
+    "id": 3876,
+    "sku": "29674",
+    "nombre": "Goma Eva Glitter 6 Pliegos Autoadhesivos 6 Colores 20 x 30 CM",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3856,
+    "sku": "7001153",
+    "nombre": "Film Plástico 300 MT Aluplast",
+    "categoria_fasit": "CAFETERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3854,
+    "sku": "7001132",
+    "nombre": "Film Plástico 15 MT Aluplast",
+    "categoria_fasit": "CAFETERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3850,
+    "sku": "8001018",
+    "nombre": "Faja Lumbar Elasticada Blackbull color Negro",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3842,
+    "sku": "8001037",
+    "nombre": "Espátula Metálica 2,5 CM con Mango Madera",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3758,
+    "sku": "2001400",
+    "nombre": "Detergente en Polvo Ropa Biodegradable 800 GR",
+    "categoria_fasit": "QUÍMICOS",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 3756,
+    "sku": "2001383",
+    "nombre": "Detergente Tabletas Finish Power All in 1 Max - 80 Und",
+    "categoria_fasit": "QUÍMICOS",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 3745,
+    "sku": "28227",
+    "nombre": "Destacador Plano Celeste Torre",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 3736,
+    "sku": "2001385",
+    "nombre": "Desodorante y Desinfectante Ambiental - Bebé 360 ML",
+    "categoria_fasit": "QUÍMICOS",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 3734,
+    "sku": "5001094",
+    "nombre": "Desodorante Spray Rexona Women Invisible 150 ML",
+    "categoria_fasit": "ASEO Y LIMPIEZA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 3732,
+    "sku": "5001095",
+    "nombre": "Desodorante Spray Rexona Men Invisible 150 ML",
+    "categoria_fasit": "ASEO Y LIMPIEZA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 3730,
+    "sku": "5001114",
+    "nombre": "Desodorante Barra Rexona Women Invisible 50 GR",
+    "categoria_fasit": "ASEO Y LIMPIEZA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 3728,
+    "sku": "5001115",
+    "nombre": "Desodorante Barra Rexona Men Invisible 50 GR",
+    "categoria_fasit": "ASEO Y LIMPIEZA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 3702,
+    "sku": "7001143",
+    "nombre": "Cuchillos de Acero Inoxidable 6 UND",
+    "categoria_fasit": "CAFETERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3695,
+    "sku": "7001140",
+    "nombre": "Cucharas de Acero Inoxidable 6 UND",
+    "categoria_fasit": "CAFETERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3691,
+    "sku": "8001083",
+    "nombre": "Cubre Nuca color Naranjo para Casco",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3689,
+    "sku": "4001049",
+    "nombre": "Cubre Calzado de Tela con Antideslizante Azul 100 UND",
+    "categoria_fasit": "ART. LIMPIEZA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 3681,
+    "sku": "22451",
+    "nombre": "Cuaderno College Liso Croquis 80 HJS",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3679,
+    "sku": "22454",
+    "nombre": "Cuaderno College Liso Composición de 80 HJS",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3677,
+    "sku": "30313",
+    "nombre": "Corchetera Mini Bicolor",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3653,
+    "sku": "8001025",
+    "nombre": "Cono de Seguridad PVC Naranjo Doble Cinta Reflectante 28\" / 70 CM",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 3639,
+    "sku": "8001054",
+    "nombre": "Cinta Delimitadora de Peligro 350 MT XTR",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Cajas de Archivo"
+    ]
+  },
+  {
+    "id": 3636,
+    "sku": "35043",
+    "nombre": "Cinta Adhesiva Cristal Transparente 18 MM x 30 MT",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 3634,
+    "sku": "8001019",
+    "nombre": "Chaleco Reflectante Alta Visibilidad Doble Cinta color Amarillo Talla L/XL",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 3621,
+    "sku": "8001022",
+    "nombre": "Casco de Seguridad Proseg con Arnés Blanco",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3619,
+    "sku": "22568",
+    "nombre": "Cartulina Metálica 10 Pliegos 7 Colores 25 x 35 CM",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3616,
+    "sku": "36696",
+    "nombre": "Cartulina 14 Pliegos 12 Colores 26,5 x 37,5 CM",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3585,
+    "sku": "8001056",
+    "nombre": "Capa de Agua PVC Blackbull color Azul",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3583,
+    "sku": "A201002",
+    "nombre": "Caja de Seguridad Metálica con Llave color Negro",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3565,
+    "sku": "XTA-110",
+    "nombre": "Cable de Seguridad Laptops con Combinación de 4 Dígitos",
+    "categoria_fasit": "COMPUTACIÓN",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3562,
+    "sku": "8001026",
+    "nombre": "Botiquín Primeros Auxilios",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3528,
+    "sku": "17871",
+    "nombre": "Block de Dibujo Liceo 60 Imagia 20 HJS",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3515,
+    "sku": "UH1001",
+    "nombre": "Barra Adhesiva Pegamento UHU 40 GR",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3513,
+    "sku": "UH1002",
+    "nombre": "Barra Adhesiva Pegamento UHU 21 GR",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3473,
+    "sku": "33022",
+    "nombre": "Anotador de Madera con Apretador Simple Oficio",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3469,
+    "sku": "8001080",
+    "nombre": "Ampolleta Led PAR16 GU-10 5.5W 4000°K - Luz Blanca Neutra",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Aseo y Limpieza"
+    ]
+  },
+  {
+    "id": 3459,
+    "sku": "5001097",
+    "nombre": "Alcohol + Glicerina Higienizante de Manos 140 ML",
+    "categoria_fasit": "QUÍMICOS",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 3449,
+    "sku": "5001111",
+    "nombre": "Acondicionador Anti Frizz Aceite de Coco y Jazmín 750 ML",
+    "categoria_fasit": "JABONES",
+    "categorias_actuales": [
+      "Té"
+    ]
+  },
+  {
+    "id": 2711,
+    "sku": "8001035",
+    "nombre": "ENCENDEDOR DE COCINA TUBO LARGO",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Computación y Tecnología",
+      "Otros Equipos"
+    ]
+  },
+  {
+    "id": 2709,
+    "sku": "8001034",
+    "nombre": "ENCHUFE HEMBRA 10A  2P  T",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Cables y Accesorios"
+    ]
+  },
+  {
+    "id": 2707,
+    "sku": "8001032",
+    "nombre": "ALARGADOR SIMPLE NARANJO 10A 2P  T20 MT",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Cables y Accesorios"
+    ]
+  },
+  {
+    "id": 2706,
+    "sku": "8001031",
+    "nombre": "ALARGADOR SIMPLE NARANJO 10A 2P  T10 MT",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Cables y Accesorios"
+    ]
+  },
+  {
+    "id": 2705,
+    "sku": "8001012",
+    "nombre": "ALARGADOR MULTIPLE DE 6 TOMAS COLOR NEGRO CON INTERRUPTOR3 MT",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Cables y Accesorios"
+    ]
+  },
+  {
+    "id": 2703,
+    "sku": "8001011",
+    "nombre": "ADHESIVO INSTANTANEO2 ML",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Barras de Pegamento"
+    ]
+  },
+  {
+    "id": 2702,
+    "sku": "8001010",
+    "nombre": "GANCHOS ADHESIVOS POWERSTRIPS BLANCOS GRANDES 15KG MAX2 UND",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Cintas y Dispensadores"
+    ]
+  },
+  {
+    "id": 2701,
+    "sku": "8001009",
+    "nombre": "GANCHOS ADHESIVOS POWERSTRIPS BLANCOS CHICOS 075KG MAX3 UND",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Cintas y Dispensadores"
+    ]
+  },
+  {
+    "id": 2700,
+    "sku": "8001008",
+    "nombre": "CINTA DE MONTAJE DOBLE FAZ POWERBOND ULTRA FUERTE 100KGMT19 MM x 15 MT",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Cintas y Dispensadores"
+    ]
+  },
+  {
+    "id": 2699,
+    "sku": "8001007",
+    "nombre": "CINTA TELA MULTIUSO GRIS EXTRA POWER48 MM x 25 MT",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Cintas y Dispensadores"
+    ]
+  },
+  {
+    "id": 2698,
+    "sku": "8001006",
+    "nombre": "CINTA AISLADORA ELECTRICA NEGRA18 MM x 10 MT",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Cintas y Dispensadores"
+    ]
+  },
+  {
+    "id": 2697,
+    "sku": "8001030",
+    "nombre": "PANEL LED REDONDO SOBREPUESTO 18WLUZ FRIA",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Computación y Tecnología",
+      "Otros Equipos"
+    ]
+  },
+  {
+    "id": 2696,
+    "sku": "8001028",
+    "nombre": "PANEL LED REDONDO SOBREPUESTO 12WLUZ FRIA",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Computación y Tecnología",
+      "Otros Equipos"
+    ]
+  },
+  {
+    "id": 2695,
+    "sku": "8001005",
+    "nombre": "TUBO LED VIDRIO T8 18W 6000K 120CMLUZ FRIA",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Computación y Tecnología",
+      "Otros Equipos"
+    ]
+  },
+  {
+    "id": 2694,
+    "sku": "8001004",
+    "nombre": "TUBO LED VIDRIO T8 9W 6000K 60CMLUZ FRIA",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Computación y Tecnología",
+      "Otros Equipos"
+    ]
+  },
+  {
+    "id": 2693,
+    "sku": "8001003",
+    "nombre": "AMPOLLETA LED BOLA E27 95WLUZ FRIA",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Computación y Tecnología",
+      "Otros Equipos"
+    ]
+  },
+  {
+    "id": 2692,
+    "sku": "8001002",
+    "nombre": "AMPOLLETA LED BOLA E27 95WLUZ CALIDA",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Computación y Tecnología",
+      "Otros Equipos"
+    ]
+  },
+  {
+    "id": 2691,
+    "sku": "8001001",
+    "nombre": "LUBRICANTE ANTICORROSIVO MULTIUSO WD40155 GR",
+    "categoria_fasit": "FERRETERIA",
+    "categorias_actuales": [
+      "Computación y Tecnología",
+      "Otros Equipos"
+    ]
+  },
+  {
+    "id": 2677,
+    "sku": "K97601WW",
+    "nombre": "AURALES CLASICOS CON MICROFONO USBANEGRO",
+    "categoria_fasit": "COMPUTACIÓN",
+    "categorias_actuales": [
+      "Insumos de Oficina",
+      "Oficina y Librería"
+    ]
+  },
+  {
+    "id": 2650,
+    "sku": "32239",
+    "nombre": "DESTRUCTORA DE DOCUMENTOS 6 HOJAS CORTE TIRAMODELO HOSC",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Destructoras de Papel"
+    ]
+  },
+  {
+    "id": 2564,
+    "sku": "32042",
+    "nombre": "LAMINAS PARA PLASTIFICAR 125 MICRAS 100 UNDOFICIO",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Termolaminadoras"
+    ]
+  },
+  {
+    "id": 2563,
+    "sku": "32040",
+    "nombre": "LAMINAS PARA PLASTIFICAR 125 MICRAS 100 UNDCARTA",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Termolaminadoras"
+    ]
+  },
+  {
+    "id": 2562,
+    "sku": "32039",
+    "nombre": "TERMOLAMINADORA PLASTIFICADORA VISION G50 HD",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Termolaminadoras"
+    ]
+  },
+  {
+    "id": 2561,
+    "sku": "32037",
+    "nombre": "TERMOLAMINADORA PLASTIFICADORA VISION G15 HD",
+    "categoria_fasit": "OFICINA Y LIBRERÍA",
+    "categorias_actuales": [
+      "Termolaminadoras"
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 2297,
+    "sku": "2001132AJ",
+    "nombre": "LATA AROMATICA CON PAPEL ABSORBENTE 133 MLAPPLE JACK",
+    "precio_actual": "4016",
+    "precio_nuevo": 4602
+  },
+  {
+    "id": 2298,
+    "sku": "2001132VB",
+    "nombre": "LATA AROMATICA CON PAPEL ABSORBENTE 133 MLVERY BERRY",
+    "precio_actual": "4016",
+    "precio_nuevo": 4602
+  },
+  {
+    "id": 2299,
+    "sku": "2001132GB",
+    "nombre": "LATA AROMATICA CON PAPEL ABSORBENTE 133 MLGRAPE BURST",
+    "precio_actual": "4016",
+    "precio_nuevo": 4602
+  },
+  {
+    "id": 2300,
+    "sku": "2001132VM",
+    "nombre": "LATA AROMATICA CON PAPEL ABSORBENTE 133 MLVAINILLA MIST",
+    "precio_actual": "4016",
+    "precio_nuevo": 4602
+  },
+  {
+    "id": 2301,
+    "sku": "2001132MA",
+    "nombre": "LATA AROMATICA CON PAPEL ABSORBENTE 133 MLMANGO",
+    "precio_actual": "4016",
+    "precio_nuevo": 4602
+  },
+  {
+    "id": 2302,
+    "sku": "2001132FC",
+    "nombre": "LATA AROMATICA CON PAPEL ABSORBENTE 133 MLFRESH CITRUS",
+    "precio_actual": "4016",
+    "precio_nuevo": 4602
+  },
+  {
+    "id": 2303,
+    "sku": "2001132CH",
+    "nombre": "LATA AROMATICA CON PAPEL ABSORBENTE 133 MLCHERRY",
+    "precio_actual": "4016",
+    "precio_nuevo": 4602
+  },
+  {
+    "id": 2304,
+    "sku": "2001132LA",
+    "nombre": "LATA AROMATICA CON PAPEL ABSORBENTE 133 MLLAVANDA",
+    "precio_actual": "4016",
+    "precio_nuevo": 4602
+  },
+  {
+    "id": 2676,
+    "sku": "KTE050WH",
+    "nombre": "AUDIFONOS TRUE WIRELESS CONNECTION TUNEFIBUDSKTE050WH BLANCOS",
+    "precio_actual": "17524",
+    "precio_nuevo": 20080
+  },
+  {
+    "id": 2688,
+    "sku": "XTFMC117",
+    "nombre": "SILLA EJECUTIVA NEGRAVERONA",
+    "precio_actual": "70924",
+    "precio_nuevo": 87230
+  }
+]
