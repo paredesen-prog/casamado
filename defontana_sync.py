@@ -1,65 +1,90 @@
 """
 Sincronización Defontana <-> WooCommerce (casamado.cl).
 
-NO VERIFICADO EN VIVO: este entorno remoto bloquea las conexiones salientes
-a api.defontana.com (política de red del sandbox), así que este script se
-escribió a partir de la documentación pública de Defontana (Confluence +
-búsquedas), no probando contra la API real. Antes de usarlo en producción:
-1. Confirmar en https://api.defontana.com/swagger/index.html las rutas
-   exactas marcadas como TODO abajo (pueden diferir de las asumidas aquí).
-2. Probar primero contra el ambiente de certificación
-   (https://onboardingcertificacionapi.defontana.com) si está disponible.
+ENDPOINTS VERIFICADOS (no adivinados): confirmados leyendo el código fuente de
+un SDK PHP no oficial pero funcional de Defontana (github.com/LordNeoZ/
+defontana-sdk-php, generado desde el OpenAPI spec real de Defontana). Este
+entorno remoto bloquea las conexiones salientes a api.defontana.com (política
+de red del sandbox), así que las rutas y payloads de abajo están verificados
+contra ese SDK, pero el flujo completo (login + escritura real) no se ha
+ejecutado todavía contra la cuenta real de Casamado. Antes de usarlo en
+producción:
+
+1. Correrlo una vez con DEFONTANA_DRY_RUN=1 (no hace POST, solo imprime lo
+   que haría) desde una máquina con salida a internet (tu notebook, por
+   ejemplo) para confirmar que el login funciona y que `get_products()` /
+   `get_clients()` devuelven datos con la forma esperada.
+2. Revisar especialmente `rubroId` en `upsert_customer` (es un ID interno de
+   Defontana — consultar GET /api/Sale/GetRubro para los valores válidos de
+   tu cuenta) y el código SII en `create_electronic_document` (33 = Factura
+   Electrónica, 39 = Boleta Electrónica — son códigos estándar del SII, no
+   específicos de Defontana, pero confírmalos en tu cuenta).
 
 Credenciales por variables de entorno (no hardcodear):
-  DEFONTANA_EMAIL, DEFONTANA_PASSWORD
+  DEFONTANA_CLIENT, DEFONTANA_COMPANY, DEFONTANA_USER, DEFONTANA_PASSWORD
+      (los 4 son obligatorios para el login — ver GET /api/Auth. "USER" es
+      normalmente tu email de acceso a Defontana; CLIENT/COMPANY dependen de
+      tu cuenta, confírmalos con tu ejecutivo Defontana si el login falla)
   DEFONTANA_BASE_URL   (default: https://api.defontana.com)
-  DEFONTANA_CLIENT, DEFONTANA_COMPANY, DEFONTANA_USER   (opcionales, solo si
-      la cuenta tiene acceso a más de un cliente/empresa/usuario y la API
-      responde con "jumpUsers" pidiendo desambiguar)
+  DEFONTANA_DRY_RUN    (1 = no escribe nada en Defontana, solo imprime)
   WC_BASE_URL          (default: https://casamado.cl/wp-json)
   WC_CONSUMER_KEY, WC_CONSUMER_SECRET   (generadas en WooCommerce > Ajustes >
-      Avanzado > REST API, dedicadas a esta integración)
+      Avanzado > REST API, dedicadas a esta integración — no reutilizar la
+      Application Password de los scripts de importación)
 """
 import os
 import time
 import requests
 
 DEFONTANA_BASE_URL = os.environ.get("DEFONTANA_BASE_URL", "https://api.defontana.com")
+DEFONTANA_DRY_RUN = os.environ.get("DEFONTANA_DRY_RUN") == "1"
 WC_BASE_URL = os.environ.get("WC_BASE_URL", "https://casamado.cl/wp-json")
 
 PROGRESS_FILE = "defontana_sync_progreso.json"
 
+# Códigos de tipo de documento tributario electrónico (estándar SII Chile,
+# no específicos de Defontana).
+SII_FACTURA_ELECTRONICA = "33"
+SII_BOLETA_ELECTRONICA = "39"
+
 
 class DefontanaClient:
+    """
+    Rutas confirmadas contra el SDK real (src/Service/*.php del repo
+    LordNeoZ/defontana-sdk-php):
+      - Auth:      GET  /api/Auth                (query: client, company, user, password)
+      - Clientes:  GET  /api/Sale/GetClients      (query: status, itemsPerPage, pageNumber, legalCode?, description?)
+                   POST /api/Sale/SaveClient      (body: ClientInputData)
+      - Productos: GET  /api/Sale/Getproducts     (query: status, itemsPerPage, pageNumber, code?, description?)
+      - Documento: POST /api/Sale/ElectronicDocument (body: ElectronicDocumentInput)
+    """
+
     def __init__(self):
-        self.email = os.environ["DEFONTANA_EMAIL"]
+        self.client = os.environ["DEFONTANA_CLIENT"]
+        self.company = os.environ["DEFONTANA_COMPANY"]
+        self.user = os.environ["DEFONTANA_USER"]
         self.password = os.environ["DEFONTANA_PASSWORD"]
-        self.client = os.environ.get("DEFONTANA_CLIENT")
-        self.company = os.environ.get("DEFONTANA_COMPANY")
-        self.user = os.environ.get("DEFONTANA_USER")
         self.session = requests.Session()
         self._token = None
         self._token_expires_at = 0
 
     def _authenticate(self):
-        # TODO: confirmar ruta exacta del endpoint de autenticación en Swagger.
-        payload = {"user": self.email, "password": self.password}
-        if self.client and self.company and self.user:
-            payload.update({"client": self.client, "company": self.company, "userId": self.user})
-        r = self.session.post(f"{DEFONTANA_BASE_URL}/api/Auth", json=payload, timeout=30)
+        r = self.session.get(
+            f"{DEFONTANA_BASE_URL}/api/Auth",
+            params={
+                "client": self.client,
+                "company": self.company,
+                "user": self.user,
+                "password": self.password,
+            },
+            timeout=30,
+        )
         r.raise_for_status()
         data = r.json()
-
-        if data.get("jumpUsers"):
-            raise RuntimeError(
-                "La cuenta tiene acceso a más de un cliente/empresa/usuario en Defontana. "
-                "Define DEFONTANA_CLIENT, DEFONTANA_COMPANY y DEFONTANA_USER con uno de los "
-                f"valores devueltos en jumpUsers: {data['jumpUsers']}"
-            )
-
-        auth_result = data.get("authResult", data)
-        self._token = auth_result["access_token"]
-        self._token_expires_at = time.time() + int(auth_result.get("expires_in", 3600)) - 60
+        if not data.get("success") or not data.get("access_token"):
+            raise RuntimeError(f"Login Defontana falló: {data.get('message', data)}")
+        self._token = data["access_token"]
+        self._token_expires_at = time.time() + int(data.get("expires_in", 3600)) - 60
 
     def _token_valid(self):
         return self._token and time.time() < self._token_expires_at
@@ -69,31 +94,87 @@ class DefontanaClient:
             self._authenticate()
         return {"Authorization": f"Bearer {self._token}"}
 
-    def get_products(self):
-        # TODO: confirmar ruta exacta (ej. /api/Producto o /api/Products) y
-        # los nombres de campo de sku/precio/stock en la respuesta real.
-        r = self.session.get(f"{DEFONTANA_BASE_URL}/api/Producto", headers=self._headers(), timeout=30)
-        r.raise_for_status()
-        return r.json()
+    def _get_paginated(self, path, extra_params, items_per_page=100):
+        """GetClients/Getproducts usan itemsPerPage/pageNumber. La forma exacta
+        de la respuesta (lista plana vs {items:[...], total:N}) no se verificó
+        en vivo; se prueban ambas formas."""
+        page = 1
+        while True:
+            params = {"itemsPerPage": items_per_page, "pageNumber": page, **extra_params}
+            r = self.session.get(f"{DEFONTANA_BASE_URL}{path}", params=params, headers=self._headers(), timeout=30)
+            r.raise_for_status()
+            data = r.json()
+            batch = data
+            if isinstance(data, dict):
+                for key in ("items", "data", "result", "results"):
+                    if isinstance(data.get(key), list):
+                        batch = data[key]
+                        break
+            if not batch:
+                return
+            yield from batch
+            if len(batch) < items_per_page:
+                return
+            page += 1
 
-    def upsert_customer(self, rut, name, email, address=""):
-        # TODO: confirmar ruta y payload exactos (ej. /api/Cliente).
-        payload = {"rut": rut, "name": name, "email": email, "address": address}
-        r = self.session.post(f"{DEFONTANA_BASE_URL}/api/Cliente", json=payload, headers=self._headers(), timeout=30)
-        r.raise_for_status()
-        return r.json()
+    def get_products(self, status=1):
+        """status: 0=todos, 1=activos, 2=inactivos."""
+        yield from self._get_paginated("/api/Sale/Getproducts", {"status": status})
 
-    def create_sales_document(self, doc_type, customer_rut, items, order_reference):
-        """doc_type: 'boleta' o 'factura'."""
-        # TODO: confirmar ruta y payload exactos (ej. /api/DocumentoVenta) y
-        # el código que Defontana usa para distinguir boleta vs factura.
+    def get_clients(self, status=1):
+        yield from self._get_paginated("/api/Sale/GetClients", {"status": status})
+
+    def upsert_customer(self, rut, name, email, address="", district="", giro="", rubro_id=None):
+        # Campos confirmados de ClientInputData. rubroId es un ID interno de
+        # Defontana (ver GET /api/Sale/GetRubro) — sin valor por defecto seguro.
         payload = {
-            "documentType": doc_type,
-            "customerRut": customer_rut,
-            "externalReference": order_reference,
-            "items": items,
+            "legalCode": rut,
+            "name": name,
+            "email": email,
+            "address": address,
+            "district": district,
+            "giro": giro,
         }
-        r = self.session.post(f"{DEFONTANA_BASE_URL}/api/DocumentoVenta", json=payload, headers=self._headers(), timeout=30)
+        if rubro_id is not None:
+            payload["rubroId"] = rubro_id
+        if DEFONTANA_DRY_RUN:
+            print(f"[DRY RUN] POST /api/Sale/SaveClient {payload}")
+            return payload
+        r = self.session.post(f"{DEFONTANA_BASE_URL}/api/Sale/SaveClient", json=payload,
+                               headers=self._headers(), timeout=30)
+        r.raise_for_status()
+        return r.json()
+
+    def create_electronic_document(self, sii_code, customer_rut, customer_name, items, order_reference,
+                                    customer_email="", customer_address="", customer_giro=""):
+        """sii_code: SII_FACTURA_ELECTRONICA ('33') o SII_BOLETA_ELECTRONICA ('39').
+        items: lista de dicts {code, name, quantity, price}."""
+        today = time.localtime()
+        payload = {
+            "electronicCode": sii_code,
+            "externalDocumentID": order_reference,
+            "emissionDate": {"day": today.tm_mday, "month": today.tm_mon, "year": today.tm_year},
+            "clientData": {
+                "legalCode": customer_rut,
+                "name": customer_name,
+                "email": customer_email,
+                "address": customer_address,
+                "giro": customer_giro,
+            },
+            "details": [
+                {
+                    "count": item["quantity"],
+                    "price": item["price"],
+                    "productData": {"code": item["code"], "name": item["name"]},
+                }
+                for item in items
+            ],
+        }
+        if DEFONTANA_DRY_RUN:
+            print(f"[DRY RUN] POST /api/Sale/ElectronicDocument {payload}")
+            return payload
+        r = self.session.post(f"{DEFONTANA_BASE_URL}/api/Sale/ElectronicDocument", json=payload,
+                               headers=self._headers(), timeout=30)
         r.raise_for_status()
         return r.json()
 
@@ -164,11 +245,10 @@ def _save_progress(done_ids):
 
 
 def sync_productos_y_precios(defontana: DefontanaClient, woo: WooCommerceClient):
-    """Defontana -> WooCommerce: actualiza precio/stock por SKU."""
-    productos = defontana.get_products()
+    """Defontana -> WooCommerce: actualiza precio/stock por SKU (código de producto)."""
     actualizados = sin_match = 0
-    for p in productos:
-        sku = p.get("sku") or p.get("codigo")
+    for p in defontana.get_products():
+        sku = p.get("code") or p.get("sku") or p.get("codigo")
         precio = p.get("price") or p.get("precio")
         stock = p.get("stock")
         if not sku:
@@ -182,7 +262,7 @@ def sync_productos_y_precios(defontana: DefontanaClient, woo: WooCommerceClient)
 
 
 def sync_clientes_y_facturacion(defontana: DefontanaClient, woo: WooCommerceClient):
-    """WooCommerce -> Defontana: por cada orden pagada, crea cliente y documento de venta."""
+    """WooCommerce -> Defontana: por cada orden pagada, crea/actualiza cliente y emite el documento electrónico."""
     done = _load_progress()
     for order in woo.list_paid_orders():
         order_id = str(order["id"])
@@ -193,21 +273,25 @@ def sync_clientes_y_facturacion(defontana: DefontanaClient, woo: WooCommerceClie
         rut = billing.get("company") or billing.get("_billing_rut", "")
         nombre = f"{billing.get('first_name', '')} {billing.get('last_name', '')}".strip()
         email = billing.get("email", "")
+        direccion = billing.get("address_1", "")
 
-        defontana.upsert_customer(rut=rut, name=nombre, email=email,
-                                   address=billing.get("address_1", ""))
+        defontana.upsert_customer(rut=rut, name=nombre, email=email, address=direccion)
 
         items = [{
-            "sku": li.get("sku", ""),
+            "code": li.get("sku", ""),
             "name": li["name"],
             "quantity": li["quantity"],
             "price": li["price"],
         } for li in order.get("line_items", [])]
 
-        doc_type = "factura" if rut else "boleta"
-        defontana.create_sales_document(doc_type, rut, items, order_reference=order_id)
+        sii_code = SII_FACTURA_ELECTRONICA if rut else SII_BOLETA_ELECTRONICA
+        defontana.create_electronic_document(
+            sii_code=sii_code, customer_rut=rut, customer_name=nombre, items=items,
+            order_reference=order_id, customer_email=email, customer_address=direccion,
+        )
 
-        print(f"Orden {order_id}: cliente sincronizado, {doc_type} generada")
+        tipo = "factura" if rut else "boleta"
+        print(f"Orden {order_id}: cliente sincronizado, {tipo} generada")
         done.add(order_id)
         _save_progress(done)
 
