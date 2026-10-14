@@ -885,15 +885,14 @@
   },
   "checks": {
     "latest": {
-      "revision": "9a52993b-125f-4fff-aaaf-7c5fb41330df",
-      "id": "e3c90b31-3487-49ea-8e3f-1ab5b8fb4275"
+      "revision": null,
+      "id": "f4d1dac2-5ee5-4846-b188-b20c2138255a"
     },
     "revisions": {
       "8e3e3a13-8bfc-4727-b731-0a756493340f": [
         {
           "id": "97b76995-2044-43fa-80ff-a55f3a73e5ae",
           "scope": "project",
-          "report": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/checks/97b76995-2044-43fa-80ff-a55f3a73e5ae.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -915,14 +914,15 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         }
       ],
       "9a52993b-125f-4fff-aaaf-7c5fb41330df": [
         {
           "id": "e3c90b31-3487-49ea-8e3f-1ab5b8fb4275",
           "scope": "project",
-          "report": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/checks/e3c90b31-3487-49ea-8e3f-1ab5b8fb4275.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -944,7 +944,9 @@
           "revision": "9a52993b-125f-4fff-aaaf-7c5fb41330df",
           "inputFingerprint": "9f3f97a62390600c965a0093777b6e91b630e1c9d7e79dffe871efd5455fc2ca",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         }
       ]
     },
@@ -1033,16 +1035,12 @@
     ]
   },
   "snapshots": {
-    "latest": {
-      "revision": "164a006e-e46c-456a-b99a-9df1c9a3b629",
-      "id": "1fa0d72a-0fbb-412e-a620-6b2cdb3fa84f-14"
-    },
+    "latest": null,
     "revisions": {
       "8e3e3a13-8bfc-4727-b731-0a756493340f": [
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-0",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-00-at-1.2s.png",
           "time": 1.2,
           "metadata": {
             "width": 1080,
@@ -1057,12 +1055,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-1",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-01-at-2.4s.png",
           "time": 2.4,
           "metadata": {
             "width": 1080,
@@ -1077,12 +1076,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-2",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-02-at-4.2s.png",
           "time": 4.2,
           "metadata": {
             "width": 1080,
@@ -1097,12 +1097,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-3",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-03-at-4.4s.png",
           "time": 4.4,
           "metadata": {
             "width": 1080,
@@ -1117,12 +1118,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-4",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-04-at-4.7s.png",
           "time": 4.7,
           "metadata": {
             "width": 1080,
@@ -1137,12 +1139,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-5",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-05-at-6.6s.png",
           "time": 6.6,
           "metadata": {
             "width": 1080,
@@ -1157,12 +1160,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-6",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-06-at-8.4s.png",
           "time": 8.4,
           "metadata": {
             "width": 1080,
@@ -1177,12 +1181,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-7",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-07-at-8.7s.png",
           "time": 8.7,
           "metadata": {
             "width": 1080,
@@ -1197,12 +1202,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-8",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-08-at-10.3s.png",
           "time": 10.3,
           "metadata": {
             "width": 1080,
@@ -1217,12 +1223,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-9",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-09-at-12s.png",
           "time": 12,
           "metadata": {
             "width": 1080,
@@ -1237,12 +1244,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-10",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-10-at-14.8s.png",
           "time": 14.8,
           "metadata": {
             "width": 1080,
@@ -1257,12 +1265,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-11",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-11-at-17.6s.png",
           "time": 17.6,
           "metadata": {
             "width": 1080,
@@ -1277,12 +1286,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-12",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-12-at-18s.png",
           "time": 18,
           "metadata": {
             "width": 1080,
@@ -1297,12 +1307,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-13",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-13-at-18.3s.png",
           "time": 18.3,
           "metadata": {
             "width": 1080,
@@ -1317,12 +1328,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-14",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-14-at-19.2s.png",
           "time": 19.2,
           "metadata": {
             "width": 1080,
@@ -1337,12 +1349,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-15",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-15-at-20.5s.png",
           "time": 20.5,
           "metadata": {
             "width": 1080,
@@ -1357,12 +1370,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-16",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-16-at-22.5s.png",
           "time": 22.5,
           "metadata": {
             "width": 1080,
@@ -1377,12 +1391,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-17",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-17-at-22.8s.png",
           "time": 22.8,
           "metadata": {
             "width": 1080,
@@ -1397,12 +1412,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-18",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-18-at-24.4s.png",
           "time": 24.4,
           "metadata": {
             "width": 1080,
@@ -1417,12 +1433,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-19",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-19-at-25.6s.png",
           "time": 25.6,
           "metadata": {
             "width": 1080,
@@ -1437,12 +1454,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-20",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-20-at-28s.png",
           "time": 28,
           "metadata": {
             "width": 1080,
@@ -1457,12 +1475,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-21",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-21-at-28.3s.png",
           "time": 28.3,
           "metadata": {
             "width": 1080,
@@ -1477,12 +1496,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-22",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-22-at-30.4s.png",
           "time": 30.4,
           "metadata": {
             "width": 1080,
@@ -1497,12 +1517,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-23",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-23-at-32.5s.png",
           "time": 32.5,
           "metadata": {
             "width": 1080,
@@ -1517,12 +1538,13 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "19dc7838-ebc4-4db5-9461-50729bbb0735-24",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/8295dcd4-f136-4df5-be19-b9af5ddc3bfe/frame-24-at-31.622s.png",
           "time": 31.622,
           "metadata": {
             "width": 1080,
@@ -1537,14 +1559,15 @@
           "revision": "8e3e3a13-8bfc-4727-b731-0a756493340f",
           "inputFingerprint": "3813a93c7b6db3f8e7469cb0ac21b017d69a872b9b44e29159cf633c12321212",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         }
       ],
       "9a52993b-125f-4fff-aaaf-7c5fb41330df": [
         {
           "scope": "full",
           "id": "5d308818-1ecf-400c-848f-0b5627dd3c75-0",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/ec8dc387-58bf-405b-a5f1-5d46258881f1/frame-00-at-17.6s.png",
           "time": 17.6,
           "metadata": {
             "width": 1080,
@@ -1559,12 +1582,13 @@
           "revision": "9a52993b-125f-4fff-aaaf-7c5fb41330df",
           "inputFingerprint": "9f3f97a62390600c965a0093777b6e91b630e1c9d7e79dffe871efd5455fc2ca",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "5d308818-1ecf-400c-848f-0b5627dd3c75-1",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/ec8dc387-58bf-405b-a5f1-5d46258881f1/frame-01-at-20.5s.png",
           "time": 20.5,
           "metadata": {
             "width": 1080,
@@ -1579,12 +1603,13 @@
           "revision": "9a52993b-125f-4fff-aaaf-7c5fb41330df",
           "inputFingerprint": "9f3f97a62390600c965a0093777b6e91b630e1c9d7e79dffe871efd5455fc2ca",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "5d308818-1ecf-400c-848f-0b5627dd3c75-2",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/ec8dc387-58bf-405b-a5f1-5d46258881f1/frame-02-at-31.622s.png",
           "time": 31.622,
           "metadata": {
             "width": 1080,
@@ -1599,14 +1624,15 @@
           "revision": "9a52993b-125f-4fff-aaaf-7c5fb41330df",
           "inputFingerprint": "9f3f97a62390600c965a0093777b6e91b630e1c9d7e79dffe871efd5455fc2ca",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         }
       ],
       "164a006e-e46c-456a-b99a-9df1c9a3b629": [
         {
           "scope": "full",
           "id": "1fa0d72a-0fbb-412e-a620-6b2cdb3fa84f-0",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/cf55b987-e379-43f5-b54b-b9b1b42a8f33/frame-00-at-2.4s.png",
           "time": 2.4,
           "metadata": {
             "width": 1080,
@@ -1621,12 +1647,13 @@
           "revision": "164a006e-e46c-456a-b99a-9df1c9a3b629",
           "inputFingerprint": "18a57b4b11c1b2e5b5df77d5f773967ee11ae22788b2333f634b073fb6edcdea",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "1fa0d72a-0fbb-412e-a620-6b2cdb3fa84f-1",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/cf55b987-e379-43f5-b54b-b9b1b42a8f33/frame-01-at-4.2s.png",
           "time": 4.2,
           "metadata": {
             "width": 1080,
@@ -1641,12 +1668,13 @@
           "revision": "164a006e-e46c-456a-b99a-9df1c9a3b629",
           "inputFingerprint": "18a57b4b11c1b2e5b5df77d5f773967ee11ae22788b2333f634b073fb6edcdea",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "1fa0d72a-0fbb-412e-a620-6b2cdb3fa84f-2",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/cf55b987-e379-43f5-b54b-b9b1b42a8f33/frame-02-at-6.6s.png",
           "time": 6.6,
           "metadata": {
             "width": 1080,
@@ -1661,12 +1689,13 @@
           "revision": "164a006e-e46c-456a-b99a-9df1c9a3b629",
           "inputFingerprint": "18a57b4b11c1b2e5b5df77d5f773967ee11ae22788b2333f634b073fb6edcdea",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "1fa0d72a-0fbb-412e-a620-6b2cdb3fa84f-3",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/cf55b987-e379-43f5-b54b-b9b1b42a8f33/frame-03-at-7.6s.png",
           "time": 7.6,
           "metadata": {
             "width": 1080,
@@ -1681,12 +1710,13 @@
           "revision": "164a006e-e46c-456a-b99a-9df1c9a3b629",
           "inputFingerprint": "18a57b4b11c1b2e5b5df77d5f773967ee11ae22788b2333f634b073fb6edcdea",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "1fa0d72a-0fbb-412e-a620-6b2cdb3fa84f-4",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/cf55b987-e379-43f5-b54b-b9b1b42a8f33/frame-04-at-10.3s.png",
           "time": 10.3,
           "metadata": {
             "width": 1080,
@@ -1701,12 +1731,13 @@
           "revision": "164a006e-e46c-456a-b99a-9df1c9a3b629",
           "inputFingerprint": "18a57b4b11c1b2e5b5df77d5f773967ee11ae22788b2333f634b073fb6edcdea",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "1fa0d72a-0fbb-412e-a620-6b2cdb3fa84f-5",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/cf55b987-e379-43f5-b54b-b9b1b42a8f33/frame-05-at-12s.png",
           "time": 12,
           "metadata": {
             "width": 1080,
@@ -1721,12 +1752,13 @@
           "revision": "164a006e-e46c-456a-b99a-9df1c9a3b629",
           "inputFingerprint": "18a57b4b11c1b2e5b5df77d5f773967ee11ae22788b2333f634b073fb6edcdea",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "1fa0d72a-0fbb-412e-a620-6b2cdb3fa84f-6",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/cf55b987-e379-43f5-b54b-b9b1b42a8f33/frame-06-at-14.8s.png",
           "time": 14.8,
           "metadata": {
             "width": 1080,
@@ -1741,12 +1773,13 @@
           "revision": "164a006e-e46c-456a-b99a-9df1c9a3b629",
           "inputFingerprint": "18a57b4b11c1b2e5b5df77d5f773967ee11ae22788b2333f634b073fb6edcdea",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "1fa0d72a-0fbb-412e-a620-6b2cdb3fa84f-7",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/cf55b987-e379-43f5-b54b-b9b1b42a8f33/frame-07-at-17.6s.png",
           "time": 17.6,
           "metadata": {
             "width": 1080,
@@ -1761,12 +1794,13 @@
           "revision": "164a006e-e46c-456a-b99a-9df1c9a3b629",
           "inputFingerprint": "18a57b4b11c1b2e5b5df77d5f773967ee11ae22788b2333f634b073fb6edcdea",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "1fa0d72a-0fbb-412e-a620-6b2cdb3fa84f-8",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/cf55b987-e379-43f5-b54b-b9b1b42a8f33/frame-08-at-20.5s.png",
           "time": 20.5,
           "metadata": {
             "width": 1080,
@@ -1781,12 +1815,13 @@
           "revision": "164a006e-e46c-456a-b99a-9df1c9a3b629",
           "inputFingerprint": "18a57b4b11c1b2e5b5df77d5f773967ee11ae22788b2333f634b073fb6edcdea",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "1fa0d72a-0fbb-412e-a620-6b2cdb3fa84f-9",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/cf55b987-e379-43f5-b54b-b9b1b42a8f33/frame-09-at-22.5s.png",
           "time": 22.5,
           "metadata": {
             "width": 1080,
@@ -1801,12 +1836,13 @@
           "revision": "164a006e-e46c-456a-b99a-9df1c9a3b629",
           "inputFingerprint": "18a57b4b11c1b2e5b5df77d5f773967ee11ae22788b2333f634b073fb6edcdea",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "1fa0d72a-0fbb-412e-a620-6b2cdb3fa84f-10",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/cf55b987-e379-43f5-b54b-b9b1b42a8f33/frame-10-at-25.6s.png",
           "time": 25.6,
           "metadata": {
             "width": 1080,
@@ -1821,12 +1857,13 @@
           "revision": "164a006e-e46c-456a-b99a-9df1c9a3b629",
           "inputFingerprint": "18a57b4b11c1b2e5b5df77d5f773967ee11ae22788b2333f634b073fb6edcdea",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "1fa0d72a-0fbb-412e-a620-6b2cdb3fa84f-11",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/cf55b987-e379-43f5-b54b-b9b1b42a8f33/frame-11-at-28s.png",
           "time": 28,
           "metadata": {
             "width": 1080,
@@ -1841,12 +1878,13 @@
           "revision": "164a006e-e46c-456a-b99a-9df1c9a3b629",
           "inputFingerprint": "18a57b4b11c1b2e5b5df77d5f773967ee11ae22788b2333f634b073fb6edcdea",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "1fa0d72a-0fbb-412e-a620-6b2cdb3fa84f-12",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/cf55b987-e379-43f5-b54b-b9b1b42a8f33/frame-12-at-30.4s.png",
           "time": 30.4,
           "metadata": {
             "width": 1080,
@@ -1861,12 +1899,13 @@
           "revision": "164a006e-e46c-456a-b99a-9df1c9a3b629",
           "inputFingerprint": "18a57b4b11c1b2e5b5df77d5f773967ee11ae22788b2333f634b073fb6edcdea",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "1fa0d72a-0fbb-412e-a620-6b2cdb3fa84f-13",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/cf55b987-e379-43f5-b54b-b9b1b42a8f33/frame-13-at-32.5s.png",
           "time": 32.5,
           "metadata": {
             "width": 1080,
@@ -1881,12 +1920,13 @@
           "revision": "164a006e-e46c-456a-b99a-9df1c9a3b629",
           "inputFingerprint": "18a57b4b11c1b2e5b5df77d5f773967ee11ae22788b2333f634b073fb6edcdea",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         },
         {
           "scope": "full",
           "id": "1fa0d72a-0fbb-412e-a620-6b2cdb3fa84f-14",
-          "image": "/home/user/casamado/videos/casamado-promo/.hyperframes/artifacts/snapshots/cf55b987-e379-43f5-b54b-b9b1b42a8f33/frame-14-at-31.622s.png",
           "time": 31.622,
           "metadata": {
             "width": 1080,
@@ -1901,10 +1941,25 @@
           "revision": "164a006e-e46c-456a-b99a-9df1c9a3b629",
           "inputFingerprint": "18a57b4b11c1b2e5b5df77d5f773967ee11ae22788b2333f634b073fb6edcdea",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "737fa0f4-1cc9-4979-a96d-1eae77b143ba"
         }
       ]
     },
     "unversioned": []
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "737fa0f4-1cc9-4979-a96d-1eae77b143ba",
+      "completedAt": 1791985435191,
+      "output": "/home/user/casamado/videos/casamado-promo/renders/video.mp4",
+      "status": "completed",
+      "revision": "d99f1544-4f32-4b59-a23f-27e7a42b129f"
+    },
+    "retainedRevisions": [
+      "d99f1544-4f32-4b59-a23f-27e7a42b129f"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }
