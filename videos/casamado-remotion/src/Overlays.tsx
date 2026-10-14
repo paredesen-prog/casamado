@@ -121,7 +121,7 @@ export const TourChips: React.FC = () => {
 export const TopBand: React.FC = () => {
   const frame = useCurrentFrame();
   const o = interpolate(frame, [T.tourStart, T.tourStart + 14], [0, 1], clamp);
-  return <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 300, opacity: o, background: "linear-gradient(rgba(243,245,247,0.96) 45%, rgba(243,245,247,0))" }} />;
+  return <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 190, opacity: o, background: "linear-gradient(rgba(243,245,247,0.95) 50%, rgba(243,245,247,0))" }} />;
 };
 
 export const Progress: React.FC = () => {

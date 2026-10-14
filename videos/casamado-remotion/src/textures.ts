@@ -1,6 +1,7 @@
 import * as THREE from "three";
-import { C, FURNITURE, ROOM_LABELS } from "./constants";
+import { C, ROOM_LABELS } from "./constants";
 import { MONO, RUBIK } from "./fonts";
+import { mulberry32 } from "./rng";
 
 const S = 2.048; // canvas px per plan unit (2048 x 1638)
 
@@ -12,44 +13,108 @@ const makeTex = (canvas: HTMLCanvasElement) => {
   return t;
 };
 
-const roundRect = (g: CanvasRenderingContext2D, x: number, y: number, w: number, h: number, r: number) => {
-  g.beginPath();
-  g.moveTo(x + r, y);
-  g.arcTo(x + w, y, x + w, y + h, r);
-  g.arcTo(x + w, y + h, x, y + h, r);
-  g.arcTo(x, y + h, x, y, r);
-  g.arcTo(x, y, x + w, y, r);
-  g.closePath();
-};
-
-export const floorTexture = (mode: "light" | "blueprint") => {
+export const blueprintTexture = () => {
   const cv = document.createElement("canvas");
   cv.width = 2048; cv.height = 1638;
   const g = cv.getContext("2d")!;
-  const bp = mode === "blueprint";
-  g.fillStyle = bp ? C.blueprint : "#FBFCFD";
+  g.fillStyle = C.blueprint;
   g.fillRect(0, 0, cv.width, cv.height);
-
-  g.strokeStyle = bp ? "rgba(255,255,255,0.10)" : "rgba(26,58,92,0.07)";
+  g.strokeStyle = "rgba(255,255,255,0.10)";
   g.lineWidth = 2;
   for (let x = 0; x <= 1000; x += 25) { g.beginPath(); g.moveTo(x * S, 0); g.lineTo(x * S, cv.height); g.stroke(); }
   for (let y = 0; y <= 800; y += 25) { g.beginPath(); g.moveTo(0, y * S); g.lineTo(cv.width, y * S); g.stroke(); }
-
-  g.strokeStyle = bp ? "rgba(255,255,255,0.85)" : "rgba(94,132,158,0.55)";
-  g.lineWidth = bp ? 5 : 4;
-  for (const f of FURNITURE) {
-    if (f.round) { g.beginPath(); g.arc((f.x + f.w / 2) * S, (f.y + f.d / 2) * S, (f.w / 2) * S, 0, Math.PI * 2); g.stroke(); continue; }
-    roundRect(g, f.x * S, f.y * S, f.w * S, f.d * S, 6); g.stroke();
-  }
-
-  g.fillStyle = bp ? "rgba(255,255,255,0.92)" : C.ink;
-  g.font = `500 ${bp ? 34 : 32}px ${MONO}`;
+  g.fillStyle = "rgba(255,255,255,0.92)";
+  g.font = `500 34px ${MONO}`;
   g.textAlign = "center";
   g.textBaseline = "middle";
-  for (const [t, x, y] of ROOM_LABELS) {
-    const spaced = t.split("").join(" ");
-    g.fillText(spaced, x * S, y * S);
+  for (const [t, x, y] of ROOM_LABELS) g.fillText(t.split("").join(" "), x * S, y * S);
+  return makeTex(cv);
+};
+
+const RS = 3.072; // realistic floor: 3072 x 2458
+type Rect = [number, number, number, number];
+const ROOMS: { kind: "wood" | "tile" | "tileWarm" | "carpet" | "concrete"; r: Rect }[] = [
+  { kind: "wood", r: [260, 0, 440, 520] }, { kind: "wood", r: [0, 300, 260, 500] },
+  { kind: "tile", r: [0, 0, 260, 300] }, { kind: "tileWarm", r: [700, 0, 300, 300] },
+  { kind: "carpet", r: [700, 300, 300, 240] }, { kind: "concrete", r: [260, 520, 440, 280] }, { kind: "concrete", r: [700, 540, 300, 260] },
+];
+
+const wood = (g: CanvasRenderingContext2D, [x, y, w, h]: Rect, rnd: () => number) => {
+  const pw = 18, pl = 130;
+  for (let row = 0; row * pw < h; row++) {
+    const off = (row % 4) * 33;
+    for (let c = -1; c * pl < w + pl; c++) {
+      const px = x + c * pl - off, py = y + row * pw;
+      const L = 66 + rnd() * 9, sat = 38 + rnd() * 10, hue = 30 + rnd() * 6;
+      g.fillStyle = `hsl(${hue}, ${sat}%, ${L}%)`;
+      g.fillRect(px * RS, py * RS, pl * RS, pw * RS);
+      for (let k = 0; k < 7; k++) {
+        g.strokeStyle = `rgba(110,72,38,${0.05 + rnd() * 0.07})`;
+        g.lineWidth = 1 + rnd() * 2;
+        const gy = (py + 2 + rnd() * (pw - 4)) * RS;
+        g.beginPath(); g.moveTo(px * RS, gy);
+        g.bezierCurveTo((px + pl * 0.3) * RS, gy + (rnd() - 0.5) * 8, (px + pl * 0.7) * RS, gy + (rnd() - 0.5) * 8, (px + pl) * RS, gy + (rnd() - 0.5) * 6);
+        g.stroke();
+      }
+      g.strokeStyle = "rgba(80,52,28,0.35)"; g.lineWidth = 2;
+      g.strokeRect(px * RS, py * RS, pl * RS, pw * RS);
+    }
   }
+};
+const tiles = (g: CanvasRenderingContext2D, [x, y, w, h]: Rect, rnd: () => number, warm: boolean) => {
+  const t = warm ? 40 : 30;
+  g.fillStyle = warm ? "#C9C2B8" : "#C8D0D6";
+  g.fillRect(x * RS, y * RS, w * RS, h * RS);
+  for (let ty = 0; ty < h; ty += t) for (let tx = 0; tx < w; tx += t) {
+    const v = rnd() * 6;
+    g.fillStyle = warm ? `hsl(35, 18%, ${86 + v}%)` : `hsl(205, 12%, ${90 + v}%)`;
+    g.fillRect((x + tx + 0.9) * RS, (y + ty + 0.9) * RS, (t - 1.8) * RS, (t - 1.8) * RS);
+  }
+};
+const carpet = (g: CanvasRenderingContext2D, [x, y, w, h]: Rect, rnd: () => number) => {
+  const t = 50;
+  for (let ty = 0; ty < h; ty += t) for (let tx = 0; tx < w; tx += t) {
+    g.fillStyle = `hsl(210, 9%, ${30 + rnd() * 4}%)`;
+    g.fillRect((x + tx) * RS, (y + ty) * RS, t * RS, t * RS);
+  }
+  for (let k = 0; k < 9000; k++) {
+    g.fillStyle = `rgba(${rnd() > 0.5 ? "255,255,255" : "0,0,0"},${0.05 + rnd() * 0.06})`;
+    g.fillRect((x + rnd() * w) * RS, (y + rnd() * h) * RS, 2, 2);
+  }
+};
+const concrete = (g: CanvasRenderingContext2D, [x, y, w, h]: Rect, rnd: () => number) => {
+  g.fillStyle = "#CDCFD0";
+  g.fillRect(x * RS, y * RS, w * RS, h * RS);
+  g.save(); g.beginPath(); g.rect(x * RS, y * RS, w * RS, h * RS); g.clip();
+  for (let k = 0; k < 90; k++) {
+    const cx = (x + rnd() * w) * RS, cy = (y + rnd() * h) * RS, r = (20 + rnd() * 70) * RS;
+    const grd = g.createRadialGradient(cx, cy, 0, cx, cy, r);
+    const dark = rnd() > 0.5;
+    grd.addColorStop(0, dark ? "rgba(120,124,128,0.10)" : "rgba(255,255,255,0.12)");
+    grd.addColorStop(1, "rgba(0,0,0,0)");
+    g.fillStyle = grd; g.fillRect(cx - r, cy - r, r * 2, r * 2);
+  }
+  g.strokeStyle = "rgba(90,95,100,0.25)"; g.lineWidth = 2;
+  for (let gx = x + 110; gx < x + w; gx += 110) { g.beginPath(); g.moveTo(gx * RS, y * RS); g.lineTo(gx * RS, (y + h) * RS); g.stroke(); }
+  for (let gy = y + 110; gy < y + h; gy += 110) { g.beginPath(); g.moveTo(x * RS, gy * RS); g.lineTo((x + w) * RS, gy * RS); g.stroke(); }
+  g.restore();
+};
+
+export const realFloorTexture = () => {
+  const cv = document.createElement("canvas");
+  cv.width = 3072; cv.height = 2458;
+  const g = cv.getContext("2d")!;
+  const rnd = mulberry32(42);
+  for (const room of ROOMS) {
+    g.save(); g.beginPath(); g.rect(room.r[0] * RS, room.r[1] * RS, room.r[2] * RS, room.r[3] * RS); g.clip();
+    if (room.kind === "wood") wood(g, room.r, rnd);
+    else if (room.kind === "tile" || room.kind === "tileWarm") tiles(g, room.r, rnd, room.kind === "tileWarm");
+    else if (room.kind === "carpet") carpet(g, room.r, rnd);
+    else concrete(g, room.r, rnd);
+    g.restore();
+  }
+  // doormat at the entrance
+  g.fillStyle = "#3B4148"; g.fillRect(55 * RS, 735 * RS, 110 * RS, 55 * RS);
   return makeTex(cv);
 };
 

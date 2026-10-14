@@ -1,14 +1,19 @@
 import { useThree } from "@react-three/fiber";
+import { EffectComposer, N8AO } from "@react-three/postprocessing";
 import React, { useLayoutEffect, useMemo } from "react";
 import * as THREE from "three";
 import { staticFile, useCurrentFrame } from "remotion";
 import { camAt } from "./camera";
-import { C, FURNITURE, PRODUCTS, WALLS, wx, wz } from "./constants";
-import { floorTexture } from "./textures";
-import { dropY, furnitureRise, lightMix, productVisible, squash, wallRise } from "./timeline";
+import { C, PRODUCTS, WALLS, wx, wz } from "./constants";
+import { Furniture } from "./Furniture";
+import { blueprintTexture, realFloorTexture } from "./textures";
+import { dropY, lightMix, productVisible, squash, wallRise } from "./timeline";
 
-const WALL_H = 0.46;
-const WALL_T = 0.1;
+const WALL_T = 0.12;
+const H_BACK = 1.5;
+const H_INNER = 0.9;
+const H_FRONT = 0.2;
+const SILL = 0.72;
 
 const CameraRig: React.FC = () => {
   const frame = useCurrentFrame();
@@ -27,43 +32,62 @@ const CameraRig: React.FC = () => {
 
 const navy = new THREE.Color(C.ink);
 const white = new THREE.Color("#FFFFFF");
+const wallWhite = new THREE.Color("#F1EEE9");
+const hex = (c: THREE.Color) => `#${c.getHexString()}`;
+
+const kindOf = (x1: number, y1: number, x2: number, y2: number) => {
+  if ((y1 === 0 && y2 === 0) || (x1 === 1000 && x2 === 1000)) return "back";
+  if ((y1 === 800 && y2 === 800) || (x1 === 0 && x2 === 0) || (x1 === 180 && x2 === 180)) return "front";
+  return "inner";
+};
 
 const Walls: React.FC = () => {
   const frame = useCurrentFrame();
   const mix = lightMix(frame);
-  const color = `#${white.clone().lerp(navy, mix).getHexString()}`;
+  const body = hex(white.clone().lerp(wallWhite, mix));
+  const cap = hex(white.clone().lerp(navy, mix));
   return (
     <group>
       {WALLS.map(([x1, y1, x2, y2], i) => {
         const len = Math.hypot(x2 - x1, y2 - y1) / 100 + WALL_T;
+        const kind = kindOf(x1, y1, x2, y2);
+        const full = kind === "back" ? H_BACK : kind === "inner" ? H_INNER : H_FRONT;
         const rise = wallRise(i, frame);
-        const h = WALL_H * rise;
+        const h = full * rise;
         const horizontal = y1 === y2;
+        const cx = wx((x1 + x2) / 2), cz = wz((y1 + y2) / 2);
+        const size = (hh: number, t = WALL_T): [number, number, number] => (horizontal ? [len, hh, t] : [t, hh, len]);
+        if (kind !== "back") {
+          return (
+            <group key={i}>
+              <mesh castShadow receiveShadow position={[cx, h / 2, cz]}><boxGeometry args={size(h)} /><meshStandardMaterial color={body} roughness={0.9} /></mesh>
+              <mesh position={[cx, h + 0.008, cz]}><boxGeometry args={size(0.016, WALL_T + 0.004)} /><meshStandardMaterial color={cap} roughness={0.6} /></mesh>
+            </group>
+          );
+        }
+        const sill = Math.min(h, SILL * rise);
+        const glassH = Math.max(0, h - sill - 0.06 * rise);
+        const n = Math.round(len / 1.0);
         return (
-          <mesh key={i} castShadow receiveShadow position={[wx((x1 + x2) / 2), h / 2, wz((y1 + y2) / 2)]}>
-            <boxGeometry args={horizontal ? [len, h, WALL_T] : [WALL_T, h, len]} />
-            <meshStandardMaterial color={color} roughness={0.65} metalness={0} />
-          </mesh>
-        );
-      })}
-    </group>
-  );
-};
-
-const Furniture: React.FC = () => {
-  const frame = useCurrentFrame();
-  return (
-    <group>
-      {FURNITURE.map((f, i) => {
-        const r = furnitureRise(i, frame);
-        if (r <= 0.001) return null;
-        const h = f.h * r;
-        const cx = wx(f.x + f.w / 2), cz = wz(f.y + f.d / 2);
-        return (
-          <mesh key={i} castShadow receiveShadow position={[cx, h / 2, cz]}>
-            {f.round ? <cylinderGeometry args={[f.w / 200, f.w / 200, h, 40]} /> : <boxGeometry args={[f.w / 100, h, f.d / 100]} />}
-            <meshStandardMaterial color={f.color ?? "#F7F9FB"} roughness={0.85} />
-          </mesh>
+          <group key={i}>
+            <mesh castShadow receiveShadow position={[cx, sill / 2, cz]}><boxGeometry args={size(sill)} /><meshStandardMaterial color={body} roughness={0.9} /></mesh>
+            {glassH > 0.01 ? (
+              <>
+                <mesh position={[cx, sill + glassH / 2, cz]}><boxGeometry args={size(glassH, 0.02)} /><meshStandardMaterial color="#BFD5E4" roughness={0.05} metalness={0.1} transparent opacity={0.32} depthWrite={false} /></mesh>
+                {Array.from({ length: n + 1 }).map((_, k) => {
+                  const off = -len / 2 + (k * len) / n;
+                  return (
+                    <mesh key={k} castShadow position={horizontal ? [cx + off, sill + glassH / 2, cz] : [cx, sill + glassH / 2, cz + off]}>
+                      <boxGeometry args={horizontal ? [0.05, glassH, 0.06] : [0.06, glassH, 0.05]} />
+                      <meshStandardMaterial color="#3B4652" roughness={0.4} metalness={0.5} />
+                    </mesh>
+                  );
+                })}
+                <mesh castShadow position={[cx, sill + glassH + 0.03 * rise, cz]}><boxGeometry args={size(0.06 * rise)} /><meshStandardMaterial color={body} roughness={0.9} /></mesh>
+              </>
+            ) : null}
+            <mesh position={[cx, h + 0.008, cz]}><boxGeometry args={size(0.016, WALL_T + 0.004)} /><meshStandardMaterial color={cap} roughness={0.6} /></mesh>
+          </group>
         );
       })}
     </group>
@@ -73,27 +97,27 @@ const Furniture: React.FC = () => {
 const Floor: React.FC = () => {
   const frame = useCurrentFrame();
   const mix = lightMix(frame);
-  const light = useMemo(() => floorTexture("light"), []);
-  const blue = useMemo(() => floorTexture("blueprint"), []);
+  const real = useMemo(() => realFloorTexture(), []);
+  const blue = useMemo(() => blueprintTexture(), []);
   return (
     <group>
       <mesh position={[0, -0.09, 0]} castShadow receiveShadow>
         <boxGeometry args={[10.3, 0.18, 8.3]} />
-        <meshStandardMaterial color={mix > 0.5 ? "#DCE4EC" : "#1F4166"} roughness={0.9} />
+        <meshStandardMaterial color={mix > 0.5 ? "#D7DDE3" : "#1F4166"} roughness={0.9} />
       </mesh>
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.001, 0]} receiveShadow>
         <planeGeometry args={[10, 8]} />
-        <meshStandardMaterial map={light} roughness={0.95} />
+        <meshStandardMaterial map={real} roughness={0.7} />
       </mesh>
       {mix < 0.999 ? (
-        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.003, 0]}>
+        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.004, 0]}>
           <planeGeometry args={[10, 8]} />
-          <meshBasicMaterial map={blue} transparent opacity={1 - mix} depthWrite={false} />
+          <meshBasicMaterial map={blue} transparent opacity={1 - mix} depthWrite={false} toneMapped={false} />
         </mesh>
       ) : null}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.18, 0]} receiveShadow>
         <planeGeometry args={[80, 80]} />
-        <shadowMaterial opacity={0.14 * mix} />
+        <shadowMaterial opacity={0.16 * mix} />
       </mesh>
     </group>
   );
@@ -123,7 +147,7 @@ const Products: React.FC<{ textures: THREE.Texture[] }> = ({ textures }) => {
           <group key={p.key} position={[x, p.base + dropY(p.key, frame), z]} rotation={[0, yaw, 0]}>
             <mesh position={[0, h / 2, 0]} scale={[1 / Math.sqrt(sq), 1, 1]} castShadow customDepthMaterial={depthMats[i]}>
               <planeGeometry args={[w, h]} />
-              <meshStandardMaterial map={tex} alphaTest={0.5} side={THREE.DoubleSide} roughness={0.7} />
+              <meshStandardMaterial map={tex} alphaTest={0.5} side={THREE.DoubleSide} roughness={0.6} toneMapped={false} emissive="#ffffff" emissiveMap={tex} emissiveIntensity={0.25} />
             </mesh>
           </group>
         );
@@ -138,10 +162,12 @@ export const Office3D: React.FC<{ textures: THREE.Texture[] }> = ({ textures }) 
   return (
     <>
       <CameraRig />
-      <hemisphereLight args={["#FFFFFF", "#B8C6D4", 0.9 + 0.6 * mix]} />
+      <ambientLight intensity={0.15 + 0.15 * mix} />
+      <hemisphereLight args={["#EEF4FF", "#C9BBA6", 0.7 + 0.5 * mix]} />
       <directionalLight
         position={[-5.5, 11, 6.5]}
-        intensity={0.4 + 2.0 * mix}
+        color="#FFF2DE"
+        intensity={0.4 + 2.3 * mix}
         castShadow
         shadow-mapSize-width={2048}
         shadow-mapSize-height={2048}
@@ -151,13 +177,18 @@ export const Office3D: React.FC<{ textures: THREE.Texture[] }> = ({ textures }) 
         shadow-camera-bottom={-9}
         shadow-camera-near={1}
         shadow-camera-far={40}
-        shadow-bias={-0.0004}
-        shadow-radius={4}
+        shadow-bias={-0.0003}
+        shadow-normalBias={0.02}
+        shadow-radius={5}
       />
+      <directionalLight position={[6, 6, -4]} color="#D8E6FF" intensity={0.35 * mix} />
       <Floor />
       <Walls />
       <Furniture />
       <Products textures={textures} />
+      <EffectComposer multisampling={4} enableNormalPass={false}>
+        <N8AO aoRadius={0.55} intensity={2.4 * mix} distanceFalloff={0.8} quality="medium" halfRes={false} />
+      </EffectComposer>
     </>
   );
 };

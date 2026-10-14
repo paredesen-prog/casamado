@@ -26,8 +26,8 @@ export const OVERVIEW: Cam = { pos: [-5.4, 13.4, 11.6], target: [-0.2, 0, -1.7],
 const YAWS = [-0.28, 0.3, -0.12, 0.34, 0.22, -0.18];
 export const stationCam = (i: number): Cam => {
   const s = STATIONS[i];
-  const target: V3 = [wx(s.target[0]), 0.62, wz(s.target[1])];
-  const base: Cam = { pos: [target[0] - 1.0, target[1] + 3.3, target[2] + 4.7], target, fov: 34 };
+  const target: V3 = [wx(s.target[0]), 0.55, wz(s.target[1])];
+  const base: Cam = { pos: [target[0] - 0.8, target[1] + 4.0, target[2] + 3.7], target, fov: 34 };
   return orbit(base, YAWS[i]);
 };
 

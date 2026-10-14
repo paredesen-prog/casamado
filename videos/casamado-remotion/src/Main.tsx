@@ -24,9 +24,13 @@ const OfficeScene: React.FC = () => {
           width={SIZE}
           height={SIZE}
           shadows
-          flat
           gl={{ antialias: true, alpha: true, preserveDrawingBuffer: true }}
-          onCreated={({ gl }) => { gl.shadowMap.type = THREE.PCFSoftShadowMap; gl.setClearColor(0x000000, 0); }}
+          onCreated={({ gl }) => {
+            gl.shadowMap.type = THREE.PCFSoftShadowMap;
+            gl.toneMapping = THREE.ACESFilmicToneMapping;
+            gl.toneMappingExposure = 1.15;
+            gl.setClearColor(0x000000, 0);
+          }}
           camera={{ fov: 35, position: [0, 17, 0.01] }}
         >
           <Office3D textures={textures} />
