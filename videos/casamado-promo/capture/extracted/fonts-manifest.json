@@ -1,0 +1,475 @@
+{
+  "files": [
+    {
+      "file": "4iCv6KVjbNBYlgoC1Czjs2yNPYZvg7UI.woff2",
+      "family": "Ubuntu",
+      "rawFamily": "Ubuntu Light",
+      "subfamily": "Regular",
+      "postscript": "Ubuntu-Light",
+      "weight": 300,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "4iCv6KVjbNBYlgoC1CzjsGyNPYZvgw.woff2",
+      "family": "Ubuntu",
+      "rawFamily": "Ubuntu Light",
+      "subfamily": "Regular",
+      "postscript": "Ubuntu-Light",
+      "weight": 300,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "4iCv6KVjbNBYlgoC1CzjtGyNPYZvg7UI.woff2",
+      "family": "Ubuntu",
+      "rawFamily": "Ubuntu Light",
+      "subfamily": "Regular",
+      "postscript": "Ubuntu-Light",
+      "weight": 300,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "4iCv6KVjbNBYlgoC1CzjvGyNPYZvg7UI.woff2",
+      "family": "Ubuntu",
+      "rawFamily": "Ubuntu Light",
+      "subfamily": "Regular",
+      "postscript": "Ubuntu-Light",
+      "weight": 300,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "4iCv6KVjbNBYlgoC1CzjvWyNPYZvg7UI.woff2",
+      "family": "Ubuntu",
+      "rawFamily": "Ubuntu Light",
+      "subfamily": "Regular",
+      "postscript": "Ubuntu-Light",
+      "weight": 300,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "4iCv6KVjbNBYlgoC1CzjvmyNPYZvg7UI.woff2",
+      "family": "Ubuntu",
+      "rawFamily": "Ubuntu Light",
+      "subfamily": "Regular",
+      "postscript": "Ubuntu-Light",
+      "weight": 300,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2",
+      "family": "Roboto",
+      "rawFamily": "Roboto",
+      "subfamily": "Regular",
+      "postscript": "Roboto-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2",
+      "family": "Roboto",
+      "rawFamily": "Roboto",
+      "subfamily": "Regular",
+      "postscript": "Roboto-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2",
+      "family": "Roboto",
+      "rawFamily": "Roboto",
+      "subfamily": "Regular",
+      "postscript": "Roboto-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2",
+      "family": "Roboto",
+      "rawFamily": "Roboto",
+      "subfamily": "Regular",
+      "postscript": "Roboto-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2",
+      "family": "Roboto",
+      "rawFamily": "Roboto",
+      "subfamily": "Regular",
+      "postscript": "Roboto-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2",
+      "family": "Roboto",
+      "rawFamily": "Roboto",
+      "subfamily": "Regular",
+      "postscript": "Roboto-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "MaterialIcons-Regular.ttf",
+      "family": "Material Icons",
+      "rawFamily": "Material Icons",
+      "subfamily": "Regular",
+      "postscript": "MaterialIcons-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "MaterialIcons-Regular.woff",
+      "family": "Material Icons",
+      "rawFamily": "Material Icons",
+      "subfamily": "Regular",
+      "postscript": "MaterialIcons-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "NaPDcZTIAOhVxoMyOr9n_E7ffBzCGIVzY5abuWIGxA.woff2",
+      "family": "Titillium Web",
+      "rawFamily": "Titillium Web SemiBold",
+      "subfamily": "Regular",
+      "postscript": "TitilliumWeb-SemiBold",
+      "weight": 600,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "NaPDcZTIAOhVxoMyOr9n_E7ffBzCGItzY5abuWI.woff2",
+      "family": "Titillium Web",
+      "rawFamily": "Titillium Web SemiBold",
+      "subfamily": "Regular",
+      "postscript": "TitilliumWeb-SemiBold",
+      "weight": 600,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "NaPecZTIAOhVxoMyOr9n_E7fdM3mDaZRbryhsA.woff2",
+      "family": "Titillium Web",
+      "rawFamily": "Titillium Web",
+      "subfamily": "Regular",
+      "postscript": "TitilliumWeb-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "NaPecZTIAOhVxoMyOr9n_E7fdMPmDaZRbrw.woff2",
+      "family": "Titillium Web",
+      "rawFamily": "Titillium Web",
+      "subfamily": "Regular",
+      "postscript": "TitilliumWeb-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "iJWKBXyIfDnIV7nBrXyw023e.woff2",
+      "family": "Rubik",
+      "rawFamily": "Rubik Light",
+      "subfamily": "Regular",
+      "postscript": "Rubik-Light",
+      "weight": 300,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "iJWKBXyIfDnIV7nDrXyw023e1Ik.woff2",
+      "family": "Rubik",
+      "rawFamily": "Rubik Light",
+      "subfamily": "Regular",
+      "postscript": "Rubik-Light",
+      "weight": 300,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "iJWKBXyIfDnIV7nErXyw023e1Ik.woff2",
+      "family": "Rubik",
+      "rawFamily": "Rubik Light",
+      "subfamily": "Regular",
+      "postscript": "Rubik-Light",
+      "weight": 300,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "iJWKBXyIfDnIV7nFrXyw023e1Ik.woff2",
+      "family": "Rubik",
+      "rawFamily": "Rubik Light",
+      "subfamily": "Regular",
+      "postscript": "Rubik-Light",
+      "weight": 300,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "iJWKBXyIfDnIV7nMrXyw023e1Ik.woff2",
+      "family": "Rubik",
+      "rawFamily": "Rubik Light",
+      "subfamily": "Regular",
+      "postscript": "Rubik-Light",
+      "weight": 300,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "iJWKBXyIfDnIV7nPrXyw023e1Ik.woff2",
+      "family": "Rubik",
+      "rawFamily": "Rubik Light",
+      "subfamily": "Regular",
+      "postscript": "Rubik-Light",
+      "weight": 300,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2",
+      "family": "Poppins",
+      "rawFamily": "Poppins",
+      "subfamily": "Bold",
+      "postscript": "Poppins-Bold",
+      "weight": 700,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2",
+      "family": "Poppins",
+      "rawFamily": "Poppins",
+      "subfamily": "Bold",
+      "postscript": "Poppins-Bold",
+      "weight": 700,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2",
+      "family": "Poppins",
+      "rawFamily": "Poppins",
+      "subfamily": "Bold",
+      "postscript": "Poppins-Bold",
+      "weight": 700,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2",
+      "family": "Poppins",
+      "rawFamily": "Poppins SemiBold",
+      "subfamily": "Regular",
+      "postscript": "Poppins-SemiBold",
+      "weight": 600,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2",
+      "family": "Poppins",
+      "rawFamily": "Poppins SemiBold",
+      "subfamily": "Regular",
+      "postscript": "Poppins-SemiBold",
+      "weight": 600,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2",
+      "family": "Poppins",
+      "rawFamily": "Poppins SemiBold",
+      "subfamily": "Regular",
+      "postscript": "Poppins-SemiBold",
+      "weight": 600,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    }
+  ],
+  "families": [
+    {
+      "family": "Material Icons",
+      "weights": [
+        400
+      ],
+      "variable": false,
+      "fileCount": 2,
+      "files": [
+        "MaterialIcons-Regular.ttf",
+        "MaterialIcons-Regular.woff"
+      ]
+    },
+    {
+      "family": "Poppins",
+      "weights": [
+        600,
+        700
+      ],
+      "variable": false,
+      "fileCount": 6,
+      "files": [
+        "pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2",
+        "pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2",
+        "pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2",
+        "pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2",
+        "pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2",
+        "pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2"
+      ]
+    },
+    {
+      "family": "Roboto",
+      "weights": [
+        400
+      ],
+      "variable": false,
+      "fileCount": 6,
+      "files": [
+        "KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2",
+        "KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2",
+        "KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2",
+        "KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2",
+        "KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2",
+        "KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2"
+      ]
+    },
+    {
+      "family": "Rubik",
+      "weights": [
+        300
+      ],
+      "variable": true,
+      "fileCount": 6,
+      "files": [
+        "iJWKBXyIfDnIV7nBrXyw023e.woff2",
+        "iJWKBXyIfDnIV7nDrXyw023e1Ik.woff2",
+        "iJWKBXyIfDnIV7nErXyw023e1Ik.woff2",
+        "iJWKBXyIfDnIV7nFrXyw023e1Ik.woff2",
+        "iJWKBXyIfDnIV7nMrXyw023e1Ik.woff2",
+        "iJWKBXyIfDnIV7nPrXyw023e1Ik.woff2"
+      ]
+    },
+    {
+      "family": "Titillium Web",
+      "weights": [
+        400,
+        600
+      ],
+      "variable": false,
+      "fileCount": 4,
+      "files": [
+        "NaPDcZTIAOhVxoMyOr9n_E7ffBzCGIVzY5abuWIGxA.woff2",
+        "NaPDcZTIAOhVxoMyOr9n_E7ffBzCGItzY5abuWI.woff2",
+        "NaPecZTIAOhVxoMyOr9n_E7fdM3mDaZRbryhsA.woff2",
+        "NaPecZTIAOhVxoMyOr9n_E7fdMPmDaZRbrw.woff2"
+      ]
+    },
+    {
+      "family": "Ubuntu",
+      "weights": [
+        300
+      ],
+      "variable": false,
+      "fileCount": 6,
+      "files": [
+        "4iCv6KVjbNBYlgoC1Czjs2yNPYZvg7UI.woff2",
+        "4iCv6KVjbNBYlgoC1CzjsGyNPYZvgw.woff2",
+        "4iCv6KVjbNBYlgoC1CzjtGyNPYZvg7UI.woff2",
+        "4iCv6KVjbNBYlgoC1CzjvGyNPYZvg7UI.woff2",
+        "4iCv6KVjbNBYlgoC1CzjvWyNPYZvg7UI.woff2",
+        "4iCv6KVjbNBYlgoC1CzjvmyNPYZvg7UI.woff2"
+      ]
+    }
+  ],
+  "unidentified": [],
+  "meta": {
+    "generatedAt": "2026-10-14T13:23:38.712Z",
+    "tool": "fontkit"
+  }
+}

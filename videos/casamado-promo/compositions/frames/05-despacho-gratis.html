@@ -1,0 +1,343 @@
+<template>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <style>
+@font-face{
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('assets/fonts/dmmono-400-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face{
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('assets/fonts/dmmono-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face{
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url('assets/fonts/dmmono-500-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face{
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url('assets/fonts/dmmono-500-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nErXyw023e1Ik.woff2") format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7, U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nMrXyw023e1Ik.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nFrXyw023e1Ik.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nDrXyw023e1Ik.woff2") format('woff2');
+  unicode-range: U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nPrXyw023e1Ik.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nBrXyw023e.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nErXyw023e1Ik.woff2") format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7, U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nMrXyw023e1Ik.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nFrXyw023e1Ik.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nDrXyw023e1Ik.woff2") format('woff2');
+  unicode-range: U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nPrXyw023e1Ik.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nBrXyw023e.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nErXyw023e1Ik.woff2") format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7, U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nMrXyw023e1Ik.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nFrXyw023e1Ik.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nDrXyw023e1Ik.woff2") format('woff2');
+  unicode-range: U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nPrXyw023e1Ik.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/captured-iJWKBXyIfDnIV7nBrXyw023e.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/captured-pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A;
+}
+@font-face{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/captured-pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/captured-pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/captured-pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A;
+}
+@font-face{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/captured-pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/captured-pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: 'Rubik', sans-serif; color: #1A3A5C; }
+    .f05-bg { position: absolute; inset: 0; background-color: #F3F5F7;
+      background-image: linear-gradient(rgba(26,58,92,0.10) 1px, transparent 1px), linear-gradient(90deg, rgba(26,58,92,0.10) 1px, transparent 1px);
+      background-size: 36px 36px; background-position: 10px 10px; }
+    .f05-rule { position: absolute; left: 40px; right: 40px; height: 2px; background: #1A3A5C; }
+    .f05-meta { position: absolute; right: 40px; top: 44px; font-family: 'DM Mono', monospace; font-size: 15px; letter-spacing: 0.08em; color: #53748B; }
+    .f05-map { position: absolute; left: 0; top: 0; width: 1080px; height: 1080px; }
+    .f05-map text { font-family: 'DM Mono', monospace; font-size: 15px; letter-spacing: 0.1em; fill: #53748B; }
+    .f05-map .f05-strong { fill: #1A3A5C; font-weight: 500; font-size: 17px; }
+    .f05-pin { position: absolute; left: 262px; top: 562px; width: 76px; height: 76px; border-radius: 50%; background: #F3F5F7; border: 3px solid #1A3A5C; overflow: hidden; }
+    .f05-pin img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .f05-dest { position: absolute; left: 758px; top: 398px; width: 44px; height: 44px; background: #1A3A5C; }
+    .f05-box { position: absolute; left: -17px; top: -17px; width: 34px; height: 34px; }
+    .f05-head { position: absolute; left: 100px; top: 40px; z-index: 1; }
+    .f05-h1 { position: relative; display: inline-block; isolation: isolate; font-weight: 600; font-size: 72px; line-height: 1; letter-spacing: -0.01em; white-space: nowrap; }
+    .f05-block { position: absolute; left: -10px; right: -10px; top: 14px; bottom: -6px; background: #F5A623; transform-origin: 0 50%; z-index: -1; }
+    .f05-h2 { display: block; margin-top: 12px; font-weight: 500; font-size: 34px; letter-spacing: -0.005em; white-space: nowrap; }
+    .f05-chips { position: absolute; left: 100px; right: 100px; top: 812px; display: flex; gap: 16px; }
+    .f05-chip { flex: 1; text-align: center; padding: 16px 10px; border: 2px solid #1A3A5C; border-radius: 999px; background: #F3F5F7;
+      font-weight: 600; font-size: 21px; letter-spacing: 0.01em; white-space: nowrap; }
+  </style>
+
+  <div data-hf-id="hf-72gb" id="root" data-composition-id="05-despacho-gratis" data-width="1080" data-height="1080" data-duration="6.1">
+    <div data-hf-id="hf-sp0z" id="f05-bg" class="f05-bg clip" data-start="0" data-duration="6.1" data-track-index="0"></div>
+    <div data-hf-id="hf-clpp" id="f05-stage" data-layout-allow-overlap data-layout-allow-occlusion class="clip" data-start="0" data-duration="6.1" data-track-index="1" style="position:absolute;inset:0;">
+      <div data-hf-id="hf-1qan" class="f05-rule" style="top:26px"></div>
+      <div data-hf-id="hf-oad9" class="f05-rule" style="top:1052px"></div>
+      <div data-hf-id="hf-uk95" class="f05-meta">COBERTURA — REGIÓN METROPOLITANA</div>
+
+      <svg data-hf-id="hf-xf2i" class="f05-map" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+        <g data-hf-id="hf-8jho" id="f05-base" fill="none" stroke-linecap="round">
+          <path data-hf-id="hf-t38y" d="M80 330 C 220 300, 300 380, 420 350 S 640 290, 760 320 S 940 300, 1010 260" stroke="rgba(26,58,92,0.30)" stroke-width="10" />
+          <ellipse data-hf-id="hf-w923" cx="560" cy="500" rx="300" ry="210" stroke="rgba(26,58,92,0.18)" stroke-width="4" stroke-dasharray="2 12" />
+          <ellipse data-hf-id="hf-wg0j" cx="560" cy="500" rx="420" ry="300" stroke="rgba(26,58,92,0.12)" stroke-width="3" />
+          <path data-hf-id="hf-97bd" d="M140 760 L 560 500 L 960 250 M 560 260 L 560 760 M 200 470 L 920 560" stroke="rgba(26,58,92,0.14)" stroke-width="3" />
+        </g>
+        <g data-hf-id="hf-va12" id="f05-labels">
+          <text data-hf-id="hf-jgnc" x="96" y="312">MAPOCHO</text>
+          <circle data-hf-id="hf-ssjg" cx="560" cy="520" r="6" fill="#53748B" /><text data-hf-id="hf-58m6" x="575" y="540">SANTIAGO</text>
+          <circle data-hf-id="hf-nx17" cx="640" cy="470" r="6" fill="#53748B" /><text data-hf-id="hf-vcpp" x="655" y="490">PROVIDENCIA</text>
+          <circle data-hf-id="hf-cker" cx="905" cy="335" r="6" fill="#53748B" /><text data-hf-id="hf-rczw" x="830" y="368">LAS CONDES</text>
+          <circle data-hf-id="hf-chk8" cx="660" cy="590" r="6" fill="#53748B" /><text data-hf-id="hf-n0l0" x="675" y="610">ÑUÑOA</text>
+          <circle data-hf-id="hf-1oyx" cx="175" cy="705" r="6" fill="#53748B" /><text data-hf-id="hf-sv11" x="122" y="740">MAIPÚ</text>
+          <circle data-hf-id="hf-ragk" cx="400" cy="280" r="6" fill="#53748B" /><text data-hf-id="hf-4940" x="415" y="270">QUILICURA</text>
+          <text data-hf-id="hf-yb5c" class="f05-strong" x="300" y="672" text-anchor="middle">CASAMADO</text>
+          <text data-hf-id="hf-fge3" class="f05-strong" x="780" y="388" text-anchor="middle">TU OFICINA</text>
+        </g>
+        <path data-hf-id="hf-xt3m" id="f05-route" d="M300 600 C 420 660, 520 380, 780 420" fill="none" stroke="#1A3A5C" stroke-width="7" stroke-linecap="round" />
+      </svg>
+
+      <div data-hf-id="hf-kqjs" class="f05-pin" id="f05-pin"><img data-hf-id="hf-53h8" src="assets/favicon.png" alt="Casamado" /></div>
+      <div data-hf-id="hf-n57a" class="f05-dest" id="f05-dest"></div>
+      <div data-hf-id="hf-dpq7" id="f05-boxwrap" style="position:absolute; left:300px; top:600px; width:0; height:0;">
+        <svg data-hf-id="hf-gw62" class="f05-box" id="f05-box" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+          <rect data-hf-id="hf-r0vg" x="2" y="2" width="30" height="30" fill="#F3F5F7" stroke="#1A3A5C" stroke-width="4" />
+          <path data-hf-id="hf-ettu" d="M17 2 V 14" stroke="#F5A623" stroke-width="5" />
+        </svg>
+      </div>
+
+      <div data-hf-id="hf-6ti2" class="f05-head">
+        <span data-hf-id="hf-9yqy" class="f05-h1" id="f05-h1">Despacho gratis<span data-hf-id="hf-z9qx" class="f05-block" id="f05-block"></span></span>
+        <span data-hf-id="hf-hhkw" class="f05-h2" id="f05-h2">sobre $70.000 en la RM</span>
+      </div>
+
+      <div data-hf-id="hf-cdt1" class="f05-chips">
+        <div data-hf-id="hf-dy53" class="f05-chip" id="f05-k1">Pago con Webpay</div>
+        <div data-hf-id="hf-39c8" class="f05-chip" id="f05-k2">Atención 24/7</div>
+        <div data-hf-id="hf-t587" class="f05-chip" id="f05-k3">Precios mayoristas</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      const $ = (id) => "#f05-" + id;
+
+      // Scene 1 — the schematic map and the two pins
+      tl.fromTo($("base"), { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power1.out" }, 0.0);
+      tl.fromTo($("labels"), { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power1.out" }, 0.35);
+      tl.fromTo($("pin"), { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.8)" }, 0.5);
+      tl.fromTo($("dest"), { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.45, ease: "back.out(1.8)" }, 0.8);
+
+      // Scene 2 — the route draws itself, a parcel rides its head
+      const route = document.getElementById("f05-route");
+      const len = route.getTotalLength();
+      route.style.strokeDasharray = len;
+      route.style.strokeDashoffset = len;
+      const wrap = document.getElementById("f05-boxwrap");
+      const prog = { t: 0 };
+      const place = () => { const p = route.getPointAtLength(prog.t * len); wrap.style.left = p.x + "px"; wrap.style.top = p.y + "px"; };
+      place();
+      tl.fromTo(route, { strokeDashoffset: len }, { strokeDashoffset: 0, duration: 1.4, ease: "power2.inOut" }, 1.0);
+      tl.fromTo(prog, { t: 0 }, { t: 1, duration: 1.4, ease: "power2.inOut", onUpdate: place, immediateRender: true }, 1.0);
+      tl.fromTo($("box"), { opacity: 0 }, { opacity: 1, duration: 0.2 }, 1.0);
+      tl.fromTo($("box"), { y: 0 }, { y: -10, duration: 0.14, ease: "power2.out" }, 2.4);
+      tl.to($("box"), { y: 0, duration: 0.22, ease: "bounce.out" }, 2.54);
+
+      // Scene 3 — the promise
+      tl.fromTo($("h1"), { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 2.0);
+      tl.fromTo($("block"), { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power3.out" }, 2.35);
+      tl.fromTo($("h2"), { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 2.85);
+
+      // Scene 4 — three service chips assemble
+      ["k1", "k2", "k3"].forEach((k, i) => {
+        tl.fromTo($(k), { opacity: 0, y: 26 }, { opacity: 1, y: 0, duration: 0.42, ease: "power3.out" }, 3.4 + i * 0.22);
+      });
+
+      tl.to({}, { duration: 0.01 }, 5.49);
+      window.__timelines["05-despacho-gratis"] = tl;
+    })();
+  </script>
+</template>

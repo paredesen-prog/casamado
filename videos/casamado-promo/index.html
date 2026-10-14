@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1080" />
+    <script src="assets/vendor/gsap.min.js" integrity="sha384-sG0Hv1tP1lZCk9KQmrIbY/XNwi+OY84GQqhMscbnsoBFqAz8KNCil1kvfL3Hbbk2" crossorigin="anonymous"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1080px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1080px;
+        overflow: hidden;
+        background: #F3F5F7;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-ge6u"
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="32.6"
+      data-width="1080"
+      data-height="1080"
+    >
+      <div data-hf-id="hf-zhyt"
+        id="el-01-oficina-vacia"
+        class="scene"
+        data-composition-id="01-oficina-vacia"
+        data-composition-src="compositions/frames/01-oficina-vacia.html"
+        data-start="0"
+        data-duration="4.8"
+        data-track-index="0"
+      ></div>
+
+      <div data-hf-id="hf-5i8p"
+        id="el-02-casamado-lo-trae"
+        class="scene"
+        data-composition-id="02-casamado-lo-trae"
+        data-composition-src="compositions/frames/02-casamado-lo-trae.html"
+        data-start="4.5"
+        data-duration="4.3"
+        data-track-index="1"
+      ></div>
+
+      <div data-hf-id="hf-bli3"
+        id="el-03-salas-se-llenan"
+        class="scene"
+        data-composition-id="03-salas-se-llenan"
+        data-composition-src="compositions/frames/03-salas-se-llenan.html"
+        data-start="8.5"
+        data-duration="9.6"
+        data-track-index="0"
+      ></div>
+
+      <div data-hf-id="hf-s9vi"
+        id="el-04-mas-de-1100"
+        class="scene"
+        data-composition-id="04-mas-de-1100"
+        data-composition-src="compositions/frames/04-mas-de-1100.html"
+        data-start="18.1"
+        data-duration="4.9"
+        data-track-index="1"
+      ></div>
+
+      <div data-hf-id="hf-l2pg"
+        id="el-05-despacho-gratis"
+        class="scene"
+        data-composition-id="05-despacho-gratis"
+        data-composition-src="compositions/frames/05-despacho-gratis.html"
+        data-start="22.6"
+        data-duration="6.1"
+        data-track-index="0"
+      ></div>
+
+      <div data-hf-id="hf-l8cq"
+        id="el-06-pide-hoy"
+        class="scene"
+        data-composition-id="06-pide-hoy"
+        data-composition-src="compositions/frames/06-pide-hoy.html"
+        data-start="28.1"
+        data-duration="4.5"
+        data-track-index="1"
+      ></div>
+
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+      // ── frame transitions (injected by transitions.mjs) ──
+      (function () { var tl = window.__timelines["main"];
+        tl.to("#el-01-oficina-vacia", { opacity: 0, duration: 0.3, ease: "power2.inOut" }, 4.5);
+        tl.fromTo("#el-02-casamado-lo-trae", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.inOut" }, 4.5);
+        tl.to("#el-02-casamado-lo-trae", { opacity: 0, duration: 0.3, ease: "power2.inOut" }, 8.5);
+        tl.fromTo("#el-03-salas-se-llenan", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.inOut" }, 8.5);
+        tl.to("#el-04-mas-de-1100", { scale: 2.5, opacity: 0, filter: "blur(8px)", duration: 0.4, ease: "power3.in" }, 22.6);
+        tl.fromTo("#el-05-despacho-gratis", { scale: 0.5, opacity: 0, filter: "blur(8px)" }, { scale: 1, opacity: 1, filter: "blur(0px)", duration: 0.4, ease: "power3.out" }, 22.6);
+        tl.to("#el-05-despacho-gratis", { filter: "blur(10px)", scale: 1.03, opacity: 0, duration: 0.6, ease: "power2.inOut" }, 28.1);
+        tl.fromTo("#el-06-pide-hoy", { filter: "blur(10px)", scale: 0.97, opacity: 0 }, { filter: "blur(0px)", scale: 1, opacity: 1, duration: 0.6, ease: "power2.inOut" }, 28.1);
+        tl.to({}, { duration: 32.6 }, 0); // full-span anchor — main.duration() == composition total (Studio master duration)
+      })();
+    </script>
+  </body>
+</html>

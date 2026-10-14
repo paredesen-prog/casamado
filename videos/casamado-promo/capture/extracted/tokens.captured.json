@@ -1,0 +1,946 @@
+{
+  "title": "Casamado | Aseo, Oficina y Tecnología para Empresas",
+  "description": "Distribuidor B2B y B2C de aseo y limpieza, oficina, tecnología, cafetería y ferretería. Despacho a nivel regional y Santiago. Precios mayoristas.",
+  "ogImage": "https://casamado.cl/wp-content/uploads/2025/03/CASAMADO-B-1-e1743097903708.png",
+  "cssVariables": {
+    "--wp--preset--color--black": "#000000",
+    "--wp--preset--color--cyan-bluish-gray": "#abb8c3",
+    "--wp--preset--color--white": "#ffffff",
+    "--wp--preset--color--pale-pink": "#f78da7",
+    "--wp--preset--color--vivid-red": "#cf2e2e",
+    "--wp--preset--color--luminous-vivid-orange": "#ff6900",
+    "--wp--preset--color--luminous-vivid-amber": "#fcb900",
+    "--wp--preset--color--light-green-cyan": "#7bdcb5",
+    "--wp--preset--color--vivid-green-cyan": "#00d084",
+    "--wp--preset--color--pale-cyan-blue": "#8ed1fc",
+    "--wp--preset--color--vivid-cyan-blue": "#0693e3",
+    "--wp--preset--color--vivid-purple": "#9b51e0",
+    "--wp--preset--font-size--small": "13px",
+    "--wp--preset--font-size--medium": "20px",
+    "--wp--preset--font-size--large": "36px",
+    "--wp--preset--font-size--x-large": "42px",
+    "--wp--preset--shadow--natural": "6px 6px 9px rgba(0, 0, 0, 0.2)",
+    "--wp--preset--shadow--deep": "12px 12px 50px rgba(0, 0, 0, 0.4)",
+    "--wp--preset--shadow--sharp": "6px 6px 0px rgba(0, 0, 0, 0.2)",
+    "--wp--preset--shadow--outlined": "6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0)",
+    "--wp--preset--shadow--crisp": "6px 6px 0px rgb(0, 0, 0)",
+    "--wd-text-line-height": "1.6",
+    "--wd-brd-radius": "0px",
+    "--wd-form-color": "inherit",
+    "--wd-form-placeholder-color": "inherit",
+    "--wd-form-bg": "transparent",
+    "--wd-form-brd-color": "rgba(0,0,0,0.1)",
+    "--wd-form-brd-color-focus": "rgba(0,0,0,0.15)",
+    "--wd-navigation-color": "51,51,51",
+    "--wd-main-bgcolor": "#fff",
+    "--color-white": "#fff",
+    "--color-gray-100": "#f7f7f7",
+    "--color-gray-200": "#f1f1f1",
+    "--color-gray-300": "#bbb",
+    "--color-gray-400": "#a5a5a5",
+    "--color-gray-500": "#767676",
+    "--color-gray-600": "#666",
+    "--color-gray-700": "#555",
+    "--color-gray-800": "#333",
+    "--color-gray-900": "#242424",
+    "--color-white-rgb": "255,255,255",
+    "--color-black-rgb": "0,0,0",
+    "--bgcolor-white": "#fff",
+    "--bgcolor-gray-100": "#f7f7f7",
+    "--bgcolor-gray-200": "#f7f7f7",
+    "--bgcolor-gray-300": "#f1f1f1",
+    "--bgcolor-black-rgb": "0,0,0",
+    "--bgcolor-white-rgb": "255,255,255",
+    "--brdcolor-gray-200": "rgba(0,0,0,0.075)",
+    "--brdcolor-gray-300": "rgba(0,0,0,0.105)",
+    "--brdcolor-gray-400": "rgba(0,0,0,0.12)",
+    "--brdcolor-gray-500": "rgba(0,0,0,0.2)",
+    "--wd-text-font": "\"Rubik\", Arial, Helvetica, sans-serif",
+    "--wd-text-font-weight": "400",
+    "--wd-text-color": "#777777",
+    "--wd-text-font-size": "14px",
+    "--wd-title-font": "\"Rubik\", Arial, Helvetica, sans-serif",
+    "--wd-title-font-weight": "500",
+    "--wd-title-color": "#242424",
+    "--wd-entities-title-font": "\"Rubik\", Arial, Helvetica, sans-serif",
+    "--wd-entities-title-font-weight": "500",
+    "--wd-entities-title-color": "#333333",
+    "--wd-entities-title-color-hover": "rgb(51 51 51 / 65%)",
+    "--wd-alternative-font": "\"Titillium Web\", Arial, Helvetica, sans-serif",
+    "--wd-widget-title-font": "\"Rubik\", Arial, Helvetica, sans-serif",
+    "--wd-widget-title-font-weight": "500",
+    "--wd-widget-title-color": "#333",
+    "--wd-widget-title-font-size": "14px",
+    "--wd-header-el-font": "\"Rubik\", Arial, Helvetica, sans-serif",
+    "--wd-header-el-font-weight": "400",
+    "--wd-header-el-font-size": "15px",
+    "--wd-primary-color": "rgb(94,132,158)",
+    "--wd-alternative-color": "rgb(35,43,53)",
+    "--btn-default-bgcolor": "rgb(94,132,158)",
+    "--btn-default-bgcolor-hover": "rgb(76,102,130)",
+    "--btn-accented-bgcolor": "rgb(35,43,53)",
+    "--btn-accented-bgcolor-hover": "rgb(25,31,40)",
+    "--notices-success-bg": "#459647",
+    "--notices-success-color": "#fff",
+    "--notices-warning-bg": "#E0B252",
+    "--notices-warning-color": "#fff",
+    "--wd-link-color": "#333333",
+    "--wd-link-color-hover": "#242424",
+    "--wd-form-brd-radius": "35px",
+    "--btn-default-color": "#fff",
+    "--btn-default-color-hover": "#fff",
+    "--btn-accented-color": "#fff",
+    "--btn-accented-color-hover": "#fff",
+    "--btn-default-brd-radius": "35px",
+    "--btn-default-box-shadow": "none",
+    "--btn-default-box-shadow-hover": "none",
+    "--btn-accented-brd-radius": "35px",
+    "--btn-accented-box-shadow": "none",
+    "--btn-accented-box-shadow-hover": "none"
+  },
+  "fonts": [
+    {
+      "family": "Material Icons",
+      "weights": [
+        400
+      ],
+      "variable": false
+    },
+    {
+      "family": "vcpb-plugin-icons",
+      "weights": [
+        400
+      ],
+      "variable": false
+    },
+    {
+      "family": "vc_grid_v1",
+      "weights": [
+        400
+      ],
+      "variable": false
+    },
+    {
+      "family": "woodmart-font",
+      "weights": [
+        400
+      ],
+      "variable": false
+    },
+    {
+      "family": "Rubik",
+      "weights": [
+        400,
+        500,
+        600,
+        700
+      ],
+      "variable": false
+    },
+    {
+      "family": "Titillium Web",
+      "weights": [
+        400,
+        600
+      ],
+      "variable": false
+    },
+    {
+      "family": "Ubuntu",
+      "weights": [
+        300,
+        400,
+        700
+      ],
+      "variable": false
+    },
+    {
+      "family": "revicons",
+      "weights": [
+        400
+      ],
+      "variable": false
+    },
+    {
+      "family": "Poppins",
+      "weights": [
+        600,
+        700
+      ],
+      "variable": false
+    },
+    {
+      "family": "Roboto",
+      "weights": [
+        400
+      ],
+      "variable": false
+    }
+  ],
+  "colors": [
+    "#838383",
+    "#FFFFFF",
+    "#333333",
+    "#777777",
+    "#F9F9F9",
+    "#1A3A5C",
+    "#5E849E",
+    "#232B35",
+    "#E9E9E9",
+    "#666666",
+    "#767676",
+    "#000000",
+    "#242424",
+    "#F5A623",
+    "#F3F3F3",
+    "#3E3E3E",
+    "#1565C0",
+    "#E65100",
+    "#4527A0",
+    "#37474F"
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Todo lo que tu empresa necesita, en un solo lugar",
+      "fontSize": "34px",
+      "fontWeight": "800",
+      "color": "#1A3A5C"
+    },
+    {
+      "level": 2,
+      "text": "Un baño bien equipado no se arma producto por producto",
+      "fontSize": "26px",
+      "fontWeight": "800",
+      "color": "#1A3A5C"
+    },
+    {
+      "level": 2,
+      "text": "ASEO Y LIMPIEZA",
+      "fontSize": "30px",
+      "fontWeight": "500",
+      "color": "#242424"
+    },
+    {
+      "level": 3,
+      "text": "Dispensador Jabon Granel 800 ML Plastico Blanco",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#333333"
+    },
+    {
+      "level": 3,
+      "text": "Dispensador Jabon Granel 800 ML Plastico Negro",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#333333"
+    },
+    {
+      "level": 3,
+      "text": "Dispensador Jabon Granel 900 ML Plastico Blanco",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#333333"
+    },
+    {
+      "level": 3,
+      "text": "Dispensador Jabon Multiflex Plastico Negro",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#333333"
+    },
+    {
+      "level": 3,
+      "text": "Dispensador Jabon Sachet Tork Elevation Plastico Blanco",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#333333"
+    },
+    {
+      "level": 3,
+      "text": "Jabon Liquido Violetas Silvestres 750 ML",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#333333"
+    },
+    {
+      "level": 3,
+      "text": "Jabon En Barra Humectante Cuidado Suave 3 UND x 90 GR",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#333333"
+    },
+    {
+      "level": 3,
+      "text": "Dispensador Jabon Sachet Tork Elevation Plastico Negro",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#333333"
+    },
+    {
+      "level": 3,
+      "text": "Jabon Liquido Fresh Azul 5 LT",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#333333"
+    },
+    {
+      "level": 3,
+      "text": "Dispensador Jabon Granel 500 ML Plastico Blanco",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#333333"
+    },
+    {
+      "level": 3,
+      "text": "Jabon Liquido Manzana Verde 5 LT",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#333333"
+    },
+    {
+      "level": 3,
+      "text": "Jabon Liquido Avena y Aceite de Almendras 350 ML",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#333333"
+    },
+    {
+      "level": 3,
+      "text": "Jabon Liquido Crema Humectante 350 ML",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#333333"
+    },
+    {
+      "level": 3,
+      "text": "Jabon Liquido Yoghurt Arandanos 750 ML",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#333333"
+    },
+    {
+      "level": 3,
+      "text": "Jabon Liquido Aceite de Coco y Jazmin 750 ML",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#333333"
+    },
+    {
+      "level": 2,
+      "text": "PAPELERÍA",
+      "fontSize": "30px",
+      "fontWeight": "500",
+      "color": "#242424"
+    },
+    {
+      "level": 3,
+      "text": "Papel Fotocopia Carta 500 Hj 75 GR",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#333333"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Skip to main content",
+      "href": "https://casamado.cl/#main-content"
+    },
+    {
+      "text": "+569 3466 0081",
+      "href": "https://wa.me/56934660081"
+    },
+    {
+      "text": "Explorar catálogo →",
+      "href": "https://casamado.cl/tienda/"
+    },
+    {
+      "text": "Cotizar kit completo →",
+      "href": "https://wa.me/56934660081?text=Hola,%20quiero%20cotizar%20el%20Kit%20Ba%C3%B1o%20Institucional"
+    },
+    {
+      "text": "Añadir al carrito",
+      "href": "https://casamado.cl/?add-to-cart=2163"
+    },
+    {
+      "text": "Añadir al carrito",
+      "href": "https://casamado.cl/?add-to-cart=2164"
+    },
+    {
+      "text": "Añadir al carrito",
+      "href": "https://casamado.cl/?add-to-cart=2165"
+    }
+  ],
+  "svgs": [
+    {
+      "label": "nta-whatsapp-default-avatar",
+      "viewBox": "0 0 512 512",
+      "width": 48,
+      "height": 48,
+      "isLogo": true
+    }
+  ],
+  "sections": [
+    {
+      "selector": "div",
+      "type": "content",
+      "x": 160,
+      "y": 1137,
+      "width": 1600,
+      "height": 527,
+      "heading": "Todo lo que tu empresa necesita, en un solo lugar",
+      "backgroundColor": "#F9F9F9",
+      "callsToAction": [
+        "Explorar catálogo →",
+        "🧻Papel Tissue",
+        "🧴Aseo y Limpieza",
+        "🗂️Oficina",
+        "💻Tecnología",
+        "☕Cafetería",
+        "🧤Ferretería"
+      ],
+      "text": "DISTRIBUCIÓN B2B/B2C — REGIONAL Y SANTIAGO Todo lo que tu empresa necesita, en un solo lugar Aseo, oficina, tecnología, cafetería y ferretería con precios mayoristas, stock permanente y despacho a nivel regional o Santiago. Explorar catálogo → 🧻 Papel Tissue 🧴 Aseo y Limpieza 🗂️ Oficina 💻 Tecnología ☕ Cafetería 🧤 Ferretería",
+      "layout": "centered",
+      "assetUrls": []
+    },
+    {
+      "selector": "div",
+      "type": "content",
+      "x": 160,
+      "y": 1665,
+      "width": 1600,
+      "height": 513,
+      "heading": "Un baño bien equipado no se arma producto por producto",
+      "backgroundColor": "#F9F9F9",
+      "callsToAction": [
+        "Cotizar kit completo →",
+        "Dispensador Jabón Granel 800 ML$27.614 + IVA",
+        "Dispensador Servilleta Interfoliada$26.095 + IVA",
+        "Jabón Líquido Hipoalergénico 650 ML$1.316 + IVA"
+      ],
+      "text": "KIT BAÑO INSTITUCIONAL INSTALACIÓN COMPLETA Un baño bien equipado no se arma producto por producto Dispensador de jabón, dispensador de servilletas y el repuesto de jabón líquido — todo en una sola cotización. Cotizar kit completo → Dispensador Jabón Granel 800 ML $27.614 + IVA Dispensador Servilleta Interfoliada $26.095 + IVA Jabón Líquido Hipoalergénico 650 ML $1.316 + IVA",
+      "layout": "centered",
+      "assetUrls": []
+    },
+    {
+      "selector": "div",
+      "type": "content",
+      "x": 165,
+      "y": 2217,
+      "width": 1590,
+      "height": 607,
+      "heading": "ASEO Y LIMPIEZA",
+      "backgroundColor": "#F9F9F9",
+      "callsToAction": [
+        "Dispensador Jabon Granel 800 ML Plastico Blanco",
+        "Añadir al carrito",
+        "Dispensador Jabon Granel 800 ML Plastico Negro",
+        "Dispensador Jabon Granel 900 ML Plastico Blanco",
+        "Dispensador Jabon Multiflex Plastico Negro",
+        "Dispensador Jabon Sachet Tork Elevation Plastico Blanco",
+        "Jabon Liquido Violetas Silvestres 750 ML",
+        "Jabon En Barra Humectante Cuidado Suave 3 UND x 90 GR"
+      ],
+      "text": "ASEO Y LIMPIEZA Dispensador Jabon Granel 800 ML Plastico Blanco $27.614 + IVA EN STOCK Dispensador Jabon Granel 800 ML Plastico Blanco cantidad AÑADIR AL CARRITO Dispensador Jabon Granel 800 ML Plastico Negro $27.614 + IVA EN STOCK Dispensador Jabon Granel 800 ML Plastico Negro cantidad AÑADIR AL CARRITO Dispensador Jabon Granel 900 ML Plastico Blanco $31.586 + IVA EN STOCK Dispensador Jabon Granel 900 ML Plastico Blanco cantidad AÑADIR AL CARRITO Dispensador Jabon Multiflex Plastico Negro $25.074 + IVA EN STOCK Dispensador Jabon Multiflex Plastico Negro cantidad AÑADIR AL CARRITO Dispensador ",
+      "layout": "grid",
+      "assetUrls": [
+        "https://casamado.cl/wp-content/uploads/2026/07/elite-dispensador-jabon-granel-blanco-91523_1.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/dispensador-jabon-granel-800-mlplastico-negro-sku-91525.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/tork-dispensador-jabon-rellenable-900ml-di55173.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/elite-dispensador-jabon-multiflex-negro-91556_1.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/tork-dispensador-jabon-sachet-elevation-di70036.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/jabon-liquido-violetas-silvestres750-ml.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/jabon-en-barra-humectante-cuidado-suave3-und-x-90-.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/tork-dispensador-jabon-sachet-negro-di70037.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/glaz-jabon-liquido-fresh-5l-5001004.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/generico-dispensador-jabon-granel-844477.jpg"
+      ],
+      "assets": [
+        "assets/dispensador-jabon-granel-800-ml-plastico.jpg",
+        "assets/entry-content-post-2.jpg",
+        "assets/dispensador-jabon-granel-900-ml-plastico.jpg",
+        "assets/dispensador-jabon-multiflex-plastico-neg.jpg",
+        "assets/dispensador-jabon-sachet-tork-elevation-.jpg",
+        "assets/jabon-liquido-violetas-silvestres-750-ml.jpg",
+        "assets/jabon-en-barra-humectante-cuidado-suave-.jpg",
+        "assets/tork-dispensador-jabon-sachet-negro-di70.jpg",
+        "assets/jabon-liquido-fresh-azul-5-lt.jpg",
+        "assets/dispensador-jabon-granel-500-ml-plastico.jpg"
+      ]
+    },
+    {
+      "selector": "div",
+      "type": "features",
+      "x": 0,
+      "y": 2854,
+      "width": 1920,
+      "height": 717,
+      "heading": "PAPELERÍA",
+      "backgroundColor": "#F6F6F6",
+      "callsToAction": [
+        "Papel Fotocopia Carta 500 Hj 75 GR",
+        "Añadir al carrito",
+        "Papel Fotocopia Oficio 500 Hj 75 GR",
+        "Papel Fotocopia A 4500 Hj 75 GR",
+        "Sobre Americano Blanco 10 x 23 CM 10 UND",
+        "Sobre Saco Revista Carta Blanco 23 x 30 CM 10 UND",
+        "Sobre Saco Oficio Blanco 25 x 36 CM 10 UND",
+        "Sobre Americano Kraft 10 x 23 CM 10 UND"
+      ],
+      "text": "PAPELERÍA Papel Fotocopia Carta 500 Hj 75 GR $4.755 + IVA EN STOCK Papel Fotocopia Carta 500 Hj 75 GR cantidad AÑADIR AL CARRITO Papel Fotocopia Oficio 500 Hj 75 GR $5.619 + IVA EN STOCK Papel Fotocopia Oficio 500 Hj 75 GR cantidad AÑADIR AL CARRITO Papel Fotocopia Carta 500 Hj 75 GR $4.097 + IVA EN STOCK Papel Fotocopia Carta 500 Hj 75 GR cantidad AÑADIR AL CARRITO Papel Fotocopia Oficio 500 Hj 75 GR $4.846 + IVA EN STOCK Papel Fotocopia Oficio 500 Hj 75 GR cantidad AÑADIR AL CARRITO Papel Fotocopia A 4500 Hj 75 GR $4.924 + IVA EN STOCK Papel Fotocopia A 4500 Hj 75 GR cantidad AÑADIR AL CARRI",
+      "layout": "grid",
+      "assetUrls": [
+        "https://casamado.cl/wp-content/uploads/2026/07/papel-fotocopia-equalit-carta-3001004.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/papel-fotocopia-equalit-oficio-3001015.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/premier-papel-fotocopia-carta-500-hjs-3001016.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/premier-papel-fotocopia-oficio-500-hjs-3001017.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/equalit-papel-fotocopia-a4-500-hjs-3001018.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/teknofas-sobre-americano-blanco-145005.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/teknofas-sobre-saco-carta-blanco-145028.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/teknofas-sobre-saco-oficio-blanco-145023.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/teknofas-sobre-americano-kraft-10und-145045.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/teknofas-sobre-saco-carta-kraft-10-und-132030.jpg"
+      ],
+      "assets": [
+        "assets/papel-fotocopia-carta-500-hj-75-gr.jpg",
+        "assets/papel-fotocopia-oficio-500-hj-75-gr.jpg",
+        "assets/premier-papel-fotocopia-carta-500-hjs-30.jpg",
+        "assets/premier-papel-fotocopia-oficio-500-hjs-3.jpg",
+        "assets/papel-fotocopia-a-4500-hj-75-gr.jpg",
+        "assets/sobre-americano-blanco-10-x-23-cm-10-und.jpg",
+        "assets/sobre-saco-revista-carta-blanco-23-x-30-.jpg",
+        "assets/sobre-saco-oficio-blanco-25-x-36-cm-10-u.jpg",
+        "assets/sobre-americano-kraft-10-x-23-cm-10-und.jpg",
+        "assets/sobre-saco-revista-carta-kraft-23-x-30-c.jpg"
+      ]
+    },
+    {
+      "selector": "div",
+      "type": "content",
+      "x": 165,
+      "y": 3571,
+      "width": 1590,
+      "height": 607,
+      "heading": "PROTECCIÓN PERSONAL",
+      "backgroundColor": "#F9F9F9",
+      "callsToAction": [
+        "Protector Solar F 501 KG",
+        "Añadir al carrito",
+        "Guantes Anticorte Palma PU Flex Legend Ultra Cut Talla S",
+        "Guantes Anticorte Palma PU Flex Legend Ultra Cut Talla XL",
+        "Guantes Cabritilla Blanco Talla XL",
+        "Overol Buzo Desechable Blanco Blackbull Basic Talla L",
+        "Overol Buzo Desechable Blanco Blackbull Basic Talla XL",
+        "Protector Solar F 50120 GR"
+      ],
+      "text": "PROTECCIÓN PERSONAL Protector Solar F 501 KG $10.822 + IVA EN STOCK Protector Solar F 501 KG cantidad AÑADIR AL CARRITO Guantes Anticorte Palma PU Flex Legend Ultra Cut Talla S $2.194 + IVA EN STOCK Guantes Anticorte Palma PU Flex Legend Ultra Cut Talla S cantidad AÑADIR AL CARRITO Guantes Anticorte Palma PU Flex Legend Ultra Cut Talla XL $2.194 + IVA EN STOCK Guantes Anticorte Palma PU Flex Legend Ultra Cut Talla XL cantidad AÑADIR AL CARRITO Guantes Cabritilla Blanco Talla XL $1.381 + IVA EN STOCK Guantes Cabritilla Blanco Talla XL cantidad AÑADIR AL CARRITO Overol Buzo Desechable Blanco Bla",
+      "layout": "grid",
+      "assetUrls": [
+        "https://casamado.cl/wp-content/uploads/2026/07/safepro-protector-solar-1kg-5001047.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/09/guantes-anticorte-palma-pu-flex-legend-ultra-cut-t-3.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/09/guantes-anticorte-palma-pu-flex-legend-ultra-cut-t-2.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/09/guantes-cabritilla-blanco-talla-xl-1.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/overol-buzo-desechable-blanco-blackbull-basic-sku-4001377.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/safepro-protector-solar-120gr-5001046.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/09/guantes-palma-pu-flex-legend-talla-m-1.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/09/guantes-palma-pu-flex-legend-talla-l-1.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/09/guantes-palma-pu-flex-legend-talla-xl-1.jpg"
+      ],
+      "assets": [
+        "assets/protector-solar-f-501-kg.jpg",
+        "assets/image-33.jpg",
+        "assets/image-34.jpg",
+        "assets/guantes-cabritilla-blanco-talla-xl-1.jpg",
+        "assets/overol-buzo-desechable-blanco-blackbull-.jpg",
+        "assets/protector-solar-f-50120-gr.jpg",
+        "assets/guantes-palma-pu-flex-legend-talla-m-1.jpg",
+        "assets/guantes-palma-pu-flex-legend-talla-l-1.jpg",
+        "assets/guantes-palma-pu-flex-legend-talla-xl-1.jpg"
+      ]
+    },
+    {
+      "selector": "div",
+      "type": "features",
+      "x": 0,
+      "y": 4209,
+      "width": 1920,
+      "height": 414,
+      "heading": "NUEVOS",
+      "backgroundColor": "#FFFFFF",
+      "callsToAction": [
+        "Toalla de Papel Alto Metraje HS Economica Classic 250 MT x 2",
+        "Toalla de Papel Alto Metraje HS Ecologica Plus 250 MT x 2 Ro",
+        "Toalla de Papel Alto Metraje HS Blanca Plus 200 MT x 2 Rollo",
+        "Tempera 12 Colores Formato Xl",
+        "Galleta Coco 120 GR",
+        "Calculadora de Bolsillo 8 Digitos Negrahl 4 A",
+        "BOLSAS DE BASURA NEGRO PLANA 10 UND70 x 90 CM 30 µm",
+        "Luminaria Colgante ARO LED 60W, 4.300°K, 75LM/W, 220V, Color"
+      ],
+      "text": "NUEVOS Toalla de Papel Alto Metraje HS Economica Classic 250 MT x 2 Rollos $9.269 + IVA Toalla de Papel Alto Metraje HS Ecologica Plus 250 MT x 2 Rollos $11.736 + IVA Toalla de Papel Alto Metraje HS Blanca Plus 200 MT x 2 Rollos $9.269 + IVA DESTACADOS Tempera 12 Colores Formato Xl $1.656 + IVA Galleta Coco 120 GR $1.031 + IVA Calculadora de Bolsillo 8 Digitos Negrahl 4 A $2.634 + IVA EN OFERTA BOLSAS DE BASURA NEGRO PLANA 10 UND70 x 90 CM 30 µm $845 + IVA Luminaria Colgante ARO LED 60W, 4.300°K, 75LM/W, 220V, Color del Equipo: Negro, Dimensiones: Ø1000*1200MM, IP20. $282.941 + IVA Proyector S",
+      "layout": "grid",
+      "assetUrls": [
+        "https://casamado.cl/wp-content/uploads/2026/07/elite-toalla-papel-classic-hs-250mt-2rollos-40862-2-100x100.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/elite-toalla-papel-plus-hs-250mt-2rollos-40734-100x100.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/elite-toalla-papel-plus-hs-200mt-2rollos-40712-100x100.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/torre-tempera-xl-12colores-972-100x100.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/galleta-coco-120-gr-sku-7001137-100x100.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/casio-calculadora-hl4a-negra-110019-100x100.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/07/generico-bolsa-de-basura-negra-70x90cm-4001003-100x100.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/09/luminaria-colgante-aro-led-60w-4-300-k-75lm-w-2-100x100.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/09/proyector-solar-6500k-100w-700lm-100x100.jpg",
+        "https://casamado.cl/wp-content/uploads/2026/09/difusor-1200mm-para-lineal-d117-100x100.jpg"
+      ]
+    },
+    {
+      "selector": "footer",
+      "type": "footer",
+      "x": 0,
+      "y": 4623,
+      "width": 1920,
+      "height": 476,
+      "heading": "ENVÍO GRATIS",
+      "backgroundColor": "#FFFFFF",
+      "callsToAction": [
+        "Fono: (569) 3466 0081",
+        "contacto@casamado.cl",
+        "NAVEGACIÓN",
+        "Tienda",
+        "Quiénes Somos",
+        "Mayoristas",
+        "INFORMACIÓN",
+        "Contacto"
+      ],
+      "text": "ENVÍO GRATIS Por compras sobre $70.000 PAGO SEGURO Paga vía webpay de Transbank ATENCIÓN 24/7 La mejor atención al cliente 100% SEGURO Sitio asegurado con SSL DEVOLUCIÓN Política de devolución Aster Somos Tienda Online Fono: (569) 3466 0081 contacto@casamado.cl NAVEGACIÓN Tienda Quiénes Somos Mayoristas INFORMACIÓN Contacto Política de Privacidad Términos y Condiciones FORMAS DE PAGO Y DESPACHO Casamado Desarrollo e-commerce por Segurishop Tiendas Virtuales.",
+      "layout": "grid",
+      "assetUrls": [
+        "https://casamado.cl/wp-content/uploads/2026/09/envio-gratis.svg",
+        "https://casamado.cl/wp-content/uploads/2026/09/pago-seguro.svg",
+        "https://casamado.cl/wp-content/uploads/2026/09/atencion-24-7.svg",
+        "https://casamado.cl/wp-content/uploads/2026/09/100-seguro.svg",
+        "https://casamado.cl/wp-content/uploads/2026/09/devolucion.svg",
+        "https://casamado.cl/wp-content/uploads/2026/07/guante-examinaci-n-vinilo-blanco-sin-polvo-100-und-1-14x14.gif",
+        "https://casamado.cl/wp-content/uploads/2026/07/guante-examinaci-n-vinilo-blanco-sin-polvo-100-und-14x14.gif",
+        "https://casamado.cl/wp-content/uploads/2023/08/logo-webpay-plus-sm.png",
+        "https://casamado.cl/wp-content/uploads/2023/08/MERCADO-PAGO-GYL2-300x79.png",
+        "https://casamado.cl/wp-content/uploads/2023/08/chilexpress-300x59.png"
+      ],
+      "assets": [
+        "assets/svg-560ca03e.svg",
+        "assets/svg-f28e72b8.svg",
+        "assets/svg-34b8b6a0.svg",
+        "assets/svg-136b63d0.svg",
+        "assets/svg-8107871b.svg",
+        "assets/mercado-pago-gyl2-300x79.png",
+        "assets/chilexpress-300x59.png"
+      ]
+    }
+  ],
+  "colorStats": [
+    {
+      "hex": "#777777",
+      "count": 856,
+      "bgCount": 0,
+      "interactiveBg": 0,
+      "areaBg": 0,
+      "textCount": 856,
+      "maxArea": 0
+    },
+    {
+      "hex": "#232B35",
+      "count": 154,
+      "bgCount": 154,
+      "interactiveBg": 116,
+      "areaBg": 0,
+      "textCount": 0,
+      "maxArea": 11508
+    },
+    {
+      "hex": "#FFFFFF",
+      "count": 322,
+      "bgCount": 57,
+      "interactiveBg": 3,
+      "areaBg": 49,
+      "textCount": 265,
+      "maxArea": 10190040
+    },
+    {
+      "hex": "#333333",
+      "count": 252,
+      "bgCount": 0,
+      "interactiveBg": 0,
+      "areaBg": 0,
+      "textCount": 252,
+      "maxArea": 0
+    },
+    {
+      "hex": "#5E849E",
+      "count": 212,
+      "bgCount": 6,
+      "interactiveBg": 2,
+      "areaBg": 2,
+      "textCount": 206,
+      "maxArea": 96000
+    },
+    {
+      "hex": "#767676",
+      "count": 213,
+      "bgCount": 0,
+      "interactiveBg": 0,
+      "areaBg": 0,
+      "textCount": 213,
+      "maxArea": 0
+    },
+    {
+      "hex": "#242424",
+      "count": 63,
+      "bgCount": 0,
+      "interactiveBg": 0,
+      "areaBg": 0,
+      "textCount": 63,
+      "maxArea": 0
+    },
+    {
+      "hex": "#838383",
+      "count": 44,
+      "bgCount": 0,
+      "interactiveBg": 0,
+      "areaBg": 0,
+      "textCount": 44,
+      "maxArea": 0
+    },
+    {
+      "hex": "#1A3A5C",
+      "count": 25,
+      "bgCount": 7,
+      "interactiveBg": 6,
+      "areaBg": 1,
+      "textCount": 18,
+      "maxArea": 124324
+    },
+    {
+      "hex": "#0F766E",
+      "count": 38,
+      "bgCount": 0,
+      "interactiveBg": 0,
+      "areaBg": 0,
+      "textCount": 38,
+      "maxArea": 0
+    },
+    {
+      "hex": "#EFEFEF",
+      "count": 3,
+      "bgCount": 3,
+      "interactiveBg": 3,
+      "areaBg": 0,
+      "textCount": 0,
+      "maxArea": 1600
+    },
+    {
+      "hex": "#000000",
+      "count": 11,
+      "bgCount": 1,
+      "interactiveBg": 0,
+      "areaBg": 1,
+      "textCount": 10,
+      "maxArea": 2073600
+    },
+    {
+      "hex": "#22D3EE",
+      "count": 6,
+      "bgCount": 2,
+      "interactiveBg": 1,
+      "areaBg": 0,
+      "textCount": 4,
+      "maxArea": 2472
+    },
+    {
+      "hex": "#F3F3F3",
+      "count": 2,
+      "bgCount": 2,
+      "interactiveBg": 2,
+      "areaBg": 0,
+      "textCount": 0,
+      "maxArea": 8148
+    },
+    {
+      "hex": "#6B7280",
+      "count": 7,
+      "bgCount": 0,
+      "interactiveBg": 0,
+      "areaBg": 0,
+      "textCount": 7,
+      "maxArea": 0
+    },
+    {
+      "hex": "#E01020",
+      "count": 6,
+      "bgCount": 0,
+      "interactiveBg": 0,
+      "areaBg": 0,
+      "textCount": 6,
+      "maxArea": 0
+    },
+    {
+      "hex": "#F5A623",
+      "count": 2,
+      "bgCount": 2,
+      "interactiveBg": 1,
+      "areaBg": 1,
+      "textCount": 0,
+      "maxArea": 70650
+    },
+    {
+      "hex": "#0A0A0A",
+      "count": 5,
+      "bgCount": 4,
+      "interactiveBg": 0,
+      "areaBg": 3,
+      "textCount": 1,
+      "maxArea": 56233
+    },
+    {
+      "hex": "#1565C0",
+      "count": 1,
+      "bgCount": 1,
+      "interactiveBg": 1,
+      "areaBg": 0,
+      "textCount": 0,
+      "maxArea": 31519
+    },
+    {
+      "hex": "#2E7D32",
+      "count": 1,
+      "bgCount": 1,
+      "interactiveBg": 1,
+      "areaBg": 0,
+      "textCount": 0,
+      "maxArea": 31519
+    },
+    {
+      "hex": "#E65100",
+      "count": 1,
+      "bgCount": 1,
+      "interactiveBg": 1,
+      "areaBg": 0,
+      "textCount": 0,
+      "maxArea": 31519
+    },
+    {
+      "hex": "#4527A0",
+      "count": 1,
+      "bgCount": 1,
+      "interactiveBg": 1,
+      "areaBg": 0,
+      "textCount": 0,
+      "maxArea": 31519
+    },
+    {
+      "hex": "#4E342E",
+      "count": 1,
+      "bgCount": 1,
+      "interactiveBg": 1,
+      "areaBg": 0,
+      "textCount": 0,
+      "maxArea": 31519
+    },
+    {
+      "hex": "#37474F",
+      "count": 1,
+      "bgCount": 1,
+      "interactiveBg": 1,
+      "areaBg": 0,
+      "textCount": 0,
+      "maxArea": 31519
+    },
+    {
+      "hex": "#94B4CC",
+      "count": 4,
+      "bgCount": 0,
+      "interactiveBg": 0,
+      "areaBg": 0,
+      "textCount": 4,
+      "maxArea": 0
+    },
+    {
+      "hex": "#F9F9F9",
+      "count": 3,
+      "bgCount": 3,
+      "interactiveBg": 0,
+      "areaBg": 3,
+      "textCount": 0,
+      "maxArea": 8402130
+    },
+    {
+      "hex": "#9CA3AF",
+      "count": 3,
+      "bgCount": 0,
+      "interactiveBg": 0,
+      "areaBg": 0,
+      "textCount": 3,
+      "maxArea": 0
+    },
+    {
+      "hex": "#DFE7F0",
+      "count": 2,
+      "bgCount": 2,
+      "interactiveBg": 0,
+      "areaBg": 2,
+      "textCount": 0,
+      "maxArea": 555330
+    },
+    {
+      "hex": "#EA7C14",
+      "count": 1,
+      "bgCount": 1,
+      "interactiveBg": 0,
+      "areaBg": 0,
+      "textCount": 0,
+      "maxArea": 0
+    },
+    {
+      "hex": "#F8F9FA",
+      "count": 1,
+      "bgCount": 1,
+      "interactiveBg": 0,
+      "areaBg": 1,
+      "textCount": 0,
+      "maxArea": 369490
+    },
+    {
+      "hex": "#FBFCFD",
+      "count": 1,
+      "bgCount": 1,
+      "interactiveBg": 0,
+      "areaBg": 1,
+      "textCount": 0,
+      "maxArea": 252020
+    },
+    {
+      "hex": "#F6F6F6",
+      "count": 1,
+      "bgCount": 1,
+      "interactiveBg": 0,
+      "areaBg": 1,
+      "textCount": 0,
+      "maxArea": 1376820
+    },
+    {
+      "hex": "#2DB742",
+      "count": 1,
+      "bgCount": 1,
+      "interactiveBg": 0,
+      "areaBg": 0,
+      "textCount": 0,
+      "maxArea": 3136
+    }
+  ],
+  "page": {
+    "width": 1920,
+    "height": 5307,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    }
+  }
+}

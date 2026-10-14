@@ -1,0 +1,355 @@
+{
+  "typography": [
+    {
+      "role": "display",
+      "fontFamily": "Rubik",
+      "fontSize": "34px",
+      "fontWeight": "800",
+      "lineHeight": "39.1px",
+      "letterSpacing": "normal",
+      "color": "#1A3A5C",
+      "sampleText": "Todo lo que tu empresa necesita, en un solo lugar"
+    },
+    {
+      "role": "heading",
+      "fontFamily": "Rubik",
+      "fontSize": "30px",
+      "fontWeight": "500",
+      "lineHeight": "35px",
+      "letterSpacing": "normal",
+      "color": "#242424",
+      "sampleText": "ASEO Y LIMPIEZA"
+    },
+    {
+      "role": "heading-2",
+      "fontFamily": "Rubik",
+      "fontSize": "26px",
+      "fontWeight": "800",
+      "lineHeight": "31.2px",
+      "letterSpacing": "normal",
+      "color": "#1A3A5C",
+      "sampleText": "Un baño bien equipado no se arma producto por producto"
+    },
+    {
+      "role": "heading-2",
+      "fontFamily": "Rubik",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "lineHeight": "19.6px",
+      "letterSpacing": "normal",
+      "color": "#333333",
+      "sampleText": "NUEVOS"
+    },
+    {
+      "role": "body",
+      "fontFamily": "Rubik",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "22.4px",
+      "letterSpacing": "normal",
+      "color": "#777777",
+      "sampleText": "DESPACHO GRATIS POR COMPRAS SOBRE $70.000 EN RM"
+    },
+    {
+      "role": "link",
+      "fontFamily": "Rubik",
+      "fontSize": "13px",
+      "fontWeight": "700",
+      "lineHeight": "20.8px",
+      "letterSpacing": "0.3px",
+      "color": "#1A3A5C",
+      "sampleText": "Ver beneficios"
+    },
+    {
+      "role": "body-small",
+      "fontFamily": "Rubik",
+      "fontSize": "12px",
+      "fontWeight": "700",
+      "lineHeight": "16.8px",
+      "letterSpacing": "normal",
+      "color": "#767676",
+      "sampleText": "+ IVA"
+    }
+  ],
+  "spacing": {
+    "observed": [
+      3,
+      5,
+      7,
+      8,
+      10,
+      14,
+      15,
+      20,
+      160
+    ],
+    "baseUnit": 8
+  },
+  "radius": [
+    "4px",
+    "35px"
+  ],
+  "shadows": [
+    {
+      "value": "rgba(26, 58, 92, 0.16) 0px 10px 20px 0px, rgba(255, 255, 255, 0.6) 0px 2px 3px 0px inset",
+      "count": 6
+    },
+    {
+      "value": "rgba(26, 58, 92, 0.1) 0px 6px 16px 0px",
+      "count": 3
+    },
+    {
+      "value": "rgba(26, 58, 92, 0.08) 0px 2px 16px 0px",
+      "count": 1
+    },
+    {
+      "value": "rgba(99, 102, 241, 0.28) 0px 10px 24px 0px, rgba(255, 255, 255, 0.4) 0px 1px 0px 0px inset",
+      "count": 1
+    },
+    {
+      "value": "rgba(99, 102, 241, 0.26) 0px 8px 18px 0px, rgba(255, 255, 255, 0.4) 0px 1px 0px 0px inset",
+      "count": 1
+    }
+  ],
+  "buttons": [
+    {
+      "label": "✕",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#1A3A5C",
+      "padding": "5px 20px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(26, 58, 92)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "height": "42px"
+    },
+    {
+      "label": "Skip to navigation",
+      "background": "#F3F3F3",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#3E3E3E",
+      "padding": "5px 20px",
+      "borderRadius": "0px",
+      "border": "0px solid rgb(233, 233, 233)",
+      "boxShadow": "none",
+      "fontSize": "13px",
+      "fontWeight": "600",
+      "height": "42px"
+    },
+    {
+      "label": "Buscar",
+      "background": "#5E849E",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FFFFFF",
+      "padding": "0px",
+      "borderRadius": "35px",
+      "border": "0px none rgb(255, 255, 255)",
+      "boxShadow": "none",
+      "fontSize": "0px",
+      "fontWeight": "400",
+      "height": "36px"
+    },
+    {
+      "label": "+569 3466 0081",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#777777",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(119, 119, 119)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "48px"
+    },
+    {
+      "label": "+569 3466 0081",
+      "background": "#5E849E",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FFFFFF",
+      "padding": "5px 28px",
+      "borderRadius": "35px",
+      "border": "0px solid rgb(94, 132, 158)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "height": "48px"
+    },
+    {
+      "label": "button",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FFFFFF",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(255, 255, 255)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "height": "25px"
+    }
+  ],
+  "cards": [
+    {
+      "label": "card",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#777777",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(119, 119, 119)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "4376.11px"
+    },
+    {
+      "label": "card",
+      "background": "#F8F9FA",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#777777",
+      "padding": "28px 24px 20px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(119, 119, 119)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "235.344px"
+    },
+    {
+      "label": "card",
+      "background": "#1565C0",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#333333",
+      "padding": "14px 10px",
+      "borderRadius": "12px",
+      "border": "0px none rgb(51, 51, 51)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "153.75px"
+    },
+    {
+      "label": "card",
+      "background": "#2E7D32",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#333333",
+      "padding": "14px 10px",
+      "borderRadius": "12px",
+      "border": "0px none rgb(51, 51, 51)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "153.75px"
+    }
+  ],
+  "nav": {
+    "label": "navigation",
+    "background": "transparent",
+    "backgroundImage": "",
+    "backdropFilter": "",
+    "color": "#777777",
+    "padding": "0px",
+    "borderRadius": "0px",
+    "border": "0px none rgb(119, 119, 119)",
+    "boxShadow": "none",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "height": "210px"
+  },
+  "chips": [
+    {
+      "label": "0 artículos",
+      "background": "#FFFFFF",
+      "color": "#333333",
+      "padding": "0px",
+      "borderRadius": "50%",
+      "border": "0px none rgb(51, 51, 51)",
+      "boxShadow": "none",
+      "fontSize": "0px",
+      "fontWeight": "400",
+      "height": "36px"
+    },
+    {
+      "label": "0 artículos",
+      "background": "#FFFFFF",
+      "color": "#5E849E",
+      "padding": "0px",
+      "borderRadius": "50%",
+      "border": "0px none rgb(94, 132, 158)",
+      "boxShadow": "rgba(0, 0, 0, 0.17) 0px 0px 4px 0px",
+      "fontSize": "11px",
+      "fontWeight": "400",
+      "height": "18px"
+    },
+    {
+      "label": "Cotizar kit completo →",
+      "background": "transparent",
+      "color": "#FFFFFF",
+      "padding": "11px 22px",
+      "borderRadius": "999px",
+      "border": "",
+      "boxShadow": "rgba(99, 102, 241, 0.26) 0px 8px 18px 0px, rgba(255, 255, 255, 0.4) 0px 1px 0px 0px inset",
+      "fontSize": "13px",
+      "fontWeight": "700",
+      "height": "43.7969px"
+    }
+  ],
+  "statCells": [
+    {
+      "background": "#0A0A0A",
+      "borderRadius": "16px",
+      "border": "0px none rgb(119, 119, 119)",
+      "boxShadow": "none",
+      "numberFontSize": "34px",
+      "numberFontWeight": "700",
+      "numberColor": "#22D3EE"
+    },
+    {
+      "background": "transparent",
+      "borderRadius": "0px",
+      "border": "0px none rgb(34, 211, 238)",
+      "boxShadow": "none",
+      "numberFontSize": "34px",
+      "numberFontWeight": "700",
+      "numberColor": "#22D3EE"
+    }
+  ],
+  "tabs": [],
+  "backgrounds": [
+    {
+      "value": "radial-gradient(circle at 30% 30%, rgba(34, 211, 238, 0.28), rgba(167, 139, 250, 0.2) 55%, rgba(0, 0, 0, 0) 78%)",
+      "area": 453923
+    },
+    {
+      "value": "linear-gradient(160deg, rgb(238, 242, 244) 0%, rgb(228, 233, 236) 100%)",
+      "area": 743745
+    },
+    {
+      "value": "radial-gradient(circle at 30% 30%, rgba(34, 211, 238, 0.35), rgba(167, 139, 250, 0.28) 55%, rgba(0, 0, 0, 0) 78%)",
+      "area": 289822
+    }
+  ],
+  "glass": [
+    {
+      "backdropFilter": "blur(8px)",
+      "background": "rgba(255, 255, 255, 0.82)",
+      "border": "0px none rgb(119, 119, 119)",
+      "borderRadius": "999px",
+      "boxShadow": "rgba(26, 58, 92, 0.08) 0px 2px 16px 0px",
+      "area": 161000
+    }
+  ]
+}

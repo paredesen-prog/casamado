@@ -1,0 +1,435 @@
+[div] 🏢 ¿Eres empresa o comercio? Regístrate y accede a
+[strong] precios mayoristas exclusivos
+[a] Ver beneficios
+[a] Skip to navigation
+[a] Skip to main content
+[span] Iniciar Sesión / Registrarse
+[span] DESPACHO GRATIS POR COMPRAS SOBRE $70.000 EN RM
+[span] DESPACHO GRATIS POR COMPRAS SOBRE $70.000 EN RM
+[span] Buscar
+[a] +569 3466 0081
+[span] Menú
+[span] Papel Tissue
+[span] Aseo y Limpieza
+[span] Oficina y Librería
+[span] Computación y Tecnología
+[span] Cafetería y Despensa
+[span] Iluminación
+[div] Categorías principales
+[div] Papel Tissue
+[div] 124 productos
+[div] Aseo y Limpieza
+[div] 540 productos
+[div] Oficina y Librería
+[div] 259 productos
+[div] Computación y Tecnología
+[div] 80 productos
+[div] Cafetería y Despensa
+[div] 146 productos
+[div] Ferretería
+[div] 62 productos
+[strong] Despacho gratis
+[span] Compras sobre $70.000 a nivel regional o Santiago
+[strong] Múltiples medios de pago
+[span] Transferencia, Flow, tarjetas
+[strong] +1.100 productos
+[span] Aseo, oficina, cafetería y más
+[strong] Precios mayoristas
+[span] Descuentos para empresas B2B
+[div] DISTRIBUCIÓN B2B/B2C — REGIONAL Y SANTIAGO
+[h1] Todo lo que tu empresa necesita, en un solo lugar
+[p] Aseo, oficina, tecnología, cafetería y ferretería con precios mayoristas, stock permanente y despacho a nivel regional o Santiago.
+[a] Explorar catálogo →
+[div] Papel Tissue
+[div] Aseo y Limpieza
+[div] 🗂️
+[div] Oficina
+[div] Tecnología
+[div] Cafetería
+[div] Ferretería
+[div] Kit Baño Institucional
+[div] Instalación completa
+[h2] Un baño bien equipado no se arma producto por producto
+[p] Dispensador de jabón, dispensador de servilletas y el repuesto de jabón líquido — todo en una sola cotización.
+[a] Cotizar kit completo →
+[div] Dispensador Jabón Granel 800 ML
+[div] $27.614
+[span] + IVA
+[div] Dispensador Servilleta Interfoliada
+[div] $26.095
+[span] + IVA
+[div] Jabón Líquido Hipoalergénico 650 ML
+[div] $1.316
+[span] + IVA
+[h2] ASEO Y LIMPIEZA
+[a] Dispensador Jabon Granel 800 ML Plastico Blanco
+[bdi] 27.614
+[small] + IVA
+[span] En stock
+[label] Dispensador Jabon Granel 800 ML Plastico Blanco cantidad
+[span] Añadir al carrito
+[a] Dispensador Jabon Granel 800 ML Plastico Negro
+[bdi] 27.614
+[small] + IVA
+[span] En stock
+[label] Dispensador Jabon Granel 800 ML Plastico Negro cantidad
+[span] Añadir al carrito
+[a] Dispensador Jabon Granel 900 ML Plastico Blanco
+[bdi] 31.586
+[small] + IVA
+[span] En stock
+[label] Dispensador Jabon Granel 900 ML Plastico Blanco cantidad
+[span] Añadir al carrito
+[a] Dispensador Jabon Multiflex Plastico Negro
+[bdi] 25.074
+[small] + IVA
+[span] En stock
+[label] Dispensador Jabon Multiflex Plastico Negro cantidad
+[span] Añadir al carrito
+[a] Dispensador Jabon Sachet Tork Elevation Plastico Blanco
+[bdi] 16.517
+[small] + IVA
+[span] En stock
+[label] Dispensador Jabon Sachet Tork Elevation Plastico Blanco cantidad
+[span] Añadir al carrito
+[a] Jabon Liquido Violetas Silvestres 750 ML
+[bdi] 1.213
+[small] + IVA
+[span] En stock
+[label] Jabon Liquido Violetas Silvestres 750 ML cantidad
+[span] Añadir al carrito
+[a] Jabon En Barra Humectante Cuidado Suave 3 UND x 90 GR
+[bdi] 2.449
+[small] + IVA
+[span] En stock
+[label] Jabon En Barra Humectante Cuidado Suave 3 UND x 90 GR cantidad
+[span] Añadir al carrito
+[a] Dispensador Jabon Sachet Tork Elevation Plastico Negro
+[bdi] 16.517
+[small] + IVA
+[span] En stock
+[label] Dispensador Jabon Sachet Tork Elevation Plastico Negro cantidad
+[span] Añadir al carrito
+[a] Jabon Liquido Fresh Azul 5 LT
+[bdi] 4.133
+[small] + IVA
+[span] En stock
+[label] Jabon Liquido Fresh Azul 5 LT cantidad
+[span] Añadir al carrito
+[a] Dispensador Jabon Granel 500 ML Plastico Blanco
+[bdi] 4.212
+[small] + IVA
+[span] En stock
+[label] Dispensador Jabon Granel 500 ML Plastico Blanco cantidad
+[span] Añadir al carrito
+[a] Jabon Liquido Manzana Verde 5 LT
+[bdi] 4.133
+[small] + IVA
+[span] En stock
+[label] Jabon Liquido Manzana Verde 5 LT cantidad
+[span] Añadir al carrito
+[a] Jabon Liquido Avena y Aceite de Almendras 350 ML
+[bdi] 1.146
+[small] + IVA
+[span] En stock
+[label] Jabon Liquido Avena y Aceite de Almendras 350 ML cantidad
+[span] Añadir al carrito
+[a] Jabon Liquido Crema Humectante 350 ML
+[bdi] 1.146
+[small] + IVA
+[span] En stock
+[label] Jabon Liquido Crema Humectante 350 ML cantidad
+[span] Añadir al carrito
+[a] Jabon Liquido Yoghurt Arandanos 750 ML
+[bdi] 1.213
+[small] + IVA
+[span] En stock
+[label] Jabon Liquido Yoghurt Arandanos 750 ML cantidad
+[span] Añadir al carrito
+[a] Jabon Liquido Aceite de Coco y Jazmin 750 ML
+[bdi] 1.213
+[small] + IVA
+[span] En stock
+[label] Jabon Liquido Aceite de Coco y Jazmin 750 ML cantidad
+[span] Añadir al carrito
+[h2] PAPELERÍA
+[a] Papel Fotocopia Carta 500 Hj 75 GR
+[bdi] 4.755
+[small] + IVA
+[span] En stock
+[label] Papel Fotocopia Carta 500 Hj 75 GR cantidad
+[span] Añadir al carrito
+[a] Papel Fotocopia Oficio 500 Hj 75 GR
+[bdi] 5.619
+[small] + IVA
+[span] En stock
+[label] Papel Fotocopia Oficio 500 Hj 75 GR cantidad
+[span] Añadir al carrito
+[a] Papel Fotocopia Carta 500 Hj 75 GR
+[bdi] 4.097
+[small] + IVA
+[span] En stock
+[label] Papel Fotocopia Carta 500 Hj 75 GR cantidad
+[span] Añadir al carrito
+[a] Papel Fotocopia Oficio 500 Hj 75 GR
+[bdi] 4.846
+[small] + IVA
+[span] En stock
+[label] Papel Fotocopia Oficio 500 Hj 75 GR cantidad
+[span] Añadir al carrito
+[a] Papel Fotocopia A 4500 Hj 75 GR
+[bdi] 4.924
+[small] + IVA
+[span] En stock
+[label] Papel Fotocopia A 4500 Hj 75 GR cantidad
+[span] Añadir al carrito
+[a] Sobre Americano Blanco 10 x 23 CM 10 UND
+[bdi] 476
+[small] + IVA
+[span] En stock
+[label] Sobre Americano Blanco 10 x 23 CM 10 UND cantidad
+[span] Añadir al carrito
+[a] Sobre Saco Revista Carta Blanco 23 x 30 CM 10 UND
+[bdi] 1.570
+[small] + IVA
+[span] En stock
+[label] Sobre Saco Revista Carta Blanco 23 x 30 CM 10 UND cantidad
+[span] Añadir al carrito
+[a] Sobre Saco Oficio Blanco 25 x 36 CM 10 UND
+[bdi] 2.044
+[small] + IVA
+[span] En stock
+[label] Sobre Saco Oficio Blanco 25 x 36 CM 10 UND cantidad
+[span] Añadir al carrito
+[a] Sobre Americano Kraft 10 x 23 CM 10 UND
+[bdi] 573
+[small] + IVA
+[span] En stock
+[label] Sobre Americano Kraft 10 x 23 CM 10 UND cantidad
+[span] Añadir al carrito
+[a] Sobre Saco Revista Carta Kraft 23 x 30 CM 10 UND
+[bdi] 1.570
+[small] + IVA
+[span] En stock
+[label] Sobre Saco Revista Carta Kraft 23 x 30 CM 10 UND cantidad
+[span] Añadir al carrito
+[a] Sobre Saco Oficio Kraft 25 x 36 CM 10 UND
+[bdi] 1.834
+[small] + IVA
+[span] En stock
+[label] Sobre Saco Oficio Kraft 25 x 36 CM 10 UND cantidad
+[span] Añadir al carrito
+[a] Papel Fotocopia – A4 500 HJS / 75 GR Excellent
+[bdi] 5.134
+[small] + IVA
+[span] En stock
+[label] Papel Fotocopia - A4 500 HJS / 75 GR Excellent cantidad
+[span] Añadir al carrito
+[a] Papel Fotocopia – Carta 500 HJS / 75 GR Pix
+[bdi] 3.651
+[small] + IVA
+[span] En stock
+[label] Papel Fotocopia - Carta 500 HJS / 75 GR Pix cantidad
+[span] Añadir al carrito
+[h2] PROTECCIÓN PERSONAL
+[a] Protector Solar F 501 KG
+[bdi] 10.822
+[small] + IVA
+[span] En stock
+[label] Protector Solar F 501 KG cantidad
+[span] Añadir al carrito
+[a] Guantes Anticorte Palma PU Flex Legend Ultra Cut Talla S
+[bdi] 2.194
+[small] + IVA
+[span] En stock
+[label] Guantes Anticorte Palma PU Flex Legend Ultra Cut Talla S cantidad
+[span] Añadir al carrito
+[a] Guantes Anticorte Palma PU Flex Legend Ultra Cut Talla XL
+[bdi] 2.194
+[small] + IVA
+[span] En stock
+[label] Guantes Anticorte Palma PU Flex Legend Ultra Cut Talla XL cantidad
+[span] Añadir al carrito
+[a] Guantes Cabritilla Blanco Talla XL
+[bdi] 1.381
+[small] + IVA
+[span] En stock
+[label] Guantes Cabritilla Blanco Talla XL cantidad
+[span] Añadir al carrito
+[a] Overol Buzo Desechable Blanco Blackbull Basic Talla L
+[bdi] 1.202
+[small] + IVA
+[span] En stock
+[label] Overol Buzo Desechable Blanco Blackbull Basic Talla L cantidad
+[span] Añadir al carrito
+[a] Overol Buzo Desechable Blanco Blackbull Basic Talla XL
+[bdi] 1.202
+[small] + IVA
+[span] En stock
+[label] Overol Buzo Desechable Blanco Blackbull Basic Talla XL cantidad
+[span] Añadir al carrito
+[a] Protector Solar F 50120 GR
+[bdi] 1.955
+[small] + IVA
+[span] En stock
+[label] Protector Solar F 50120 GR cantidad
+[span] Añadir al carrito
+[a] Guantes Palma PU Flex Legend Talla M
+[bdi] 630
+[small] + IVA
+[span] En stock
+[label] Guantes Palma PU Flex Legend Talla M cantidad
+[span] Añadir al carrito
+[a] Guantes Palma PU Flex Legend Talla L
+[bdi] 630
+[small] + IVA
+[span] En stock
+[label] Guantes Palma PU Flex Legend Talla L cantidad
+[span] Añadir al carrito
+[a] Guantes Palma PU Flex Legend Talla XL
+[bdi] 630
+[small] + IVA
+[span] En stock
+[label] Guantes Palma PU Flex Legend Talla XL cantidad
+[span] Añadir al carrito
+[h2] NUEVOS
+[a] Toalla de Papel Alto Metraje HS Economica Classic 250 MT x 2 Rollos
+[bdi] 9.269
+[small] + IVA
+[a] Toalla de Papel Alto Metraje HS Ecologica Plus 250 MT x 2 Rollos
+[bdi] 11.736
+[small] + IVA
+[a] Toalla de Papel Alto Metraje HS Blanca Plus 200 MT x 2 Rollos
+[bdi] 9.269
+[small] + IVA
+[h2] DESTACADOS
+[a] Tempera 12 Colores Formato Xl
+[bdi] 1.656
+[small] + IVA
+[a] Galleta Coco 120 GR
+[bdi] 1.031
+[small] + IVA
+[a] Calculadora de Bolsillo 8 Digitos Negrahl 4 A
+[bdi] 2.634
+[small] + IVA
+[h2] EN OFERTA
+[a] BOLSAS DE BASURA NEGRO PLANA 10 UND70 x 90 CM 30 µm
+[bdi] 845
+[small] + IVA
+[a] Luminaria Colgante ARO LED 60W, 4.300°K, 75LM/W, 220V, Color del Equipo: Negro, Dimensiones: Ø1000*1200MM, IP20.
+[bdi] 282.941
+[small] + IVA
+[a] Proyector Solar 6500K 100W 700LM
+[bdi] 28.939
+[small] + IVA
+[h2] POPULARES
+[a] Difusor 1200MM para Lineal D117
+[small] + IVA
+[a] Clips de Montaje para Manguera LED
+[bdi] 109
+[small] + IVA
+[a] Tapa Final para Manguera LED
+[bdi] 109
+[small] + IVA
+[h4] ENVÍO GRATIS
+[p] Por compras sobre $70.000
+[h4] PAGO SEGURO
+[p] Paga vía webpay de Transbank
+[h4] ATENCIÓN 24/7
+[p] La mejor atención al cliente
+[h4] 100% SEGURO
+[p] Sitio asegurado con SSL
+[h4] DEVOLUCIÓN
+[p] Política de devolución Aster
+[span] Somos Tienda Online
+[a] Fono: (569) 3466 0081
+[a] contacto@casamado.cl
+[span] NAVEGACIÓN
+[a] Quiénes Somos
+[a] Mayoristas
+[span] INFORMACIÓN
+[a] Contacto
+[a] Política de Privacidad
+[a] Términos y Condiciones
+[span] FORMAS DE PAGO Y DESPACHO
+[small] Desarrollo e-commerce por
+[strong] Segurishop
+[span] Tiendas Virtuales
+[span] Papel Tissue
+[a] Faciales y Pañuelos
+[a] Papeles Higiénicos
+[a] Protección Adulto
+[a] Sabanillas y Cobertores
+[a] Servilletas
+[a] Toallas de Papel
+[span] Aseo y Limpieza
+[a] Artículos de Limpieza
+[a] Cuidado Automotriz
+[a] Cuidado Personal
+[a] Equipos de Limpieza
+[a] Protección e Higiene
+[a] Químicos de Limpieza
+[span] Oficina y Librería
+[a] Cuadernos y Archivos
+[a] Escritura
+[a] Fijar – Perforar – Cortar
+[a] Insumos de Oficina
+[a] Papelería
+[a] Útiles Escolares
+[span] Computación y Tecnología
+[a] Accesorios Computación
+[a] Almacenamiento
+[a] Impresoras y Multifuncionales
+[a] Monitores, Audio y Video
+[a] Otros Equipos
+[a] Sillas y Mobiliario
+[span] Cafetería y Despensa
+[a] Cafetería
+[a] Despensa
+[a] Electrodomésticos
+[a] Envases Desechables
+[a] Galletas y Snacks
+[a] Líquidos
+[span] Iluminación
+[a] Luminarias
+[a] Ampolletas
+[a] Plafones
+[a] Paneles LED
+[a] Focos y Spots
+[a] Proyectores y Reflectores
+[a] Tubos LED
+[a] Lámparas
+[a] Cintas y Perfiles LED
+[a] Accesorios y Repuestos
+[a] Apliques de Muro
+[a] Campanas Industriales
+[a] Bollards y Estacas
+[a] Iniciar Sesión / Registrarse
+[span] Carrito
+[a] Cerrar
+[p] No hay productos en el carrito.
+[a] Regresar a la Tienda
+[span] Ingreso
+[a] Cerrar
+[label] Usuario o correo electrónico
+[span] Obligatorio
+[label] Contraseña
+[span] Obligatorio
+[button] Iniciar sesión
+[a] ¿Olvidaste tu contraseña?
+[span] Recuérdame
+[p] ¿Sin cuenta aún?
+[a] Crear Una Cuenta
+[div] Desde 2022
+[div] Años en el rubro
+[div] Región + Santiago
+[div] Cobertura de despacho
+[div] 24-48h
+[div] Tiempo de entrega
+[span] Añadido al carrito
+[button] Cotizar
+[span] ¿Necesitas ayuda?
+[strong] Escríbenos
+[strong] Nuevo sistema de cotizaciones para empresas:
+[div] cotiza al instante, recibe tu PDF y luego compra con un click.
+[button] Ver más

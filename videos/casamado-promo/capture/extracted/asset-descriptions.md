@@ -1,0 +1,117 @@
+# Asset Descriptions
+
+⚠️  No vision credentials — descriptions below are catalog-derived (alt text, headings, section context, filename) instead of Vision-generated. To get richer Vision descriptions on the next capture, set GEMINI_API_KEY (or GOOGLE_API_KEY), or HYPERFRAMES_VERTEX_PROJECT_ID plus HYPERFRAMES_VERTEX_SERVICE_ACCOUNT for Vertex service-account auth, and re-run.
+
+The `logo-<hash>.svg` filename prefix is a structural hint (DOM said this SVG was inside a `<header>`, home-link `<a>`, or had an aria-label matching the page brand). To pick the actual brand logo without Vision, open the `logo-*` candidates in a previewer or rasterize them with `sharp` before referencing — composing a fake logo ships off-brand in the final video.
+
+- casamado.png — 38KB, casamado
+- chilexpress-300x59.png — 14KB, section: "ENVÍO GRATIS"
+- clips-de-montaje-para-manguera-led-1024x.jpg — 36KB, section: "Todo lo que tu empresa necesita, en un solo lugar"
+- clips-de-montaje-para-manguera-led-600x6.jpg — 16KB, section: "Todo lo que tu empresa necesita, en un solo lugar"
+- clips-de-montaje-para-manguera-led-768x7.jpg — 23KB, section: "Todo lo que tu empresa necesita, en un solo lugar"
+- clips-de-montaje-para-manguera-led.jpg — 83KB, section: "Todo lo que tu empresa necesita, en un solo lugar"
+- cuaderno-universitario-7-mm100-hjs-1.jpg — 11KB, cuaderno universitario 7 mm100 hjs 1
+- despacho1.png — 130KB, section: "Todo lo que tu empresa necesita, en un solo lugar", above fold
+- difusor-1200mm-para-lineal-d117.jpg — 11KB, section: "Todo lo que tu empresa necesita, en un solo lugar"
+- dispensador-jabon-granel-500-ml-plastico.jpg — 17KB, "Dispensador Jabon Granel 800 ML Plastico Negro", section: "Todo lo que tu empresa necesita, en un solo lugar"
+- dispensador-jabon-granel-800-ml-plastico.jpg — 26KB, "Dispensador Jabon Granel 800 ML Plastico Negro", section: "Todo lo que tu empresa necesita, en un solo lugar"
+- dispensador-jabon-granel-900-ml-plastico.jpg — 16KB, "Dispensador Jabon Granel 800 ML Plastico Negro", section: "Todo lo que tu empresa necesita, en un solo lugar"
+- dispensador-jabon-multiflex-plastico-neg.jpg — 28KB, dispensador jabon multiflex plastico neg
+- dispensador-jabon-sachet-tork-elevation-.jpg — 15KB, dispensador jabon sachet tork elevation 
+- dispensador-servilleta.jpg — 38KB, dispensador servilleta
+- entry-content-post-2.jpg — 33KB, entry content post 2
+- envo-gratis.gif — 17KB, envo gratis
+- favicon.png — 22KB, favicon
+- footer-container-color-scheme-dark.gif — 17KB, footer container color scheme dark
+- galleta-coco-120-gr.jpg — 36KB, galleta coco 120 gr
+- guantes-cabritilla-blanco-talla-xl-1.jpg — 25KB, section: "Todo lo que tu empresa necesita, en un solo lugar"
+- guantes-palma-pu-flex-legend-talla-l-1.jpg — 30KB, section: "Todo lo que tu empresa necesita, en un solo lugar"
+- guantes-palma-pu-flex-legend-talla-m-1.jpg — 30KB, section: "Todo lo que tu empresa necesita, en un solo lugar"
+- guantes-palma-pu-flex-legend-talla-xl-1.jpg — 30KB, section: "Todo lo que tu empresa necesita, en un solo lugar"
+- haiti-cafe-molido-super-moka-bolsa-250gr.jpg — 17KB, haiti cafe molido super moka bolsa 250gr
+- icon-apple-touch-icon-unsized.png — 20KB, icon apple touch icon unsized
+- icon-icon-192x192.png — 22KB, icon icon 192x192
+- icon-icon-32x32.png — 2KB, icon icon 32x32
+- image-33.jpg — 29KB, image 33
+- image-34.jpg — 29KB, image 34
+- image-66.jpg — 36KB, image 66
+- image-67.jpg — 22KB, image 67
+- image-69.jpg — 23KB, image 69
+- image-71.jpg — 36KB, image 71
+- jabn-lquido.jpg — 42KB, jabn lquido
+- jabon-en-barra-humectante-cuidado-suave-.jpg — 26KB, "Jabon En Barra Humectante Cuidado Suave 3 UND x 90 GR", section: "Todo lo que tu empresa necesita, en un solo lugar"
+- jabon-liquido-aceite-de-coco-y-jazmin-75.jpg — 28KB, "Jabon Liquido Aceite de Coco y Jazmin 750 ML", section: "Todo lo que tu empresa necesita, en un solo lugar"
+- jabon-liquido-avena-y-aceite-de-almendra.jpg — 30KB, jabon liquido avena y aceite de almendra
+- jabon-liquido-crema-humectante-350-ml.jpg — 26KB, jabon liquido crema humectante 350 ml
+- jabon-liquido-fresh-azul-5-lt.jpg — 26KB, jabon liquido fresh azul 5 lt
+- jabon-liquido-manzana-verde-5-lt.jpg — 30KB, jabon liquido manzana verde 5 lt
+- jabon-liquido-violetas-silvestres-750-ml.jpg — 37KB, "Jabon Liquido Violetas Silvestres 750 ML", section: "Todo lo que tu empresa necesita, en un solo lugar"
+- jabon-liquido-yoghurt-arandanos-750-ml.jpg — 29KB, "Jabon Liquido Yoghurt Arandanos 750 ML", section: "Todo lo que tu empresa necesita, en un solo lugar"
+- logo-1f767ff3.svg — 2KB, logo 1f767ff3
+- luminaria-colgante-aro-led-60w-4-300-k-7.jpg — 51KB, section: "Todo lo que tu empresa necesita, en un solo lugar"
+- mercado-pago-gyl2-300x79.png — 25KB, mercado pago gyl2 300x79
+- mercado-pago-gyl2-400x106.png — 22KB, mercado pago gyl2 400x106
+- overol-buzo-desechable-blanco-blackbull-.jpg — 22KB, "Overol Buzo Desechable Blanco Blackbull Basic", section: "Todo lo que tu empresa necesita, en un solo lugar"
+- papel-fotocopia-a-4500-hj-75-gr.jpg — 28KB, papel fotocopia a 4500 hj 75 gr
+- papel-fotocopia-a4-500-hjs-75-gr-excelle.jpg — 33KB, "Papel Fotocopia - A4 500 HJS / 75 GR Excellent", section: "Todo lo que tu empresa necesita, en un solo lugar"
+- papel-fotocopia-carta-500-hj-75-gr.jpg — 31KB, "Papel Fotocopia - Carta 500 HJS / 75 GR Pix", section: "Todo lo que tu empresa necesita, en un solo lugar"
+- papel-fotocopia-carta-500-hjs-75-gr-pix.jpg — 29KB, "Papel Fotocopia - Carta 500 HJS / 75 GR Pix", section: "Todo lo que tu empresa necesita, en un solo lugar"
+- papel-fotocopia-oficio-500-hj-75-gr.jpg — 25KB, papel fotocopia oficio 500 hj 75 gr
+- premier-papel-fotocopia-carta-500-hjs-30.jpg — 36KB, "Papel Fotocopia Carta 500 Hj 75 GR", section: "Todo lo que tu empresa necesita, en un solo lugar"
+- premier-papel-fotocopia-oficio-500-hjs-3.jpg — 33KB, "Papel Fotocopia Carta 500 Hj 75 GR", section: "Todo lo que tu empresa necesita, en un solo lugar"
+- protector-solar-f-501-kg.jpg — 20KB, protector solar f 501 kg
+- protector-solar-f-50120-gr.jpg — 18KB, protector solar f 50120 gr
+- proyector-solar-6500k-100w-700lm-400x400.jpg — 20KB, section: "Todo lo que tu empresa necesita, en un solo lugar"
+- sobre-americano-blanco-10-x-23-cm-10-und.jpg — 13KB, sobre americano blanco 10 x 23 cm 10 und
+- sobre-americano-kraft-10-x-23-cm-10-und.jpg — 23KB, sobre americano kraft 10 x 23 cm 10 und
+- sobre-saco-oficio-blanco-25-x-36-cm-10-u.jpg — 11KB, sobre saco oficio blanco 25 x 36 cm 10 u
+- sobre-saco-oficio-kraft-25-x-36-cm-10-un.jpg — 20KB, sobre saco oficio kraft 25 x 36 cm 10 un
+- sobre-saco-revista-carta-blanco-23-x-30-.jpg — 11KB, sobre saco revista carta blanco 23 x 30 
+- sobre-saco-revista-carta-kraft-23-x-30-c.jpg — 20KB, sobre saco revista carta kraft 23 x 30 c
+- svg-136b63d0.svg — 0KB, svg 136b63d0
+- svg-34b8b6a0.svg — 0KB, svg 34b8b6a0
+- svg-35b20da3.svg — 1KB, svg 35b20da3
+- svg-560ca03e.svg — 0KB, svg 560ca03e
+- svg-8107871b.svg — 0KB, svg 8107871b
+- svg-cace0b74.svg — 0KB, svg cace0b74
+- svg-f28e72b8.svg — 0KB, svg f28e72b8
+- tapa-final-para-manguera-led-1024x1024.jpg — 21KB, section: "Todo lo que tu empresa necesita, en un solo lugar"
+- tapa-final-para-manguera-led-768x768.jpg — 13KB, section: "Todo lo que tu empresa necesita, en un solo lugar"
+- tapa-final-para-manguera-led.jpg — 40KB, section: "Todo lo que tu empresa necesita, en un solo lugar"
+- todo-lo-que-tu-empresa-necesita-en-un-so.jpg — 119KB, todo lo que tu empresa necesita en un so
+- tork-dispensador-jabon-sachet-negro-di70.jpg — 14KB, "Dispensador Jabon Granel 900 ML Plastico Blanco", section: "Todo lo que tu empresa necesita, en un solo lugar"
+- svgs/logo-9d06711a.svg — logo 9d06711a
+- fonts/4iCv6KVjbNBYlgoC1Czjs2yNPYZvg7UI.woff2 — font file
+- fonts/4iCv6KVjbNBYlgoC1CzjsGyNPYZvgw.woff2 — font file
+- fonts/4iCv6KVjbNBYlgoC1CzjtGyNPYZvg7UI.woff2 — font file
+- fonts/4iCv6KVjbNBYlgoC1CzjvGyNPYZvg7UI.woff2 — font file
+- fonts/4iCv6KVjbNBYlgoC1CzjvWyNPYZvg7UI.woff2 — font file
+- fonts/4iCv6KVjbNBYlgoC1CzjvmyNPYZvg7UI.woff2 — font file
+- fonts/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2 — font file
+- fonts/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2 — font file
+- fonts/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2 — font file
+- fonts/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2 — font file
+- fonts/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2 — font file
+- fonts/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2 — font file
+- fonts/MaterialIcons-Regular.ttf — font file
+- fonts/MaterialIcons-Regular.woff — font file
+- fonts/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGIVzY5abuWIGxA.woff2 — font file
+- fonts/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGItzY5abuWI.woff2 — font file
+- fonts/NaPecZTIAOhVxoMyOr9n_E7fdM3mDaZRbryhsA.woff2 — font file
+- fonts/NaPecZTIAOhVxoMyOr9n_E7fdMPmDaZRbrw.woff2 — font file
+- fonts/iJWKBXyIfDnIV7nBrXyw023e.woff2 — font file
+- fonts/iJWKBXyIfDnIV7nDrXyw023e1Ik.woff2 — font file
+- fonts/iJWKBXyIfDnIV7nErXyw023e1Ik.woff2 — font file
+- fonts/iJWKBXyIfDnIV7nFrXyw023e1Ik.woff2 — font file
+- fonts/iJWKBXyIfDnIV7nMrXyw023e1Ik.woff2 — font file
+- fonts/iJWKBXyIfDnIV7nPrXyw023e1Ik.woff2 — font file
+- fonts/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2 — font file
+- fonts/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2 — font file
+- fonts/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2 — font file
+- fonts/pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2 — font file
+- fonts/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2 — font file
+- fonts/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2 — font file
+
+## Added by orchestrator (not from capture)
+
+- plano-oficina.svg — top-down office floor plan drawn for this video (viewBox 1000x800, navy walls, steel furniture, mono room labels). Rooms (viewBox coords): BAÑO x0–260 y0–300 · ESCRITORIOS x260–700 y0–520 · COCINA x700–1000 y0–300 · SALA TI x700–1000 y300–540 · BODEGA DE ASEO x260–700 y520–800 · MANTENCIÓN x700–1000 y540–800 · RECEPCIÓN x0–260 y300–800 (entrance door gap at bottom-left). Groups: #walls (paths, draw-on friendly), #furniture, #labels.

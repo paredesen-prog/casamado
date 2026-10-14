@@ -1,0 +1,421 @@
+{
+  "summary": {
+    "webAnimations": 121,
+    "cssDeclarations": 176,
+    "scrollTargets": 3,
+    "cdpAnimations": 94,
+    "canvases": 2
+  },
+  "namedAnimations": [
+    "csm-logo-float",
+    "wd-fadeInDownBig",
+    "wd-fadeIn"
+  ],
+  "scrollTriggeredElements": 3,
+  "representativeAnimations": [
+    {
+      "type": "CSSAnimation",
+      "playState": "running",
+      "animationName": "csm-logo-float",
+      "targetSelector": "a.wd-logo.wd-main-logo",
+      "targetRect": {
+        "x": 275.1764831542969,
+        "y": -4149.3583984375,
+        "width": 159.07928466796875,
+        "height": 100.564208984375,
+        "top": -4149.3583984375,
+        "right": 434.2557678222656,
+        "bottom": -4048.794189453125,
+        "left": 275.1764831542969
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "ease-in-out",
+          "composite": "auto",
+          "transform": "rotateY(-18deg) rotateX(6deg) translateY(0px)",
+          "computedOffset": 0
+        },
+        {
+          "offset": 0.5,
+          "easing": "ease-in-out",
+          "composite": "auto",
+          "transform": "rotateY(18deg) rotateX(-6deg) translateY(-8px)",
+          "computedOffset": 0.5
+        },
+        {
+          "offset": 1,
+          "easing": "ease-in-out",
+          "composite": "auto",
+          "transform": "rotateY(-18deg) rotateX(6deg) translateY(0px)",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 5500,
+        "delay": 0,
+        "iterations": null,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "paused",
+      "animationName": "wd-rotate",
+      "targetSelector": "button.searchsubmit",
+      "targetRect": {
+        "x": 1179,
+        "y": -4105.703125,
+        "width": 36,
+        "height": 36,
+        "top": -4105.703125,
+        "right": 1215,
+        "bottom": -4069.703125,
+        "left": 1179
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "linear",
+          "composite": "replace",
+          "transform": "none",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "linear",
+          "composite": "auto",
+          "transform": "rotate(360deg)",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 450,
+        "delay": 0,
+        "iterations": null,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "running",
+      "animationName": "csm-logo-float",
+      "targetSelector": "a.wd-logo.wd-main-logo",
+      "targetRect": {
+        "x": 275.2170715332031,
+        "y": 8.867424964904785,
+        "width": 91.38009643554688,
+        "height": 60.200111389160156,
+        "top": 8.867424964904785,
+        "right": 366.59716796875,
+        "bottom": 69.06753635406494,
+        "left": 275.2170715332031
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "ease-in-out",
+          "composite": "auto",
+          "transform": "rotateY(-18deg) rotateX(6deg) translateY(0px)",
+          "computedOffset": 0
+        },
+        {
+          "offset": 0.5,
+          "easing": "ease-in-out",
+          "composite": "auto",
+          "transform": "rotateY(18deg) rotateX(-6deg) translateY(-8px)",
+          "computedOffset": 0.5
+        },
+        {
+          "offset": 1,
+          "easing": "ease-in-out",
+          "composite": "auto",
+          "transform": "rotateY(-18deg) rotateX(6deg) translateY(0px)",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 5500,
+        "delay": 0,
+        "iterations": null,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "paused",
+      "animationName": "wd-rotate",
+      "targetSelector": "div.product-element-top.wd-quick-shop",
+      "targetRect": {
+        "x": 191,
+        "y": -1918.71875,
+        "width": 274,
+        "height": 342.5,
+        "top": -1918.71875,
+        "right": 465,
+        "bottom": -1576.21875,
+        "left": 191
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "linear",
+          "composite": "replace",
+          "transform": "none",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "linear",
+          "composite": "auto",
+          "transform": "rotate(360deg)",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 450,
+        "delay": 0,
+        "iterations": null,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "paused",
+      "animationName": "wd-rotate",
+      "targetSelector": "a.open-quick-view.quick-view-button",
+      "targetRect": {
+        "x": 425,
+        "y": -1908.71875,
+        "width": 50,
+        "height": 45,
+        "top": -1908.71875,
+        "right": 475,
+        "bottom": -1863.71875,
+        "left": 425
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "linear",
+          "composite": "replace",
+          "transform": "none",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "linear",
+          "composite": "auto",
+          "transform": "rotate(360deg)",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 450,
+        "delay": 0,
+        "iterations": null,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "paused",
+      "animationName": "wd-rotate",
+      "targetSelector": "a.button.product_type_simple.add_to_cart_button",
+      "targetRect": {
+        "x": 191,
+        "y": -1480.625,
+        "width": 274,
+        "height": 42,
+        "top": -1480.625,
+        "right": 465,
+        "bottom": -1438.625,
+        "left": 191
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "linear",
+          "composite": "replace",
+          "transform": "none",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "linear",
+          "composite": "auto",
+          "transform": "rotate(360deg)",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 450,
+        "delay": 0,
+        "iterations": null,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "paused",
+      "animationName": "wd-rotate",
+      "targetSelector": "div.product-element-top.wd-quick-shop",
+      "targetRect": {
+        "x": 507,
+        "y": -1918.71875,
+        "width": 274,
+        "height": 274,
+        "top": -1918.71875,
+        "right": 781,
+        "bottom": -1644.71875,
+        "left": 507
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "linear",
+          "composite": "replace",
+          "transform": "none",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "linear",
+          "composite": "auto",
+          "transform": "rotate(360deg)",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 450,
+        "delay": 0,
+        "iterations": null,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "paused",
+      "animationName": "wd-rotate",
+      "targetSelector": "a.open-quick-view.quick-view-button",
+      "targetRect": {
+        "x": 741,
+        "y": -1908.71875,
+        "width": 50,
+        "height": 45,
+        "top": -1908.71875,
+        "right": 791,
+        "bottom": -1863.71875,
+        "left": 741
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "linear",
+          "composite": "replace",
+          "transform": "none",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "linear",
+          "composite": "auto",
+          "transform": "rotate(360deg)",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 450,
+        "delay": 0,
+        "iterations": null,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "paused",
+      "animationName": "wd-rotate",
+      "targetSelector": "a.button.product_type_simple.add_to_cart_button",
+      "targetRect": {
+        "x": 507,
+        "y": -1480.625,
+        "width": 274,
+        "height": 42,
+        "top": -1480.625,
+        "right": 781,
+        "bottom": -1438.625,
+        "left": 507
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "linear",
+          "composite": "replace",
+          "transform": "none",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "linear",
+          "composite": "auto",
+          "transform": "rotate(360deg)",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 450,
+        "delay": 0,
+        "iterations": null,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "paused",
+      "animationName": "wd-rotate",
+      "targetSelector": "div.product-element-top.wd-quick-shop",
+      "targetRect": {
+        "x": 823,
+        "y": -1918.71875,
+        "width": 274,
+        "height": 342.5,
+        "top": -1918.71875,
+        "right": 1097,
+        "bottom": -1576.21875,
+        "left": 823
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "linear",
+          "composite": "replace",
+          "transform": "none",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "linear",
+          "composite": "auto",
+          "transform": "rotate(360deg)",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 450,
+        "delay": 0,
+        "iterations": null,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    }
+  ]
+}
