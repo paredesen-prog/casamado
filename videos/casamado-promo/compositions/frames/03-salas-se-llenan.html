@@ -1,5 +1,6 @@
 <template>
   <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/office3d.js"></script>
   <style>
 @font-face{
   font-family: 'DM Mono';
@@ -229,115 +230,50 @@
 
   <style>
     #root { position: absolute; inset: 0; overflow: hidden; font-family: 'Rubik', sans-serif; color: #1A3A5C; }
-    .f03-bg { position: absolute; inset: 0; background-color: #F3F5F7; }
-    .f03-world { position: absolute; left: 0; top: 0; width: 1080px; height: 1080px; transform-origin: 0 0; will-change: transform; }
-    .f03-grid { position: absolute; left: -1080px; top: -1080px; width: 3240px; height: 3240px;
+    .f03-bg { position: absolute; inset: 0; background-color: #F3F5F7;
       background-image: linear-gradient(rgba(26,58,92,0.10) 1px, transparent 1px), linear-gradient(90deg, rgba(26,58,92,0.10) 1px, transparent 1px);
       background-size: 36px 36px; background-position: 10px 10px; }
-    .f03-plan { position: absolute; left: 100px; top: 180px; width: 880px; height: 704px; }
-    .f03-plan svg { width: 100%; height: 100%; display: block; overflow: visible; }
-    .f03-card { position: absolute; width: 96px; height: 120px; box-sizing: border-box; border: 4px solid #F3F5F7; outline: 1px solid rgba(26,58,92,0.18);
-      background: #fff; box-shadow: 0 6px 14px rgba(26,58,92,0.28); overflow: hidden; }
-    .f03-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .f03-chip { position: absolute; display: flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 999px; background: #1A3A5C; color: #F3F5F7; white-space: nowrap; }
-    .f03-chip b { font-family: 'Rubik', sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.12em; }
-    .f03-chip span { font-family: 'DM Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.04em; color: #F5A623; }
-    .f03-under { position: absolute; height: 5px; background: #F5A623; transform-origin: 0 50%; }
+    .f03-mount { position: absolute; inset: 0; }
   </style>
 
-  <div data-hf-id="hf-7mo6" id="root" data-composition-id="03-salas-se-llenan" data-width="1080" data-height="1080">
-    <div data-hf-id="hf-vhab" id="f03-bg" class="f03-bg clip" data-start="0" data-duration="9.6" data-track-index="0"></div>
-    <div data-hf-id="hf-puu3" id="f03-stage" data-layout-allow-overlap data-layout-allow-occlusion class="clip" data-start="0" data-duration="9.6" data-track-index="1" style="position:absolute;inset:0;">
-      <div data-hf-id="hf-p0cq" class="f03-world" id="f03-world">
-        <div data-hf-id="hf-pi27" class="f03-grid" data-layout-allow-overflow></div>
-        <div data-hf-id="hf-iyen" class="f03-plan"><svg data-hf-id="hf-toa6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" preserveAspectRatio="xMidYMid meet">
-  <g data-hf-id="hf-bm50" id="f03-walls" fill="none" stroke="#1A3A5C" stroke-width="10" stroke-linecap="square">
-    <path data-hf-id="hf-r8fr" id="f03-wall-outer" d="M40 800 H0 V0 H1000 V800 H180"/>
-    <path data-hf-id="hf-w8kv" id="f03-wall-bano" d="M260 0 V120 M260 190 V300 H0"/>
-    <path data-hf-id="hf-livx" id="f03-wall-cocina" d="M700 0 V110 M700 180 V300 H1000"/>
-    <path data-hf-id="hf-da41" id="f03-wall-ti" d="M700 300 V380 M700 450 V540 H1000"/>
-    <path data-hf-id="hf-8nrx" id="f03-wall-bodega" d="M260 520 H420 M500 520 H700 V800 M260 520 V800"/>
-    <path data-hf-id="hf-mi98" id="f03-wall-mant" d="M700 540 V800"/>
-    <path data-hf-id="hf-e9lw" id="f03-wall-recepcion" d="M180 800 V740"/>
-  </g>
-  <g data-hf-id="hf-jeeq" id="f03-furniture" fill="none" stroke="#5E849E" stroke-width="3">
-    <rect data-hf-id="hf-nfno" x="30" y="30" width="70" height="90" rx="30"/>
-    <rect data-hf-id="hf-a88f" x="30" y="170" width="70" height="90" rx="30"/>
-    <rect data-hf-id="hf-numj" x="160" y="30" width="70" height="60"/>
-    <rect data-hf-id="hf-ny2j" x="730" y="30" width="240" height="60"/>
-    <circle data-hf-id="hf-3f4t" cx="850" cy="210" r="45"/>
-    <rect data-hf-id="hf-naoc" x="310" y="60" width="150" height="80"/><rect data-hf-id="hf-ir7z" x="500" y="60" width="150" height="80"/>
-    <rect data-hf-id="hf-yjsz" x="310" y="210" width="150" height="80"/><rect data-hf-id="hf-yns6" x="500" y="210" width="150" height="80"/>
-    <rect data-hf-id="hf-r133" x="310" y="360" width="150" height="80"/><rect data-hf-id="hf-fqn6" x="500" y="360" width="150" height="80"/>
-    <rect data-hf-id="hf-gfxk" x="740" y="330" width="220" height="70"/><rect data-hf-id="hf-mw1j" x="740" y="440" width="100" height="70"/>
-    <rect data-hf-id="hf-rp7y" x="290" y="560" width="390" height="40"/><rect data-hf-id="hf-tfkq" x="290" y="740" width="390" height="40"/>
-    <rect data-hf-id="hf-pn6i" x="730" y="570" width="40" height="200"/>
-    <rect data-hf-id="hf-27b7" x="40" y="360" width="160" height="70"/>
-  </g>
-  <g data-hf-id="hf-60u4" id="f03-labels" fill="#1A3A5C" font-family="DM Mono, IBM Plex Mono, monospace" font-size="20" letter-spacing="2">
-    <text data-hf-id="hf-so3f" x="130" y="290" text-anchor="middle">BAÑO</text>
-    <text data-hf-id="hf-6xoc" x="480" y="470" text-anchor="middle">ESCRITORIOS</text>
-    <text data-hf-id="hf-po7m" x="850" y="290" text-anchor="middle">COCINA</text>
-    <text data-hf-id="hf-1wxa" x="850" y="530" text-anchor="middle">SALA TI</text>
-    <text data-hf-id="hf-ioav" x="280" y="690">BODEGA</text><text data-hf-id="hf-jxfw" x="280" y="715">DE ASEO</text>
-    <text data-hf-id="hf-3mn3" x="850" y="768" text-anchor="middle">MANTENCIÓN</text>
-    <text data-hf-id="hf-czdy" x="130" y="520" text-anchor="middle">RECEPCIÓN</text>
-  </g>
-</svg>
-</div>
-
-        <div data-hf-id="hf-trcl" class="f03-card" id="f03-c1" style="left:117px; top:240px;"><img data-hf-id="hf-rcoz" src="assets/image-66.jpg" alt="Toalla Jumbo Tork" /></div>
-        <div data-hf-id="hf-a98r" class="f03-card" id="f03-c2" style="left:217px; top:262px;"><img data-hf-id="hf-7s7h" src="assets/dispensador-jabon-sachet-tork-elevation-.jpg" alt="Dispensador jabón Tork" /></div>
-        <div data-hf-id="hf-j91z" class="f03-card" id="f03-c3" style="left:742px; top:240px;"><img data-hf-id="hf-bdcu" src="assets/haiti-cafe-molido-super-moka-bolsa-250gr.jpg" alt="Café Haití Super Moka" /></div>
-        <div data-hf-id="hf-yxcf" class="f03-card" id="f03-c4" style="left:857px; top:262px;"><img data-hf-id="hf-5f7j" src="assets/galleta-coco-120-gr.jpg" alt="Galleta McKay coco" /></div>
-        <div data-hf-id="hf-8dkv" class="f03-card" id="f03-c5" style="left:422px; top:340px;"><img data-hf-id="hf-7ch9" src="assets/papel-fotocopia-a4-500-hjs-75-gr-excelle.jpg" alt="Papel fotocopia A4" /></div>
-        <div data-hf-id="hf-8h7f" class="f03-card" id="f03-c6" style="left:542px; top:324px;"><img data-hf-id="hf-02dg" src="assets/cuaderno-universitario-7-mm100-hjs-1.jpg" alt="Cuaderno universitario" /></div>
-        <div data-hf-id="hf-ppng" class="f03-card" id="f03-c7" style="left:800px; top:488px;"><img data-hf-id="hf-id4r" src="assets/image-69.jpg" alt="Teclado y mouse inalámbrico" /></div>
-        <div data-hf-id="hf-uwa8" class="f03-card" id="f03-c8" style="left:800px; top:700px;"><img data-hf-id="hf-knq5" src="assets/image-33.jpg" alt="Guantes Flex" /></div>
-        <div data-hf-id="hf-aerh" class="f03-card" id="f03-c9" style="left:442px; top:700px;"><img data-hf-id="hf-umg0" src="assets/jabn-lquido.jpg" alt="Jabón líquido Ballerina" /></div>
-        <div data-hf-id="hf-zhk4" class="f03-card" id="f03-c10" style="left:552px; top:712px;"><img data-hf-id="hf-c9de" src="assets/image-67.jpg" alt="Toallitas desinfectantes Virutex" /></div>
-
-        <div data-hf-id="hf-xli2" class="f03-chip" id="f03-k1" style="left:112px; top:196px;"><b data-hf-id="hf-3ynu">PAPEL TISSUE</b><span data-hf-id="hf-zin7">· 124</span></div>
-        <div data-hf-id="hf-owhy" class="f03-chip" id="f03-k2" style="left:728px; top:196px;"><b data-hf-id="hf-scc1">CAFETERÍA</b><span data-hf-id="hf-dlfj">· 146</span></div>
-        <div data-hf-id="hf-uojq" class="f03-chip" id="f03-k3" style="left:341px; top:196px;"><b data-hf-id="hf-d3l6">OFICINA</b><span data-hf-id="hf-m36e">· 259</span></div>
-        <div data-hf-id="hf-sh3d" class="f03-chip" id="f03-k4" style="left:728px; top:458px;"><b data-hf-id="hf-kfzw">TECNOLOGÍA</b><span data-hf-id="hf-2oqm">· 80</span></div>
-        <div data-hf-id="hf-fg0z" class="f03-chip" id="f03-k5" style="left:728px; top:668px;"><b data-hf-id="hf-ayfg">FERRETERÍA</b><span data-hf-id="hf-xa1y">· 62</span></div>
-        <div data-hf-id="hf-hw5e" class="f03-chip" id="f03-k6" style="left:341px; top:650px;"><b data-hf-id="hf-i6ff">ASEO Y LIMPIEZA</b><span data-hf-id="hf-pd9x">· 540</span></div>
-        <div data-hf-id="hf-dayk" class="f03-under" id="f03-u6" style="left:345px; top:682px; width:170px;"></div>
-      </div>
+  <div id="root" data-composition-id="03-salas-se-llenan" data-width="1080" data-height="1080">
+    <div id="f03-bg" class="f03-bg clip" data-start="0" data-duration="9.6" data-track-index="0"></div>
+    <div id="f03-stage" data-layout-allow-overlap data-layout-allow-occlusion data-layout-allow-overflow class="clip" data-start="0" data-duration="9.6" data-track-index="1" style="position:absolute;inset:0;">
+      <div class="f03-mount" id="f03-mount"></div>
     </div>
   </div>
 
   <script>
     (function () {
       const tl = gsap.timeline({ paused: true });
-      const $ = (id) => "#f03-" + id;
-      const world = document.getElementById("f03-world");
-      const cam = { z: 1, x: 540, y: 540 };
-      const apply = () => { world.style.transform = `translate(${540 - cam.z * cam.x}px, ${540 - cam.z * cam.y}px) scale(${cam.z})`; };
-      apply();
+      const O = Office3D(document.getElementById("f03-mount"), "f03-");
+      Object.values(O.tags).forEach((t) => { t.bb.style.opacity = 0; });
 
-      const rot = { c1: -4, c2: 3, c3: 3, c4: -3, c5: -2, c6: 4, c7: -2, c8: 3, c9: -3, c10: 2 };
-      const drop = (c, t) => tl.fromTo($(c), { opacity: 0, scale: 1.45, rotation: rot[c] * 2.5, y: -10 },
-        { opacity: 1, scale: 1, rotation: rot[c], y: 0, duration: 0.38, ease: "power3.out" }, t);
-      const chip = (k, t) => tl.fromTo($(k), { opacity: 0, x: -14 }, { opacity: 1, x: 0, duration: 0.32, ease: "power3.out" }, t);
-      const pan = (x, y, t, d) => tl.to(cam, { z: 1.8, x, y, duration: d, ease: "power3.inOut", onUpdate: apply }, t);
+      const ST = { t: 46, s: 1.75, ox: 540, oy: 560, wall: 1 };
+      const at = (cx, cy, r) => Object.assign({}, ST, { cx, cy, r });
+      const home = Object.assign({}, O.HOME, { wall: 1 });
+      const stations = [
+        { cam: at(140, 190, -6),  start: 0.0, dur: 0.85, items: ["tork", "disp"],       chip: "tissue" },
+        { cam: at(845, 190, -14), start: 2.2, dur: 0.6,  items: ["cafe", "galleta"],    chip: "cafeteria" },
+        { cam: at(490, 300, -8),  start: 3.6, dur: 0.6,  items: ["papel", "cuaderno"],  chip: "oficina" },
+        { cam: at(850, 450, -14), start: 5.0, dur: 0.6,  items: ["teclado"],            chip: "tecno" },
+        { cam: at(850, 690, -12), start: 6.4, dur: 0.6,  items: ["guantes"],            chip: "ferre" },
+        { cam: at(545, 700, -10), start: 7.8, dur: 0.65, items: ["jabon", "toallitas"], chip: "aseo" }
+      ];
 
-      // Scene 1 — push in to the bathroom
-      tl.fromTo(cam, { z: 1, x: 540, y: 540 }, { z: 1.8, x: 214, y: 312, duration: 0.8, ease: "power3.inOut", onUpdate: apply, immediateRender: true }, 0);
-      // Scene 2 — BAÑO
-      drop("c1", 0.85); drop("c2", 1.0); chip("k1", 1.3);
-      // Scene 3 — COCINA
-      pan(848, 312, 2.2, 0.55); drop("c3", 2.8); drop("c4", 2.95); chip("k2", 3.2);
-      // Scene 4 — ESCRITORIOS
-      pan(522, 409, 3.6, 0.55); drop("c5", 4.2); drop("c6", 4.35); chip("k3", 4.6);
-      // Scene 5 — SALA TI
-      pan(848, 550, 5.0, 0.55); drop("c7", 5.6); chip("k4", 5.85);
-      // Scene 6 — MANTENCIÓN
-      pan(848, 770, 6.4, 0.55); drop("c8", 7.0); chip("k5", 7.25);
-      // Scene 7 — BODEGA DE ASEO, the biggest line, then hold
-      pan(525, 766, 7.8, 0.6); drop("c9", 8.45); drop("c10", 8.6); chip("k6", 8.8);
-      tl.fromTo($("u6"), { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power3.out" }, 9.0);
+      O.set(home);
+      let prev = home;
+      stations.forEach((st) => {
+        tl.fromTo(O.cam, Object.assign({}, prev), Object.assign({}, st.cam, { duration: st.dur, ease: "power3.inOut", onUpdate: O.apply, immediateRender: false }), st.start);
+        prev = st.cam;
+        const landed = st.start + st.dur + 0.05;
+        st.items.forEach((k, i) => {
+          const p = O.products[k];
+          tl.fromTo(p.drop, { y: -320, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "bounce.out" }, landed + i * 0.15);
+          tl.fromTo(p.shadow, { scale: 0.3, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "power2.out", transformOrigin: "50% 50%" }, landed + i * 0.15);
+        });
+        tl.fromTo(O.chips[st.chip].chip, { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)", transformOrigin: "50% 100%" }, landed + 0.45);
+      });
 
       tl.to({}, { duration: 0.01 }, 9.59);
       window.__timelines["03-salas-se-llenan"] = tl;

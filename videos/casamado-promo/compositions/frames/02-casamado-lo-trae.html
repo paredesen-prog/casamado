@@ -1,5 +1,6 @@
 <template>
   <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/office3d.js"></script>
   <style>
 @font-face{
   font-family: 'DM Mono';
@@ -232,73 +233,29 @@
     .f02-bg { position: absolute; inset: 0; background-color: #F3F5F7;
       background-image: linear-gradient(rgba(26,58,92,0.10) 1px, transparent 1px), linear-gradient(90deg, rgba(26,58,92,0.10) 1px, transparent 1px);
       background-size: 36px 36px; background-position: 10px 10px; }
+    .f02-mount { position: absolute; inset: 0; }
     .f02-rule { position: absolute; left: 40px; right: 40px; height: 2px; background: #1A3A5C; }
     .f02-meta { position: absolute; right: 40px; top: 44px; font-family: 'DM Mono', monospace; font-size: 15px; letter-spacing: 0.08em; color: #53748B; }
-    .f02-plan { position: absolute; left: 100px; top: 180px; width: 880px; height: 704px; }
-    .f02-plan svg { width: 100%; height: 100%; display: block; overflow: visible; }
-    .f02-tag { position: absolute; font-family: 'DM Mono', monospace; font-weight: 500; font-size: 17px; letter-spacing: 0.08em;
-      padding: 7px 12px; border: 2px solid #1A3A5C; background: #F3F5F7; color: #1A3A5C; white-space: nowrap; }
-    .f02-disc { position: absolute; left: 250px; top: 270px; width: 580px; height: 580px; border-radius: 50%; background: #F3F5F7; border: 2px solid rgba(26,58,92,0.18); }
-    .f02-logo { position: absolute; left: 280px; top: 420px; width: 520px; height: auto; }
-    .f02-head { position: absolute; left: 100px; top: 40px; z-index: 1; font-weight: 600; font-size: 64px; line-height: 0.96; letter-spacing: -0.01em; }
+    .f02-disc { position: absolute; left: 240px; top: 300px; width: 600px; height: 600px; border-radius: 50%; background: #F3F5F7; border: 2px solid rgba(26,58,92,0.18); box-shadow: 0 30px 60px rgba(26,58,92,0.12); }
+    .f02-logo { position: absolute; left: 280px; top: 458px; width: 520px; height: auto; }
+    .f02-head { position: absolute; left: 100px; top: 40px; z-index: 2; font-weight: 600; font-size: 64px; line-height: 0.96; letter-spacing: -0.01em; }
     .f02-line { display: block; white-space: nowrap; }
     .f02-hl { position: relative; display: inline-block; isolation: isolate; }
     .f02-block { position: absolute; left: -8px; right: -8px; top: 10px; bottom: -4px; background: #F5A623; transform-origin: 0 50%; z-index: -1; }
   </style>
 
-  <div data-hf-id="hf-9wqg" id="root" data-composition-id="02-casamado-lo-trae" data-width="1080" data-height="1080" data-duration="4.3">
-    <div data-hf-id="hf-ju3t" id="f02-bg" class="f02-bg clip" data-start="0" data-duration="4.3" data-track-index="0"></div>
-    <div data-hf-id="hf-xui0" id="f02-stage" data-layout-allow-overlap data-layout-allow-occlusion class="clip" data-start="0" data-duration="4.3" data-track-index="1" style="position:absolute;inset:0;">
-      <div data-hf-id="hf-6vio" class="f02-rule" style="top:26px"></div>
-      <div data-hf-id="hf-tdeu" class="f02-rule" style="top:1052px"></div>
-      <div data-hf-id="hf-bfs5" class="f02-meta">PLANO 01 — SANTIAGO</div>
-
-      <div data-hf-id="hf-zp82" class="f02-plan" id="f02-plan"><svg data-hf-id="hf-toa6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" preserveAspectRatio="xMidYMid meet">
-  <g data-hf-id="hf-my83" id="f02-walls" fill="none" stroke="#1A3A5C" stroke-width="10" stroke-linecap="square">
-    <path data-hf-id="hf-4qu0" id="f02-wall-outer" d="M40 800 H0 V0 H1000 V800 H180"/>
-    <path data-hf-id="hf-4xau" id="f02-wall-bano" d="M260 0 V120 M260 190 V300 H0"/>
-    <path data-hf-id="hf-0ve8" id="f02-wall-cocina" d="M700 0 V110 M700 180 V300 H1000"/>
-    <path data-hf-id="hf-bcyo" id="f02-wall-ti" d="M700 300 V380 M700 450 V540 H1000"/>
-    <path data-hf-id="hf-o5dc" id="f02-wall-bodega" d="M260 520 H420 M500 520 H700 V800 M260 520 V800"/>
-    <path data-hf-id="hf-85u5" id="f02-wall-mant" d="M700 540 V800"/>
-    <path data-hf-id="hf-4e2j" id="f02-wall-recepcion" d="M180 800 V740"/>
-  </g>
-  <g data-hf-id="hf-kl2f" id="f02-furniture" fill="none" stroke="#5E849E" stroke-width="3">
-    <rect data-hf-id="hf-nfno" x="30" y="30" width="70" height="90" rx="30"/>
-    <rect data-hf-id="hf-a88f" x="30" y="170" width="70" height="90" rx="30"/>
-    <rect data-hf-id="hf-numj" x="160" y="30" width="70" height="60"/>
-    <rect data-hf-id="hf-ny2j" x="730" y="30" width="240" height="60"/>
-    <circle data-hf-id="hf-3f4t" cx="850" cy="210" r="45"/>
-    <rect data-hf-id="hf-naoc" x="310" y="60" width="150" height="80"/><rect data-hf-id="hf-ir7z" x="500" y="60" width="150" height="80"/>
-    <rect data-hf-id="hf-yjsz" x="310" y="210" width="150" height="80"/><rect data-hf-id="hf-yns6" x="500" y="210" width="150" height="80"/>
-    <rect data-hf-id="hf-r133" x="310" y="360" width="150" height="80"/><rect data-hf-id="hf-fqn6" x="500" y="360" width="150" height="80"/>
-    <rect data-hf-id="hf-gfxk" x="740" y="330" width="220" height="70"/><rect data-hf-id="hf-mw1j" x="740" y="440" width="100" height="70"/>
-    <rect data-hf-id="hf-rp7y" x="290" y="560" width="390" height="40"/><rect data-hf-id="hf-tfkq" x="290" y="740" width="390" height="40"/>
-    <rect data-hf-id="hf-pn6i" x="730" y="570" width="40" height="200"/>
-    <rect data-hf-id="hf-27b7" x="40" y="360" width="160" height="70"/>
-  </g>
-  <g data-hf-id="hf-d4st" id="f02-labels" fill="#1A3A5C" font-family="DM Mono, IBM Plex Mono, monospace" font-size="20" letter-spacing="2">
-    <text data-hf-id="hf-so3f" x="130" y="290" text-anchor="middle">BAÑO</text>
-    <text data-hf-id="hf-6xoc" x="480" y="470" text-anchor="middle">ESCRITORIOS</text>
-    <text data-hf-id="hf-po7m" x="850" y="290" text-anchor="middle">COCINA</text>
-    <text data-hf-id="hf-1wxa" x="850" y="530" text-anchor="middle">SALA TI</text>
-    <text data-hf-id="hf-ioav" x="280" y="690">BODEGA</text><text data-hf-id="hf-jxfw" x="280" y="715">DE ASEO</text>
-    <text data-hf-id="hf-3mn3" x="850" y="768" text-anchor="middle">MANTENCIÓN</text>
-    <text data-hf-id="hf-czdy" x="130" y="520" text-anchor="middle">RECEPCIÓN</text>
-  </g>
-</svg>
-</div>
-
-      <div data-hf-id="hf-74zu" class="f02-tag" id="f02-tag1" style="left:154px; top:318px; transform: rotate(-3deg);">SIN PAPEL</div>
-      <div data-hf-id="hf-60dk" class="f02-tag" id="f02-tag2" style="left:798px; top:318px; transform: rotate(2deg);">SIN CAFÉ</div>
-      <div data-hf-id="hf-xrv9" class="f02-tag" id="f02-tag3" style="left:462px; top:318px; transform: rotate(-2deg);">SIN TÓNER</div>
-
-      <div data-hf-id="hf-ch8q" class="f02-disc" id="f02-disc"></div>
-      <img data-hf-id="hf-yk00" class="f02-logo" id="f02-logo" src="assets/casamado.png" alt="Casamado" />
-
-      <div data-hf-id="hf-qioq" class="f02-head" id="f02-head">
-        <span data-hf-id="hf-li8s" class="f02-line" id="f02-l1">Todo lo que falta,</span>
-        <span data-hf-id="hf-4f8g" class="f02-line" id="f02-l2">en <span data-hf-id="hf-nz57" class="f02-hl">un solo pedido.<span data-hf-id="hf-ahiz" class="f02-block" id="f02-block"></span></span></span>
+  <div id="root" data-composition-id="02-casamado-lo-trae" data-width="1080" data-height="1080">
+    <div id="f02-bg" class="f02-bg clip" data-start="0" data-duration="4" data-track-index="0"></div>
+    <div id="f02-stage" data-layout-allow-overlap data-layout-allow-occlusion data-layout-allow-overflow class="clip" data-start="0" data-duration="4" data-track-index="1" style="position:absolute;inset:0;">
+      <div class="f02-mount" id="f02-mount"></div>
+      <div class="f02-rule" style="top:26px"></div>
+      <div class="f02-rule" style="top:1052px"></div>
+      <div class="f02-meta">PLANO 01 — SANTIAGO</div>
+      <div class="f02-disc" id="f02-disc"></div>
+      <img class="f02-logo" id="f02-logo" src="assets/casamado.png" alt="Casamado" />
+      <div class="f02-head" id="f02-head">
+        <span class="f02-line" id="f02-l1">Todo lo que falta,</span>
+        <span class="f02-line" id="f02-l2">en <span class="f02-hl">un solo pedido.<span class="f02-block" id="f02-block"></span></span></span>
       </div>
     </div>
   </div>
@@ -307,24 +264,30 @@
     (function () {
       const tl = gsap.timeline({ paused: true });
       const $ = (id) => "#f02-" + id;
+      const O = Office3D(document.getElementById("f02-mount"), "f02-");
+      Object.values(O.products).forEach((p) => { p.bb.style.opacity = 0; p.shadow.style.opacity = 0; });
+      Object.values(O.chips).forEach((c) => { c.bb.style.opacity = 0; });
+      O.set(Object.assign({}, O.HOME, { wall: 1 }));
+      const mount = document.getElementById("f02-mount");
+      const tagDrops = ["papel", "cafe", "toner"].map((k) => O.tags[k].drop);
 
-      // Scene 1 — tags clear, plan dims to make a stage
-      tl.fromTo([$("tag1"), $("tag2"), $("tag3")], { opacity: 1 }, { opacity: 0, duration: 0.35, ease: "power1.out", stagger: 0.06 }, 0.05);
-      tl.fromTo($("plan"), { opacity: 1 }, { opacity: 0.25, duration: 0.55, ease: "power2.out" }, 0.1);
+      // Scene 1 — tags clear, the office dims into a stage
+      tl.fromTo(tagDrops, { opacity: 1 }, { opacity: 0, duration: 0.35, ease: "power1.out", stagger: 0.06 }, 0.05);
+      tl.fromTo(mount, { opacity: 1 }, { opacity: 0.25, duration: 0.55, ease: "power2.out" }, 0.1);
       tl.fromTo($("disc"), { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.6, ease: "power3.out" }, 0.25);
 
-      // Scene 2 — the lockup blooms from zero (signature move)
+      // Scene 2 — the lockup blooms from zero
       tl.fromTo($("logo"), { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.85, ease: "back.out(1.6)", transformOrigin: "50% 50%" }, 0.4);
 
-      // Scene 3 — the promise, line by line
+      // Scene 3 — the promise
       tl.fromTo($("l1"), { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 1.3);
       tl.fromTo($("l2"), { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 1.85);
       tl.fromTo($("block"), { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power3.out" }, 2.2);
 
-      // Scene 4 — hand the bare plan back to the tour
-      tl.to([$("logo"), $("disc")], { scale: 0.6, opacity: 0, duration: 0.5, ease: "power2.in", transformOrigin: "50% 50%" }, 3.15);
-      tl.to($("head"), { opacity: 0, duration: 0.4, ease: "power1.in" }, 3.3);
-      tl.to($("plan"), { opacity: 1, duration: 0.5, ease: "power2.out" }, 3.35);
+      // Scene 4 — hand the bare office back to the tour
+      tl.fromTo([$("logo"), $("disc")], { scale: 1, opacity: 1 }, { scale: 0.6, opacity: 0, duration: 0.5, ease: "power2.in", transformOrigin: "50% 50%", immediateRender: false }, 3.15);
+      tl.fromTo($("head"), { opacity: 1 }, { opacity: 0, duration: 0.4, ease: "power1.in", immediateRender: false }, 3.3);
+      tl.fromTo(mount, { opacity: 0.25 }, { opacity: 1, duration: 0.5, ease: "power2.out", immediateRender: false }, 3.35);
 
       tl.to({}, { duration: 0.01 }, 3.99);
       window.__timelines["02-casamado-lo-trae"] = tl;

@@ -1,5 +1,6 @@
 <template>
   <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/office3d.js"></script>
   <style>
 @font-face{
   font-family: 'DM Mono';
@@ -229,95 +230,26 @@
 
   <style>
     #root { position: absolute; inset: 0; overflow: hidden; font-family: 'Rubik', sans-serif; color: #1A3A5C; }
-    .f04-bg { position: absolute; inset: 0; background-color: #F3F5F7; }
-    .f04-world { position: absolute; left: 0; top: 0; width: 1080px; height: 1080px; transform-origin: 0 0; will-change: transform; }
-    .f04-grid { position: absolute; left: -1080px; top: -1080px; width: 3240px; height: 3240px;
+    .f04-bg { position: absolute; inset: 0; background-color: #F3F5F7;
       background-image: linear-gradient(rgba(26,58,92,0.10) 1px, transparent 1px), linear-gradient(90deg, rgba(26,58,92,0.10) 1px, transparent 1px);
       background-size: 36px 36px; background-position: 10px 10px; }
-    .f04-plan { position: absolute; left: 100px; top: 180px; width: 880px; height: 704px; }
-    .f04-plan svg { width: 100%; height: 100%; display: block; overflow: visible; }
-    .f04-card { position: absolute; width: 96px; height: 120px; box-sizing: border-box; border: 4px solid #F3F5F7; outline: 1px solid rgba(26,58,92,0.18);
-      background: #fff; box-shadow: 0 6px 14px rgba(26,58,92,0.28); overflow: hidden; }
-    .f04-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .f04-chip { position: absolute; display: flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 999px; background: #1A3A5C; color: #F3F5F7; white-space: nowrap; }
-    .f04-chip b { font-family: 'Rubik', sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.12em; }
-    .f04-chip span { font-family: 'DM Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.04em; color: #F5A623; }
-    .f04-under6 { position: absolute; height: 5px; background: #F5A623; }
+    .f04-mount { position: absolute; inset: 0; }
     .f04-rule { position: absolute; left: 40px; right: 40px; height: 2px; background: #1A3A5C; }
-    .f04-band { position: absolute; left: 0; right: 0; top: 0; height: 172px; background: linear-gradient(#F3F5F7 78%, rgba(243,245,247,0)); }
-    .f04-num { position: absolute; left: 96px; top: 34px; font-weight: 600; font-size: 112px; line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; transform-origin: 0 100%; white-space: nowrap; }
-    .f04-numbar { position: absolute; left: 100px; top: 150px; width: 330px; height: 10px; background: #F5A623; transform-origin: 0 50%; }
-    .f04-label { position: absolute; left: 495px; top: 62px; font-weight: 600; font-size: 34px; line-height: 1.05; letter-spacing: -0.005em; }
+    .f04-num { position: absolute; left: 96px; top: 48px; font-weight: 600; font-size: 120px; line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; transform-origin: 0 100%; white-space: nowrap; }
+    .f04-numbar { position: absolute; left: 100px; top: 172px; width: 352px; height: 12px; background: #F5A623; transform-origin: 0 50%; }
+    .f04-label { position: absolute; left: 510px; top: 76px; font-weight: 600; font-size: 36px; line-height: 1.05; letter-spacing: -0.005em; }
     .f04-label small { display: block; font-family: 'DM Mono', monospace; font-weight: 500; font-size: 17px; letter-spacing: 0.08em; color: #53748B; margin-top: 10px; }
   </style>
 
-  <div data-hf-id="hf-o2i0" id="root" data-composition-id="04-mas-de-1100" data-width="1080" data-height="1080" data-duration="4.9">
-    <div data-hf-id="hf-90ob" id="f04-bg" class="f04-bg clip" data-start="0" data-duration="4.9" data-track-index="0"></div>
-    <div data-hf-id="hf-s8w8" id="f04-stage" data-layout-allow-overlap data-layout-allow-occlusion class="clip" data-start="0" data-duration="4.9" data-track-index="1" style="position:absolute;inset:0;">
-      <div data-hf-id="hf-9ems" class="f04-world" id="f04-world">
-        <div data-hf-id="hf-q7zy" class="f04-grid" data-layout-allow-overflow></div>
-        <div data-hf-id="hf-lji2" class="f04-plan"><svg data-hf-id="hf-toa6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" preserveAspectRatio="xMidYMid meet">
-  <g data-hf-id="hf-fi4t" id="f04-walls" fill="none" stroke="#1A3A5C" stroke-width="10" stroke-linecap="square">
-    <path data-hf-id="hf-fcwm" id="f04-wall-outer" d="M40 800 H0 V0 H1000 V800 H180"/>
-    <path data-hf-id="hf-chtc" id="f04-wall-bano" d="M260 0 V120 M260 190 V300 H0"/>
-    <path data-hf-id="hf-g7jq" id="f04-wall-cocina" d="M700 0 V110 M700 180 V300 H1000"/>
-    <path data-hf-id="hf-gdna" id="f04-wall-ti" d="M700 300 V380 M700 450 V540 H1000"/>
-    <path data-hf-id="hf-b2pm" id="f04-wall-bodega" d="M260 520 H420 M500 520 H700 V800 M260 520 V800"/>
-    <path data-hf-id="hf-fayv" id="f04-wall-mant" d="M700 540 V800"/>
-    <path data-hf-id="hf-9ual" id="f04-wall-recepcion" d="M180 800 V740"/>
-  </g>
-  <g data-hf-id="hf-y29t" id="f04-furniture" fill="none" stroke="#5E849E" stroke-width="3">
-    <rect data-hf-id="hf-nfno" x="30" y="30" width="70" height="90" rx="30"/>
-    <rect data-hf-id="hf-a88f" x="30" y="170" width="70" height="90" rx="30"/>
-    <rect data-hf-id="hf-numj" x="160" y="30" width="70" height="60"/>
-    <rect data-hf-id="hf-ny2j" x="730" y="30" width="240" height="60"/>
-    <circle data-hf-id="hf-3f4t" cx="850" cy="210" r="45"/>
-    <rect data-hf-id="hf-naoc" x="310" y="60" width="150" height="80"/><rect data-hf-id="hf-ir7z" x="500" y="60" width="150" height="80"/>
-    <rect data-hf-id="hf-yjsz" x="310" y="210" width="150" height="80"/><rect data-hf-id="hf-yns6" x="500" y="210" width="150" height="80"/>
-    <rect data-hf-id="hf-r133" x="310" y="360" width="150" height="80"/><rect data-hf-id="hf-fqn6" x="500" y="360" width="150" height="80"/>
-    <rect data-hf-id="hf-gfxk" x="740" y="330" width="220" height="70"/><rect data-hf-id="hf-mw1j" x="740" y="440" width="100" height="70"/>
-    <rect data-hf-id="hf-rp7y" x="290" y="560" width="390" height="40"/><rect data-hf-id="hf-tfkq" x="290" y="740" width="390" height="40"/>
-    <rect data-hf-id="hf-pn6i" x="730" y="570" width="40" height="200"/>
-    <rect data-hf-id="hf-27b7" x="40" y="360" width="160" height="70"/>
-  </g>
-  <g data-hf-id="hf-fhcn" id="f04-labels" fill="#1A3A5C" font-family="DM Mono, IBM Plex Mono, monospace" font-size="20" letter-spacing="2">
-    <text data-hf-id="hf-so3f" x="130" y="290" text-anchor="middle">BAÑO</text>
-    <text data-hf-id="hf-6xoc" x="480" y="470" text-anchor="middle">ESCRITORIOS</text>
-    <text data-hf-id="hf-po7m" x="850" y="290" text-anchor="middle">COCINA</text>
-    <text data-hf-id="hf-1wxa" x="850" y="530" text-anchor="middle">SALA TI</text>
-    <text data-hf-id="hf-ioav" x="280" y="690">BODEGA</text><text data-hf-id="hf-jxfw" x="280" y="715">DE ASEO</text>
-    <text data-hf-id="hf-3mn3" x="850" y="768" text-anchor="middle">MANTENCIÓN</text>
-    <text data-hf-id="hf-czdy" x="130" y="520" text-anchor="middle">RECEPCIÓN</text>
-  </g>
-</svg>
-</div>
-
-        <div data-hf-id="hf-90vg" class="f04-card" style="left:117px; top:240px; transform: rotate(-4deg);"><img data-hf-id="hf-rcoz" src="assets/image-66.jpg" alt="Toalla Jumbo Tork" /></div>
-        <div data-hf-id="hf-h4hv" class="f04-card" style="left:217px; top:262px; transform: rotate(3deg);"><img data-hf-id="hf-7s7h" src="assets/dispensador-jabon-sachet-tork-elevation-.jpg" alt="Dispensador jabón Tork" /></div>
-        <div data-hf-id="hf-pxvy" class="f04-card" style="left:742px; top:240px; transform: rotate(3deg);"><img data-hf-id="hf-bdcu" src="assets/haiti-cafe-molido-super-moka-bolsa-250gr.jpg" alt="Café Haití Super Moka" /></div>
-        <div data-hf-id="hf-599k" class="f04-card" style="left:857px; top:262px; transform: rotate(-3deg);"><img data-hf-id="hf-5f7j" src="assets/galleta-coco-120-gr.jpg" alt="Galleta McKay coco" /></div>
-        <div data-hf-id="hf-1oto" class="f04-card" style="left:422px; top:340px; transform: rotate(-2deg);"><img data-hf-id="hf-7ch9" src="assets/papel-fotocopia-a4-500-hjs-75-gr-excelle.jpg" alt="Papel fotocopia A4" /></div>
-        <div data-hf-id="hf-g6xq" class="f04-card" style="left:542px; top:324px; transform: rotate(4deg);"><img data-hf-id="hf-02dg" src="assets/cuaderno-universitario-7-mm100-hjs-1.jpg" alt="Cuaderno universitario" /></div>
-        <div data-hf-id="hf-fk25" class="f04-card" style="left:800px; top:488px; transform: rotate(-2deg);"><img data-hf-id="hf-id4r" src="assets/image-69.jpg" alt="Teclado y mouse inalámbrico" /></div>
-        <div data-hf-id="hf-tvj0" class="f04-card" style="left:800px; top:700px; transform: rotate(3deg);"><img data-hf-id="hf-knq5" src="assets/image-33.jpg" alt="Guantes Flex" /></div>
-        <div data-hf-id="hf-9xqh" class="f04-card" style="left:442px; top:700px; transform: rotate(-3deg);"><img data-hf-id="hf-umg0" src="assets/jabn-lquido.jpg" alt="Jabón líquido Ballerina" /></div>
-        <div data-hf-id="hf-36r2" class="f04-card" style="left:552px; top:712px; transform: rotate(2deg);"><img data-hf-id="hf-c9de" src="assets/image-67.jpg" alt="Toallitas desinfectantes Virutex" /></div>
-
-        <div data-hf-id="hf-9vg1" class="f04-chip" style="left:112px; top:196px;"><b data-hf-id="hf-3ynu">PAPEL TISSUE</b><span data-hf-id="hf-zin7">· 124</span></div>
-        <div data-hf-id="hf-45gk" class="f04-chip" style="left:728px; top:196px;"><b data-hf-id="hf-scc1">CAFETERÍA</b><span data-hf-id="hf-dlfj">· 146</span></div>
-        <div data-hf-id="hf-5mgf" class="f04-chip" style="left:341px; top:196px;"><b data-hf-id="hf-d3l6">OFICINA</b><span data-hf-id="hf-m36e">· 259</span></div>
-        <div data-hf-id="hf-jwz5" class="f04-chip" style="left:728px; top:458px;"><b data-hf-id="hf-kfzw">TECNOLOGÍA</b><span data-hf-id="hf-2oqm">· 80</span></div>
-        <div data-hf-id="hf-hk9c" class="f04-chip" style="left:728px; top:668px;"><b data-hf-id="hf-ayfg">FERRETERÍA</b><span data-hf-id="hf-xa1y">· 62</span></div>
-        <div data-hf-id="hf-hqpk" class="f04-chip" style="left:341px; top:650px;"><b data-hf-id="hf-i6ff">ASEO Y LIMPIEZA</b><span data-hf-id="hf-pd9x">· 540</span></div>
-        <div data-hf-id="hf-qble" class="f04-under6" style="left:345px; top:682px; width:170px;"></div>
-      </div>
-
-      <div data-hf-id="hf-ih6y" class="f04-band" id="f04-band"></div>
-      <div data-hf-id="hf-fda0" class="f04-rule" id="f04-r1" style="top:26px"></div>
-      <div data-hf-id="hf-pc8v" class="f04-rule" id="f04-r2" style="top:1052px"></div>
-      <div data-hf-id="hf-c6fd" class="f04-num" id="f04-num">+<span data-hf-id="hf-w1va" id="f04-count">0</span></div>
-      <div data-hf-id="hf-ucjy" class="f04-numbar" id="f04-numbar"></div>
-      <div data-hf-id="hf-64ru" class="f04-label" id="f04-label">productos<br data-hf-id="hf-x5px" />en 6 líneas<small data-hf-id="hf-utd0">UN SOLO PROVEEDOR</small></div>
+  <div id="root" data-composition-id="04-mas-de-1100" data-width="1080" data-height="1080">
+    <div id="f04-bg" class="f04-bg clip" data-start="0" data-duration="4.5" data-track-index="0"></div>
+    <div id="f04-stage" data-layout-allow-overlap data-layout-allow-occlusion data-layout-allow-overflow class="clip" data-start="0" data-duration="4.5" data-track-index="1" style="position:absolute;inset:0;">
+      <div class="f04-mount" id="f04-mount"></div>
+      <div class="f04-rule" id="f04-r1" style="top:26px"></div>
+      <div class="f04-rule" id="f04-r2" style="top:1052px"></div>
+      <div class="f04-num" id="f04-num">+<span id="f04-count">0</span></div>
+      <div class="f04-numbar" id="f04-numbar"></div>
+      <div class="f04-label" id="f04-label">productos<br />en 6 líneas<small>UN SOLO PROVEEDOR</small></div>
     </div>
   </div>
 
@@ -325,26 +257,27 @@
     (function () {
       const tl = gsap.timeline({ paused: true });
       const $ = (id) => "#f04-" + id;
-      const world = document.getElementById("f04-world");
-      const cam = { z: 1.8, x: 525, y: 766 };
-      const apply = () => { world.style.transform = `translate(${540 - cam.z * cam.x}px, ${540 - cam.z * cam.y}px) scale(${cam.z})`; };
-      apply();
+      const O = Office3D(document.getElementById("f04-mount"), "f04-");
+      Object.values(O.tags).forEach((t) => { t.bb.style.opacity = 0; });
+      const start = { t: 46, s: 1.75, ox: 540, oy: 560, wall: 1, cx: 545, cy: 700, r: -10 };
+      const end = Object.assign({}, O.HOME, { wall: 1, oy: 640 });
+      O.set(start);
 
-      // Scene 1 — one long decelerating zoom-out to the whole stocked office (signature move)
-      tl.fromTo(cam, { z: 1.8, x: 525, y: 766 }, { z: 1, x: 540, y: 540, duration: 1.8, ease: "expo.out", onUpdate: apply, immediateRender: true }, 0);
-      tl.fromTo([$("band"), $("r1"), $("r2")], { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, 1.1);
+      // Scene 1 — one long decelerating pull-back to the whole stocked office
+      tl.fromTo(O.cam, Object.assign({}, start), Object.assign({}, end, { duration: 1.9, ease: "expo.out", onUpdate: O.apply, immediateRender: false }), 0);
+      tl.fromTo([$("r1"), $("r2")], { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, 1.1);
 
-      // Scene 2 — the count climbs, with value-scaled growth
+      // Scene 2 — the count climbs
       const counter = document.getElementById("f04-count");
       const fmt = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
       const st = { v: 0 };
-      tl.fromTo($("num"), { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power1.out" }, 1.4);
-      tl.fromTo(st, { v: 0 }, { v: 1100, duration: 1.4, ease: "power2.out", onUpdate: () => { counter.textContent = fmt(Math.round(st.v)); } }, 1.4);
-      tl.fromTo($("num"), { scale: 0.62 }, { scale: 1, duration: 1.4, ease: "power2.out" }, 1.4);
-      tl.fromTo($("numbar"), { scaleX: 0 }, { scaleX: 1, duration: 1.4, ease: "power2.out" }, 1.4);
-      tl.fromTo($("label"), { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out" }, 2.75);
+      tl.fromTo($("num"), { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power1.out" }, 1.3);
+      tl.fromTo(st, { v: 0 }, { v: 1100, duration: 1.4, ease: "power2.out", onUpdate: () => { counter.textContent = fmt(Math.round(st.v)); }, immediateRender: true }, 1.3);
+      tl.fromTo($("num"), { scale: 0.62 }, { scale: 1, duration: 1.4, ease: "power2.out" }, 1.3);
+      tl.fromTo($("numbar"), { scaleX: 0 }, { scaleX: 1, duration: 1.4, ease: "power2.out" }, 1.3);
+      tl.fromTo($("label"), { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out" }, 2.65);
 
-      // Scene 3 — hold the full office and the number
+      // Scene 3 — hold
       tl.to({}, { duration: 0.01 }, 4.49);
       window.__timelines["04-mas-de-1100"] = tl;
     })();
