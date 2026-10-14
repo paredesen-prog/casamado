@@ -81,6 +81,17 @@ Keep facts honest: schematic maps are labeled schematic, never invent products o
 - **Sound** sells the motion: whoosh on each camera move, thud on each product landing,
   ticks on the counter, chimes on arrival/end, beat drop when the lights come on.
 
+## Alternative look: isometric "room diorama"
+
+The client's favourite reference style (`src/diorama/` → composition `DioramaOficina`):
+one cutaway room on a thick light slab, two dark walls with light caps, narrow-FOV
+camera (fov 20, ~31° elevation, slow 12° orbit), warm low sun that enters **only through
+the window** (sun from behind the window wall, so the open front never lets it in) and
+paints a bright patch with plant shadows, procedural stone floor + teak slat wall, studio
+IBL from `RoomEnvironment`, peach/orange background with a faint `MeshReflectorMaterial`
+ground, N8AO + light bloom + vignette. Pitfall: a material `color` multiplies its `map` —
+use white when a wood texture is applied, or the wood turns cherry red.
+
 ## Getting better next time
 
 Ideas the user wanted but we didn't reach yet: people in the space, more props (lamps,

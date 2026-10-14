@@ -9,6 +9,8 @@ Everything below was hit for real; each fix is one flag or one command.
 | Playwright's Chromium has no H.264 | `R3F: Img is not part of the THREE namespace` (OffthreadVideo fallback rendering inside the canvas) | Don't use H.264 videos inside the 3D scene here; use images/textures, or transcode to VP9 webm with the system `ffmpeg`. |
 | CDNs blocked (jsdelivr, unpkg, Poly Haven, Kenney) | 403 / connection reset | npm registry and GitHub raw work. Get libraries via `npm install` / `npm pack <pkg>@<ver>`; build models and textures procedurally in code. |
 | Browser `console.log` not shown | debugging blind | Render a still and look at it; use a bright debug mesh (red box) to test whether a component mounts. |
+| Heavy first frame (big procedural canvas textures, many shaders, reflector + AO) | `Timeout (30000ms) exceeded rendering the component initially` — stills work, full render dies after ~45 s | Add `--timeout=240000` to `render` (the parallel tabs each build textures and compile shaders at once). |
+| `drei` `<Environment preset>` / HDRI files | download blocked | Build IBL offline: `scene.environment = new PMREMGenerator(gl).fromScene(new RoomEnvironment(), 0.04).texture` (from `three/examples/jsm/environments/RoomEnvironment.js`). |
 | Product textures missing in renders | products never appear | Load textures **outside** the `<ThreeCanvas>` with `delayRender`, and only mount the canvas once they're ready (state set inside the R3F tree arrives after the frame is captured). |
 
 ## Commands
