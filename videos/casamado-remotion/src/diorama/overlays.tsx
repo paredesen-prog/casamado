@@ -240,31 +240,55 @@ export const Delivery: React.FC = () => {
 
 /* -------------------------------------------------------------- end card */
 
+/** Closing frame: the stocked building stays on screen; brand, promise and CTA sit over it. */
 export const EndCard: React.FC = () => {
   const frame = useCurrentFrame() - E.end;
   const { fps } = useVideoConfig();
   const L = useLayout();
-  const bg = interpolate(frame, [0, 16], [0, 1], clamp);
-  if (bg <= 0) return null;
-  const logo = spring({ frame: frame - 8, fps, config: { damping: 13, stiffness: 110 } });
-  const pre = spring({ frame: frame - 26, fps, config: { damping: 16 } });
-  const url = spring({ frame: frame - 34, fps, config: { damping: 14 } });
-  const bar = interpolate(frame, [46, 62], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
-  const phone = interpolate(frame, [58, 70], [0, 1], clamp);
-  const foot = interpolate(frame, [66, 80], [0, 1], clamp);
+  if (frame < -4) return null;
+  const sp = (at: number, damping = 15, stiffness = 140) => spring({ frame: frame - at, fps, config: { damping, stiffness } });
+  const wash = interpolate(frame, [0, 18], [0, 1], clamp);
+  const logo = sp(6, 13, 120);
+  const cta = sp(40, 12, 150);
+  const arrow = interpolate(frame, [52, 70], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
+  const badges = ["Despacho gratis +$70.000 RM", "Pago con Webpay", "Atención 24/7"];
+  const paper = "246,240,232";
   return (
-    <AbsoluteFill style={{ opacity: bg, backgroundColor: C.paper, alignItems: "center", justifyContent: "center", fontFamily: RUBIK, color: C.ink, paddingBottom: L.v ? 200 : 40,
-      backgroundImage: "linear-gradient(rgba(26,58,92,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(26,58,92,0.07) 1px, transparent 1px)", backgroundSize: "36px 36px", backgroundPosition: "10px 10px" }}>
-      <Img src={staticFile("casamado.png")} style={{ width: L.v ? 620 : 500, opacity: Math.min(1, logo), transform: `scale(${0.7 + 0.3 * logo}) translateY(${(1 - logo) * 30}px)` }} />
-      <div style={{ marginTop: 46, fontSize: L.v ? 46 : 38, fontWeight: 500, color: C.inkSoft, opacity: pre, transform: `translateY(${(1 - pre) * 16}px)` }}>Pide hoy en</div>
-      <div style={{ position: "relative", isolation: "isolate", marginTop: 6, fontSize: L.v ? 138 : 122, fontWeight: 600, letterSpacing: "-0.025em", lineHeight: 1, opacity: url, transform: `translateY(${(1 - url) * 24}px)` }}>
-        casamado.cl
-        <span style={{ position: "absolute", left: -8, right: -8, bottom: 4, height: 26, background: C.amber, transformOrigin: "0 50%", transform: `scaleX(${bar})`, zIndex: -1 }} />
+    <AbsoluteFill>
+      {/* soft paper washes top and bottom so type sits on calm ground */}
+      <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: L.v ? 760 : 400, opacity: wash, background: `linear-gradient(rgba(${paper},0.97) 62%, rgba(${paper},0))` }} />
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: L.v ? 640 : 300, opacity: wash, background: `linear-gradient(rgba(${paper},0), rgba(${paper},0.97) 50%)` }} />
+
+      <div style={{ position: "absolute", left: 0, right: 0, top: L.v ? L.top - 30 : 54, display: "flex", flexDirection: "column", alignItems: "center", color: C.ink, fontFamily: RUBIK }}>
+        <Img src={staticFile("casamado.png")} style={{ width: L.v ? 360 : 250, opacity: Math.min(1, logo), transform: `translateY(${(1 - logo) * 24}px) scale(${0.85 + 0.15 * logo})` }} />
+        <div style={{ marginTop: L.v ? 40 : 22, fontWeight: 600, fontSize: L.v ? 104 : 76, lineHeight: 1.02, letterSpacing: "-0.02em", textAlign: "center" }}>
+          <Rise at={E.end + 16}>Somos tu</Rise>
+          <Rise at={E.end + 22}>
+            <Mark at={E.end + 34} color={C.amber} inset={L.v ? 84 : 62}>mejor opción.</Mark>
+          </Rise>
+        </div>
       </div>
-      <div style={{ marginTop: 40, fontFamily: RUBIK, fontWeight: 600, fontSize: L.v ? 50 : 44, letterSpacing: "0.12em", opacity: phone, transform: `translateY(${(1 - phone) * 14}px)` }}>SOMOS TU MEJOR OPCIÓN</div>
-      <div style={{ position: "absolute", bottom: L.v ? L.bottom - 60 : 64, left: L.pad + 12, right: L.pad + 12, borderTop: `2px solid ${C.ink}`, paddingTop: 22, display: "flex", flexDirection: L.v ? "column" : "row", alignItems: "center", gap: 10, justifyContent: "space-between",
-        fontFamily: MONO, fontWeight: 500, fontSize: L.v ? 26 : 20, letterSpacing: "0.08em", color: C.inkSoft, opacity: foot }}>
-        <span>DESPACHO GRATIS SOBRE $70.000 · RM</span><span>WEBPAY · ATENCIÓN 24/7</span>
+
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: L.v ? L.bottom - 150 : 52, display: "flex", flexDirection: "column", alignItems: "center", gap: L.v ? 34 : 24 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 22, padding: L.v ? "26px 30px 26px 48px" : "20px 22px 20px 38px", borderRadius: 999, background: C.ink,
+          boxShadow: "0 24px 50px rgba(26,58,92,0.35)", opacity: Math.min(1, cta), transform: `translateY(${(1 - cta) * 40}px) scale(${0.9 + 0.1 * cta})` }}>
+          <span style={{ fontFamily: RUBIK, fontWeight: 500, fontSize: L.v ? 40 : 32, color: "rgba(255,255,255,0.72)" }}>Pide hoy en</span>
+          <span style={{ fontFamily: RUBIK, fontWeight: 600, fontSize: L.v ? 56 : 44, color: "#FFFFFF", letterSpacing: "-0.01em" }}>casamado.cl</span>
+          <span style={{ width: L.v ? 74 : 60, height: L.v ? 74 : 60, borderRadius: "50%", background: C.amber, display: "flex", alignItems: "center", justifyContent: "center",
+            fontFamily: RUBIK, fontWeight: 600, fontSize: L.v ? 40 : 32, color: C.ink, transform: `translateX(${(1 - arrow) * -14}px)` }}>→</span>
+        </div>
+        <div style={{ display: "flex", gap: L.v ? 10 : 12, alignItems: "center" }}>
+          {badges.map((b, i) => {
+            const s = sp(60 + i * 6, 14, 160);
+            return (
+              <div key={b} style={{ display: "flex", alignItems: "center", gap: 10, padding: L.v ? "11px 16px" : "9px 18px", borderRadius: 999, background: "rgba(255,255,255,0.9)", border: "1.5px solid rgba(26,58,92,0.18)",
+                fontFamily: MONO, fontWeight: 500, fontSize: L.v ? 20 : 19, letterSpacing: L.v ? "0.01em" : "0.04em", color: C.ink, whiteSpace: "nowrap", opacity: s, transform: `translateY(${(1 - s) * 16}px)` }}>
+                <span style={{ width: 10, height: 10, borderRadius: "50%", background: C.amber }} />
+                {b}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </AbsoluteFill>
   );

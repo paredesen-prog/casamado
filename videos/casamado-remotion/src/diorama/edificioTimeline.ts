@@ -51,7 +51,7 @@ export const ROOM_DROP: Record<string, number> = {
 
 /* ---------------------------------------------------------------- camera */
 
-type Shot = { target: [number, number, number]; az: number; el: number; width: number };
+type Shot = { target: [number, number, number]; az: number; el: number; width: number; vw?: number }; // vw: portrait width override
 const WIDE: Shot = { target: [-0.9, 0, -0.9], az: 45, el: 40, width: 18.5 };
 const HOOK0: Shot = { target: [-1.6, 0, -1.6], az: 30, el: 60, width: 19 };
 const room = (k: number): Shot => {
@@ -60,7 +60,7 @@ const room = (k: number): Shot => {
   return { target: [x - 0.25, 0.55, z - 0.25], az: s.az, el: 41, width: 7.0 };
 };
 const VAN: Shot = { target: [3.1, 0.9, 3.4], az: 44, el: 36, width: 9.5 };
-const END: Shot = { target: [-0.5, 0, -0.5], az: 52, el: 50, width: 21 };
+const END: Shot = { target: [-2.6, 0, -2.6], az: 47, el: 40, width: 28, vw: 24.5 * 0.84 };
 
 // [frame, shot] keys; between keys the camera eases, on equal shots it holds.
 const KEYS: [number, Shot][] = [
@@ -76,7 +76,8 @@ const KEYS: [number, Shot][] = [
   [E.delivery - 6, { ...WIDE, az: 42 }],
   [E.delivery + 30, VAN],
   [E.end - 4, { ...VAN, az: 48, width: 8.8 }],
-  [E.total, END],
+  [E.end + 46, END],
+  [E.total, { ...END, az: END.az + 7 }],
 ];
 
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
@@ -92,7 +93,8 @@ export const camAt = (frame: number, aspect: number): CamState => {
   const t = interpolate(frame, [f0, f1], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
   const az = THREE.MathUtils.degToRad(lerp(a.az, b.az, t));
   const el = THREE.MathUtils.degToRad(lerp(a.el, b.el, t));
-  const width = lerp(a.width, b.width, t) * (aspect < 1 ? 0.84 : 1); // portrait: fill more of the frame
+  const wOf = (x: Shot) => (aspect < 1 ? x.vw ?? x.width * 0.84 : x.width); // portrait fills more of the frame
+  const width = lerp(wOf(a), wOf(b), t);
   const target = new THREE.Vector3(lerp(a.target[0], b.target[0], t), lerp(a.target[1], b.target[1], t), lerp(a.target[2], b.target[2], t));
   // distance so that `width` metres span the frame horizontally (portrait frames get extra height for text)
   const hfov = 2 * Math.atan(Math.tan(THREE.MathUtils.degToRad(VFOV) / 2) * Math.min(1, aspect));
