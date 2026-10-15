@@ -261,7 +261,7 @@ export const EndCard: React.FC = () => {
         casamado.cl
         <span style={{ position: "absolute", left: -8, right: -8, bottom: 4, height: 26, background: C.amber, transformOrigin: "0 50%", transform: `scaleX(${bar})`, zIndex: -1 }} />
       </div>
-      <div style={{ marginTop: 34, fontFamily: MONO, fontWeight: 500, fontSize: L.v ? 44 : 38, letterSpacing: "0.06em", opacity: phone }}>+569 3466 0081</div>
+      <div style={{ marginTop: 40, fontFamily: RUBIK, fontWeight: 600, fontSize: L.v ? 50 : 44, letterSpacing: "0.12em", opacity: phone, transform: `translateY(${(1 - phone) * 14}px)` }}>SOMOS TU MEJOR OPCIÓN</div>
       <div style={{ position: "absolute", bottom: L.v ? L.bottom - 60 : 64, left: L.pad + 12, right: L.pad + 12, borderTop: `2px solid ${C.ink}`, paddingTop: 22, display: "flex", flexDirection: L.v ? "column" : "row", alignItems: "center", gap: 10, justifyContent: "space-between",
         fontFamily: MONO, fontWeight: 500, fontSize: L.v ? 26 : 20, letterSpacing: "0.08em", color: C.inkSoft, opacity: foot }}>
         <span>DESPACHO GRATIS SOBRE $70.000 · RM</span><span>WEBPAY · ATENCIÓN 24/7</span>
