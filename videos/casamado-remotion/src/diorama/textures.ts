@@ -269,3 +269,91 @@ export const clockTexture = () => {
   g.fill();
   return finish(c);
 };
+
+/** Wood planks: grain + staggered seams. `tone` tints the base colour. */
+export const plankTexture = (seed = 7, tone: [number, number, number] = [205, 150, 102]) => {
+  const W = 1024, H = 1024;
+  const [c, g] = canvas(W, H);
+  const img = g.createImageData(W, H);
+  const warp = fbm(seed, 6, 4);
+  const r = mulberry32(seed);
+  const rows = 8, plankLen = 0.5;
+  const offs = Array.from({ length: rows }, () => r());
+  const shade = Array.from({ length: rows * 4 }, () => 0.9 + r() * 0.16);
+  for (let y = 0; y < H; y++) {
+    const row = Math.floor((y / H) * rows);
+    const vy = (y / H) * rows - row;
+    for (let x = 0; x < W; x++) {
+      const u = x / W + offs[row];
+      const seg = Math.floor(u / plankLen);
+      const su = (u / plankLen) % 1;
+      const grain = Math.sin((vy * 9 + warp(u, y / H) * 5) * Math.PI) * 0.05;
+      let k = shade[(row * 4 + seg) % shade.length] + grain + (warp(u * 3, y / H * 3) - 0.5) * 0.12;
+      if (vy < 0.025 || su < 0.006) k *= 0.55;
+      const i = (y * W + x) * 4;
+      img.data[i] = tone[0] * k;
+      img.data[i + 1] = tone[1] * k;
+      img.data[i + 2] = tone[2] * k;
+      img.data[i + 3] = 255;
+    }
+  }
+  g.putImageData(img, 0, 0);
+  return finish(c, 1);
+};
+
+/** Square tiles with grout; checker optional. */
+export const tileTexture = (a: string, b: string, n = 8, grout = "#B9B4AC", seed = 3) => {
+  const N = 1024;
+  const [c, g] = canvas(N, N);
+  const r = mulberry32(seed);
+  const s = N / n;
+  g.fillStyle = grout;
+  g.fillRect(0, 0, N, N);
+  for (let y = 0; y < n; y++) for (let x = 0; x < n; x++) {
+    g.fillStyle = (x + y) % 2 ? b : a;
+    g.fillRect(x * s + 2, y * s + 2, s - 4, s - 4);
+    g.fillStyle = `rgba(255,255,255,${r() * 0.06})`;
+    g.fillRect(x * s + 2, y * s + 2, s - 4, s - 4);
+  }
+  return finish(c, 1);
+};
+
+/** Speckled carpet tiles / concrete: base colour + fine noise. */
+export const speckleTexture = (base: [number, number, number], amount = 0.12, cloudAmt = 0.08, seed = 9) => {
+  const N = 512;
+  const [c, g] = canvas(N, N);
+  const img = g.createImageData(N, N);
+  const r = mulberry32(seed);
+  const cloud = fbm(seed, 4, 5);
+  for (let i = 0; i < N * N; i++) {
+    const x = i % N, y = Math.floor(i / N);
+    const k = 1 + (r() - 0.5) * amount + (cloud(x / N, y / N) - 0.5) * cloudAmt * 2;
+    img.data[i * 4] = base[0] * k;
+    img.data[i * 4 + 1] = base[1] * k;
+    img.data[i * 4 + 2] = base[2] * k;
+    img.data[i * 4 + 3] = 255;
+  }
+  g.putImageData(img, 0, 0);
+  return finish(c, 1);
+};
+
+/** Kraft shipping box face with the Casamado logo and tape. */
+export const kraftTexture = (logo: Img) => {
+  const W = 512, H = 512;
+  const [c, g] = canvas(W, H);
+  g.fillStyle = "#C2935E";
+  g.fillRect(0, 0, W, H);
+  const r = mulberry32(4);
+  for (let i = 0; i < 1800; i++) {
+    g.fillStyle = `rgba(90,60,30,${r() * 0.08})`;
+    g.fillRect(r() * W, r() * H, 2 + r() * 6, 1);
+  }
+  g.fillStyle = "rgba(255,255,255,.18)";
+  g.fillRect(W / 2 - 40, 0, 80, H);
+  contain(g, logo, 150, 120, 212, 212);
+  g.fillStyle = "#1A3A5C";
+  g.textAlign = "center";
+  g.font = `700 54px ${RUBIK}`;
+  g.fillText("casamado", W / 2, 400);
+  return finish(c);
+};

@@ -11,7 +11,7 @@ import { useTextures } from "../useTextures";
 import { Books, Box, DeskSetup, Frame, OfficeChair, Plant, ProductBox, ProductCard, ShelfRack } from "./props";
 import { clockTexture, marbleTexture, orderScreenTexture, posterBrand, posterLines, posterSunset, storeScreenTexture, woodTexture } from "./textures";
 
-const BG = "#F0A868";
+export const BG = "#F0A868";
 const ROOM = 1.6; // interior half-size
 const T = 0.14; // wall thickness
 const H = 2.7; // wall height
@@ -51,7 +51,7 @@ const Camera: React.FC = () => {
 };
 
 /** Soft studio reflections without downloading an HDRI. */
-const Env: React.FC = () => {
+export const Env: React.FC = () => {
   const { gl, scene } = useThree();
   useMemo(() => {
     const pm = new THREE.PMREMGenerator(gl);
@@ -132,7 +132,7 @@ const Shell: React.FC<{ marble: THREE.Texture; wood: THREE.Texture }> = ({ marbl
   );
 };
 
-const Ground: React.FC = () => (
+export const Ground: React.FC = () => (
   <mesh position={[0, -0.26, 0]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
     <planeGeometry args={[80, 80]} />
     <MeshReflectorMaterial

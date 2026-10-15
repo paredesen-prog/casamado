@@ -19,7 +19,7 @@ export const RBox: React.FC<{ p: V3; s: V3; c?: string; r?: number; rad?: number
   </RoundedBox>
 );
 
-const Cyl: React.FC<{ p: V3; r: number; r2?: number; h: number; c?: string; rough?: number; m?: number; rot?: V3; seg?: number }> = ({ p, r, r2, h, c = "#ffffff", rough = 0.6, m = 0, rot, seg = 32 }) => (
+export const Cyl: React.FC<{ p: V3; r: number; r2?: number; h: number; c?: string; rough?: number; m?: number; rot?: V3; seg?: number }> = ({ p, r, r2, h, c = "#ffffff", rough = 0.6, m = 0, rot, seg = 32 }) => (
   <mesh position={p} rotation={rot} {...S}>
     <cylinderGeometry args={[r, r2 ?? r, h, seg]} />
     <meshStandardMaterial color={c} roughness={rough} metalness={m} />
