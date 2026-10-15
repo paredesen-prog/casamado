@@ -2,6 +2,7 @@ import { RoundedBox } from "@react-three/drei";
 import React, { useMemo } from "react";
 import * as THREE from "three";
 import { mulberry32 } from "../rng";
+import { useDrop } from "./drop";
 
 type V3 = [number, number, number];
 const S = { castShadow: true, receiveShadow: true } as const;
@@ -288,37 +289,43 @@ export const Books: React.FC<{ p: V3; seed?: number; n?: number }> = ({ p, seed 
 
 /* ---------------------------------------------------------------- products */
 
-/** Box-shaped product with the photo on its front (+z) or top (+y) face. */
-export const ProductBox: React.FC<{ p: V3; size: V3; tex: THREE.Texture; face?: "front" | "top"; side?: string; yaw?: number }> = ({
-  p, size, tex, face = "front", side = "#F4F2EE", yaw = 0,
+/** Box-shaped product with the photo on its front (+z) or top (+y) face. `d` = drop order in its room. */
+export const ProductBox: React.FC<{ p: V3; size: V3; tex: THREE.Texture; face?: "front" | "top"; side?: string; yaw?: number; d?: number }> = ({
+  p, size, tex, face = "front", side = "#F4F2EE", yaw = 0, d = 0,
 }) => {
   const photo = face === "front" ? 4 : 2;
+  const a = useDrop(d);
+  if (!a.show) return null;
   return (
-    <mesh position={[p[0], p[1] + size[1] / 2, p[2]]} rotation={[0, yaw, 0]} {...S}>
-      <boxGeometry args={size} />
-      {[0, 1, 2, 3, 4, 5].map((i) => (
-        <meshStandardMaterial
-          key={i}
-          attach={`material-${i}`}
-          color={i === photo ? "#ffffff" : side}
-          map={i === photo ? tex : undefined}
-          roughness={0.55}
-          emissive="#ffffff"
-          emissiveMap={i === photo ? tex : undefined}
-          emissiveIntensity={i === photo ? 0.12 : 0}
-        />
-      ))}
-    </mesh>
+    <group position={[p[0], p[1] + a.y, p[2]]} rotation={[0, yaw, 0]} scale={[a.sx, a.sy, a.sx]}>
+      <mesh position={[0, size[1] / 2, 0]} {...S}>
+        <boxGeometry args={size} />
+        {[0, 1, 2, 3, 4, 5].map((i) => (
+          <meshStandardMaterial
+            key={i}
+            attach={`material-${i}`}
+            color={i === photo ? "#ffffff" : side}
+            map={i === photo ? tex : undefined}
+            roughness={0.55}
+            emissive="#ffffff"
+            emissiveMap={i === photo ? tex : undefined}
+            emissiveIntensity={i === photo ? 0.12 : 0}
+          />
+        ))}
+      </mesh>
+    </group>
   );
 };
 
 /** Cut-out photo standing upright (bags, pouches), shadow follows the silhouette. */
-export const ProductCard: React.FC<{ p: V3; h: number; tex: THREE.Texture; yaw?: number; lean?: number }> = ({ p, h, tex, yaw = 0, lean = 0 }) => {
+export const ProductCard: React.FC<{ p: V3; h: number; tex: THREE.Texture; yaw?: number; lean?: number; d?: number }> = ({ p, h, tex, yaw = 0, lean = 0, d = 0 }) => {
   const img = tex.image as HTMLImageElement;
   const w = (h * img.width) / img.height;
   const depth = useMemo(() => new THREE.MeshDepthMaterial({ depthPacking: THREE.RGBADepthPacking, map: tex, alphaTest: 0.5 }), [tex]);
+  const a = useDrop(d);
+  if (!a.show) return null;
   return (
-    <group position={p} rotation={[0, yaw, 0]}>
+    <group position={[p[0], p[1] + a.y, p[2]]} rotation={[0, yaw, 0]} scale={[a.sx, a.sy, a.sx]}>
       <mesh position={[0, h / 2, 0]} rotation={[-lean, 0, 0]} castShadow customDepthMaterial={depth}>
         <planeGeometry args={[w, h]} />
         <meshStandardMaterial map={tex} alphaTest={0.5} side={THREE.DoubleSide} roughness={0.5} emissive="#ffffff" emissiveMap={tex} emissiveIntensity={0.12} />

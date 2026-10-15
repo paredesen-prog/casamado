@@ -1,6 +1,9 @@
 import { RoundedBox } from "@react-three/drei";
 import React, { useMemo } from "react";
 import * as THREE from "three";
+import { DropCtx, useDrop } from "./drop";
+import { ROOM_DROP } from "./edificioTimeline";
+import { LOOKS, Person } from "./people";
 import { Books, Box, Cyl, DeskSetup, Frame, OfficeChair, Plant, ProductBox, ProductCard, RBox, ShelfRack } from "./props";
 
 type V3 = [number, number, number];
@@ -98,14 +101,20 @@ const Monitor: React.FC<{ p: V3; yaw?: number; screen: THREE.Texture; w?: number
   </group>
 );
 
-export const KraftBox: React.FC<{ p: V3; s?: V3; kraft: THREE.Texture; yaw?: number }> = ({ p, s = [0.5, 0.36, 0.4], kraft, yaw = 0 }) => (
-  <mesh position={[p[0], p[1] + s[1] / 2, p[2]]} rotation={[0, yaw, 0]} castShadow receiveShadow>
-    <boxGeometry args={s} />
-    {[0, 1, 2, 3, 4, 5].map((i) => (
-      <meshStandardMaterial key={i} attach={`material-${i}`} map={i === 0 || i === 4 ? kraft : undefined} color={i === 0 || i === 4 ? "#ffffff" : "#BF8F5A"} roughness={0.85} />
-    ))}
-  </mesh>
-);
+export const KraftBox: React.FC<{ p: V3; s?: V3; kraft: THREE.Texture; yaw?: number; d?: number }> = ({ p, s = [0.5, 0.36, 0.4], kraft, yaw = 0, d = 0 }) => {
+  const a = useDrop(d);
+  if (!a.show) return null;
+  return (
+    <group position={[p[0], p[1] + a.y, p[2]]} rotation={[0, yaw, 0]} scale={[a.sx, a.sy, a.sx]}>
+      <mesh position={[0, s[1] / 2, 0]} castShadow receiveShadow>
+        <boxGeometry args={s} />
+        {[0, 1, 2, 3, 4, 5].map((i) => (
+          <meshStandardMaterial key={i} attach={`material-${i}`} map={i === 0 || i === 4 ? kraft : undefined} color={i === 0 || i === 4 ? "#ffffff" : "#BF8F5A"} roughness={0.85} />
+        ))}
+      </mesh>
+    </group>
+  );
+};
 
 const Toilet: React.FC<{ p: V3; yaw?: number }> = ({ p, yaw = 0 }) => (
   <group position={p} rotation={[0, yaw, 0]}>
@@ -155,11 +164,14 @@ const Meeting: React.FC<RoomProps> = ({ tex, m }) => (
         <SimpleChair p={[x - 0.1, 0, 0.45]} />
       </React.Fragment>
     ))}
-    <ProductBox p={[0.35, 0.74, -0.4]} size={[0.26, 0.012, 0.34]} tex={tex.cuaderno} face="top" side="#5C9A35" yaw={0.4} />
-    <ProductBox p={[-0.55, 0.74, -0.35]} size={[0.3, 0.42, 0.07]} tex={tex.papel} yaw={0.7} />
+    <ProductBox p={[0.35, 0.74, -0.4]} size={[0.32, 0.014, 0.42]} tex={tex.cuaderno} face="top" side="#5C9A35" yaw={0.4} d={0} />
+    <ProductBox p={[-0.55, 0.74, -0.35]} size={[0.36, 0.5, 0.08]} tex={tex.papel} yaw={0.7} d={1} />
     <Frame p={[-0.1, 1.55, -HALF + 0.08]} w={1.3} h={0.72} map={m.store} />
     <Plant p={[-1.4, 0, 1.25]} kind="bush" seed={31} size={1.2} pot="#E9E5DE" />
     <Plant p={[1.4, 0, -1.4]} kind="snake" seed={32} size={1.1} pot="#2B2B2F" />
+    <Person p={[-0.85, 0, 0.45]} {...LOOKS[1]} pose="sit" seed={1} />
+    <Person p={[0.65, 0, -1.15]} yaw={Math.PI} {...LOOKS[4]} pose="sit" seed={2} />
+    <Person p={[1.2, 0, -0.7]} yaw={2.4} {...LOOKS[0]} pose="present" seed={3} />
   </group>
 );
 
@@ -178,15 +190,18 @@ const OpenOffice: React.FC<RoomProps> = ({ tex, m }) => (
         ))}
       </group>
     ))}
-    <ProductBox p={[0.85, 0.74, -0.65]} size={[0.3, 0.42, 0.07]} tex={tex.papel} yaw={0.6} />
-    <ProductBox p={[0.95, 0.74, 0.7]} size={[0.26, 0.012, 0.34]} tex={tex.cuaderno} face="top" side="#5C9A35" yaw={0.3} />
+    <ProductBox p={[0.85, 0.74, -0.65]} size={[0.36, 0.5, 0.08]} tex={tex.papel} yaw={0.6} d={0} />
+    <ProductBox p={[0.95, 0.74, 0.7]} size={[0.32, 0.014, 0.42]} tex={tex.cuaderno} face="top" side="#5C9A35" yaw={0.3} d={1} />
     <ShelfRack p={[-1.55, 0, -0.1]} len={1.6} depth={0.32} levels={[0.08, 0.5, 0.92]} wood={m.wood} yaw={Math.PI / 2} />
     {[0, 1, 2].map((i) => (
-      <ProductBox key={i} p={[-1.55, 0.095 + i * 0.075, -0.5]} size={[0.24, 0.075, 0.34]} tex={tex.papel} face="top" />
+      <ProductBox key={i} p={[-1.55, 0.095 + i * 0.075, -0.5]} size={[0.24, 0.075, 0.34]} tex={tex.papel} face="top" d={2 + i} />
     ))}
     <Books p={[-1.57, 0.515, 0.1]} seed={41} n={9} />
     <Plant p={[-1.55, 0.935, -0.4]} kind="small" seed={42} size={1.4} pot="#C66B3D" potH={0.13} potR={0.08} />
     <Plant p={[-1.55, 0.935, 0.45]} kind="trail" seed={43} size={0.8} pot="#F1EEE8" potH={0.15} potR={0.09} />
+    <Person p={[-0.7, 0, 0.1]} yaw={-0.15} {...LOOKS[2]} pose="sit" seed={4} />
+    <Person p={[0.4, 0, 1.4]} yaw={0.15} {...LOOKS[5]} pose="sit" seed={5} />
+    <Person p={[-1.0, 0, 0.75]} yaw={Math.PI / 2} {...LOOKS[6]} seed={6} />
   </group>
 );
 
@@ -211,8 +226,8 @@ const Cafeteria: React.FC<RoomProps> = ({ tex, m }) => (
     <RBox p={[1.35, 0.95, -1.45]} s={[0.7, 1.9, 0.65]} c="#E9EAEC" rad={0.03} r={0.25} />
     <Box p={[1.08, 1.2, -1.11]} s={[0.025, 0.5, 0.03]} c="#9EA3A9" m={0.8} r={0.3} />
     {/* products on the counter */}
-    <ProductCard p={[-0.55, 0.91, -1.4]} h={0.4} tex={tex.cafe} yaw={0.55} />
-    <ProductCard p={[-0.15, 0.91, -1.35]} h={0.15} tex={tex.galleta} yaw={0.55} lean={0.15} />
+    <ProductCard p={[-0.55, 0.91, -1.4]} h={0.52} tex={tex.cafe} yaw={0.55} d={0} />
+    <ProductCard p={[-0.15, 0.91, -1.35]} h={0.21} tex={tex.galleta} yaw={0.55} lean={0.15} d={1} />
     {/* bistro table */}
     <Cyl p={[0.1, 0.37, 0.35]} r={0.04} h={0.74} c="#1F1F22" m={0.5} rough={0.4} />
     <Cyl p={[0.1, 0.02, 0.35]} r={0.25} h={0.04} c="#1F1F22" m={0.5} rough={0.4} />
@@ -225,6 +240,8 @@ const Cafeteria: React.FC<RoomProps> = ({ tex, m }) => (
       <Cyl p={[0, 0.096, 0]} r={0.034} h={0.004} c="#3A2416" rough={0.2} />
     </group>
     <Plant p={[1.45, 0, 1.3]} kind="bush" seed={51} size={1.1} pot="#C66B3D" />
+    <Person p={[-0.8, 0, -0.85]} {...LOOKS[3]} seed={7} />
+    <Person p={[0.1, 0, 1.1]} {...LOOKS[0]} pose="sit" seed={8} />
   </group>
 );
 
@@ -241,11 +258,13 @@ const Reception: React.FC<RoomProps> = ({ m }) => (
     <Monitor p={[-0.4, 1.075, -0.8]} screen={m.order} w={0.45} yaw={0.1} />
     <Sofa p={[-1.3, 0, 0.6]} w={1.5} yaw={Math.PI / 2} />
     {/* delivery that just arrived */}
-    <KraftBox p={[0.55, 0, 0.55]} kraft={m.kraft} yaw={0.15} />
-    <KraftBox p={[1.05, 0, 0.75]} kraft={m.kraft} yaw={-0.2} s={[0.42, 0.3, 0.36]} />
-    <KraftBox p={[0.6, 0.36, 0.55]} kraft={m.kraft} yaw={0.35} s={[0.4, 0.28, 0.34]} />
+    <KraftBox p={[0.55, 0, 0.55]} kraft={m.kraft} yaw={0.15} d={0} />
+    <KraftBox p={[1.05, 0, 0.75]} kraft={m.kraft} yaw={-0.2} s={[0.42, 0.3, 0.36]} d={1} />
+    <KraftBox p={[0.6, 0.36, 0.55]} kraft={m.kraft} yaw={0.35} s={[0.4, 0.28, 0.34]} d={2} />
     <Plant p={[1.45, 0, -1.4]} kind="bush" seed={61} size={1.35} pot="#E9E5DE" />
     <Plant p={[-1.45, 0, -1.4]} kind="snake" seed={62} size={1.15} pot="#2B2B2F" />
+    <Person p={[0.55, 0, -1.2]} yaw={Math.PI} {...LOOKS[4]} seed={9} />
+    <Person p={[-1.38, 0, 0.6]} yaw={-Math.PI / 2} {...LOOKS[1]} pose="sit" seed={10} />
   </group>
 );
 
@@ -269,10 +288,10 @@ const Restroom: React.FC<RoomProps> = ({ tex }) => (
     ))}
     <Box p={[-1.72, 1.15, 0.3]} s={[0.02, 0.25, 1.5]} c="#B9CCDA" m={0.9} r={0.05} />
     {/* products: soap refill + dispenser + paper towels */}
-    <ProductCard p={[-1.45, 0.85, 1.0]} h={0.38} tex={tex.jabon} yaw={0.9} />
-    <ProductCard p={[-1.68, 0.95, -0.55]} h={0.42} tex={tex.disp} yaw={Math.PI / 2 - 0.2} />
-    <ProductBox p={[0.9, 0, 0.3]} size={[0.62, 0.28, 0.3]} tex={tex.tork} yaw={0.45} side="#F7F7F5" />
-    <ProductBox p={[0.95, 0.28, 0.32]} size={[0.62, 0.28, 0.3]} tex={tex.tork} yaw={0.55} side="#F7F7F5" />
+    <ProductCard p={[-1.45, 0.85, 1.0]} h={0.5} tex={tex.jabon} yaw={0.9} d={0} />
+    <ProductCard p={[-1.68, 0.95, -0.55]} h={0.52} tex={tex.disp} yaw={Math.PI / 2 - 0.2} d={1} />
+    <ProductBox p={[0.9, 0, 0.3]} size={[0.74, 0.33, 0.35]} tex={tex.tork} yaw={0.45} side="#F7F7F5" d={2} />
+    <ProductBox p={[0.95, 0.33, 0.32]} size={[0.74, 0.33, 0.35]} tex={tex.tork} yaw={0.55} side="#F7F7F5" d={3} />
     <Plant p={[1.45, 0, 1.35]} kind="small" seed={71} size={1.8} pot="#E9E5DE" potH={0.2} potR={0.1} />
   </group>
 );
@@ -283,22 +302,23 @@ const StoreRoom: React.FC<RoomProps> = ({ tex, m }) => (
     {[-0.75, 0.75].map((z) => (
       <ShelfRack key={z} p={[-1.5, 0, z]} len={1.3} depth={0.45} levels={[0.08, 0.6, 1.12, 1.64]} wood={m.wood} yaw={Math.PI / 2} />
     ))}
-    <ProductCard p={[-1.5, 0.095, -1.05]} h={0.42} tex={tex.jabon} yaw={1.0} />
-    <ProductCard p={[-1.5, 0.095, -0.55]} h={0.42} tex={tex.jabon} yaw={1.0} />
-    <ProductCard p={[-1.5, 0.615, -0.8]} h={0.36} tex={tex.toallitas} yaw={1.0} />
-    <ProductCard p={[-1.5, 1.135, -0.8]} h={0.36} tex={tex.guantes} yaw={1.0} />
-    <ProductBox p={[-1.5, 0.095, 0.75]} size={[0.62, 0.28, 0.3]} tex={tex.tork} yaw={Math.PI / 2} side="#F7F7F5" />
-    <ProductBox p={[-1.5, 0.615, 0.75]} size={[0.62, 0.28, 0.3]} tex={tex.tork} yaw={Math.PI / 2} side="#F7F7F5" />
-    <KraftBox p={[-1.5, 1.135, 0.75]} kraft={m.kraft} yaw={Math.PI / 2} s={[0.45, 0.3, 0.38]} />
+    <ProductCard p={[-1.5, 0.095, -1.05]} h={0.42} tex={tex.jabon} yaw={1.0} d={0} />
+    <ProductCard p={[-1.5, 0.095, -0.55]} h={0.42} tex={tex.jabon} yaw={1.0} d={1} />
+    <ProductCard p={[-1.5, 0.615, -0.8]} h={0.44} tex={tex.toallitas} yaw={1.0} d={2} />
+    <ProductCard p={[-1.5, 1.135, -0.8]} h={0.44} tex={tex.guantes} yaw={1.0} d={3} />
+    <ProductBox p={[-1.5, 0.095, 0.75]} size={[0.74, 0.33, 0.35]} tex={tex.tork} yaw={Math.PI / 2} side="#F7F7F5" d={4} />
+    <ProductBox p={[-1.5, 0.615, 0.75]} size={[0.74, 0.33, 0.35]} tex={tex.tork} yaw={Math.PI / 2} side="#F7F7F5" d={5} />
+    <KraftBox p={[-1.5, 1.135, 0.75]} kraft={m.kraft} yaw={Math.PI / 2} s={[0.45, 0.3, 0.38]} d={6} />
     {/* pallet with boxes */}
     <group position={[0.4, 0, -0.6]}>
       <Box p={[0, 0.07, 0]} s={[1.2, 0.14, 1.0]} c="#B98D5A" r={0.9} />
-      <KraftBox p={[-0.28, 0.14, -0.22]} kraft={m.kraft} />
-      <KraftBox p={[0.28, 0.14, -0.22]} kraft={m.kraft} />
-      <KraftBox p={[-0.28, 0.14, 0.24]} kraft={m.kraft} />
-      <KraftBox p={[0.28, 0.14, 0.24]} kraft={m.kraft} />
-      <KraftBox p={[0, 0.5, 0]} kraft={m.kraft} yaw={0.2} />
+      <KraftBox p={[-0.28, 0.14, -0.22]} kraft={m.kraft} d={7} />
+      <KraftBox p={[0.28, 0.14, -0.22]} kraft={m.kraft} d={8} />
+      <KraftBox p={[-0.28, 0.14, 0.24]} kraft={m.kraft} d={9} />
+      <KraftBox p={[0.28, 0.14, 0.24]} kraft={m.kraft} d={10} />
+      <KraftBox p={[0, 0.5, 0]} kraft={m.kraft} yaw={0.2} d={11} />
     </group>
+    <Person p={[0.95, 0, 0.1]} yaw={2.5} {...LOOKS[3]} pose="carry" box={m.kraft} seed={13} />
     {/* mop bucket */}
     <group position={[0.9, 0, 0.9]}>
       <Cyl p={[0, 0.17, 0]} r={0.2} r2={0.17} h={0.34} c="#F5C02A" rough={0.5} />
@@ -315,10 +335,11 @@ const ITRoom: React.FC<RoomProps> = ({ tex, m }) => (
     <Table p={[0.7, 0, 0.15]} w={1.5} d={0.75} wood={m.wood} />
     <Monitor p={[0.45, 0.74, -0.05]} screen={m.store} yaw={0.1} />
     <Monitor p={[1.05, 0.74, -0.02]} screen={m.order} yaw={-0.15} />
-    <ProductCard p={[0.75, 0.74, 0.35]} h={0.2} tex={tex.teclado} yaw={0.6} lean={0.9} />
+    <ProductCard p={[0.75, 0.74, 0.35]} h={0.28} tex={tex.teclado} yaw={0.6} lean={0.9} d={0} />
     <OfficeChair p={[0.75, 0, 0.85]} yaw={0.1} />
-    <KraftBox p={[1.35, 0, -1.3]} kraft={m.kraft} yaw={-0.3} />
+    <KraftBox p={[1.35, 0, -1.3]} kraft={m.kraft} yaw={-0.3} d={1} />
     <Plant p={[-1.45, 0, 1.35]} kind="snake" seed={81} size={1.0} pot="#E9E5DE" />
+    <Person p={[0.75, 0, 0.85]} yaw={0.1} {...LOOKS[2]} pose="sit" seed={11} />
   </group>
 );
 
@@ -327,8 +348,9 @@ const Manager: React.FC<RoomProps> = ({ tex, m }) => (
   <group position={[0, 0, -0.2]}>
     <DeskSetup store={m.store} order={m.order} wood={m.wood} />
     <OfficeChair p={[0.42, 0, -0.55]} yaw={0.22} />
-    <ProductBox p={[1.3, 0.74, -1.33]} size={[0.3, 0.42, 0.07]} tex={tex.papel} yaw={0.4} />
-    <ProductCard p={[-0.2, 0.74, -1.45]} h={0.32} tex={tex.cafe} yaw={0.5} />
+    <Person p={[0.42, 0, -0.55]} yaw={0.22} {...LOOKS[0]} pose="sit" seed={12} />
+    <ProductBox p={[1.3, 0.74, -1.33]} size={[0.36, 0.5, 0.08]} tex={tex.papel} yaw={0.4} d={0} />
+    <ProductCard p={[-0.2, 0.74, -1.45]} h={0.32} tex={tex.cafe} yaw={0.5} d={1} />
     <Plant p={[-1.35, 0, 1.3]} kind="bush" seed={2} size={1.4} pot="#C66B3D" />
     <Sofa p={[-1.3, 0, 0.1]} w={1.3} yaw={Math.PI / 2} c="#C9B79C" />
   </group>
@@ -351,7 +373,7 @@ export const roomCenter = (i: number, j: number): [number, number] => [(i - 1) *
 export const hasRoom = (i: number, j: number) => ROOMS.some((r) => r.i === i && r.j === j);
 
 /** Floors are passed in by key so each texture is built once. */
-export const Building: React.FC<{ tex: Tex; m: Mats; floors: Record<string, THREE.Texture> }> = ({ tex, m, floors }) => {
+export const Building: React.FC<{ tex: Tex; m: Mats; floors: Record<string, THREE.Texture>; animate?: boolean }> = ({ tex, m, floors, animate = false }) => {
   const doors = useMemo(() => new Set(["1,0x", "1,1x", "0,1z", "1,1z", "2,1x", "1,2z", "2,1z"]), []);
   return (
     <group>
@@ -380,9 +402,11 @@ export const Building: React.FC<{ tex: Tex; m: Mats; floors: Record<string, THRE
             {/* low front walls on the camera-facing edge */}
             {frontX ? <WallRun axis="z" c={cx + HALF + 0.02} a0={cz - HALF} a1={cz + HALF + (frontZ ? 0.08 : 0)} h={0.22} /> : null}
             {frontZ ? <WallRun axis="x" c={cz + HALF + 0.02} a0={cx - HALF} a1={cx + HALF + (frontX ? 0.08 : 0)} h={0.22} /> : null}
-            <group position={[cx, 0, cz]}>
-              <C tex={tex} m={m} />
-            </group>
+            <DropCtx.Provider value={animate ? ROOM_DROP[r.key] : null}>
+              <group position={[cx, 0, cz]}>
+                <C tex={tex} m={m} />
+              </group>
+            </DropCtx.Provider>
           </group>
         );
       })}

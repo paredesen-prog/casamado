@@ -2,11 +2,14 @@ import { useThree } from "@react-three/fiber";
 import { Bloom, EffectComposer, N8AO, Vignette } from "@react-three/postprocessing";
 import { ThreeCanvas } from "@remotion/three";
 import React, { useLayoutEffect, useMemo } from "react";
-import { AbsoluteFill, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import * as THREE from "three";
 import { useFontsReady } from "../fonts";
 import { useTextures } from "../useTextures";
 import { BG, Env, Ground } from "./Diorama";
+import { camAt, VAN_ARRIVE, VAN_YAW, vanAt } from "./edificioTimeline";
+import { Brand, Counter, Delivery, EndCard, Hook, Progress, TopBand, TourChips } from "./overlays";
+import { LOOKS, Person } from "./people";
 import { Building, CELL, Mats, Tex, Van } from "./rooms";
 import { clockTexture, kraftTexture, marbleTexture, orderScreenTexture, plankTexture, posterBrand, posterLines, posterSunset, speckleTexture, storeScreenTexture, tileTexture, woodTexture } from "./textures";
 
@@ -25,24 +28,51 @@ const FILES: Record<keyof Tex, string> = {
 };
 const KEYS = Object.keys(FILES) as (keyof Tex)[];
 
-const Camera: React.FC = () => {
+const Camera: React.FC<{ film: boolean }> = ({ film }) => {
   const frame = useCurrentFrame();
-  const { durationInFrames } = useVideoConfig();
+  const { durationInFrames, width, height } = useVideoConfig();
   const { camera } = useThree();
   useLayoutEffect(() => {
-    const az = THREE.MathUtils.degToRad(interpolate(frame, [0, durationInFrames], [40, 50]));
-    const el = THREE.MathUtils.degToRad(40);
-    const dist = 47;
-    const target = new THREE.Vector3(-0.5, 0.0, -0.5);
     const cam = camera as THREE.PerspectiveCamera;
-    cam.fov = 22;
     cam.near = 1;
-    cam.far = 140;
-    cam.position.set(target.x + dist * Math.sin(az) * Math.cos(el), target.y + dist * Math.sin(el), target.z + dist * Math.cos(az) * Math.cos(el));
-    cam.lookAt(target);
+    cam.far = 160;
+    if (film) {
+      const c = camAt(frame, width / height);
+      cam.fov = c.fov;
+      cam.position.copy(c.pos);
+      cam.lookAt(c.target);
+    } else {
+      const az = THREE.MathUtils.degToRad(interpolate(frame, [0, durationInFrames], [40, 50]));
+      const el = THREE.MathUtils.degToRad(40);
+      const dist = 47;
+      const target = new THREE.Vector3(-0.5, 0.0, -0.5);
+      cam.fov = 22;
+      cam.position.set(target.x + dist * Math.sin(az) * Math.cos(el), target.y + dist * Math.sin(el), target.z + dist * Math.cos(az) * Math.cos(el));
+      cam.lookAt(target);
+    }
     cam.updateProjectionMatrix();
   });
   return null;
+};
+
+/** Van drives in for the delivery scene; the driver walks a box toward the building. */
+const Delivery3D: React.FC<{ logo: THREE.Texture; kraft: THREE.Texture }> = ({ logo, kraft }) => {
+  const frame = useCurrentFrame();
+  const v = vanAt(frame);
+  if (!v.visible) return null;
+  const moving = frame < VAN_ARRIVE[1];
+  const bob = moving ? Math.sin(frame / 2.2) * 0.012 : 0;
+  const w0 = VAN_ARRIVE[1] + 8;
+  const t = interpolate(frame, [w0, w0 + 46], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const from = [2.26, -0.26, 5.09], to = [2.0, -0.26, 4.55];
+  return (
+    <group>
+      <Van p={[v.pos[0], v.pos[1] + bob, v.pos[2]]} yaw={VAN_YAW} logo={logo} />
+      {frame >= w0 ? (
+        <Person p={[from[0] + (to[0] - from[0]) * t, from[1], from[2] + (to[2] - from[2]) * t]} yaw={0.56} pose="carry" moving={t > 0 && t < 1} box={kraft} {...LOOKS[5]} shirt="#1A3A5C" seed={21} />
+      ) : null}
+    </group>
+  );
 };
 
 const Lights: React.FC = () => (
@@ -69,7 +99,7 @@ const Lights: React.FC = () => (
   </>
 );
 
-const Scene: React.FC<{ tex: Tex }> = ({ tex }) => {
+const Scene: React.FC<{ tex: Tex; film: boolean }> = ({ tex, film }) => {
   const m: Mats = useMemo(() => {
     const logo = tex.logo.image as HTMLImageElement;
     return {
@@ -100,12 +130,12 @@ const Scene: React.FC<{ tex: Tex }> = ({ tex }) => {
     <>
       <color attach="background" args={[BG]} />
       <fog attach="fog" args={[BG, 75, 140]} />
-      <Camera />
+      <Camera film={film} />
       <Env />
       <Lights />
       <Ground />
-      <Building tex={tex} m={m} floors={floors} />
-      <Van p={[CELL * 0.98, -0.26, CELL * 0.98]} yaw={Math.PI / 4} logo={tex.logo} />
+      <Building tex={tex} m={m} floors={floors} animate={film} />
+      {film ? <Delivery3D logo={tex.logo} kraft={m.kraft} /> : <Van p={[CELL * 0.98, -0.26, CELL * 0.98]} yaw={VAN_YAW} logo={tex.logo} />}
       <EffectComposer multisampling={4} enableNormalPass={false}>
         <N8AO aoRadius={0.4} intensity={2.2} distanceFalloff={0.6} quality="medium" />
         <Bloom mipmapBlur intensity={0.3} luminanceThreshold={0.92} luminanceSmoothing={0.1} />
@@ -115,7 +145,7 @@ const Scene: React.FC<{ tex: Tex }> = ({ tex }) => {
   );
 };
 
-export const Edificio: React.FC = () => {
+export const Edificio: React.FC<{ film?: boolean }> = ({ film = false }) => {
   const { width, height } = useVideoConfig();
   const fonts = useFontsReady();
   const list = useTextures(KEYS.map((k) => staticFile(FILES[k])));
@@ -135,8 +165,21 @@ export const Edificio: React.FC = () => {
           }}
           camera={{ fov: 22, position: [25, 25, 25] }}
         >
-          <Scene tex={tex} />
+          <Scene tex={tex} film={film} />
         </ThreeCanvas>
+      ) : null}
+      {film ? (
+        <>
+          <TopBand />
+          <Hook />
+          <TourChips />
+          <Progress />
+          <Counter />
+          <Delivery />
+          <Brand />
+          <EndCard />
+          <Audio src={staticFile("audio/soundtrack-edificio.wav")} />
+        </>
       ) : null}
     </AbsoluteFill>
   );

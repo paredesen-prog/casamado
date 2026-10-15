@@ -138,7 +138,7 @@ export const Ground: React.FC = () => (
     <MeshReflectorMaterial
       color="#E59A5C"
       blur={[500, 150]}
-      resolution={1024}
+      resolution={512}
       mixBlur={1}
       mixStrength={0.6}
       mirror={0.18}
