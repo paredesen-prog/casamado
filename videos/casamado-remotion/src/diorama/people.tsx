@@ -20,14 +20,14 @@ const Limb: React.FC<{ len: number; r: number; c: string }> = ({ len, r, c }) =>
  * (for "sit" put it at the chair origin; the seat is ~0.5 m high).
  */
 export const Person: React.FC<{
-  p: V3; yaw?: number; pose?: Pose; shirt?: string; pants?: string; skin?: string; hair?: string; seed?: number; box?: THREE.Texture; long?: boolean; moving?: boolean;
-}> = ({ p, yaw = 0, pose = "stand", moving = false, shirt = "#1A3A5C", pants = "#2E3238", skin = "#C99772", hair = "#2B1E16", seed = 1, box, long = false }) => {
+  p: V3; yaw?: number; pose?: Pose; shirt?: string; pants?: string; skin?: string; hair?: string; seed?: number; box?: THREE.Texture; long?: boolean; moving?: boolean; phase?: number;
+}> = ({ p, yaw = 0, pose = "stand", moving = false, phase, shirt = "#1A3A5C", pants = "#2E3238", skin = "#C99772", hair = "#2B1E16", seed = 1, box, long = false }) => {
   const frame = useCurrentFrame();
   const sit = pose === "sit";
   const lift = sit ? -0.33 : 0; // torso/head drop when seated
   const look = Math.sin(frame / 38 + seed * 1.7) * 0.18;
   const breathe = 1 + Math.sin(frame / 22 + seed) * 0.012;
-  const step = pose === "walk" || moving ? Math.sin(frame / 4.5 + seed) : 0;
+  const step = phase !== undefined ? Math.sin(phase) : pose === "walk" || moving ? Math.sin(frame / 4.5 + seed) : 0;
   const walking = pose === "walk";
   const armX = pose === "carry" ? 1.35 : sit ? 0.95 : walking ? step * 0.4 : 0.08;
   const armXL = pose === "present" ? 0.08 : armX;

@@ -100,6 +100,11 @@ export const camAt = (frame: number, aspect: number): CamState => {
   const hfov = 2 * Math.atan(Math.tan(THREE.MathUtils.degToRad(VFOV) / 2) * Math.min(1, aspect));
   const dist = width / (2 * Math.tan(hfov / 2));
   const pos = new THREE.Vector3(target.x + dist * Math.sin(az) * Math.cos(el), target.y + dist * Math.sin(el), target.z + dist * Math.cos(az) * Math.cos(el));
+  // handheld feel: slow, layered sway scaled with distance (deterministic)
+  const hs = dist / 40;
+  pos.x += (Math.sin(frame / 41) * 0.09 + Math.sin(frame / 13.7 + 1.3) * 0.025) * hs;
+  pos.y += (Math.sin(frame / 53 + 2.1) * 0.07 + Math.sin(frame / 11.3) * 0.02) * hs;
+  pos.z += (Math.sin(frame / 47 + 0.7) * 0.08) * hs;
   return { pos, target, fov: aspect < 1 ? THREE.MathUtils.radToDeg(2 * Math.atan(Math.tan(hfov / 2) / aspect)) : VFOV };
 };
 

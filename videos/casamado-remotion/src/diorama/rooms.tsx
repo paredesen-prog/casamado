@@ -239,7 +239,7 @@ const Cafeteria: React.FC<RoomProps> = ({ tex, m }) => (
       <Cyl p={[0, 0.05, 0]} r={0.04} h={0.1} c="#F1EEE8" rough={0.35} />
       <Cyl p={[0, 0.096, 0]} r={0.034} h={0.004} c="#3A2416" rough={0.2} />
     </group>
-    <Plant p={[1.45, 0, 1.3]} kind="bush" seed={51} size={1.1} pot="#C66B3D" />
+    <Plant p={[-1.45, 0, 1.3]} kind="bush" seed={51} size={1.1} pot="#C66B3D" />
     <Person p={[-0.8, 0, -0.85]} {...LOOKS[3]} seed={7} />
     <Person p={[0.1, 0, 1.1]} {...LOOKS[0]} pose="sit" seed={8} />
   </group>
@@ -258,9 +258,9 @@ const Reception: React.FC<RoomProps> = ({ m }) => (
     <Monitor p={[-0.4, 1.075, -0.8]} screen={m.order} w={0.45} yaw={0.1} />
     <Sofa p={[-1.3, 0, 0.6]} w={1.5} yaw={Math.PI / 2} />
     {/* delivery that just arrived */}
-    <KraftBox p={[0.55, 0, 0.55]} kraft={m.kraft} yaw={0.15} d={0} />
-    <KraftBox p={[1.05, 0, 0.75]} kraft={m.kraft} yaw={-0.2} s={[0.42, 0.3, 0.36]} d={1} />
-    <KraftBox p={[0.6, 0.36, 0.55]} kraft={m.kraft} yaw={0.35} s={[0.4, 0.28, 0.34]} d={2} />
+    <KraftBox p={[-0.35, 0, 1.25]} kraft={m.kraft} yaw={0.15} d={0} />
+    <KraftBox p={[0.2, 0, 1.45]} kraft={m.kraft} yaw={-0.2} s={[0.42, 0.3, 0.36]} d={1} />
+    <KraftBox p={[-0.3, 0.36, 1.25]} kraft={m.kraft} yaw={0.35} s={[0.4, 0.28, 0.34]} d={2} />
     <Plant p={[1.45, 0, -1.4]} kind="bush" seed={61} size={1.35} pot="#E9E5DE" />
     <Plant p={[-1.45, 0, -1.4]} kind="snake" seed={62} size={1.15} pot="#2B2B2F" />
     <Person p={[0.55, 0, -1.2]} yaw={Math.PI} {...LOOKS[4]} seed={9} />
@@ -318,7 +318,6 @@ const StoreRoom: React.FC<RoomProps> = ({ tex, m }) => (
       <KraftBox p={[0.28, 0.14, 0.24]} kraft={m.kraft} d={10} />
       <KraftBox p={[0, 0.5, 0]} kraft={m.kraft} yaw={0.2} d={11} />
     </group>
-    <Person p={[0.95, 0, 0.1]} yaw={2.5} {...LOOKS[3]} pose="carry" box={m.kraft} seed={13} />
     {/* mop bucket */}
     <group position={[0.9, 0, 0.9]}>
       <Cyl p={[0, 0.17, 0]} r={0.2} r2={0.17} h={0.34} c="#F5C02A" rough={0.5} />

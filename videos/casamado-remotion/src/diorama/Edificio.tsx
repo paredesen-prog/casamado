@@ -1,7 +1,8 @@
 import { useThree } from "@react-three/fiber";
-import { Bloom, EffectComposer, N8AO, Vignette } from "@react-three/postprocessing";
+import { Bloom, BrightnessContrast, DepthOfField, EffectComposer, HueSaturation, N8AO, Noise, Vignette } from "@react-three/postprocessing";
+import { BlendFunction, DepthOfFieldEffect } from "postprocessing";
 import { ThreeCanvas } from "@remotion/three";
-import React, { useLayoutEffect, useMemo } from "react";
+import React, { useLayoutEffect, useMemo, useRef } from "react";
 import { AbsoluteFill, Audio, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import * as THREE from "three";
 import { useFontsReady } from "../fonts";
@@ -10,6 +11,7 @@ import { BG, Env, Ground } from "./Diorama";
 import { camAt, VAN_ARRIVE, VAN_YAW, vanAt } from "./edificioTimeline";
 import { Brand, Counter, Delivery, EndCard, Hook, Progress, TopBand, TourChips } from "./overlays";
 import { LOOKS, Person } from "./people";
+import { Walkers } from "./walkers";
 import { Building, CELL, Mats, Tex, Van } from "./rooms";
 import { clockTexture, kraftTexture, marbleTexture, orderScreenTexture, plankTexture, posterBrand, posterLines, posterSunset, speckleTexture, storeScreenTexture, tileTexture, woodTexture } from "./textures";
 
@@ -75,6 +77,23 @@ const Delivery3D: React.FC<{ logo: THREE.Texture; kraft: THREE.Texture }> = ({ l
   );
 };
 
+/** Cinematic depth of field: focus rides the camera target; the focus range opens up on wide shots
+ *  so the whole building stays sharp and only room close-ups get a soft background. */
+const FocusPull: React.FC = () => {
+  const frame = useCurrentFrame();
+  const { width, height } = useVideoConfig();
+  const ref = useRef<DepthOfFieldEffect>(null);
+  const c = camAt(frame, width / height);
+  const dist = c.pos.distanceTo(c.target);
+  useLayoutEffect(() => {
+    const e = ref.current;
+    if (!e) return;
+    e.cocMaterial.worldFocusRange = interpolate(dist, [17, 30, 45], [7, 18, 45], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    e.bokehScale = interpolate(dist, [17, 45], [2.6, 1.2], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  });
+  return <DepthOfField ref={ref} target={[c.target.x, c.target.y, c.target.z]} worldFocusRange={10} bokehScale={2} />;
+};
+
 const Lights: React.FC = () => (
   <>
     <hemisphereLight args={["#FFE7CC", "#B8774A", 0.6]} />
@@ -136,10 +155,15 @@ const Scene: React.FC<{ tex: Tex; film: boolean }> = ({ tex, film }) => {
       <Ground />
       <Building tex={tex} m={m} floors={floors} animate={film} />
       {film ? <Delivery3D logo={tex.logo} kraft={m.kraft} /> : <Van p={[CELL * 0.98, -0.26, CELL * 0.98]} yaw={VAN_YAW} logo={tex.logo} />}
+      {film ? <Walkers kraft={m.kraft} /> : null}
       <EffectComposer multisampling={4} enableNormalPass={false}>
         <N8AO aoRadius={0.4} intensity={2.2} distanceFalloff={0.6} quality="medium" />
+        {film ? <FocusPull /> : <></>}
         <Bloom mipmapBlur intensity={0.3} luminanceThreshold={0.92} luminanceSmoothing={0.1} />
-        <Vignette offset={0.25} darkness={0.5} />
+        <BrightnessContrast brightness={-0.01} contrast={film ? 0.06 : 0} />
+        <HueSaturation saturation={film ? -0.04 : 0} />
+        <Vignette offset={0.25} darkness={film ? 0.6 : 0.5} />
+        {film ? <Noise premultiply blendFunction={BlendFunction.OVERLAY} opacity={0.16} /> : <></>}
       </EffectComposer>
     </>
   );
