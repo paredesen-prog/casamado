@@ -1,0 +1,95 @@
+add_action('wp_footer', function() {
+    if (!is_front_page()) return;
+    ?>
+    <style>
+    .csm-tiles-wrap { background: #f8f9fa; padding: 28px 24px 20px; }
+    .csm-section-title {
+        max-width: 1300px; margin: 0 auto 16px;
+        font-size: 11px; font-weight: 700; letter-spacing: 2px;
+        text-transform: uppercase; color: #6b7280;
+    }
+    .csm-tiles {
+        display: grid; grid-template-columns: repeat(6, 1fr);
+        gap: 14px; max-width: 1300px; margin: 0 auto;
+    }
+    .csm-tile {
+        border-radius: 12px; overflow: hidden; cursor: pointer;
+        position: relative; aspect-ratio: 4/3;
+        display: flex; flex-direction: column;
+        align-items: center; justify-content: flex-end;
+        padding: 14px 10px; text-decoration: none;
+        transition: transform .2s, box-shadow .2s;
+        background-size: cover; background-position: center;
+    }
+    .csm-tile:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(0,0,0,0.22); }
+    .csm-tile::before {
+        content: ''; position: absolute; inset: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.15) 55%, transparent 100%);
+    }
+    .csm-tile-name {
+        position: relative; z-index: 1; color: #fff;
+        font-size: 13px; font-weight: 700; text-align: center;
+        line-height: 1.2; text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+    }
+    .csm-tile-count { position: relative; z-index: 1; color: rgba(255,255,255,0.85); font-size: 10px; margin-top: 4px; }
+    .csm-t1 { background-image: url('https://casamado.cl/wp-content/uploads/2026/07/toalla-de-papel-alto-metraje-h-s-universal-250-mt-sku-TO55004.jpg'); background-color:#1565C0; }
+    .csm-t2 { background-image: url('https://casamado.cl/wp-content/uploads/2026/07/pa-o-toalla-desinfectante-easy-clean-aroma-lim-n-5-sku-4001243.jpg'); background-color:#2E7D32; }
+    .csm-t3 { background-image: url('https://casamado.cl/wp-content/uploads/2026/07/cuaderno-universitario-7-mm100-hjs-1.jpg'); background-color:#E65100; }
+    .csm-t4 { background-image: url('https://casamado.cl/wp-content/uploads/2026/07/kit-mouse-y-teclado-inal-mbrico-xtech-xtk-311s-sku-XTK-311S.jpg'); background-color:#4527A0; }
+    .csm-t5 { background-image: url('https://casamado.cl/wp-content/uploads/2026/07/haiti-cafe-molido-super-moka-bolsa-250gr-7001110.jpg'); background-color:#4E342E; }
+    .csm-t6 { background-image: url('https://casamado.cl/wp-content/uploads/2026/07/guantes-anticorte-palma-pu-flex-legend-ultra-cut-t-sku-8001058-L.jpg'); background-color:#37474F; }
+    .csm-strip {
+        background: #1a3a5c; padding: 0 24px; margin-top: 0;
+        display: grid; grid-template-columns: repeat(4, 1fr);
+    }
+    .csm-strip-item {
+        display: flex; align-items: center; gap: 14px;
+        padding: 18px 20px; border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .csm-strip-item:last-child { border-right: none; }
+    .csm-strip-ico { font-size: 26px; }
+    .csm-strip-txt strong { display: block; color: #fff; font-size: 13px; }
+    .csm-strip-txt span { color: #94b4cc; font-size: 11px; }
+    @media (max-width: 768px) {
+        .csm-tiles { grid-template-columns: repeat(2, 1fr); }
+        .csm-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 769px) and (max-width: 1100px) {
+        .csm-tiles { grid-template-columns: repeat(3, 1fr); }
+    }
+    </style>
+
+    <div id="csm-block" style="display:none">
+        <div class="csm-tiles-wrap">
+            <div class="csm-section-title">Categorías principales</div>
+            <div class="csm-tiles">
+                <a class="csm-tile csm-t1" href="/categoria-producto/papel-tissue/"><div class="csm-tile-name">Papel Tissue</div><div class="csm-tile-count">124 productos</div></a>
+                <a class="csm-tile csm-t2" href="/categoria-producto/aseo-y-limpieza/"><div class="csm-tile-name">Aseo y Limpieza</div><div class="csm-tile-count">540 productos</div></a>
+                <a class="csm-tile csm-t3" href="/categoria-producto/oficina-y-libreria/"><div class="csm-tile-name">Oficina y Librería</div><div class="csm-tile-count">259 productos</div></a>
+                <a class="csm-tile csm-t4" href="/categoria-producto/computacion-y-tecnologia/"><div class="csm-tile-name">Computación y Tecnología</div><div class="csm-tile-count">80 productos</div></a>
+                <a class="csm-tile csm-t5" href="/categoria-producto/cafeteria-y-despensa/"><div class="csm-tile-name">Cafetería y Despensa</div><div class="csm-tile-count">146 productos</div></a>
+                <a class="csm-tile csm-t6" href="/categoria-producto/ferreteria/"><div class="csm-tile-name">Ferretería</div><div class="csm-tile-count">62 productos</div></a>
+            </div>
+        </div>
+        <div class="csm-strip">
+            <div class="csm-strip-item"><div class="csm-strip-ico">🚚</div><div class="csm-strip-txt"><strong>Despacho gratis</strong><span>Compras sobre $70.000 a nivel regional o Santiago</span></div></div>
+            <div class="csm-strip-item"><div class="csm-strip-ico">💳</div><div class="csm-strip-txt"><strong>Múltiples medios de pago</strong><span>Transferencia, Flow, tarjetas</span></div></div>
+            <div class="csm-strip-item"><div class="csm-strip-ico">📦</div><div class="csm-strip-txt"><strong>+1.100 productos</strong><span>Aseo, oficina, cafetería y más</span></div></div>
+            <div class="csm-strip-item"><div class="csm-strip-ico">🏢</div><div class="csm-strip-txt"><strong>Precios mayoristas</strong><span>Descuentos para empresas B2B</span></div></div>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var block = document.getElementById('csm-block');
+        if (!block) return;
+        var clearfixes = document.querySelectorAll('.vc_row-full-width.vc_clearfix');
+        var anchor = clearfixes.length > 0 ? clearfixes[0] : null;
+        if (anchor) {
+            block.style.display = 'block';
+            anchor.parentNode.insertBefore(block, anchor.nextSibling);
+        }
+    });
+    </script>
+    <?php
+});

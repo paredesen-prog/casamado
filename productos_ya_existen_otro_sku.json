@@ -1,0 +1,1056 @@
+[
+  {
+    "sku_fasit": "5001110",
+    "producto": "SHAMPOO ANTI FRIZZ ACEITE DE COCO Y JAZMÍN",
+    "match_casamado": [
+      [
+        4721,
+        "Shampoo Anti Frizz Aceite de Coco y Jazmín 750 ML",
+        ""
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "2001386",
+    "producto": "DESODORANTE Y DESINFECTANTE AMBIENTAL - LAVANDA",
+    "match_casamado": [
+      [
+        3736,
+        "Desodorante y Desinfectante Ambiental - Bebé 360 ML",
+        "2001385"
+      ],
+      [
+        2311,
+        "DESODORANTE Y DESINFECTANTE AMBIENTAL AIRE DE MONTANA360 ML",
+        "2001351"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001113",
+    "producto": "ESPONJA CLÁSICA",
+    "match_casamado": [
+      [
+        3838,
+        "Esponja Spunita Antiadherente Clásica",
+        "4001182"
+      ],
+      [
+        3836,
+        "Esponja Clásica Virutex Pro",
+        ""
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001241",
+    "producto": "PAÑO ESPONJA ABSORBENTE NATURAL AMARILLO",
+    "match_casamado": [
+      [
+        4243,
+        "Paño Esponja Absorbente Natural Amarillo 6 UND",
+        ""
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001265",
+    "producto": "TRAPERO MULTIUSO ULTRA ABSORBENTE AMARILLO DOBLE C/OJAL",
+    "match_casamado": [
+      [
+        4865,
+        "Trapero Multiuso Ultra Absorbente Amarillo Doble con Ojal",
+        ""
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001165",
+    "producto": "TRAPERO HÚMEDO PARA TODO TIPO DE PISO - LAVANDA",
+    "match_casamado": [
+      [
+        4855,
+        "Trapero Húmedo para todo tipo de Piso - Lavanda 10 UND x 1 Pqte",
+        ""
+      ],
+      [
+        4850,
+        "Trapero Húmedo Desinfectante para todo tipo de Piso - Limón 10 UND x 1 Pqte",
+        "4001166"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001039-S",
+    "producto": "GUANTE LATEX DOMESTICO AMARILLO",
+    "match_casamado": [
+      [
+        3900,
+        "Guante Latex Doméstico Amarillo",
+        "4001039"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001039-M",
+    "producto": "GUANTE LATEX DOMESTICO AMARILLO",
+    "match_casamado": [
+      [
+        3900,
+        "Guante Latex Doméstico Amarillo",
+        "4001039"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001039-L",
+    "producto": "GUANTE LATEX DOMESTICO AMARILLO",
+    "match_casamado": [
+      [
+        3900,
+        "Guante Latex Doméstico Amarillo",
+        "4001039"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001115-S",
+    "producto": "GUANTE LATEX MULTIUSO AMARILLO",
+    "match_casamado": [
+      [
+        3904,
+        "Guante Latex Multiuso Amarillo Impeke",
+        "4001228"
+      ],
+      [
+        3902,
+        "Guante Latex Multiuso Amarillo",
+        "4001115"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001115-M",
+    "producto": "GUANTE LATEX MULTIUSO AMARILLO",
+    "match_casamado": [
+      [
+        3904,
+        "Guante Latex Multiuso Amarillo Impeke",
+        "4001228"
+      ],
+      [
+        3902,
+        "Guante Latex Multiuso Amarillo",
+        "4001115"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001115-L",
+    "producto": "GUANTE LATEX MULTIUSO AMARILLO",
+    "match_casamado": [
+      [
+        3904,
+        "Guante Latex Multiuso Amarillo Impeke",
+        "4001228"
+      ],
+      [
+        3902,
+        "Guante Latex Multiuso Amarillo",
+        "4001115"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001228-S",
+    "producto": "GUANTE LATEX MULTIUSO AMARILLO",
+    "match_casamado": [
+      [
+        3904,
+        "Guante Latex Multiuso Amarillo Impeke",
+        "4001228"
+      ],
+      [
+        3902,
+        "Guante Latex Multiuso Amarillo",
+        "4001115"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001228-M",
+    "producto": "GUANTE LATEX MULTIUSO AMARILLO",
+    "match_casamado": [
+      [
+        3904,
+        "Guante Latex Multiuso Amarillo Impeke",
+        "4001228"
+      ],
+      [
+        3902,
+        "Guante Latex Multiuso Amarillo",
+        "4001115"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001228-L",
+    "producto": "GUANTE LATEX MULTIUSO AMARILLO",
+    "match_casamado": [
+      [
+        3904,
+        "Guante Latex Multiuso Amarillo Impeke",
+        "4001228"
+      ],
+      [
+        3902,
+        "Guante Latex Multiuso Amarillo",
+        "4001115"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001042-M",
+    "producto": "GUANTE NITRILO VERDE",
+    "match_casamado": [
+      [
+        3912,
+        "Guante Nitrilo Verde Pro",
+        "4001189"
+      ],
+      [
+        3910,
+        "Guante Nitrilo Verde",
+        "4001042"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001042-L",
+    "producto": "GUANTE NITRILO VERDE",
+    "match_casamado": [
+      [
+        3912,
+        "Guante Nitrilo Verde Pro",
+        "4001189"
+      ],
+      [
+        3910,
+        "Guante Nitrilo Verde",
+        "4001042"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001189-M",
+    "producto": "GUANTE NITRILO VERDE PRO",
+    "match_casamado": [
+      [
+        3912,
+        "Guante Nitrilo Verde Pro",
+        "4001189"
+      ],
+      [
+        3910,
+        "Guante Nitrilo Verde",
+        "4001042"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001189-L",
+    "producto": "GUANTE NITRILO VERDE PRO",
+    "match_casamado": [
+      [
+        3912,
+        "Guante Nitrilo Verde Pro",
+        "4001189"
+      ],
+      [
+        3910,
+        "Guante Nitrilo Verde",
+        "4001042"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001225-S",
+    "producto": "GUANTE EXAMINACIÓN LATEX BLANCO CON POLVO",
+    "match_casamado": [
+      [
+        3890,
+        "Guante Examinación Látex Blanco con Polvo 100 UND",
+        "4001225"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001225-M",
+    "producto": "GUANTE EXAMINACIÓN LATEX BLANCO CON POLVO",
+    "match_casamado": [
+      [
+        3890,
+        "Guante Examinación Látex Blanco con Polvo 100 UND",
+        "4001225"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001225-L",
+    "producto": "GUANTE EXAMINACIÓN LATEX BLANCO CON POLVO",
+    "match_casamado": [
+      [
+        3890,
+        "Guante Examinación Látex Blanco con Polvo 100 UND",
+        "4001225"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001046-S",
+    "producto": "GUANTE EXAMINACIÓN VINILO BLANCO SIN POLVO",
+    "match_casamado": [
+      [
+        3898,
+        "Guante Examinación Vinilo Blanco sin Polvo 100 UND Virutex Pro",
+        "4001227"
+      ],
+      [
+        3896,
+        "Guante Examinación Vinilo Blanco Sin Polvo 100 UND",
+        "4001046"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001046-M",
+    "producto": "GUANTE EXAMINACIÓN VINILO BLANCO SIN POLVO",
+    "match_casamado": [
+      [
+        3898,
+        "Guante Examinación Vinilo Blanco sin Polvo 100 UND Virutex Pro",
+        "4001227"
+      ],
+      [
+        3896,
+        "Guante Examinación Vinilo Blanco Sin Polvo 100 UND",
+        "4001046"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001046-L",
+    "producto": "GUANTE EXAMINACIÓN VINILO BLANCO SIN POLVO",
+    "match_casamado": [
+      [
+        3898,
+        "Guante Examinación Vinilo Blanco sin Polvo 100 UND Virutex Pro",
+        "4001227"
+      ],
+      [
+        3896,
+        "Guante Examinación Vinilo Blanco Sin Polvo 100 UND",
+        "4001046"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001227-S",
+    "producto": "GUANTE EXAMINACIÓN VINILO BLANCO SIN POLVO",
+    "match_casamado": [
+      [
+        3898,
+        "Guante Examinación Vinilo Blanco sin Polvo 100 UND Virutex Pro",
+        "4001227"
+      ],
+      [
+        3896,
+        "Guante Examinación Vinilo Blanco Sin Polvo 100 UND",
+        "4001046"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001226-S",
+    "producto": "GUANTE EXAMINACIÓN NITRILO AZUL SIN POLVO",
+    "match_casamado": [
+      [
+        3892,
+        "Guante Examinación Nitrilo Azul sin Polvo 100 UND",
+        "4001226"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001226-M",
+    "producto": "GUANTE EXAMINACIÓN NITRILO AZUL SIN POLVO",
+    "match_casamado": [
+      [
+        3892,
+        "Guante Examinación Nitrilo Azul sin Polvo 100 UND",
+        "4001226"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001226-L",
+    "producto": "GUANTE EXAMINACIÓN NITRILO AZUL SIN POLVO",
+    "match_casamado": [
+      [
+        3892,
+        "Guante Examinación Nitrilo Azul sin Polvo 100 UND",
+        "4001226"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001280-S",
+    "producto": "GUANTE EXAMINACIÓN NITRILO NEGRO SIN POLVO",
+    "match_casamado": [
+      [
+        3894,
+        "Guante Examinación Nitrilo Negro sin Polvo 100 UND",
+        "4001280"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001280-M",
+    "producto": "GUANTE EXAMINACIÓN NITRILO NEGRO SIN POLVO",
+    "match_casamado": [
+      [
+        3894,
+        "Guante Examinación Nitrilo Negro sin Polvo 100 UND",
+        "4001280"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001280-L",
+    "producto": "GUANTE EXAMINACIÓN NITRILO NEGRO SIN POLVO",
+    "match_casamado": [
+      [
+        3894,
+        "Guante Examinación Nitrilo Negro sin Polvo 100 UND",
+        "4001280"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001054-L",
+    "producto": "OVEROL BUZO DESECHABLE LAMINADO BLANCO",
+    "match_casamado": [
+      [
+        4139,
+        "Overol Buzo Desechable Laminado Blanco",
+        "4001054"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001054-XXL",
+    "producto": "OVEROL BUZO DESECHABLE LAMINADO BLANCO",
+    "match_casamado": [
+      [
+        4139,
+        "Overol Buzo Desechable Laminado Blanco",
+        "4001054"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001377-L",
+    "producto": "OVEROL BUZO DESECHABLE BLANCO BLACKBULL BASIC",
+    "match_casamado": [
+      [
+        4137,
+        "Overol Buzo Desechable Blanco Blackbull Basic",
+        "4001377"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001377-XL",
+    "producto": "OVEROL BUZO DESECHABLE BLANCO BLACKBULL BASIC",
+    "match_casamado": [
+      [
+        4137,
+        "Overol Buzo Desechable Blanco Blackbull Basic",
+        "4001377"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001210",
+    "producto": "PASTILLA ESTANQUE WC",
+    "match_casamado": [
+      [
+        4232,
+        "Pastilla Estanque WC Cloro 1 KG - 50 Tabletas de 20 GR",
+        "4001078"
+      ],
+      [
+        4230,
+        "Pastilla Estanque WC 5 UND",
+        ""
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "27908",
+    "producto": "CARPETA ARCHIVADOR PLASTIFICADO CON GUSANO",
+    "match_casamado": [
+      [
+        3602,
+        "Carpeta Archivador Plastificado sin Gusano Verde",
+        "28832"
+      ],
+      [
+        3600,
+        "Carpeta Archivador Plastificado sin Gusano Rojo",
+        "27910"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001017",
+    "producto": "FAJA LUMBAR ELASTICADA COLOR NEGRO",
+    "match_casamado": [
+      [
+        3850,
+        "Faja Lumbar Elasticada Blackbull color Negro",
+        ""
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001018",
+    "producto": "FAJA LUMBAR ELASTICADA COLOR NEGRO",
+    "match_casamado": [
+      [
+        3850,
+        "Faja Lumbar Elasticada Blackbull color Negro",
+        ""
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001061-37",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BLACK",
+    "match_casamado": [
+      [
+        4875,
+        "Zapato de Seguridad Blackbull Basic Negro",
+        "8001061"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001061-38",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BLACK",
+    "match_casamado": [
+      [
+        4875,
+        "Zapato de Seguridad Blackbull Basic Negro",
+        "8001061"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001061-39",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BLACK",
+    "match_casamado": [
+      [
+        4875,
+        "Zapato de Seguridad Blackbull Basic Negro",
+        "8001061"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001061-40",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BLACK",
+    "match_casamado": [
+      [
+        4875,
+        "Zapato de Seguridad Blackbull Basic Negro",
+        "8001061"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001061-41",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BLACK",
+    "match_casamado": [
+      [
+        4875,
+        "Zapato de Seguridad Blackbull Basic Negro",
+        "8001061"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001061-42",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BLACK",
+    "match_casamado": [
+      [
+        4875,
+        "Zapato de Seguridad Blackbull Basic Negro",
+        "8001061"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001061-43",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BLACK",
+    "match_casamado": [
+      [
+        4875,
+        "Zapato de Seguridad Blackbull Basic Negro",
+        "8001061"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001061-44",
+    "producto": "ZAPATO DE SEGURIDAD BLACKBULL BASIC BLACK",
+    "match_casamado": [
+      [
+        4875,
+        "Zapato de Seguridad Blackbull Basic Negro",
+        "8001061"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001064-36",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "match_casamado": [
+      [
+        4879,
+        "Zapato de Seguridad Legend LG-50 Ranco Café",
+        "8001064"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001064-37",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "match_casamado": [
+      [
+        4879,
+        "Zapato de Seguridad Legend LG-50 Ranco Café",
+        "8001064"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001064-38",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "match_casamado": [
+      [
+        4879,
+        "Zapato de Seguridad Legend LG-50 Ranco Café",
+        "8001064"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001064-39",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "match_casamado": [
+      [
+        4879,
+        "Zapato de Seguridad Legend LG-50 Ranco Café",
+        "8001064"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001064-40",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "match_casamado": [
+      [
+        4879,
+        "Zapato de Seguridad Legend LG-50 Ranco Café",
+        "8001064"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001064-41",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "match_casamado": [
+      [
+        4879,
+        "Zapato de Seguridad Legend LG-50 Ranco Café",
+        "8001064"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001064-42",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "match_casamado": [
+      [
+        4879,
+        "Zapato de Seguridad Legend LG-50 Ranco Café",
+        "8001064"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001064-43",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "match_casamado": [
+      [
+        4879,
+        "Zapato de Seguridad Legend LG-50 Ranco Café",
+        "8001064"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001064-44",
+    "producto": "ZAPATO DE SEGURIDAD LEGEND LG-50 RANCO CAFÉ",
+    "match_casamado": [
+      [
+        4879,
+        "Zapato de Seguridad Legend LG-50 Ranco Café",
+        "8001064"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001072-38",
+    "producto": "BOTA DE AGUA",
+    "match_casamado": [
+      [
+        3557,
+        "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+        "8001052"
+      ],
+      [
+        3555,
+        "Bota de Agua Blackbull Negra",
+        "8001072"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001072-39",
+    "producto": "BOTA DE AGUA",
+    "match_casamado": [
+      [
+        3557,
+        "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+        "8001052"
+      ],
+      [
+        3555,
+        "Bota de Agua Blackbull Negra",
+        "8001072"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001072-40",
+    "producto": "BOTA DE AGUA",
+    "match_casamado": [
+      [
+        3557,
+        "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+        "8001052"
+      ],
+      [
+        3555,
+        "Bota de Agua Blackbull Negra",
+        "8001072"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001072-41",
+    "producto": "BOTA DE AGUA",
+    "match_casamado": [
+      [
+        3557,
+        "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+        "8001052"
+      ],
+      [
+        3555,
+        "Bota de Agua Blackbull Negra",
+        "8001072"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001072-42",
+    "producto": "BOTA DE AGUA",
+    "match_casamado": [
+      [
+        3557,
+        "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+        "8001052"
+      ],
+      [
+        3555,
+        "Bota de Agua Blackbull Negra",
+        "8001072"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001072-43",
+    "producto": "BOTA DE AGUA",
+    "match_casamado": [
+      [
+        3557,
+        "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+        "8001052"
+      ],
+      [
+        3555,
+        "Bota de Agua Blackbull Negra",
+        "8001072"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001072-44",
+    "producto": "BOTA DE AGUA",
+    "match_casamado": [
+      [
+        3557,
+        "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+        "8001052"
+      ],
+      [
+        3555,
+        "Bota de Agua Blackbull Negra",
+        "8001072"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001052-38",
+    "producto": "BOTA DE AGUA DE SEGURIDAD PUNTA PLANTILLA",
+    "match_casamado": [
+      [
+        3557,
+        "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+        "8001052"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001052-39",
+    "producto": "BOTA DE AGUA DE SEGURIDAD PUNTA PLANTILLA",
+    "match_casamado": [
+      [
+        3557,
+        "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+        "8001052"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001052-40",
+    "producto": "BOTA DE AGUA DE SEGURIDAD PUNTA PLANTILLA",
+    "match_casamado": [
+      [
+        3557,
+        "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+        "8001052"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001052-41",
+    "producto": "BOTA DE AGUA DE SEGURIDAD PUNTA PLANTILLA",
+    "match_casamado": [
+      [
+        3557,
+        "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+        "8001052"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001052-42",
+    "producto": "BOTA DE AGUA DE SEGURIDAD PUNTA PLANTILLA",
+    "match_casamado": [
+      [
+        3557,
+        "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+        "8001052"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001052-43",
+    "producto": "BOTA DE AGUA DE SEGURIDAD PUNTA PLANTILLA",
+    "match_casamado": [
+      [
+        3557,
+        "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+        "8001052"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001052-44",
+    "producto": "BOTA DE AGUA DE SEGURIDAD PUNTA PLANTILLA",
+    "match_casamado": [
+      [
+        3557,
+        "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+        "8001052"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001059-M",
+    "producto": "PANTALÓN CARGO POPLIN AZUL",
+    "match_casamado": [
+      [
+        4175,
+        "Pantalón Cargo Poplin Blackbull color Azul",
+        "8001059"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001059-L",
+    "producto": "PANTALÓN CARGO POPLIN AZUL",
+    "match_casamado": [
+      [
+        4175,
+        "Pantalón Cargo Poplin Blackbull color Azul",
+        "8001059"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001059-XL",
+    "producto": "PANTALÓN CARGO POPLIN AZUL",
+    "match_casamado": [
+      [
+        4175,
+        "Pantalón Cargo Poplin Blackbull color Azul",
+        "8001059"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001071-S",
+    "producto": "PANTALÓN CARGO GABARDINA AZUL",
+    "match_casamado": [
+      [
+        4173,
+        "Pantalón Cargo Gabardina Blackbull color Azul",
+        "8001071"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001071-M",
+    "producto": "PANTALÓN CARGO GABARDINA AZUL",
+    "match_casamado": [
+      [
+        4173,
+        "Pantalón Cargo Gabardina Blackbull color Azul",
+        "8001071"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001071-L",
+    "producto": "PANTALÓN CARGO GABARDINA AZUL",
+    "match_casamado": [
+      [
+        4173,
+        "Pantalón Cargo Gabardina Blackbull color Azul",
+        "8001071"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001071-XL",
+    "producto": "PANTALÓN CARGO GABARDINA AZUL",
+    "match_casamado": [
+      [
+        4173,
+        "Pantalón Cargo Gabardina Blackbull color Azul",
+        "8001071"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001081-M",
+    "producto": "OVEROL POPLIN AZUL",
+    "match_casamado": [
+      [
+        4141,
+        "Overol Poplin Blackbull Azul",
+        "8001081"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001081-L",
+    "producto": "OVEROL POPLIN AZUL",
+    "match_casamado": [
+      [
+        4141,
+        "Overol Poplin Blackbull Azul",
+        "8001081"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001081-XL",
+    "producto": "OVEROL POPLIN AZUL",
+    "match_casamado": [
+      [
+        4141,
+        "Overol Poplin Blackbull Azul",
+        "8001081"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001082-L",
+    "producto": "TRAJE DE AGUA JARDINERA AMARILLA",
+    "match_casamado": [
+      [
+        4836,
+        "Traje de Agua Impermeable Jardinera Blackbull Amarilla",
+        "8001082"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001082-XL",
+    "producto": "TRAJE DE AGUA JARDINERA AMARILLA",
+    "match_casamado": [
+      [
+        4836,
+        "Traje de Agua Impermeable Jardinera Blackbull Amarilla",
+        "8001082"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "8001020",
+    "producto": "MARTILLO CARPINTERO 27MM CON MANGO ENGOMADO",
+    "match_casamado": [
+      [
+        4087,
+        "Martillo Carpintero 27MM con Mango Engomado",
+        ""
+      ]
+    ]
+  }
+]

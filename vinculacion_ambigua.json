@@ -1,0 +1,82 @@
+[
+  {
+    "sku_fasit": "2001386",
+    "producto": "DESODORANTE Y DESINFECTANTE AMBIENTAL - LAVANDA",
+    "match_casamado": [
+      [
+        3736,
+        "Desodorante y Desinfectante Ambiental - Bebé 360 ML",
+        "2001385"
+      ],
+      [
+        2311,
+        "DESODORANTE Y DESINFECTANTE AMBIENTAL AIRE DE MONTANA360 ML",
+        "2001351"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001113",
+    "producto": "ESPONJA CLÁSICA",
+    "match_casamado": [
+      [
+        3838,
+        "Esponja Spunita Antiadherente Clásica",
+        "4001182"
+      ],
+      [
+        3836,
+        "Esponja Clásica Virutex Pro",
+        ""
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001165",
+    "producto": "TRAPERO HÚMEDO PARA TODO TIPO DE PISO - LAVANDA",
+    "match_casamado": [
+      [
+        4855,
+        "Trapero Húmedo para todo tipo de Piso - Lavanda 10 UND x 1 Pqte",
+        ""
+      ],
+      [
+        4850,
+        "Trapero Húmedo Desinfectante para todo tipo de Piso - Limón 10 UND x 1 Pqte",
+        "4001166"
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "4001210",
+    "producto": "PASTILLA ESTANQUE WC",
+    "match_casamado": [
+      [
+        4232,
+        "Pastilla Estanque WC Cloro 1 KG - 50 Tabletas de 20 GR",
+        "4001078"
+      ],
+      [
+        4230,
+        "Pastilla Estanque WC 5 UND",
+        ""
+      ]
+    ]
+  },
+  {
+    "sku_fasit": "27908",
+    "producto": "CARPETA ARCHIVADOR PLASTIFICADO CON GUSANO",
+    "match_casamado": [
+      [
+        3602,
+        "Carpeta Archivador Plastificado sin Gusano Verde",
+        "28832"
+      ],
+      [
+        3600,
+        "Carpeta Archivador Plastificado sin Gusano Rojo",
+        "27910"
+      ]
+    ]
+  }
+]

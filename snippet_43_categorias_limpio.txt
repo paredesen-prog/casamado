@@ -1,0 +1,103 @@
+add_action('wp_footer', function() {
+    ?>
+    <div id="csm-dyn-island"><span class="dot"></span><span id="csm-dyn-island-text">Añadido al carrito</span></div>
+
+    <button id="csm-quote-fab" title="Cotización express B2B">💬</button>
+    <div id="csm-quote-form">
+        <h4>Cotización express B2B</h4>
+        <p>Te contactamos con tu cotización del carro actual.</p>
+        <input type="text" id="csm-quote-rut" placeholder="RUT empresa">
+        <input type="email" id="csm-quote-email" placeholder="Correo">
+        <input type="tel" id="csm-quote-phone" placeholder="Teléfono">
+        <button type="button" id="csm-quote-submit">Solicitar cotización</button>
+        <div class="csm-quote-msg" id="csm-quote-msg"></div>
+    </div>
+
+    <script>
+    (function() {
+        var fab = document.getElementById('csm-quote-fab');
+        var form = document.getElementById('csm-quote-form');
+        fab.addEventListener('click', function() {
+            form.classList.toggle('is-open');
+        });
+
+        var island = document.getElementById('csm-dyn-island');
+        var islaTimeout;
+        function mostrarIsla(texto) {
+            document.getElementById('csm-dyn-island-text').textContent = texto || 'Añadido al carrito';
+            island.classList.add('is-active');
+            clearTimeout(islaTimeout);
+            islaTimeout = setTimeout(function() {
+                island.classList.remove('is-active');
+            }, 2000);
+        }
+
+        // Evento real de WooCommerce al agregar un producto (via jQuery, que WooCommerce ya usa)
+        if (window.jQuery) {
+            jQuery(document.body).on('added_to_cart', function() {
+                mostrarIsla('Añadido al carrito');
+            });
+        }
+
+        document.getElementById('csm-quote-submit').addEventListener('click', function() {
+            var btn = this;
+            var msg = document.getElementById('csm-quote-msg');
+            var rut = document.getElementById('csm-quote-rut').value.trim();
+            var email = document.getElementById('csm-quote-email').value.trim();
+            var phone = document.getElementById('csm-quote-phone').value.trim();
+
+            if (!rut || !email || !phone) {
+                msg.textContent = 'Completa los 3 campos.';
+                msg.style.color = '#b91c1c';
+                return;
+            }
+
+            btn.disabled = true;
+            btn.textContent = 'Enviando...';
+            msg.textContent = '';
+
+            var data = new URLSearchParams();
+            data.append('action', 'csm_solicitar_cotizacion');
+            data.append('rut', rut);
+            data.append('email', email);
+            data.append('phone', phone);
+
+            fetch(csm_ajax.url, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                body: data.toString()
+            })
+            .then(function(r) { return r.json(); })
+            .then(function(res) {
+                btn.disabled = false;
+                btn.textContent = 'Solicitar cotización';
+                if (res.success) {
+                    msg.textContent = '¡Listo! Te contactaremos pronto.';
+                    msg.style.color = '#0f766e';
+                    document.getElementById('csm-quote-rut').value = '';
+                    document.getElementById('csm-quote-email').value = '';
+                    document.getElementById('csm-quote-phone').value = '';
+                } else {
+                    msg.textContent = 'Hubo un problema. Intenta de nuevo.';
+                    msg.style.color = '#b91c1c';
+                }
+            })
+            .catch(function() {
+                btn.disabled = false;
+                btn.textContent = 'Solicitar cotización';
+                msg.textContent = 'Hubo un problema. Intenta de nuevo.';
+                msg.style.color = '#b91c1c';
+            });
+        });
+    })();
+    </script>
+    <?php
+});
+
+add_action('wp_head', function() {
+    ?>
+    <script>
+    var csm_ajax = { url: "<?php echo admin_url('admin-ajax.php'); ?>" };
+    </script>
+    <?php
+});

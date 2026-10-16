@@ -1,0 +1,92 @@
+// Página de Cotización B2B - renderizado dinámico
+add_filter("the_content", function($content) {
+    if (!is_page("cotizacion")) return $content;
+    
+    $is_logged   = is_user_logged_in() ? "true" : "false";
+    $login_url   = esc_js(wc_get_page_permalink("myaccount") . "?redirect_to=" . urlencode(home_url("/cotizacion/")));
+    $register_url = esc_js(wc_get_page_permalink("myaccount") . "?action=register");
+    $quote_url   = esc_js(home_url("/mi-cotizacion/"));
+    
+    ob_start();
+    ?>
+<style>
+#casamado-cot-page{max-width:900px;margin:32px auto;padding:0 16px;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.cot-hero{background:linear-gradient(135deg,#1a3a5c 0%,#12283f 100%);color:#fff;border-radius:20px;padding:40px 44px;text-align:center;margin-bottom:24px;position:relative;overflow:hidden}
+.cot-hero::after{content:"";position:absolute;bottom:-100px;right:-80px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle at 30% 30%, rgba(34,211,238,0.35), rgba(167,139,250,0.25) 55%, transparent 78%);pointer-events:none}
+.cot-hero>*{position:relative;z-index:1}
+.cot-hero h1{font-size:1.9em;margin:0 0 8px;color:#fff;font-weight:800}
+.cot-hero p{font-size:1.05em;opacity:.85;margin:0}
+.cot-benefits{display:flex;gap:14px;margin-bottom:24px;flex-wrap:wrap}
+.cot-benefit{flex:1;min-width:180px;background:#f8fafc;border-radius:14px;padding:20px 18px;text-align:center;border:1px solid #eef1f4;transition:transform .25s cubic-bezier(0.16,1,0.3,1),box-shadow .25s ease}
+.cot-benefit:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(26,58,92,0.08)}
+.cot-benefit .icon{width:44px;height:44px;margin:0 auto 10px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3em;background:radial-gradient(circle at 30% 30%, #ffffff 0%, #22d3ee 38%, #1a3a5c 100%);box-shadow:0 6px 14px rgba(26,58,92,0.18),inset 0 2px 3px rgba(255,255,255,0.6)}
+.cot-benefit h3{font-size:.92em;font-weight:700;margin:0 0 5px;color:#1a3a5c}
+.cot-benefit p{font-size:.82em;color:#6b7280;margin:0}
+.cot-login-box{background:#fff;border:1px solid #eef1f4;border-radius:20px;padding:40px;text-align:center;box-shadow:0 10px 30px rgba(26,58,92,0.08)}
+.cot-login-box h2{font-size:1.35em;color:#1a3a5c;margin:0 0 8px;font-weight:800}
+.cot-login-box .sub{color:#6b7280;margin:0 0 28px;font-size:.95em;line-height:1.5}
+.cot-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cot-btn-p{background:linear-gradient(135deg,#22d3ee 0%,#6366f1 60%,#a78bfa 100%);color:#fff;border-top:1px solid rgba(255,255,255,0.5);border-radius:999px;padding:14px 38px;font-weight:700;font-size:1em;text-decoration:none;display:inline-block;box-shadow:0 10px 22px rgba(99,102,241,0.28),inset 0 1px 0 rgba(255,255,255,0.4);transition:transform .15s ease,box-shadow .2s ease}
+.cot-btn-p:hover{box-shadow:0 14px 28px rgba(99,102,241,0.34),inset 0 1px 0 rgba(255,255,255,0.5);color:#fff;text-decoration:none}
+.cot-btn-p:active{transform:scale(0.97)}
+.cot-btn-s{background:#fff;color:#1a3a5c;border:1px solid #e2e8f0;border-radius:999px;padding:12px 38px;font-weight:700;font-size:1em;text-decoration:none;display:inline-block;transition:border-color .2s ease,transform .15s ease}
+.cot-btn-s:hover{border-color:#22d3ee;text-decoration:none}
+.cot-btn-s:active{transform:scale(0.97)}
+.cot-bridge{margin-top:20px;font-size:.85em;color:#6b7280;line-height:1.5}
+.cot-bridge strong{color:#1a3a5c}
+.cot-logged-box{background:#fff;border-radius:20px;padding:30px;border:1px solid #eef1f4;box-shadow:0 10px 30px rgba(26,58,92,0.06)}
+.cot-info-bar{background:#f4f6f8;border-radius:14px;padding:18px 22px;margin-bottom:20px;display:flex;align-items:center;gap:14px}
+.cot-info-bar .ck{font-size:1.8em;flex-shrink:0}
+.cot-info-bar h3{margin:0 0 3px;color:#1a3a5c;font-size:1em}
+.cot-info-bar p{margin:0;color:#6b7280;font-size:.88em}
+.cot-view-btn{background:linear-gradient(135deg,#22d3ee 0%,#6366f1 60%,#a78bfa 100%);color:#fff;border-top:1px solid rgba(255,255,255,0.5);border-radius:999px;padding:14px 38px;font-weight:700;font-size:1em;text-decoration:none;display:inline-block;margin-right:14px;box-shadow:0 10px 22px rgba(99,102,241,0.28),inset 0 1px 0 rgba(255,255,255,0.4);transition:transform .15s ease}
+.cot-view-btn:hover{color:#fff;text-decoration:none}
+.cot-view-btn:active{transform:scale(0.97)}
+.cot-back{color:#1a3a5c;font-weight:600;text-decoration:none;font-size:.95em}
+.cot-back:hover{text-decoration:underline}
+</style>
+
+<div id="casamado-cot-page">
+<?php if (!is_user_logged_in()): ?>
+  <div class="cot-hero">
+    <h1>📄 Cotización B2B</h1>
+    <p>Cotizaciones formales con precios garantizados para empresas</p>
+  </div>
+  <div class="cot-benefits">
+    <div class="cot-benefit"><div class="icon">📋</div><h3>Cotización Formal</h3><p>Documento PDF profesional listo para presentar</p></div>
+    <div class="cot-benefit"><div class="icon">🔒</div><h3>Precios Garantizados</h3><p>Validez de 5 días hábiles desde la emisión</p></div>
+    <div class="cot-benefit"><div class="icon">⚡</div><h3>Compra con 1 Clic</h3><p>Convierte tu cotización en pedido al instante</p></div>
+  </div>
+  <div class="cot-login-box">
+    <h2>Ingresa o crea tu cuenta para continuar</h2>
+    <p class="sub">Para crear una cotización formal con precios garantizados por 5 días hábiles,<br>necesitas tener una cuenta en Casamado.</p>
+    <div class="cot-buttons">
+      <a href="<?php echo wc_get_page_permalink("myaccount") . "?redirect_to=" . urlencode(home_url("/cotizacion/")); ?>" class="cot-btn-p">Iniciar Sesión</a>
+      <a href="<?php echo wc_get_page_permalink("myaccount") . "?action=register"; ?>" class="cot-btn-s">Crear Cuenta</a>
+    </div>
+    <p class="cot-bridge">¿Solo necesitas un precio rápido sin crear cuenta? Usa el botón <strong>Cotización Express</strong> (💬) en la esquina inferior derecha de cualquier página.</p>
+  </div>
+<?php else: ?>
+  <div class="cot-hero">
+    <h1>📄 Tu Cotización</h1>
+    <p>Agrega productos y genera tu cotización formal en PDF</p>
+  </div>
+  <div class="cot-benefits">
+    <div class="cot-benefit"><div class="icon">📋</div><h3>Cotización Formal</h3><p>Documento PDF profesional listo para presentar</p></div>
+    <div class="cot-benefit"><div class="icon">🔒</div><h3>Precios Garantizados</h3><p>Validez de 5 días hábiles desde la emisión</p></div>
+    <div class="cot-benefit"><div class="icon">⚡</div><h3>Compra con 1 Clic</h3><p>Convierte tu cotización en pedido al instante</p></div>
+  </div>
+  <div class="cot-logged-box">
+    <div class="cot-info-bar">
+      <div class="ck">✅</div>
+      <div><h3>Cuenta verificada</h3><p>Puedes agregar productos a tu cotización desde el catálogo.</p></div>
+    </div>
+    <a href="<?php echo home_url("/mi-cotizacion/"); ?>" class="cot-view-btn">Ver mi Cotización</a>
+    <a href="<?php echo home_url("/tienda/"); ?>" class="cot-back">← Seguir comprando</a>
+  </div>
+<?php endif; ?>
+</div>
+    <?php
+    return ob_get_clean();
+});
+
