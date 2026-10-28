@@ -1,0 +1,53 @@
+add_action('wp_footer', function() {
+    if (!is_front_page()) return;
+    ?>
+    <style>
+    .csm-metrics-wrap {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 40px 24px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .csm-metric-box {
+        background: #0a0a0a;
+        border-radius: 16px;
+        padding: 32px 24px;
+        text-align: center;
+    }
+    .csm-metric-value {
+        font-family: "SF Mono", "Roboto Mono", Consolas, "Courier New", monospace;
+        font-size: 34px;
+        font-weight: 700;
+        color: #22d3ee;
+        line-height: 1.1;
+    }
+    .csm-metric-label {
+        margin-top: 8px;
+        font-family: "SF Mono", "Roboto Mono", Consolas, "Courier New", monospace;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #9ca3af;
+    }
+    @media (max-width: 768px) {
+        .csm-metrics-wrap { grid-template-columns: 1fr; }
+    }
+    </style>
+    <div class="csm-metrics-wrap">
+        <div class="csm-metric-box">
+            <div class="csm-metric-value">Desde 2022</div>
+            <div class="csm-metric-label">Años en el rubro</div>
+        </div>
+        <div class="csm-metric-box">
+            <div class="csm-metric-value">Región + Santiago</div>
+            <div class="csm-metric-label">Cobertura de despacho</div>
+        </div>
+        <div class="csm-metric-box">
+            <div class="csm-metric-value">24-48h</div>
+            <div class="csm-metric-label">Tiempo de entrega</div>
+        </div>
+    </div>
+    <?php
+});

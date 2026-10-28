@@ -1,0 +1,42 @@
+[vc_row][vc_column]<div class="csm-bento-section-title">Kit Baño Institucional</div>
+<div class="csm-bento">
+<div class="csm-bento-large">
+<div>
+<div class="kicker">Instalación completa</div>
+<h2>Un baño bien equipado no se arma producto por producto</h2>
+<p>Dispensador de jabón, dispensador de servilletas y el repuesto de jabón líquido — todo en una sola cotización.</p>
+</div>
+<div class="csm-bento-photos">
+<img src="https://casamado.cl/wp-content/uploads/2026/07/elite-dispensador-jabon-granel-blanco-91523_1.jpg" alt="Dispensador Jabón Granel">
+<img src="https://casamado.cl/wp-content/uploads/2026/07/elite-dispensador-servilleta-sobremesa-interfoliado-94312_1.jpg" alt="Dispensador Servilleta">
+<img src="https://casamado.cl/wp-content/uploads/2026/07/jab-n-l-quido-hipoalerg-nico-650-ml-sku-5001120.jpg" alt="Jabón Líquido">
+</div>
+<a class="csm-bento-cta" href="https://wa.me/56934660081?text=Hola%2C%20quiero%20cotizar%20el%20Kit%20Ba%C3%B1o%20Institucional" target="_blank" rel="nofollow">Cotizar kit completo →</a>
+</div>
+
+<div class="csm-bento-right">
+<a class="csm-bento-small" href="https://casamado.cl/producto/dispensador-jabon-granel-800-mlplastico-blanco/">
+<img src="https://casamado.cl/wp-content/uploads/2026/07/elite-dispensador-jabon-granel-blanco-91523_1.jpg" alt="Dispensador Jabón Granel 800 ML">
+<div class="csm-bento-small-text">
+<div class="name">Dispensador Jabón Granel 800 ML</div>
+<div class="price">$27.614 <span>+ IVA</span></div>
+</div>
+</a>
+
+<a class="csm-bento-small" href="https://casamado.cl/producto/dispensador-servilleta-interfoliadaplastico/">
+<img src="https://casamado.cl/wp-content/uploads/2026/07/elite-dispensador-servilleta-sobremesa-interfoliado-94312_1.jpg" alt="Dispensador Servilleta Interfoliada">
+<div class="csm-bento-small-text">
+<div class="name">Dispensador Servilleta Interfoliada</div>
+<div class="price">$26.095 <span>+ IVA</span></div>
+</div>
+</a>
+
+<a class="csm-bento-small" href="https://casamado.cl/producto/jabon-liquido-hipoalergenico-650-ml/">
+<img src="https://casamado.cl/wp-content/uploads/2026/07/jab-n-l-quido-hipoalerg-nico-650-ml-sku-5001120.jpg" alt="Jabón Líquido Hipoalergénico 650 ML">
+<div class="csm-bento-small-text">
+<div class="name">Jabón Líquido Hipoalergénico 650 ML</div>
+<div class="price">$1.316 <span>+ IVA</span></div>
+</div>
+</a>
+</div>
+</div>[/vc_column][/vc_row]
