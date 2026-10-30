@@ -1,0 +1,13 @@
+{
+  "fuente": "Cédula RUT del SII (emitida 19/04/2022) + pie de cotizaciones automáticas de casamado.cl",
+  "razon_social": "CASA MATERIALES DE OBRA SPA",
+  "nombre_fantasia": "Casamado",
+  "rut": "77.557.072-5",
+  "giro": "Construcción",
+  "direccion_principal_casa_matriz": "La Concepción 81, Of. 214, Providencia, Santiago",
+  "codigo_postal": "7500000",
+  "telefono": "+56 9 3466 0081",
+  "email": "contacto@casamado.cl",
+  "web": "https://casamado.cl",
+  "nota": "El RUT es el mismo que usa Fasit para facturar (razón social CASA MATERIALES DE OBRA SPA, giro Construcción). Las cotizaciones generadas por casamado.cl muestran 'Casamado SpA' como nombre — es el nombre de fantasía, no la razón social legal ante el SII. Pendiente evaluar si conviene mostrar la razón social legal (o ambas) en las cotizaciones/facturas para evitar inconsistencia."
+}
