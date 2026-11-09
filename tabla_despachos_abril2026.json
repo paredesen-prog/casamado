@@ -1,0 +1,26 @@
+{
+  "fuente": "Fasit Distribución Integral - Tabla de Costos Despachos 2026",
+  "nota": "Tabla de costos de despacho de Fasit, usada como referencia para coordinar envíos. Casamado es tienda 100% online, sin retiro en bodega.",
+  "comunas_rm": {
+    "Buin": 7900,
+    "Paine": 8900,
+    "Peñaflor": 7900,
+    "Calera de Tango": 7900,
+    "Talagante": 8900,
+    "Lampa": 7900,
+    "Chicureo / Colina": 7900,
+    "Curacaví": "PULLMAN CARGO (bajo $500.000); $49.900 sobre $500.000",
+    "Melipilla": "PULLMAN CARGO (bajo $500.000); $49.900 sobre $500.000",
+    "Pirque": "PULLMAN CARGO (bajo $500.000); $49.900 sobre $500.000",
+    "San Jose de Maipo (hasta San Alfonso)": "PULLMAN CARGO"
+  },
+  "v_region": {
+    "precio_neto_sobre_mm1": 69900,
+    "comunas": ["Santo Domingo", "Algarrobo", "El Tabo", "San Antonio", "Cartagena", "El Quisco", "Casablanca", "Valparaíso", "Viña del Mar", "Quilpué", "Limache", "Villa Alemana", "Hijuelas", "Llay Llay", "San Felipe", "Los Andes"]
+  },
+  "vi_region": {
+    "precio_neto_sobre_mm1": 79900,
+    "comunas": ["San Francisco de Mostazal", "Graneros", "Doñihue", "Rancagua", "San Fernando"]
+  },
+  "comunas_no_listadas_nota": "Comunas RM no listadas aquí (ej. Padre Hurtado, Santiago centro, Providencia, Las Condes, etc.) no tienen costo confirmado en esta tabla — consultar con Johan antes de cotizar despacho a una comuna no listada."
+}

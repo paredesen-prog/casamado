@@ -1,0 +1,549 @@
+[
+  {
+    "accion": "asignar_sku_vacio",
+    "sku_fasit": "5001110",
+    "id": 4721,
+    "nombre": "Shampoo Anti Frizz Aceite de Coco y Jazmín 750 ML"
+  },
+  {
+    "accion": "asignar_sku_vacio",
+    "sku_fasit": "4001241",
+    "id": 4243,
+    "nombre": "Paño Esponja Absorbente Natural Amarillo 6 UND"
+  },
+  {
+    "accion": "asignar_sku_vacio",
+    "sku_fasit": "4001265",
+    "id": 4865,
+    "nombre": "Trapero Multiuso Ultra Absorbente Amarillo Doble con Ojal"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001039-S",
+    "id": 3900,
+    "nombre": "Guante Latex Doméstico Amarillo",
+    "sku_actual": "4001039"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001039-M",
+    "id": 3900,
+    "nombre": "Guante Latex Doméstico Amarillo",
+    "sku_actual": "4001039"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001039-L",
+    "id": 3900,
+    "nombre": "Guante Latex Doméstico Amarillo",
+    "sku_actual": "4001039"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001115-S",
+    "id": 3902,
+    "nombre": "Guante Latex Multiuso Amarillo",
+    "sku_actual": "4001115"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001115-M",
+    "id": 3902,
+    "nombre": "Guante Latex Multiuso Amarillo",
+    "sku_actual": "4001115"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001115-L",
+    "id": 3902,
+    "nombre": "Guante Latex Multiuso Amarillo",
+    "sku_actual": "4001115"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001228-S",
+    "id": 3904,
+    "nombre": "Guante Latex Multiuso Amarillo Impeke",
+    "sku_actual": "4001228"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001228-M",
+    "id": 3904,
+    "nombre": "Guante Latex Multiuso Amarillo Impeke",
+    "sku_actual": "4001228"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001228-L",
+    "id": 3904,
+    "nombre": "Guante Latex Multiuso Amarillo Impeke",
+    "sku_actual": "4001228"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001042-M",
+    "id": 3910,
+    "nombre": "Guante Nitrilo Verde",
+    "sku_actual": "4001042"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001042-L",
+    "id": 3910,
+    "nombre": "Guante Nitrilo Verde",
+    "sku_actual": "4001042"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001189-M",
+    "id": 3912,
+    "nombre": "Guante Nitrilo Verde Pro",
+    "sku_actual": "4001189"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001189-L",
+    "id": 3912,
+    "nombre": "Guante Nitrilo Verde Pro",
+    "sku_actual": "4001189"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001225-S",
+    "id": 3890,
+    "nombre": "Guante Examinación Látex Blanco con Polvo 100 UND",
+    "sku_actual": "4001225"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001225-M",
+    "id": 3890,
+    "nombre": "Guante Examinación Látex Blanco con Polvo 100 UND",
+    "sku_actual": "4001225"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001225-L",
+    "id": 3890,
+    "nombre": "Guante Examinación Látex Blanco con Polvo 100 UND",
+    "sku_actual": "4001225"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001046-S",
+    "id": 3896,
+    "nombre": "Guante Examinación Vinilo Blanco Sin Polvo 100 UND",
+    "sku_actual": "4001046"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001046-M",
+    "id": 3896,
+    "nombre": "Guante Examinación Vinilo Blanco Sin Polvo 100 UND",
+    "sku_actual": "4001046"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001046-L",
+    "id": 3896,
+    "nombre": "Guante Examinación Vinilo Blanco Sin Polvo 100 UND",
+    "sku_actual": "4001046"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001227-S",
+    "id": 3898,
+    "nombre": "Guante Examinación Vinilo Blanco sin Polvo 100 UND Virutex Pro",
+    "sku_actual": "4001227"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001226-S",
+    "id": 3892,
+    "nombre": "Guante Examinación Nitrilo Azul sin Polvo 100 UND",
+    "sku_actual": "4001226"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001226-M",
+    "id": 3892,
+    "nombre": "Guante Examinación Nitrilo Azul sin Polvo 100 UND",
+    "sku_actual": "4001226"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001226-L",
+    "id": 3892,
+    "nombre": "Guante Examinación Nitrilo Azul sin Polvo 100 UND",
+    "sku_actual": "4001226"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001280-S",
+    "id": 3894,
+    "nombre": "Guante Examinación Nitrilo Negro sin Polvo 100 UND",
+    "sku_actual": "4001280"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001280-M",
+    "id": 3894,
+    "nombre": "Guante Examinación Nitrilo Negro sin Polvo 100 UND",
+    "sku_actual": "4001280"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001280-L",
+    "id": 3894,
+    "nombre": "Guante Examinación Nitrilo Negro sin Polvo 100 UND",
+    "sku_actual": "4001280"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001054-L",
+    "id": 4139,
+    "nombre": "Overol Buzo Desechable Laminado Blanco",
+    "sku_actual": "4001054"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001054-XXL",
+    "id": 4139,
+    "nombre": "Overol Buzo Desechable Laminado Blanco",
+    "sku_actual": "4001054"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001377-L",
+    "id": 4137,
+    "nombre": "Overol Buzo Desechable Blanco Blackbull Basic",
+    "sku_actual": "4001377"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "4001377-XL",
+    "id": 4137,
+    "nombre": "Overol Buzo Desechable Blanco Blackbull Basic",
+    "sku_actual": "4001377"
+  },
+  {
+    "accion": "asignar_sku_vacio",
+    "sku_fasit": "8001017",
+    "id": 3850,
+    "nombre": "Faja Lumbar Elasticada Blackbull color Negro"
+  },
+  {
+    "accion": "asignar_sku_vacio",
+    "sku_fasit": "8001018",
+    "id": 3850,
+    "nombre": "Faja Lumbar Elasticada Blackbull color Negro"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001061-37",
+    "id": 4875,
+    "nombre": "Zapato de Seguridad Blackbull Basic Negro",
+    "sku_actual": "8001061"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001061-38",
+    "id": 4875,
+    "nombre": "Zapato de Seguridad Blackbull Basic Negro",
+    "sku_actual": "8001061"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001061-39",
+    "id": 4875,
+    "nombre": "Zapato de Seguridad Blackbull Basic Negro",
+    "sku_actual": "8001061"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001061-40",
+    "id": 4875,
+    "nombre": "Zapato de Seguridad Blackbull Basic Negro",
+    "sku_actual": "8001061"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001061-41",
+    "id": 4875,
+    "nombre": "Zapato de Seguridad Blackbull Basic Negro",
+    "sku_actual": "8001061"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001061-42",
+    "id": 4875,
+    "nombre": "Zapato de Seguridad Blackbull Basic Negro",
+    "sku_actual": "8001061"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001061-43",
+    "id": 4875,
+    "nombre": "Zapato de Seguridad Blackbull Basic Negro",
+    "sku_actual": "8001061"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001061-44",
+    "id": 4875,
+    "nombre": "Zapato de Seguridad Blackbull Basic Negro",
+    "sku_actual": "8001061"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001064-36",
+    "id": 4879,
+    "nombre": "Zapato de Seguridad Legend LG-50 Ranco Café",
+    "sku_actual": "8001064"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001064-37",
+    "id": 4879,
+    "nombre": "Zapato de Seguridad Legend LG-50 Ranco Café",
+    "sku_actual": "8001064"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001064-38",
+    "id": 4879,
+    "nombre": "Zapato de Seguridad Legend LG-50 Ranco Café",
+    "sku_actual": "8001064"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001064-39",
+    "id": 4879,
+    "nombre": "Zapato de Seguridad Legend LG-50 Ranco Café",
+    "sku_actual": "8001064"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001064-40",
+    "id": 4879,
+    "nombre": "Zapato de Seguridad Legend LG-50 Ranco Café",
+    "sku_actual": "8001064"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001064-41",
+    "id": 4879,
+    "nombre": "Zapato de Seguridad Legend LG-50 Ranco Café",
+    "sku_actual": "8001064"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001064-42",
+    "id": 4879,
+    "nombre": "Zapato de Seguridad Legend LG-50 Ranco Café",
+    "sku_actual": "8001064"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001064-43",
+    "id": 4879,
+    "nombre": "Zapato de Seguridad Legend LG-50 Ranco Café",
+    "sku_actual": "8001064"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001064-44",
+    "id": 4879,
+    "nombre": "Zapato de Seguridad Legend LG-50 Ranco Café",
+    "sku_actual": "8001064"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001072-38",
+    "id": 3555,
+    "nombre": "Bota de Agua Blackbull Negra",
+    "sku_actual": "8001072"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001072-39",
+    "id": 3555,
+    "nombre": "Bota de Agua Blackbull Negra",
+    "sku_actual": "8001072"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001072-40",
+    "id": 3555,
+    "nombre": "Bota de Agua Blackbull Negra",
+    "sku_actual": "8001072"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001072-41",
+    "id": 3555,
+    "nombre": "Bota de Agua Blackbull Negra",
+    "sku_actual": "8001072"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001072-42",
+    "id": 3555,
+    "nombre": "Bota de Agua Blackbull Negra",
+    "sku_actual": "8001072"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001072-43",
+    "id": 3555,
+    "nombre": "Bota de Agua Blackbull Negra",
+    "sku_actual": "8001072"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001072-44",
+    "id": 3555,
+    "nombre": "Bota de Agua Blackbull Negra",
+    "sku_actual": "8001072"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001052-38",
+    "id": 3557,
+    "nombre": "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+    "sku_actual": "8001052"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001052-39",
+    "id": 3557,
+    "nombre": "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+    "sku_actual": "8001052"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001052-40",
+    "id": 3557,
+    "nombre": "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+    "sku_actual": "8001052"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001052-41",
+    "id": 3557,
+    "nombre": "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+    "sku_actual": "8001052"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001052-42",
+    "id": 3557,
+    "nombre": "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+    "sku_actual": "8001052"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001052-43",
+    "id": 3557,
+    "nombre": "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+    "sku_actual": "8001052"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001052-44",
+    "id": 3557,
+    "nombre": "Bota de Agua de Seguridad Punta Plantilla Blackbull Negra",
+    "sku_actual": "8001052"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001059-M",
+    "id": 4175,
+    "nombre": "Pantalón Cargo Poplin Blackbull color Azul",
+    "sku_actual": "8001059"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001059-L",
+    "id": 4175,
+    "nombre": "Pantalón Cargo Poplin Blackbull color Azul",
+    "sku_actual": "8001059"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001059-XL",
+    "id": 4175,
+    "nombre": "Pantalón Cargo Poplin Blackbull color Azul",
+    "sku_actual": "8001059"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001071-S",
+    "id": 4173,
+    "nombre": "Pantalón Cargo Gabardina Blackbull color Azul",
+    "sku_actual": "8001071"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001071-M",
+    "id": 4173,
+    "nombre": "Pantalón Cargo Gabardina Blackbull color Azul",
+    "sku_actual": "8001071"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001071-L",
+    "id": 4173,
+    "nombre": "Pantalón Cargo Gabardina Blackbull color Azul",
+    "sku_actual": "8001071"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001071-XL",
+    "id": 4173,
+    "nombre": "Pantalón Cargo Gabardina Blackbull color Azul",
+    "sku_actual": "8001071"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001081-M",
+    "id": 4141,
+    "nombre": "Overol Poplin Blackbull Azul",
+    "sku_actual": "8001081"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001081-L",
+    "id": 4141,
+    "nombre": "Overol Poplin Blackbull Azul",
+    "sku_actual": "8001081"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001081-XL",
+    "id": 4141,
+    "nombre": "Overol Poplin Blackbull Azul",
+    "sku_actual": "8001081"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001082-L",
+    "id": 4836,
+    "nombre": "Traje de Agua Impermeable Jardinera Blackbull Amarilla",
+    "sku_actual": "8001082"
+  },
+  {
+    "accion": "variante_misma_base",
+    "sku_fasit": "8001082-XL",
+    "id": 4836,
+    "nombre": "Traje de Agua Impermeable Jardinera Blackbull Amarilla",
+    "sku_actual": "8001082"
+  },
+  {
+    "accion": "asignar_sku_vacio",
+    "sku_fasit": "8001020",
+    "id": 4087,
+    "nombre": "Martillo Carpintero 27MM con Mango Engomado"
+  }
+]

@@ -1,0 +1,38 @@
+// Personalizacion del PDF para pedidos que son Cotizacion (formal o express):
+// datos reales de Casamado, titulo "Cotizacion", RUT del cliente y nota de validez.
+
+// Datos reales de la empresa en el encabezado del PDF (una sola vez; update_option no reescribe si no cambia)
+$csm_pdf_general = get_option('wpo_wcpdf_settings_general', array());
+$csm_pdf_general['shop_phone_number'] = array('default' => '+56 9 3466 0081');
+$csm_pdf_general['shop_email_address'] = array('default' => 'contacto@casamado.cl');
+$csm_pdf_general['header_logo'] = array('default' => 2008); // Logo real de Casamado en la biblioteca de medios
+update_option('wpo_wcpdf_settings_general', $csm_pdf_general);
+
+add_filter('wpo_wcpdf_shop_address', function($address, $document) {
+    return "Casa Materiales de Obra SpA (Casamado)\nLa Concepción 81, oficina 214, Providencia\nRUT: 77.557.072-5";
+}, 10, 2);
+
+add_filter('wpo_wcpdf_document_title', function($title, $document) {
+    $order = isset($document->order) ? $document->order : null;
+    if ($order && $order->get_meta('_tipo_solicitud') === 'cotizacion') {
+        return 'Cotización';
+    }
+    return $title;
+}, 10, 2);
+
+add_action('wpo_wcpdf_after_billing_address', function($type, $order) {
+    if (!$order || $order->get_meta('_tipo_solicitud') !== 'cotizacion') return;
+    $rut = $order->get_meta('_billing_rut');
+    if ($rut) {
+        echo '<div class="billing-rut">RUT: ' . esc_html($rut) . '</div>';
+    }
+}, 10, 2);
+
+add_action('wpo_wcpdf_after_order_details', function($type, $order) {
+    if (!$order || $order->get_meta('_tipo_solicitud') !== 'cotizacion') return;
+    echo '<div style="margin-top:14px;padding:10px 14px;background:#fffdf0;border-left:4px solid #e0a800;font-size:10.5px;">
+        <strong>Validez:</strong> Esta cotización tiene una validez de 5 días hábiles desde la fecha de emisión.<br>
+        Los precios están sujetos a confirmación de stock al momento de la compra.
+    </div>';
+}, 10, 2);
+

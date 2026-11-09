@@ -1,0 +1,145 @@
+// Manejo de la solicitud de cotizacion express B2B (boton flotante)
+add_action('wp_ajax_csm_solicitar_cotizacion', 'csm_manejar_cotizacion');
+add_action('wp_ajax_nopriv_csm_solicitar_cotizacion', 'csm_manejar_cotizacion');
+
+function csm_manejar_cotizacion() {
+    $rut = isset($_POST['rut']) ? sanitize_text_field($_POST['rut']) : '';
+    $email = isset($_POST['email']) ? sanitize_email($_POST['email']) : '';
+    $phone = isset($_POST['phone']) ? sanitize_text_field($_POST['phone']) : '';
+
+    if (empty($rut) || empty($email) || empty($phone) || !is_email($email)) {
+        wp_send_json_error(array('message' => 'Datos incompletos o inválidos.'));
+    }
+
+    if (!function_exists('WC') || !WC()->cart || WC()->cart->is_empty()) {
+        wp_send_json_error(array('message' => 'Tu carro está vacío. Agrega productos antes de cotizar.'));
+    }
+
+    // Crear un pedido real (mismo mecanismo que el sistema formal de /cotizacion/),
+    // en estado on-hold, para poder generar el PDF con el plugin ya instalado
+    // (PDF Invoices & Packing Slips for WooCommerce).
+    $order = wc_create_order();
+
+    foreach (WC()->cart->get_cart() as $item) {
+        $producto = $item['data'];
+        if (!$producto) continue;
+        $order->add_product($producto, $item['quantity']);
+    }
+
+    $order->set_billing_email($email);
+    $order->set_billing_phone($phone);
+    $order->update_meta_data('_billing_rut', $rut);
+    $order->update_meta_data('_tipo_solicitud', 'cotizacion');
+    $order->update_meta_data('_origen_cotizacion', 'express_anonima');
+    $order->set_status('on-hold', 'Cotización express generada desde el botón flotante (sin cuenta).');
+    $order->calculate_totals();
+    $order->save();
+
+    // Generar el PDF real con el plugin ya instalado en el sitio
+    $pdf_enviado = false;
+    if (function_exists('wcpdf_get_document')) {
+        $document = wcpdf_get_document('invoice', $order, true);
+        if ($document && $document->exists()) {
+            $pdf_data = $document->get_pdf();
+            $tmp_path = trailingslashit(get_temp_dir()) . 'cotizacion-' . $order->get_id() . '.pdf';
+            file_put_contents($tmp_path, $pdf_data);
+
+            $asunto_cliente = 'Tu cotización Casamado n.° ' . $order->get_id();
+            $mensaje_cliente = "Hola,\n\nAdjuntamos tu cotización con los productos de tu carro.\n\n"
+                . "N.° de cotización: " . $order->get_id() . "\n"
+                . "Total: $" . number_format($order->get_total(), 0, ',', '.') . "\n\n"
+                . "Precios sujetos a confirmación de stock al momento de tu pedido.\n"
+                . "Cualquier consulta, respóndenos a este correo o escríbenos por WhatsApp.\n\n"
+                . "Casamado";
+            $headers_cliente = array('Content-Type: text/plain; charset=UTF-8');
+            $pdf_enviado = wp_mail($email, $asunto_cliente, $mensaje_cliente, $headers_cliente, array($tmp_path));
+
+            @unlink($tmp_path);
+        }
+    }
+
+    // Notificacion interna al equipo (se mantiene igual que antes, mas el numero de pedido)
+    $lineas_carrito = array();
+    foreach ($order->get_items() as $line_item) {
+        $lineas_carrito[] = sprintf('%s x%d — $%s', $line_item->get_name(), $line_item->get_quantity(), number_format($line_item->get_subtotal(), 0, ',', '.'));
+    }
+    $asunto = 'Nueva solicitud de cotización B2B — Casamado (Pedido #' . $order->get_id() . ')';
+    $mensaje = "Se recibió una nueva solicitud de cotización express desde casamado.cl\n\n"
+        . "N.° de pedido/cotización: " . $order->get_id() . " (" . admin_url('post.php?post=' . $order->get_id() . '&action=edit') . ")\n"
+        . "RUT empresa: $rut\n"
+        . "Correo: $email\n"
+        . "Teléfono: $phone\n\n"
+        . "Carro de compras al momento de la solicitud:\n"
+        . implode("\n", $lineas_carrito)
+        . "\n\nTotal: $" . number_format($order->get_total(), 0, ',', '.')
+        . ($pdf_enviado ? "\n\nSe envió el PDF de la cotización al cliente." : "\n\nNo se pudo generar/enviar el PDF al cliente (revisar plugin de PDF).");
+
+    $headers = array('Content-Type: text/plain; charset=UTF-8');
+    $enviado = wp_mail('contacto@casamado.cl', $asunto, $mensaje, $headers);
+
+    // Gancho para integraciones futuras (ej. Google Sheets via Zapier/Make webhook)
+    do_action('csm_quote_submitted', array(
+        'order_id' => $order->get_id(),
+        'rut' => $rut,
+        'email' => $email,
+        'phone' => $phone,
+        'cart_items' => $lineas_carrito,
+        'cart_total' => $order->get_total(),
+        'date' => current_time('mysql'),
+    ));
+
+    if ($pdf_enviado) {
+        wp_send_json_success(array('message' => 'Cotización enviada a tu correo en PDF.'));
+    } elseif ($enviado) {
+        wp_send_json_success(array('message' => 'Cotización recibida, te contactaremos con el detalle.'));
+    } else {
+        wp_send_json_error(array('message' => 'No se pudo enviar el correo.'));
+    }
+}
+
+// Resumen del carrito real, para mostrar en el popup de Cotizacion Express antes de enviar
+add_action('wp_ajax_csm_resumen_carrito', 'csm_obtener_resumen_carrito');
+add_action('wp_ajax_nopriv_csm_resumen_carrito', 'csm_obtener_resumen_carrito');
+
+function csm_obtener_resumen_carrito() {
+    $items = array();
+    $total = 0;
+
+    if (function_exists('WC') && WC()->cart) {
+        foreach (WC()->cart->get_cart() as $item) {
+            $producto = $item['data'];
+            if (!$producto) continue;
+            $subtotal = isset($item['line_subtotal']) ? (float) $item['line_subtotal'] : 0;
+            $items[] = array(
+                'nombre' => $producto->get_name(),
+                'cantidad' => (int) $item['quantity'],
+                'subtotal' => number_format($subtotal, 0, ',', '.'),
+            );
+            $total += $subtotal;
+        }
+    }
+
+    wp_send_json_success(array(
+        'items' => $items,
+        'total' => number_format($total, 0, ',', '.'),
+        'vacio' => empty($items),
+    ));
+}
+
+// Indicador de stock tipo bateria en las tarjetas de producto reales
+add_action('woocommerce_after_shop_loop_item_title', function() {
+    global $product;
+    if (!$product) return;
+
+    $en_stock = $product->is_in_stock();
+    $clase = $en_stock ? 'in-stock' : 'out-of-stock';
+    $etiqueta = $en_stock ? 'En stock' : 'Sin stock';
+    ?>
+    <div class="csm-stock-battery <?php echo esc_attr($clase); ?>">
+        <div class="cells"><div class="cell"></div><div class="cell"></div><div class="cell"></div></div>
+        <span class="csm-stock-battery-label"><?php echo esc_html($etiqueta); ?></span>
+    </div>
+    <?php
+}, 15);
+
+

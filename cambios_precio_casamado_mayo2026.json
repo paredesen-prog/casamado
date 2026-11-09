@@ -1,0 +1,6876 @@
+[
+  {
+    "id": 4821,
+    "sku": "TO55004",
+    "nombre": "Toalla de Papel Alto Metraje H/S Universal 250 MT x 2 Rollos",
+    "precio_actual": "13445",
+    "precio_nuevo": 13521
+  },
+  {
+    "id": 2044,
+    "sku": "40862",
+    "nombre": "TOALLA DE PAPEL ALTO METRAJE HS ECONOMICA CLASSIC250 MT x 2 ROLLOS",
+    "precio_actual": "9218",
+    "precio_nuevo": 9269
+  },
+  {
+    "id": 2045,
+    "sku": "40734",
+    "nombre": "TOALLA DE PAPEL ALTO METRAJE HS ECOLOGICA PLUS250 MT x 2 ROLLOS",
+    "precio_actual": "11672",
+    "precio_nuevo": 11736
+  },
+  {
+    "id": 2046,
+    "sku": "40712",
+    "nombre": "TOALLA DE PAPEL ALTO METRAJE HS BLANCA PLUS200 MT x 2 ROLLOS",
+    "precio_actual": "9218",
+    "precio_nuevo": 9269
+  },
+  {
+    "id": 2047,
+    "sku": "1325002",
+    "nombre": "TOALLA DE PAPEL ALTO METRAJE HS BLANCA250 MT x 2 ROLLOS",
+    "precio_actual": "10605",
+    "precio_nuevo": 10666
+  },
+  {
+    "id": 2048,
+    "sku": "40209",
+    "nombre": "TOALLA DE PAPEL ALTO METRAJE HS190 MT x 2 ROLLOS",
+    "precio_actual": "5798",
+    "precio_nuevo": 5829
+  },
+  {
+    "id": 2049,
+    "sku": "TO70026",
+    "nombre": "TOALLA DE PAPEL JUMBO HS ADVANCED250 MT x 6 ROLLOS",
+    "precio_actual": "55546",
+    "precio_nuevo": 55855
+  },
+  {
+    "id": 2050,
+    "sku": "40207",
+    "nombre": "TOALLA DE PAPEL ALTO METRAJE HS250 MT x 2 ROLLOS",
+    "precio_actual": "7630",
+    "precio_nuevo": 7670
+  },
+  {
+    "id": 2051,
+    "sku": "1001012",
+    "nombre": "TOALLA DE PAPEL ALTO METRAJE HS BLANCA180 MT x 2 ROLLOS",
+    "precio_actual": "4739",
+    "precio_nuevo": 4770
+  },
+  {
+    "id": 2052,
+    "sku": "1001011",
+    "nombre": "TOALLA DE PAPEL ALTO METRAJE HS BLANCA250 MT x 2 ROLLOS",
+    "precio_actual": "7092",
+    "precio_nuevo": 7135
+  },
+  {
+    "id": 2053,
+    "sku": "40138",
+    "nombre": "TOALLA DE PAPEL ALTO METRAJE HS EVOLUTION PLUS135 MT x 3 ROLLOS",
+    "precio_actual": "12664",
+    "precio_nuevo": 12737
+  },
+  {
+    "id": 2054,
+    "sku": "40254",
+    "nombre": "TOALLA DE PAPEL ALTO METRAJE HS EVOLUTION PLUS250 MT x 2 ROLLOS",
+    "precio_actual": "13160",
+    "precio_nuevo": 13233
+  },
+  {
+    "id": 2055,
+    "sku": "TO55038",
+    "nombre": "TOALLA DE PAPEL JUMBO HS ADVANCED310 MT x 2 ROLLOS",
+    "precio_actual": "21378",
+    "precio_nuevo": 21498
+  },
+  {
+    "id": 2056,
+    "sku": "TO70021",
+    "nombre": "TOALLA DE PAPEL JUMBO HD PREMIUM150 MT x 6 ROLLOS",
+    "precio_actual": "41277",
+    "precio_nuevo": 41510
+  },
+  {
+    "id": 2057,
+    "sku": "40724",
+    "nombre": "TOALLA DE PAPEL ALTO METRAJE HD EVOLUTION EXCELLENCE200 MT x 2 ROLLOS",
+    "precio_actual": "12042",
+    "precio_nuevo": 12110
+  },
+  {
+    "id": 2058,
+    "sku": "40782",
+    "nombre": "TOALLA DE PAPEL BAJO METRAJE HD EXT BLANCA EXCELLENCE24 MT x 2 ROLLOS",
+    "precio_actual": "1739",
+    "precio_nuevo": 1749
+  },
+  {
+    "id": 2059,
+    "sku": "TO55046",
+    "nombre": "TOALLA DE PAPEL BAJO METRAJE HD UNIVERSAL BLANCA24 MT x 2 ROLLOS",
+    "precio_actual": "2000",
+    "precio_nuevo": 2014
+  },
+  {
+    "id": 4824,
+    "sku": "40688",
+    "nombre": "Toalla de Papel Bajo Metraje H/D Clásica 12 MT x 3 Rollos",
+    "precio_actual": "2143",
+    "precio_nuevo": 2157
+  },
+  {
+    "id": 2061,
+    "sku": "1001015",
+    "nombre": "TOALLA DE PAPEL BAJO METRAJE HS BLANCA PREPICADA80 MT x 1 ROLLO",
+    "precio_actual": "1647",
+    "precio_nuevo": 1654
+  },
+  {
+    "id": 2062,
+    "sku": "40638",
+    "nombre": "TOALLA DE PAPEL BAJO METRAJE HD BLANCA XL100 MT x 1 ROLLO",
+    "precio_actual": "3882",
+    "precio_nuevo": 3908
+  },
+  {
+    "id": 2063,
+    "sku": "1525018",
+    "nombre": "TOALLA DE PAPEL INTERFOLIADA HS BLANCA250 HJS x 18 PQTES",
+    "precio_actual": "25655",
+    "precio_nuevo": 25796
+  },
+  {
+    "id": 2064,
+    "sku": "1001014",
+    "nombre": "TOALLA DE PAPEL INTERFOLIADA HD BLANCA200 HJS x 18 PQTES",
+    "precio_actual": "20849",
+    "precio_nuevo": 20962
+  },
+  {
+    "id": 2065,
+    "sku": "TO70027",
+    "nombre": "TOALLA DE PAPEL INTERFOLIADA HD ADVANCED200 HJS x 16 PQTES",
+    "precio_actual": "35731",
+    "precio_nuevo": 35927
+  },
+  {
+    "id": 2066,
+    "sku": "40844",
+    "nombre": "TOALLA DE PAPEL INTERFOLIADA HD EXT BLANCA EXCELLENCE200 HJS x 18 PQTES",
+    "precio_actual": "29168",
+    "precio_nuevo": 29328
+  },
+  {
+    "id": 2067,
+    "sku": "HI55004",
+    "nombre": "PAPEL HIGIENICO ALTO METRAJE HS UNIVERSAL500 MT x 6 ROLLOS",
+    "precio_actual": "22160",
+    "precio_nuevo": 22286
+  },
+  {
+    "id": 2068,
+    "sku": "52093",
+    "nombre": "PAPEL HIGIENICO ALTO METRAJE HS ECONOMICO CLASSIC500 MT x 4 ROLLOS",
+    "precio_actual": "9739",
+    "precio_nuevo": 9792
+  },
+  {
+    "id": 2069,
+    "sku": "1001021",
+    "nombre": "PAPEL HIGIENICO ALTO METRAJE HS BLANCO500 MT x 4 ROLLOS",
+    "precio_actual": "9319",
+    "precio_nuevo": 9369
+  },
+  {
+    "id": 2070,
+    "sku": "1001022",
+    "nombre": "PAPEL HIGIENICO ALTO METRAJE HS BLANCO500 MT x 6 ROLLOS",
+    "precio_actual": "13941",
+    "precio_nuevo": 14020
+  },
+  {
+    "id": 2071,
+    "sku": "125006",
+    "nombre": "PAPEL HIGIENICO ALTO METRAJE HS 500 MT x 6 ROLLOS",
+    "precio_actual": "17924",
+    "precio_nuevo": 18024
+  },
+  {
+    "id": 2072,
+    "sku": "HI70003",
+    "nombre": "PAPEL HIGIENICO ALTO METRAJE HS UNIVERSAL300 MT x 12 ROLLOS",
+    "precio_actual": "32412",
+    "precio_nuevo": 32590
+  },
+  {
+    "id": 2073,
+    "sku": "HI70004",
+    "nombre": "PAPEL HIGIENICO ALTO METRAJE HD PREMIUM160 MT x 12 ROLLOS",
+    "precio_actual": "30916",
+    "precio_nuevo": 31087
+  },
+  {
+    "id": 2074,
+    "sku": "52309",
+    "nombre": "PAPEL HIGIENICO ALTO METRAJE HS 300 MT x 6 ROLLOS",
+    "precio_actual": "9151",
+    "precio_nuevo": 9204
+  },
+  {
+    "id": 2075,
+    "sku": "52315",
+    "nombre": "PAPEL HIGIENICO ALTO METRAJE HS 500 MT x 4 ROLLOS",
+    "precio_actual": "10311",
+    "precio_nuevo": 10365
+  },
+  {
+    "id": 2076,
+    "sku": "1001023",
+    "nombre": "PAPEL HIGIENICO ALTO METRAJE HD PREMIUM250 MT x 6 ROLLOS",
+    "precio_actual": "12445",
+    "precio_nuevo": 12517
+  },
+  {
+    "id": 2077,
+    "sku": "HI55024",
+    "nombre": "PAPEL HIGIENICO ALTO METRAJE HD BLANCO PREMIUM250 MT x 6 ROLLOS",
+    "precio_actual": "22866",
+    "precio_nuevo": 22996
+  },
+  {
+    "id": 2078,
+    "sku": "50971",
+    "nombre": "PAPEL HIGIENICO ALTO METRAJE HD EXT BLANCO EXCELLENCE250 MT x 6 ROLLOS",
+    "precio_actual": "16630",
+    "precio_nuevo": 16721
+  },
+  {
+    "id": 2079,
+    "sku": "52041",
+    "nombre": "PAPEL HIGIENICO BAJO METRAJE HS BLANCO PLUS50 MT x 4 ROLLOS",
+    "precio_actual": "1538",
+    "precio_nuevo": 1546
+  },
+  {
+    "id": 2080,
+    "sku": "50602",
+    "nombre": "PAPEL HIGIENICO BAJO METRAJE HS BLANCO50 MT x 8 ROLLOS",
+    "precio_actual": "4933",
+    "precio_nuevo": 4960
+  },
+  {
+    "id": 2081,
+    "sku": "50570",
+    "nombre": "PAPEL HIGIENICO BAJO METRAJE HS BLANCO FAJILLA50 MT x 12 ROLLOS",
+    "precio_actual": "6840",
+    "precio_nuevo": 6875
+  },
+  {
+    "id": 2082,
+    "sku": "50959",
+    "nombre": "PAPEL HIGIENICO BAJO METRAJE HS BLANCO100 MT x 4 ROLLOS",
+    "precio_actual": "4630",
+    "precio_nuevo": 4659
+  },
+  {
+    "id": 4222,
+    "sku": "HI70006",
+    "nombre": "Papel Higiénico Bajo Metraje H/S Universal 100 MT x 4 Rollos",
+    "precio_actual": "3387",
+    "precio_nuevo": 3407
+  },
+  {
+    "id": 2083,
+    "sku": "52084",
+    "nombre": "PAPEL HIGIENICO BAJO METRAJE HD EXT BLANCO EXCELLENCE20 MT x 16 ROLLOS",
+    "precio_actual": "4487",
+    "precio_nuevo": 4513
+  },
+  {
+    "id": 2085,
+    "sku": "50501",
+    "nombre": "PAPEL HIGIENICO BAJO METRAJE HD BLANCO30 MT x 4 ROLLOS",
+    "precio_actual": "2218",
+    "precio_nuevo": 2226
+  },
+  {
+    "id": 2086,
+    "sku": "50839",
+    "nombre": "PAPEL HIGIENICO BAJO METRAJE HD ULTRA25 MT x 12 ROLLOS",
+    "precio_actual": "10571",
+    "precio_nuevo": 10628
+  },
+  {
+    "id": 2088,
+    "sku": "50975",
+    "nombre": "PAPEL HIGIENICO BAJO METRAJE HD ULTRA50 MT x 8 ROLLOS",
+    "precio_actual": "8639",
+    "precio_nuevo": 8686
+  },
+  {
+    "id": 2089,
+    "sku": "HI70009",
+    "nombre": "PAPEL HIGIENICO BAJO METRAJE HD PREMIUM20 MT x 24 ROLLOS",
+    "precio_actual": "7790",
+    "precio_nuevo": 7829
+  },
+  {
+    "id": 2090,
+    "sku": "HI70019",
+    "nombre": "PAPEL HIGIENICO BAJO METRAJE HD PREMIUM50 MT x 4 ROLLOS",
+    "precio_actual": "3395",
+    "precio_nuevo": 3415
+  },
+  {
+    "id": 4209,
+    "sku": "1001025",
+    "nombre": "Papel Higiénico Bajo Metraje H/D Maxipaper 30 MT x 24 Rollos",
+    "precio_actual": "7311",
+    "precio_nuevo": 7349
+  },
+  {
+    "id": 2091,
+    "sku": "10552",
+    "nombre": "SABANILLA HS BLANCA PLUS48 MT x 2 ROLLOS",
+    "precio_actual": "6050",
+    "precio_nuevo": 6084
+  },
+  {
+    "id": 2092,
+    "sku": "1001031",
+    "nombre": "SABANILLA CLINICA HS PREPICADA BLANCA48 MT x 2 ROLLOS",
+    "precio_actual": "3563",
+    "precio_nuevo": 3583
+  },
+  {
+    "id": 2093,
+    "sku": "16509",
+    "nombre": "FACIAL HD EXT BLANCO EXCELLENCE 216 x 14 CM50 HJS x 1 PQTES",
+    "precio_actual": "672",
+    "precio_nuevo": 679
+  },
+  {
+    "id": 2094,
+    "sku": "16522",
+    "nombre": "FACIAL HD EXT BLANCO  216 x 14 CM90 HJS x 1 PQTES",
+    "precio_actual": "1118",
+    "precio_nuevo": 1121
+  },
+  {
+    "id": 2095,
+    "sku": "16810",
+    "nombre": "FACIAL HT EXTRA BLANCO EXTRA SUAVE 21 x 21 CM60 HJS x 1 PQTES",
+    "precio_actual": "1773",
+    "precio_nuevo": 1783
+  },
+  {
+    "id": 2096,
+    "sku": "17422",
+    "nombre": "PANUELOS DESECHABLE HT CON MENTOL10 HJS x 6 PQTES",
+    "precio_actual": "1084",
+    "precio_nuevo": 1089
+  },
+  {
+    "id": 2097,
+    "sku": "81420",
+    "nombre": "SERVILLETA MESA HS ECOLOGICA PLUS 23 x 22 CM150 HJS x 1 PQTES",
+    "precio_actual": "1244",
+    "precio_nuevo": 1253
+  },
+  {
+    "id": 2098,
+    "sku": "85280",
+    "nombre": "SERVILLETA MESA HS BLANCA PLUS 23 x 22 CM160 HJS x 1 PQTES",
+    "precio_actual": "798",
+    "precio_nuevo": 802
+  },
+  {
+    "id": 2099,
+    "sku": "SE70055",
+    "nombre": "SERVILLETA MESA HS UNIVERSAL COCKTAIL BLANCA 23 x 22 CM200 HJS x 1 PQTE",
+    "precio_actual": "1218",
+    "precio_nuevo": 1229
+  },
+  {
+    "id": 2100,
+    "sku": "22110",
+    "nombre": "SERVILLETA MESA HS COCTEL BLANCA 24 x 24 CM50 HJS x 1 PQTE",
+    "precio_actual": "471",
+    "precio_nuevo": 474
+  },
+  {
+    "id": 2101,
+    "sku": "22550",
+    "nombre": "SERVILLETA MESA HS MESA BLANCA 33 x 33 CM50 HJS x 1 PQTE",
+    "precio_actual": "782",
+    "precio_nuevo": 786
+  },
+  {
+    "id": 2102,
+    "sku": "24141",
+    "nombre": "SERVILLETA MESA HS COCTEL  BLANCA 23 x 22 CM50 HJS x 1 PQTES",
+    "precio_actual": "328",
+    "precio_nuevo": 329
+  },
+  {
+    "id": 2103,
+    "sku": "85261",
+    "nombre": "SERVILLETA MESA HS BLANCA PLUS 30 x 33 CM200 HJS x 1 PQTES",
+    "precio_actual": "2874",
+    "precio_nuevo": 2885
+  },
+  {
+    "id": 2104,
+    "sku": "28651",
+    "nombre": "SERVILLETA MESA HS EXT BLANCA EXCELLENCE 33 x 33 CM500 HJS x 1 PQTES",
+    "precio_actual": "6706",
+    "precio_nuevo": 6742
+  },
+  {
+    "id": 2105,
+    "sku": "81292",
+    "nombre": "SERVILLETA MESA HS GOURMET BLANCA EXCELLENCE 40 x 40 CM050 HJS x 1 PQTES",
+    "precio_actual": "8118",
+    "precio_nuevo": 8164
+  },
+  {
+    "id": 2106,
+    "sku": "52602",
+    "nombre": "SERVILLETA MESA HD EXT BLANCA EXCELLENCE 40 x 40 CM100 HJS x 1 PQTES",
+    "precio_actual": "3202",
+    "precio_nuevo": 3218
+  },
+  {
+    "id": 2107,
+    "sku": "20753",
+    "nombre": "SERVILLETA DISPENSADOR HS EXPRESS CLASSIC 10 x 21 CM250 HJS x 72 PQTES",
+    "precio_actual": "57143",
+    "precio_nuevo": 57457
+  },
+  {
+    "id": 2108,
+    "sku": "85374",
+    "nombre": "SERVILLETA DISPENSADOR HS BLANCA PLUS 216 x 158 CM300 HJS x 30 PQTES",
+    "precio_actual": "32378",
+    "precio_nuevo": 32555
+  },
+  {
+    "id": 2109,
+    "sku": "85378",
+    "nombre": "SERVILLETA DISPENSADOR HS ECOLOGICA PLUS 216 x 158 CM250 HJS x 30 PQTES",
+    "precio_actual": "28345",
+    "precio_nuevo": 28499
+  },
+  {
+    "id": 2110,
+    "sku": "85116",
+    "nombre": "SERVILLETA DISPENSADOR HD EXT BLANCA EXCELLENCE 216 x 105 CM400 HJS x 18 PQTES",
+    "precio_actual": "31555",
+    "precio_nuevo": 31727
+  },
+  {
+    "id": 2111,
+    "sku": "SE70051",
+    "nombre": "SERVILLETA DISPENSADOR HS UNIVERSAL XPRESSNAP FIT240 HJS x 18 PQTES",
+    "precio_actual": "24076",
+    "precio_nuevo": 24209
+  },
+  {
+    "id": 2112,
+    "sku": "SE70008",
+    "nombre": "SERVILLETA DISPENSADOR HS UNIVERSAL INTERFOLIADA 24 x 11 CM250 HJS x 24 PQTES",
+    "precio_actual": "30218",
+    "precio_nuevo": 30389
+  },
+  {
+    "id": 2113,
+    "sku": "SE70047",
+    "nombre": "SERVILLETA DISPENSADOR HS UNIVERSAL XPRESSNAP NATURAL500 HJS x 12 PQTES",
+    "precio_actual": "40748",
+    "precio_nuevo": 40978
+  },
+  {
+    "id": 2115,
+    "sku": "SE70052",
+    "nombre": "SERVILLETA DISPENSADOR HS UNIVERSAL XPRESSNAP SIGNATURE NATURAL250 HJS x 24 PQTES",
+    "precio_actual": "47790",
+    "precio_nuevo": 48057
+  },
+  {
+    "id": 2116,
+    "sku": "SE70053",
+    "nombre": "SERVILLETA DISPENSADOR HS UNIVERSAL XPRESSNAP SIGNATURE BLANCO250 HJS x 24 PQTES",
+    "precio_actual": "49042",
+    "precio_nuevo": 49311
+  },
+  {
+    "id": 2117,
+    "sku": "40011",
+    "nombre": "COBERTOR DE WC NEAT SEAT BLANCO125 HJS x 20 PQTES",
+    "precio_actual": "72303",
+    "precio_nuevo": 72702
+  },
+  {
+    "id": 4324,
+    "sku": "1106",
+    "nombre": "Protector de Cama Sabanilla Tamaño Único 90 x 60 CM 6 UND",
+    "precio_actual": "3092",
+    "precio_nuevo": 3107
+  },
+  {
+    "id": 2118,
+    "sku": "77113",
+    "nombre": "PROTECTOR DE CAMA SABANILLA TAMANO UNICO 90 x 60 CM8 UND",
+    "precio_actual": "7109",
+    "precio_nuevo": 7148
+  },
+  {
+    "id": 2119,
+    "sku": "77121",
+    "nombre": "APOSITOS ADULTO UNISEX INCONTINENCIA LEVE 35 x 15 CM20 UND",
+    "precio_actual": "3824",
+    "precio_nuevo": 3848
+  },
+  {
+    "id": 4240,
+    "sku": "2212",
+    "nombre": "Pañales Adulto Unisex Incontinencia Fuerte Basic Talla G 8 UND",
+    "precio_actual": "3563",
+    "precio_nuevo": 3586
+  },
+  {
+    "id": 4242,
+    "sku": "2217",
+    "nombre": "Pañales Adulto Unisex Incontinencia Fuerte Basic Talla XG 8 UND",
+    "precio_actual": "3966",
+    "precio_nuevo": 3990
+  },
+  {
+    "id": 2120,
+    "sku": "77586",
+    "nombre": "PANALES ADULTO UNISEX INCONTINENCIA FUERTE PREMIUM MEDIANO20 UND",
+    "precio_actual": "19765",
+    "precio_nuevo": 19878
+  },
+  {
+    "id": 2121,
+    "sku": "77588",
+    "nombre": "PANALES ADULTO UNISEX INCONTINENCIA FUERTE PREMIUM GRANDE20 UND",
+    "precio_actual": "19765",
+    "precio_nuevo": 19878
+  },
+  {
+    "id": 2122,
+    "sku": "77505",
+    "nombre": "PANALES ADULTO UNISEX INCONTINENCIA FUERTE PLUS MEDIANO36 UND",
+    "precio_actual": "28462",
+    "precio_nuevo": 28619
+  },
+  {
+    "id": 2123,
+    "sku": "77506",
+    "nombre": "PANALES ADULTO UNISEX INCONTINENCIA FUERTE PLUS GRANDE36 UND",
+    "precio_actual": "28462",
+    "precio_nuevo": 28619
+  },
+  {
+    "id": 4236,
+    "sku": "7005",
+    "nombre": "Pañales Adulto Unisex Comodity Pants Incontinencia Fuerte Talla G 8 UND",
+    "precio_actual": "4916",
+    "precio_nuevo": 4945
+  },
+  {
+    "id": 4238,
+    "sku": "7004",
+    "nombre": "Pañales Adulto Unisex Comodity Pants Incontinencia Fuerte Talla XG 8 UND",
+    "precio_actual": "4916",
+    "precio_nuevo": 4945
+  },
+  {
+    "id": 2125,
+    "sku": "96051",
+    "nombre": "TOALLAS HIGIENICAS FEMENINAS NORMAL TELA SUAVE8 UND",
+    "precio_actual": "916",
+    "precio_nuevo": 919
+  },
+  {
+    "id": 2126,
+    "sku": "96281",
+    "nombre": "TOALLAS HIGIENICAS FEMENINAS NOCTURNA NORMAL TELA SUAVE7 UND",
+    "precio_actual": "1218",
+    "precio_nuevo": 1222
+  },
+  {
+    "id": 2127,
+    "sku": "5001101",
+    "nombre": "PROTECTORES DIARIOS ULTRA FINOS20 UND",
+    "precio_actual": "597",
+    "precio_nuevo": 600
+  },
+  {
+    "id": 2128,
+    "sku": "91533",
+    "nombre": "DISPENSADOR TOALLA DE PAPEL CORTE MANUAL C PALANCAPLASTICO  BLANCO",
+    "precio_actual": "63857",
+    "precio_nuevo": 64212
+  },
+  {
+    "id": 2129,
+    "sku": "91535",
+    "nombre": "DISPENSADOR TOALLA DE PAPEL CORTE MANUAL C PALANCAPLASTICO  NEGRO",
+    "precio_actual": "63857",
+    "precio_nuevo": 64212
+  },
+  {
+    "id": 2130,
+    "sku": "DI55169",
+    "nombre": "DISPENSADOR TOALLA DE PAPEL CORTE MANUAL C PALANCAPLASTICO  BLANCO",
+    "precio_actual": "79311",
+    "precio_nuevo": 79751
+  },
+  {
+    "id": 2131,
+    "sku": "91501",
+    "nombre": "DISPENSADOR TOALLA DE PAPEL CORTE AUTPLASTICO  BLANCO",
+    "precio_actual": "84571",
+    "precio_nuevo": 85039
+  },
+  {
+    "id": 2132,
+    "sku": "91503",
+    "nombre": "DISPENSADOR TOALLA DE PAPEL CORTE AUTPLASTICO  NEGRO",
+    "precio_actual": "84571",
+    "precio_nuevo": 85039
+  },
+  {
+    "id": 2133,
+    "sku": "DI70026",
+    "nombre": "DISPENSADOR TOALLA DE PAPEL CORTE AUT TORK ELEVATIONPLASTICO  BLANCO",
+    "precio_actual": "82193",
+    "precio_nuevo": 82647
+  },
+  {
+    "id": 2134,
+    "sku": "91517",
+    "nombre": "DISPENSADOR TOALLA INTERFOLIADA EVOLUTIONPLASTICO  BLANCO",
+    "precio_actual": "25706",
+    "precio_nuevo": 25846
+  },
+  {
+    "id": 2135,
+    "sku": "91519",
+    "nombre": "DISPENSADOR TOALLA INTERFOLIADA EVOLUTIONPLASTICO  NEGRO",
+    "precio_actual": "25706",
+    "precio_nuevo": 25846
+  },
+  {
+    "id": 2136,
+    "sku": "92660",
+    "nombre": "DISPENSADOR TOALLA INTERFOLIADAACERO INOXIDABLE",
+    "precio_actual": "53294",
+    "precio_nuevo": 53591
+  },
+  {
+    "id": 2137,
+    "sku": "DI70028",
+    "nombre": "DISPENSADOR TOALLA INTERFOLIADA TORK ELEVATION MINIPLASTICO  BLANCO",
+    "precio_actual": "26050",
+    "precio_nuevo": 26198
+  },
+  {
+    "id": 2138,
+    "sku": "89140",
+    "nombre": "DISPENSADOR PAPEL HIGIENICO ALTO METRAJE PLASTICO  BLANCO",
+    "precio_actual": "16059",
+    "precio_nuevo": 16149
+  },
+  {
+    "id": 3780,
+    "sku": "DI70087",
+    "nombre": "Dispensador Papel Higiénico Tork Elegance Plástico / Blanco",
+    "precio_actual": "22782",
+    "precio_nuevo": 22905
+  },
+  {
+    "id": 2140,
+    "sku": "91507",
+    "nombre": "DISPENSADOR PAPEL HIGIENICO ALTO METRAJE DYNAMICPLASTICO  BLANCO",
+    "precio_actual": "28924",
+    "precio_nuevo": 29088
+  },
+  {
+    "id": 2141,
+    "sku": "91509",
+    "nombre": "DISPENSADOR PAPEL HIGIENICO ALTO METRAJE DYNAMICPLASTICO  NEGRO",
+    "precio_actual": "28924",
+    "precio_nuevo": 29088
+  },
+  {
+    "id": 2143,
+    "sku": "95720",
+    "nombre": "DISPENSADOR PAPEL HIGIENICO ALTO METRAJE ACERO INOXIDABLE",
+    "precio_actual": "53529",
+    "precio_nuevo": 53827
+  },
+  {
+    "id": 2150,
+    "sku": "91504",
+    "nombre": "DISPENSADOR PAPEL HIGIENICO INTERFOLIADOPLASTICO  BLANCO",
+    "precio_actual": "29160",
+    "precio_nuevo": 29317
+  },
+  {
+    "id": 2151,
+    "sku": "DI70032",
+    "nombre": "DISPENSADOR PAPEL HIGIENICO ALTO METRAJE TORK ELEVATION MINIPLASTICO  BLANCO",
+    "precio_actual": "28353",
+    "precio_nuevo": 28511
+  },
+  {
+    "id": 2152,
+    "sku": "94045",
+    "nombre": "DISPENSADOR SERVILLETA EXPRESS PLASTICO  BLANCO",
+    "precio_actual": "6555",
+    "precio_nuevo": 6588
+  },
+  {
+    "id": 2153,
+    "sku": "94048",
+    "nombre": "DISPENSADOR SERVILLETA EXPRESSPLASTICO  NEGRO",
+    "precio_actual": "6555",
+    "precio_nuevo": 6588
+  },
+  {
+    "id": 2154,
+    "sku": "94312",
+    "nombre": "DISPENSADOR SERVILLETA INTERFOLIADAPLASTICO",
+    "precio_actual": "25950",
+    "precio_nuevo": 26095
+  },
+  {
+    "id": 2155,
+    "sku": "94314",
+    "nombre": "DISPENSADOR SERVILLETA TORRE INTERFOLIADAPLASTICO",
+    "precio_actual": "55933",
+    "precio_nuevo": 56239
+  },
+  {
+    "id": 2156,
+    "sku": "94318",
+    "nombre": "DISPENSADOR SERVILLETA INTERFOLIADA MINIPLASTICO",
+    "precio_actual": "15866",
+    "precio_nuevo": 15956
+  },
+  {
+    "id": 2157,
+    "sku": "DI70077",
+    "nombre": "DISPENSADOR SERVILLETA XPRESSNAP FITPLASTICO  NEGRO",
+    "precio_actual": "16387",
+    "precio_nuevo": 16478
+  },
+  {
+    "id": 2158,
+    "sku": "DI70009",
+    "nombre": "DISPENSADOR SERVILLETA INTERFOLIADA TORKMETALICO  GRIS",
+    "precio_actual": "20286",
+    "precio_nuevo": 20395
+  },
+  {
+    "id": 2159,
+    "sku": "DI70088",
+    "nombre": "DISPENSADOR SERVILLETA TORK XPRESSNAPPLASTICO  NEGRO",
+    "precio_actual": "24126",
+    "precio_nuevo": 24262
+  },
+  {
+    "id": 2160,
+    "sku": "DI70086",
+    "nombre": "DISPENSADOR SERVILLETA TORK XPRESSNAP SIGNATURE TABLETOPPLASTICO  NEGRO",
+    "precio_actual": "25345",
+    "precio_nuevo": 25487
+  },
+  {
+    "id": 2161,
+    "sku": "DI70059",
+    "nombre": "DISPENSADOR SERVILLETA TORK XPRESSNAP SIGNATURE VERTICALPLASTICO  NEGRO",
+    "precio_actual": "60092",
+    "precio_nuevo": 60425
+  },
+  {
+    "id": 2162,
+    "sku": "89216",
+    "nombre": "DISPENSADOR SABANILLAMETALICO  BLANCO",
+    "precio_actual": "59479",
+    "precio_nuevo": 59813
+  },
+  {
+    "id": 2163,
+    "sku": "91523",
+    "nombre": "DISPENSADOR JABON GRANEL 800 MLPLASTICO  BLANCO",
+    "precio_actual": "27462",
+    "precio_nuevo": 27614
+  },
+  {
+    "id": 2164,
+    "sku": "91525",
+    "nombre": "DISPENSADOR JABON GRANEL 800 MLPLASTICO  NEGRO",
+    "precio_actual": "27462",
+    "precio_nuevo": 27614
+  },
+  {
+    "id": 2165,
+    "sku": "DI55173",
+    "nombre": "DISPENSADOR JABON GRANEL 900 MLPLASTICO  BLANCO",
+    "precio_actual": "31412",
+    "precio_nuevo": 31586
+  },
+  {
+    "id": 2166,
+    "sku": "91555",
+    "nombre": "DISPENSADOR JABON MULTIFLEX PLASTICO  BLANCO",
+    "precio_actual": "24933",
+    "precio_nuevo": 25074
+  },
+  {
+    "id": 2167,
+    "sku": "91556",
+    "nombre": "DISPENSADOR JABON MULTIFLEX PLASTICO  NEGRO",
+    "precio_actual": "24933",
+    "precio_nuevo": 25074
+  },
+  {
+    "id": 2168,
+    "sku": "DI70036",
+    "nombre": "DISPENSADOR JABON SACHET TORK ELEVATIONPLASTICO  BLANCO",
+    "precio_actual": "16429",
+    "precio_nuevo": 16517
+  },
+  {
+    "id": 2169,
+    "sku": "DI70037",
+    "nombre": "DISPENSADOR JABON SACHET TORK ELEVATIONPLASTICO  NEGRO",
+    "precio_actual": "16429",
+    "precio_nuevo": 16517
+  },
+  {
+    "id": 2170,
+    "sku": "844477",
+    "nombre": "DISPENSADOR JABON GRANEL 500MLPLASTICO  BLANCO",
+    "precio_actual": "4185",
+    "precio_nuevo": 4212
+  },
+  {
+    "id": 2171,
+    "sku": "92910",
+    "nombre": "DISPENSADOR COBERTOR WCMETALICO  BLANCO",
+    "precio_actual": "59244",
+    "precio_nuevo": 59576
+  },
+  {
+    "id": 3949,
+    "sku": "5001121",
+    "nombre": "Jabón en Barra Le Sancy Aceite de Almendras 90 GR",
+    "precio_actual": "975",
+    "precio_nuevo": 983
+  },
+  {
+    "id": 2173,
+    "sku": "5001004",
+    "nombre": "JABON LIQUIDO FRESH AZUL5 LT",
+    "precio_actual": "4109",
+    "precio_nuevo": 4133
+  },
+  {
+    "id": 2174,
+    "sku": "5001006",
+    "nombre": "JABON LIQUIDO MANZANA VERDE5 LT",
+    "precio_actual": "4109",
+    "precio_nuevo": 4133
+  },
+  {
+    "id": 2175,
+    "sku": "5001054",
+    "nombre": "JABON LIQUIDO AVENA Y ACEITE DE ALMENDRAS350 ML",
+    "precio_actual": "1143",
+    "precio_nuevo": 1146
+  },
+  {
+    "id": 2176,
+    "sku": "5001055",
+    "nombre": "JABON LIQUIDO CREMA HUMECTANTE350 ML",
+    "precio_actual": "1143",
+    "precio_nuevo": 1146
+  },
+  {
+    "id": 3934,
+    "sku": "5001088",
+    "nombre": "Jabón Líquido - Hipoalergénico 350 ML",
+    "precio_actual": "1143",
+    "precio_nuevo": 1146
+  },
+  {
+    "id": 3941,
+    "sku": "5001105",
+    "nombre": "Jabón Líquido Cremoso - Crema Humectante Piel Sensible 350 ML",
+    "precio_actual": "1630",
+    "precio_nuevo": 1641
+  },
+  {
+    "id": 3931,
+    "sku": "5001113",
+    "nombre": "Jabón Líquido - Aceite de Coco y Jazmín 650 ML",
+    "precio_actual": "1311",
+    "precio_nuevo": 1316
+  },
+  {
+    "id": 2180,
+    "sku": "5001081",
+    "nombre": "JABON LIQUIDO AVENA Y ACEITE DE ALMENDRAS750 ML",
+    "precio_actual": "1311",
+    "precio_nuevo": 1316
+  },
+  {
+    "id": 3936,
+    "sku": "5001120",
+    "nombre": "Jabón Líquido - Hipoalergénico 650 ML",
+    "precio_actual": "1311",
+    "precio_nuevo": 1316
+  },
+  {
+    "id": 2183,
+    "sku": "5001102",
+    "nombre": "JABON LIQUIDO AVENA Y ALMENDRAS750 ML",
+    "precio_actual": "1176",
+    "precio_nuevo": 1185
+  },
+  {
+    "id": 2184,
+    "sku": "5001103",
+    "nombre": "JABON LIQUIDO CREMOSO750 ML",
+    "precio_actual": "1176",
+    "precio_nuevo": 1182
+  },
+  {
+    "id": 2185,
+    "sku": "5001104",
+    "nombre": "JABON LIQUIDO PARAISO FLORAL750 ML",
+    "precio_actual": "1176",
+    "precio_nuevo": 1185
+  },
+  {
+    "id": 2189,
+    "sku": "5001087",
+    "nombre": "JABON LIQUIDO CREMOSO700 ML",
+    "precio_actual": "2933",
+    "precio_nuevo": 2950
+  },
+  {
+    "id": 2190,
+    "sku": "5001015",
+    "nombre": "JABON LIQUIDO AIRES DE AZUCENA5 LT",
+    "precio_actual": "8042",
+    "precio_nuevo": 8088
+  },
+  {
+    "id": 2191,
+    "sku": "5001016",
+    "nombre": "JABON LIQUIDO YOGHURT Y ALMENDRAS5 LT",
+    "precio_actual": "8042",
+    "precio_nuevo": 8088
+  },
+  {
+    "id": 2192,
+    "sku": "97061",
+    "nombre": "JABON LIQUIDO ECONOMICO5 LT",
+    "precio_actual": "7420",
+    "precio_nuevo": 7464
+  },
+  {
+    "id": 2193,
+    "sku": "97068",
+    "nombre": "JABON LIQUIDO MANZANA5 LT",
+    "precio_actual": "6244",
+    "precio_nuevo": 6276
+  },
+  {
+    "id": 2194,
+    "sku": "98148",
+    "nombre": "JABON MULTIFLEX GLICERINA1 LT x 6 UND",
+    "precio_actual": "29487",
+    "precio_nuevo": 29655
+  },
+  {
+    "id": 2196,
+    "sku": "98135",
+    "nombre": "JABON MULTIFLEX ALCOHOL GEL1 LT x 6 UND",
+    "precio_actual": "46437",
+    "precio_nuevo": 46696
+  },
+  {
+    "id": 2197,
+    "sku": "98140",
+    "nombre": "JABON MULTIFLEX ESPUMA1 LT x 6 UND",
+    "precio_actual": "58378",
+    "precio_nuevo": 58701
+  },
+  {
+    "id": 2198,
+    "sku": "98145",
+    "nombre": "ALCOHOL GEL ANTIBACTERIAL320 ML",
+    "precio_actual": "2109",
+    "precio_nuevo": 2119
+  },
+  {
+    "id": 2199,
+    "sku": "JA70002",
+    "nombre": "JABON PREMIUM LIQUIDO SUAVE MILD1 LT x 6 UND",
+    "precio_actual": "52235",
+    "precio_nuevo": 52521
+  },
+  {
+    "id": 2200,
+    "sku": "JA70003",
+    "nombre": "JABON PREMIUM LIQUIDO SHOWER CREAM1 LT x 6 UND",
+    "precio_actual": "49983",
+    "precio_nuevo": 50260
+  },
+  {
+    "id": 2201,
+    "sku": "JA70006",
+    "nombre": "JABON PREMIUM LIQUIDO ESPUMA SUAVE1 LT x 6 UND",
+    "precio_actual": "75462",
+    "precio_nuevo": 75883
+  },
+  {
+    "id": 2202,
+    "sku": "JA70012",
+    "nombre": "JABON PREMIUM LIQUIDO ALCOHOL GEL1 LT x 6 UND",
+    "precio_actual": "85739",
+    "precio_nuevo": 86217
+  },
+  {
+    "id": 3943,
+    "sku": "5001096",
+    "nombre": "Jabón Neutro Balsámico sin Aroma 800 ML x 12 UND",
+    "precio_actual": "92924",
+    "precio_nuevo": 93444
+  },
+  {
+    "id": 3459,
+    "sku": "5001097",
+    "nombre": "Alcohol + Glicerina Higienizante de Manos 140 ML",
+    "precio_actual": "1950",
+    "precio_nuevo": 1957
+  },
+  {
+    "id": 2203,
+    "sku": "5001058",
+    "nombre": "ALCOHOL GEL ANTIBACTERIAL CON DOSIFICADOR1 LT",
+    "precio_actual": "3403",
+    "precio_nuevo": 3426
+  },
+  {
+    "id": 2204,
+    "sku": "5001048",
+    "nombre": "ALCOHOL GEL ANTIBACTERIAL5 LT",
+    "precio_actual": "13008",
+    "precio_nuevo": 13080
+  },
+  {
+    "id": 2205,
+    "sku": "5001057",
+    "nombre": "SHAMPOO MANZANILLA DOYPACK750 ML",
+    "precio_actual": "1521",
+    "precio_nuevo": 1529
+  },
+  {
+    "id": 2207,
+    "sku": "5001068",
+    "nombre": "SHAMPOO SACHET MIX AROMAS CAJA 50 UND50 ML CU",
+    "precio_actual": "5849",
+    "precio_nuevo": 5883
+  },
+  {
+    "id": 3451,
+    "sku": "5001112",
+    "nombre": "Acondicionador Sachet Mix Aromas Caja 50 UND 50 ML c/u",
+    "precio_actual": "5849",
+    "precio_nuevo": 5883
+  },
+  {
+    "id": 3449,
+    "sku": "5001111",
+    "nombre": "Acondicionador Anti Frizz Aceite de Coco y Jazmín 750 ML",
+    "precio_actual": "1613",
+    "precio_nuevo": 1622
+  },
+  {
+    "id": 2209,
+    "sku": "5001046",
+    "nombre": "PROTECTOR SOLAR F50120 GR",
+    "precio_actual": "1941",
+    "precio_nuevo": 1955
+  },
+  {
+    "id": 2210,
+    "sku": "5001047",
+    "nombre": "PROTECTOR SOLAR F501 KG",
+    "precio_actual": "10765",
+    "precio_nuevo": 10822
+  },
+  {
+    "id": 2211,
+    "sku": "5001091",
+    "nombre": "CEPILLO DENTAL UNIVERSAL SLIMSUAVE",
+    "precio_actual": "630",
+    "precio_nuevo": 635
+  },
+  {
+    "id": 2212,
+    "sku": "5001090",
+    "nombre": "PASTA DENTAL FRESCURA MAXIMA MENTA90 GR",
+    "precio_actual": "723",
+    "precio_nuevo": 723
+  },
+  {
+    "id": 3730,
+    "sku": "5001114",
+    "nombre": "Desodorante Barra Rexona Women Invisible 50 GR",
+    "precio_actual": "2235",
+    "precio_nuevo": 2252
+  },
+  {
+    "id": 3728,
+    "sku": "5001115",
+    "nombre": "Desodorante Barra Rexona Men Invisible 50 GR",
+    "precio_actual": "2235",
+    "precio_nuevo": 2252
+  },
+  {
+    "id": 3734,
+    "sku": "5001094",
+    "nombre": "Desodorante Spray Rexona Women Invisible 150 ML",
+    "precio_actual": "2235",
+    "precio_nuevo": 2252
+  },
+  {
+    "id": 3732,
+    "sku": "5001095",
+    "nombre": "Desodorante Spray Rexona Men Invisible 150 ML",
+    "precio_actual": "2235",
+    "precio_nuevo": 2252
+  },
+  {
+    "id": 2216,
+    "sku": "8713181",
+    "nombre": "MAQUINA DE AFEITAR BIC COMFORT 3 SENSITIVE",
+    "precio_actual": "739",
+    "precio_nuevo": 745
+  },
+  {
+    "id": 2217,
+    "sku": "922120",
+    "nombre": "MAQUINA DE AFEITAR BIC SOLEIL",
+    "precio_actual": "782",
+    "precio_nuevo": 785
+  },
+  {
+    "id": 2218,
+    "sku": "5001092",
+    "nombre": "TOALLITAS HUMEDAS BEBE EXTRA SUAVE CON TAPA80 UND",
+    "precio_actual": "1664",
+    "precio_nuevo": 1673
+  },
+  {
+    "id": 4833,
+    "sku": "5001118",
+    "nombre": "Toallitas Húmedas Adulto Extra Grande 60 UND",
+    "precio_actual": "3798",
+    "precio_nuevo": 3816
+  },
+  {
+    "id": 2220,
+    "sku": "2001001",
+    "nombre": "ABRILLANTADOR PISO FLOTANTE LAVANDA900 ML",
+    "precio_actual": "3697",
+    "precio_nuevo": 3717
+  },
+  {
+    "id": 2222,
+    "sku": "2001198",
+    "nombre": "ABRILLANTADOR PISO FLOTANTE LAVANDA5 LT",
+    "precio_actual": "17655",
+    "precio_nuevo": 17755
+  },
+  {
+    "id": 2223,
+    "sku": "2001232",
+    "nombre": "ALCOHOL DESNATURALIZADO 95 GRADOS1 LT",
+    "precio_actual": "4958",
+    "precio_nuevo": 4981
+  },
+  {
+    "id": 2224,
+    "sku": "2001219",
+    "nombre": "ALCOHOL DESNATURALIZADO DIFEMCARE 70 GRADOS1 LT",
+    "precio_actual": "4454",
+    "precio_nuevo": 4479
+  },
+  {
+    "id": 3463,
+    "sku": "2001384",
+    "nombre": "Alcohol Desnaturalizado DifemProfesional 70º 5 LT",
+    "precio_actual": "20924",
+    "precio_nuevo": 21044
+  },
+  {
+    "id": 2225,
+    "sku": "2001003",
+    "nombre": "LIMPIADOR BANO WC REMOVEDOR REST A CLIN500 ML",
+    "precio_actual": "2067",
+    "precio_nuevo": 2078
+  },
+  {
+    "id": 2226,
+    "sku": "2001241",
+    "nombre": "ALCOHOL ISOPROPILICO DIFEMPROFESIONAL 70 GRADOS CON GATILLO1 LT",
+    "precio_actual": "6689",
+    "precio_nuevo": 6730
+  },
+  {
+    "id": 3996,
+    "sku": "2001392",
+    "nombre": "Limpiador de Baño WC Removedor de Sarro Marina 500 ML",
+    "precio_actual": "3017",
+    "precio_nuevo": 3034
+  },
+  {
+    "id": 2227,
+    "sku": "2001230",
+    "nombre": "LIMPIADOR BANO WC REMOVEDOR DE SARRO EXTRA FUERTE200 ML",
+    "precio_actual": "1454",
+    "precio_nuevo": 1458
+  },
+  {
+    "id": 2228,
+    "sku": "2001250",
+    "nombre": "LIMPIADOR BANO WC REMOVEDOR DE SARRO POWER PLUS CITRUS750 ML",
+    "precio_actual": "4311",
+    "precio_nuevo": 4332
+  },
+  {
+    "id": 2229,
+    "sku": "2001304",
+    "nombre": "LIMPIADOR BANO SARRO Y MUGRE CON GATILLO495 ML",
+    "precio_actual": "3361",
+    "precio_nuevo": 3377
+  },
+  {
+    "id": 2230,
+    "sku": "2001120",
+    "nombre": "LIMPIADOR DESINFECTANTE AMONIO CUATERNARIO EUCALIPTO5 LT",
+    "precio_actual": "10277",
+    "precio_nuevo": 10333
+  },
+  {
+    "id": 2231,
+    "sku": "2001236",
+    "nombre": "LIMPIADOR DESINFECTANTE AMONIO CUATERNARIO FLORAL5 LT",
+    "precio_actual": "6950",
+    "precio_nuevo": 6985
+  },
+  {
+    "id": 2232,
+    "sku": "2001121",
+    "nombre": "LIMPIADOR DESINCRUSTANTE FUERA5 LT",
+    "precio_actual": "13378",
+    "precio_nuevo": 13451
+  },
+  {
+    "id": 2233,
+    "sku": "2001357",
+    "nombre": "LIMPIADOR DESINCRUSTANTE Y REMOVEDOR DE SARRO5 LT",
+    "precio_actual": "3176",
+    "precio_nuevo": 3194
+  },
+  {
+    "id": 2234,
+    "sku": "2001338",
+    "nombre": "LIMPIADOR BANO DESINCRUSTANTE AROMA BAMBU CON GATILLO500 ML",
+    "precio_actual": "2160",
+    "precio_nuevo": 2170
+  },
+  {
+    "id": 2235,
+    "sku": "2001341",
+    "nombre": "CLORO GEL CONCENTRADO LIMON900 ML",
+    "precio_actual": "1538",
+    "precio_nuevo": 1545
+  },
+  {
+    "id": 2236,
+    "sku": "2001005",
+    "nombre": "CLORO GEL ANTISARRO MENTA900 ML",
+    "precio_actual": "1143",
+    "precio_nuevo": 1149
+  },
+  {
+    "id": 2237,
+    "sku": "2001089",
+    "nombre": "CLORO GEL ANTISARRO LAVANDA900 ML",
+    "precio_actual": "1143",
+    "precio_nuevo": 1149
+  },
+  {
+    "id": 2238,
+    "sku": "2001006",
+    "nombre": "CLORO GEL ANTISARRO LIMON900 ML",
+    "precio_actual": "1143",
+    "precio_nuevo": 1149
+  },
+  {
+    "id": 2239,
+    "sku": "2001103",
+    "nombre": "CLORO GEL CONCENTRADO EUCALIPTO900 ML",
+    "precio_actual": "1361",
+    "precio_nuevo": 1370
+  },
+  {
+    "id": 2241,
+    "sku": "2001302",
+    "nombre": "CLORO GEL CONCENTRADO LAVANDA900 ML",
+    "precio_actual": "1361",
+    "precio_nuevo": 1370
+  },
+  {
+    "id": 2242,
+    "sku": "2001007",
+    "nombre": "CLORO GEL CONCENTRADO TRADICIONAL5 LT",
+    "precio_actual": "6403",
+    "precio_nuevo": 6437
+  },
+  {
+    "id": 2243,
+    "sku": "2001295",
+    "nombre": "CLORO GEL CONCENTRADO LIMON5 LT",
+    "precio_actual": "5361",
+    "precio_nuevo": 5391
+  },
+  {
+    "id": 2244,
+    "sku": "2001265",
+    "nombre": "CLORO TRADICIONAL 2621 KG",
+    "precio_actual": "1118",
+    "precio_nuevo": 1126
+  },
+  {
+    "id": 2245,
+    "sku": "2001266",
+    "nombre": "CLORO TRADICIONAL 2622 KG",
+    "precio_actual": "1815",
+    "precio_nuevo": 1822
+  },
+  {
+    "id": 2246,
+    "sku": "2001267",
+    "nombre": "CLORO TRADICIONAL 2624 KG",
+    "precio_actual": "2958",
+    "precio_nuevo": 2976
+  },
+  {
+    "id": 2247,
+    "sku": "2001128",
+    "nombre": "CLORO TRADICIONAL CONCENTRADO ULTRA PODER 51 KG",
+    "precio_actual": "1067",
+    "precio_nuevo": 1071
+  },
+  {
+    "id": 2249,
+    "sku": "2001129",
+    "nombre": "CLORO TRADICIONAL CONCENTRADO ULTRA PODER 54 KG",
+    "precio_actual": "3294",
+    "precio_nuevo": 3309
+  },
+  {
+    "id": 3628,
+    "sku": "2001271",
+    "nombre": "Cera Incolora Autobrillo Virginia 900 ML",
+    "precio_actual": "2790",
+    "precio_nuevo": 2802
+  },
+  {
+    "id": 2252,
+    "sku": "2001113",
+    "nombre": "CERA PINTURA ROJA AUTOBRILLANTE900 ML",
+    "precio_actual": "2235",
+    "precio_nuevo": 2250
+  },
+  {
+    "id": 2253,
+    "sku": "2001117",
+    "nombre": "CERA ACRILICA INCOLORA AUTOBRILLO 105 LT",
+    "precio_actual": "9445",
+    "precio_nuevo": 9500
+  },
+  {
+    "id": 2254,
+    "sku": "2001277",
+    "nombre": "CERA ACRILICA ROJA AUTOBRILLO5 LT",
+    "precio_actual": "9445",
+    "precio_nuevo": 9500
+  },
+  {
+    "id": 2255,
+    "sku": "2001278",
+    "nombre": "CERA ACRILICA NEGRA AUTOBRILLO5 LT",
+    "precio_actual": "9445",
+    "precio_nuevo": 9500
+  },
+  {
+    "id": 2256,
+    "sku": "2001203",
+    "nombre": "CERA NEGRA AUTOBRILLANTE HIT5 LT",
+    "precio_actual": "11084",
+    "precio_nuevo": 11146
+  },
+  {
+    "id": 2257,
+    "sku": "2001207",
+    "nombre": "CERA CREMA AMARILLA360 ML",
+    "precio_actual": "1756",
+    "precio_nuevo": 1765
+  },
+  {
+    "id": 2258,
+    "sku": "2001222",
+    "nombre": "CERA CREMA INCOLORA360 ML",
+    "precio_actual": "1756",
+    "precio_nuevo": 1765
+  },
+  {
+    "id": 2259,
+    "sku": "2001223",
+    "nombre": "CERA CREMA ROJA360 ML",
+    "precio_actual": "1756",
+    "precio_nuevo": 1765
+  },
+  {
+    "id": 2260,
+    "sku": "2001010",
+    "nombre": "DESENGRASANTE ESPECIAL500 ML",
+    "precio_actual": "1723",
+    "precio_nuevo": 1733
+  },
+  {
+    "id": 3710,
+    "sku": "2001291",
+    "nombre": "Desengrasante con Gatillo Mr. Músculo 500 ML",
+    "precio_actual": "3739",
+    "precio_nuevo": 3763
+  },
+  {
+    "id": 3707,
+    "sku": "2001401",
+    "nombre": "Desengrasante Biodegradable Bambú 500 ML Doypack",
+    "precio_actual": "1605",
+    "precio_nuevo": 1617
+  },
+  {
+    "id": 2261,
+    "sku": "2001281",
+    "nombre": "DESENGRASANTE BIODEGRADABLE BAMBU500 ML",
+    "precio_actual": "2160",
+    "precio_nuevo": 2170
+  },
+  {
+    "id": 3705,
+    "sku": "2001405",
+    "nombre": "Desengrasante Biodegradable Bambú 5 LT",
+    "precio_actual": "10437",
+    "precio_nuevo": 10494
+  },
+  {
+    "id": 2262,
+    "sku": "2001011",
+    "nombre": "DESENGRASANTE QUITA GRASAS PRO5 LT",
+    "precio_actual": "10706",
+    "precio_nuevo": 10767
+  },
+  {
+    "id": 2263,
+    "sku": "2001193",
+    "nombre": "DESENGRASANTE BRIO10005 LT",
+    "precio_actual": "16849",
+    "precio_nuevo": 16942
+  },
+  {
+    "id": 2264,
+    "sku": "2001013",
+    "nombre": "DESENGRASANTE5 LT",
+    "precio_actual": "2916",
+    "precio_nuevo": 2934
+  },
+  {
+    "id": 2265,
+    "sku": "2001014",
+    "nombre": "DESODORANTE AMBIENTAL FANTASIA MARINA360 ML",
+    "precio_actual": "1538",
+    "precio_nuevo": 1548
+  },
+  {
+    "id": 2266,
+    "sku": "2001015",
+    "nombre": "DESODORANTE AMBIENTAL FRESCURA CITRICA360 ML",
+    "precio_actual": "1538",
+    "precio_nuevo": 1548
+  },
+  {
+    "id": 2267,
+    "sku": "2001016",
+    "nombre": "DESODORANTE AMBIENTAL FRUTILLA CREMA360 ML",
+    "precio_actual": "1538",
+    "precio_nuevo": 1548
+  },
+  {
+    "id": 2268,
+    "sku": "2001017",
+    "nombre": "DESODORANTE AMBIENTAL JARDIN DE LAVANDA360 ML",
+    "precio_actual": "1538",
+    "precio_nuevo": 1548
+  },
+  {
+    "id": 2269,
+    "sku": "2001018",
+    "nombre": "DESODORANTE AMBIENTAL LLUVIA DE FLORES360 ML",
+    "precio_actual": "1538",
+    "precio_nuevo": 1548
+  },
+  {
+    "id": 2270,
+    "sku": "2001019",
+    "nombre": "DESODORANTE AMBIENTAL VAINILLA EN FLOR360 ML",
+    "precio_actual": "1538",
+    "precio_nuevo": 1548
+  },
+  {
+    "id": 2273,
+    "sku": "2001313",
+    "nombre": "DESODORANTE AMBIENTAL LAVANDA300 ML",
+    "precio_actual": "2277",
+    "precio_nuevo": 2293
+  },
+  {
+    "id": 2274,
+    "sku": "2001317",
+    "nombre": "DESODORANTE AMBIENTAL PURE CHERRY BLOSSOM250 ML",
+    "precio_actual": "4588",
+    "precio_nuevo": 4612
+  },
+  {
+    "id": 2275,
+    "sku": "2001318",
+    "nombre": "DESODORANTE AMBIENTAL PURE REFRESHING BREEZE250 ML",
+    "precio_actual": "4588",
+    "precio_nuevo": 4612
+  },
+  {
+    "id": 2276,
+    "sku": "2001347",
+    "nombre": "DESODORANTE AMBIENTAL PURE MEDITERRANEAN SUN250 ML",
+    "precio_actual": "4588",
+    "precio_nuevo": 4612
+  },
+  {
+    "id": 2277,
+    "sku": "2001352",
+    "nombre": "DESODORANTE AMBIENTAL CAMPOS DE LAVANDA360 ML",
+    "precio_actual": "2109",
+    "precio_nuevo": 2124
+  },
+  {
+    "id": 2278,
+    "sku": "2001353",
+    "nombre": "DESODORANTE AMBIENTAL POTPURRI360 ML",
+    "precio_actual": "2109",
+    "precio_nuevo": 2124
+  },
+  {
+    "id": 3713,
+    "sku": "2001387",
+    "nombre": "Desodorante Ambiental - Flores Tropicales y Coco 360 ML",
+    "precio_actual": "2109",
+    "precio_nuevo": 2124
+  },
+  {
+    "id": 2280,
+    "sku": "2001358",
+    "nombre": "DISPENSADOR DESODORANTE AMBIENTAL AUTOMATICO LAVANDA Y VAINILLA270 ML  175 GR",
+    "precio_actual": "10454",
+    "precio_nuevo": 10510
+  },
+  {
+    "id": 2281,
+    "sku": "2001359",
+    "nombre": "DESODORANTE AMBIENTAL AUTOMATICO  LAVANDA &amp; VAINILLA270 ML  175 GR",
+    "precio_actual": "6639",
+    "precio_nuevo": 6672
+  },
+  {
+    "id": 2282,
+    "sku": "2001360",
+    "nombre": "DESODORANTE AMBIENTAL AUTOMATICO  MANZANA &amp; CANELA270 ML  175 GR",
+    "precio_actual": "6639",
+    "precio_nuevo": 6672
+  },
+  {
+    "id": 3719,
+    "sku": "2001391",
+    "nombre": "Desodorante Ambiental Automático - Coco Vibes 270 ML",
+    "precio_actual": "6639",
+    "precio_nuevo": 6672
+  },
+  {
+    "id": 3725,
+    "sku": "2001440",
+    "nombre": "Desodorante Ambiental Automático - Naranjo y Orquídeas 270 ML",
+    "precio_actual": "6639",
+    "precio_nuevo": 6672
+  },
+  {
+    "id": 3482,
+    "sku": "2001413",
+    "nombre": "Aromatizador Automóvil Glade Aparato + Repuesto 7 ML New Car",
+    "precio_actual": "5042",
+    "precio_nuevo": 5070
+  },
+  {
+    "id": 3484,
+    "sku": "2001414",
+    "nombre": "Aromatizador Automóvil Glade Repuesto 7 ML New Car",
+    "precio_actual": "4345",
+    "precio_nuevo": 4368
+  },
+  {
+    "id": 3488,
+    "sku": "2001421",
+    "nombre": "Aromatizante Colgante Automóvil Paradise Air New Car",
+    "precio_actual": "1395",
+    "precio_nuevo": 1406
+  },
+  {
+    "id": 3486,
+    "sku": "2001422",
+    "nombre": "Aromatizante Colgante Automóvil Paradise Air Island Escape",
+    "precio_actual": "1395",
+    "precio_nuevo": 1406
+  },
+  {
+    "id": 3490,
+    "sku": "2001423",
+    "nombre": "Aromatizante Colgante Automóvil Paradise Air Red",
+    "precio_actual": "1395",
+    "precio_nuevo": 1406
+  },
+  {
+    "id": 2284,
+    "sku": "2001091",
+    "nombre": "DESODORANTE AMBIENTAL CITRUS5 LT",
+    "precio_actual": "6471",
+    "precio_nuevo": 6503
+  },
+  {
+    "id": 2285,
+    "sku": "2001101",
+    "nombre": "DESODORANTE AMBIENTAL LAVANDA5 LT",
+    "precio_actual": "6471",
+    "precio_nuevo": 6503
+  },
+  {
+    "id": 2286,
+    "sku": "2001020",
+    "nombre": "DISPENSADOR AROMATIZACION AUT VAINILLA CANELA 250 ML",
+    "precio_actual": "9185",
+    "precio_nuevo": 9237
+  },
+  {
+    "id": 2287,
+    "sku": "2001021",
+    "nombre": "RECARGA AROMATIZACION AUT FRAMBUESA BERRIES250 ML",
+    "precio_actual": "4269",
+    "precio_nuevo": 4290
+  },
+  {
+    "id": 2288,
+    "sku": "2001022",
+    "nombre": "RECARGA AROMATIZACION AUT MANZANA CANELA250 ML",
+    "precio_actual": "4269",
+    "precio_nuevo": 4290
+  },
+  {
+    "id": 2289,
+    "sku": "2001023",
+    "nombre": "RECARGA AROMATIZACION AUT VAINILLA CANELA250 ML",
+    "precio_actual": "4269",
+    "precio_nuevo": 4290
+  },
+  {
+    "id": 2290,
+    "sku": "2001345",
+    "nombre": "AROMATIZANTE EN GEL CONO 190 GRMANZANA CANELA",
+    "precio_actual": "1580",
+    "precio_nuevo": 1592
+  },
+  {
+    "id": 2291,
+    "sku": "2001346",
+    "nombre": "AROMATIZANTE EN GEL CONO 190 GRVAINILLA COCO",
+    "precio_actual": "1580",
+    "precio_nuevo": 1592
+  },
+  {
+    "id": 2292,
+    "sku": "2001330",
+    "nombre": "DESODORANTE AMBIENTAL APARATO ELECTRICO  REPUESTOMANZANA CANELA",
+    "precio_actual": "5403",
+    "precio_nuevo": 5436
+  },
+  {
+    "id": 2293,
+    "sku": "2001331",
+    "nombre": "DESODORANTE AMBIENTAL PACK 3 REPUESTOS DE 21 MLMANZANA CANELA",
+    "precio_actual": "10378",
+    "precio_nuevo": 10438
+  },
+  {
+    "id": 2294,
+    "sku": "2001332",
+    "nombre": "DESODORANTE AMBIENTAL PACK 3 REPUESTOS DE 21 MLVAINILLA",
+    "precio_actual": "10378",
+    "precio_nuevo": 10438
+  },
+  {
+    "id": 2295,
+    "sku": "2001333",
+    "nombre": "DESODORANTE AMBIENTAL PACK 3 REPUESTOS DE 21 MLLIRIOS DE LUNA Y SEDA",
+    "precio_actual": "10378",
+    "precio_nuevo": 10438
+  },
+  {
+    "id": 3760,
+    "sku": "2001370-CV",
+    "nombre": "Difusor Home Organic Spa Aromatizante 125 ML Coco &amp; Vainilla",
+    "precio_actual": "8882",
+    "precio_nuevo": 8931
+  },
+  {
+    "id": 3762,
+    "sku": "2001370-MA",
+    "nombre": "Difusor Home Organic Spa Aromatizante 125 ML Maracuyá",
+    "precio_actual": "8882",
+    "precio_nuevo": 8931
+  },
+  {
+    "id": 4344,
+    "sku": "2001371-CV",
+    "nombre": "Repuesto para Difusor Organic Spa Aromatizante 350 ML Coco &amp; Vainilla",
+    "precio_actual": "8697",
+    "precio_nuevo": 8746
+  },
+  {
+    "id": 4674,
+    "sku": "2001371-MA",
+    "nombre": "Repuesto para Difusor Organic Spa Aromatizante 350 ML Maracuyá",
+    "precio_actual": "8697",
+    "precio_nuevo": 8746
+  },
+  {
+    "id": 2305,
+    "sku": "2001024",
+    "nombre": "DESODORANTE Y DESINFECTANTE AMBIENTAL TRADICIONAL360 ML",
+    "precio_actual": "2303",
+    "precio_nuevo": 2311
+  },
+  {
+    "id": 2306,
+    "sku": "2001025",
+    "nombre": "DESODORANTE Y DESINFECTANTE AMBIENTAL LAVANDA360 ML",
+    "precio_actual": "2303",
+    "precio_nuevo": 2311
+  },
+  {
+    "id": 2307,
+    "sku": "2001092",
+    "nombre": "DESODORANTE Y DESINFECTANTE AMBIENTAL VAINILLA360 ML",
+    "precio_actual": "2303",
+    "precio_nuevo": 2311
+  },
+  {
+    "id": 2308,
+    "sku": "2001305",
+    "nombre": "DESODORANTE Y DESINFECTANTE AMBIENTAL CRISP LINEN370 ML",
+    "precio_actual": "3277",
+    "precio_nuevo": 3295
+  },
+  {
+    "id": 2309,
+    "sku": "2001307",
+    "nombre": "DESODORANTE Y DESINFECTANTE AMBIENTAL CITRUS MEADOWS370 ML",
+    "precio_actual": "3277",
+    "precio_nuevo": 3295
+  },
+  {
+    "id": 2310,
+    "sku": "2001350",
+    "nombre": "DESODORANTE Y DESINFECTANTE AMBIENTAL ORIGINAL360 ML",
+    "precio_actual": "3504",
+    "precio_nuevo": 3527
+  },
+  {
+    "id": 2311,
+    "sku": "2001351",
+    "nombre": "DESODORANTE Y DESINFECTANTE AMBIENTAL AIRE DE MONTANA360 ML",
+    "precio_actual": "3504",
+    "precio_nuevo": 3527
+  },
+  {
+    "id": 3736,
+    "sku": "2001385",
+    "nombre": "Desodorante y Desinfectante Ambiental - Bebé 360 ML",
+    "precio_actual": "3504",
+    "precio_nuevo": 3527
+  },
+  {
+    "id": 2312,
+    "sku": "2001105",
+    "nombre": "INSECTICIDA CASA Y JARDIN560 ML",
+    "precio_actual": "3042",
+    "precio_nuevo": 3061
+  },
+  {
+    "id": 2313,
+    "sku": "2001106",
+    "nombre": "INSECTICIDA MATA TODO TIPO DE INSECTOS560 ML",
+    "precio_actual": "3042",
+    "precio_nuevo": 3061
+  },
+  {
+    "id": 2314,
+    "sku": "2001107",
+    "nombre": "INSECTICIDA MOSCAS Y ZANCUDOS560 ML",
+    "precio_actual": "3042",
+    "precio_nuevo": 3061
+  },
+  {
+    "id": 2315,
+    "sku": "2001286",
+    "nombre": "INSECTICIDA MATA ARANAS Y CUCARACHAS560 ML",
+    "precio_actual": "3042",
+    "precio_nuevo": 3061
+  },
+  {
+    "id": 3925,
+    "sku": "2001389",
+    "nombre": "Insecticida - Mata Todo Insecto 360 ML",
+    "precio_actual": "3681",
+    "precio_nuevo": 3697
+  },
+  {
+    "id": 3927,
+    "sku": "2001390",
+    "nombre": "Insecticida - Moscas, Mosquitos y Zancudos 360 ML",
+    "precio_actual": "3681",
+    "precio_nuevo": 3697
+  },
+  {
+    "id": 2317,
+    "sku": "2001361",
+    "nombre": "INSECTICIDA TABLETAS APARATO ELECTRICO MOSQUITOS Y ZANCUDOS",
+    "precio_actual": "5773",
+    "precio_nuevo": 5807
+  },
+  {
+    "id": 2318,
+    "sku": "2001362",
+    "nombre": "INSECTICIDA TABLETAS RECARGA MOSQUITOS Y ZANCUDOS12 TABLETAS",
+    "precio_actual": "3151",
+    "precio_nuevo": 3172
+  },
+  {
+    "id": 2319,
+    "sku": "2001301",
+    "nombre": "QUITAMANCHAS ROPA COLOR930 GR",
+    "precio_actual": "2714",
+    "precio_nuevo": 2727
+  },
+  {
+    "id": 2320,
+    "sku": "2001229",
+    "nombre": "DETERGENTE EN POLVO ROPA CON SOFT ALOE VERA400 GR",
+    "precio_actual": "1193",
+    "precio_nuevo": 1196
+  },
+  {
+    "id": 3758,
+    "sku": "2001400",
+    "nombre": "Detergente en Polvo Ropa Biodegradable 800 GR",
+    "precio_actual": "1319",
+    "precio_nuevo": 1328
+  },
+  {
+    "id": 2321,
+    "sku": "2001255",
+    "nombre": "DETERGENTE LIQUIDO CONCENTRADO PARA DILUIR500 ML",
+    "precio_actual": "4840",
+    "precio_nuevo": 4864
+  },
+  {
+    "id": 2322,
+    "sku": "2001297",
+    "nombre": "DETERGENTE LIQUIDO CONCENTRADO PARA DILUIR PIEL SENSIBLE500 ML",
+    "precio_actual": "4840",
+    "precio_nuevo": 4864
+  },
+  {
+    "id": 2323,
+    "sku": "2001348",
+    "nombre": "DETERGENTE LIQUIDO HIGIENIZANTE PARA DILUIR500 ML",
+    "precio_actual": "2697",
+    "precio_nuevo": 2715
+  },
+  {
+    "id": 2324,
+    "sku": "2001334",
+    "nombre": "DETERGENTE LIQUIDO HIGIENIZANTE3 LT",
+    "precio_actual": "5370",
+    "precio_nuevo": 5400
+  },
+  {
+    "id": 2325,
+    "sku": "2001086",
+    "nombre": "DETERGENTE LIQUIDO ROPA5 LT",
+    "precio_actual": "2269",
+    "precio_nuevo": 2282
+  },
+  {
+    "id": 2326,
+    "sku": "2001261",
+    "nombre": "SUAVIZANTE DE ROPA CONCENTRADO BRISA DE VERANO500 ML",
+    "precio_actual": "3378",
+    "precio_nuevo": 3396
+  },
+  {
+    "id": 2328,
+    "sku": "2001240",
+    "nombre": "LAVALOZA DESENGRASANTE CONCENTRADO500 ML",
+    "precio_actual": "1277",
+    "precio_nuevo": 1284
+  },
+  {
+    "id": 2329,
+    "sku": "2001349",
+    "nombre": "LAVALOZA DESENGRASANTE CONCENTRADO5 LT",
+    "precio_actual": "14067",
+    "precio_nuevo": 14145
+  },
+  {
+    "id": 2330,
+    "sku": "2001340",
+    "nombre": "LAVALOZA DESENGRASANTE CONCENTRADO LIMON750 ML",
+    "precio_actual": "1387",
+    "precio_nuevo": 1396
+  },
+  {
+    "id": 3971,
+    "sku": "2001393",
+    "nombre": "Lavalozas Desengrasante Concentrado Limón 5 LT",
+    "precio_actual": "6303",
+    "precio_nuevo": 6335
+  },
+  {
+    "id": 2331,
+    "sku": "2001029",
+    "nombre": "LAVALOZA DESENGRASANTE C DESINFECTANTE750 ML",
+    "precio_actual": "1445",
+    "precio_nuevo": 1453
+  },
+  {
+    "id": 2332,
+    "sku": "2001321",
+    "nombre": "LAVALOZA DESENGRASANTE RECARGA DOYPACK450 ML",
+    "precio_actual": "874",
+    "precio_nuevo": 879
+  },
+  {
+    "id": 2333,
+    "sku": "2001208",
+    "nombre": "LAVALOZA DESENGRASANTE750 ML",
+    "precio_actual": "1487",
+    "precio_nuevo": 1492
+  },
+  {
+    "id": 2334,
+    "sku": "2001194",
+    "nombre": "LAVALOZA DESENGRASANTE1500 ML",
+    "precio_actual": "2521",
+    "precio_nuevo": 2531
+  },
+  {
+    "id": 2335,
+    "sku": "2001296",
+    "nombre": "LAVALOZA DESENGRASANTE5 LT",
+    "precio_actual": "9042",
+    "precio_nuevo": 9091
+  },
+  {
+    "id": 2338,
+    "sku": "2001034",
+    "nombre": "LAVALOZA CONCENTRADO5 LT",
+    "precio_actual": "2311",
+    "precio_nuevo": 2322
+  },
+  {
+    "id": 4685,
+    "sku": "2001381",
+    "nombre": "Sal Lavavajillas Finish 1 KG",
+    "precio_actual": "2454",
+    "precio_nuevo": 2469
+  },
+  {
+    "id": 3444,
+    "sku": "2001382",
+    "nombre": "Abrillantador Lavavajillas Finish 400 ml",
+    "precio_actual": "4042",
+    "precio_nuevo": 4061
+  },
+  {
+    "id": 3756,
+    "sku": "2001383",
+    "nombre": "Detergente Tabletas Finish Power All in 1 Max - 80 Und",
+    "precio_actual": "23261",
+    "precio_nuevo": 23392
+  },
+  {
+    "id": 2339,
+    "sku": "2001035",
+    "nombre": "LIMPIADOR CREMA LIMON500 ML  750 GR",
+    "precio_actual": "1471",
+    "precio_nuevo": 1476
+  },
+  {
+    "id": 3985,
+    "sku": "2001366",
+    "nombre": "Limpiador Crema - Biodegradable 500 ML / 750 GR",
+    "precio_actual": "2092",
+    "precio_nuevo": 2103
+  },
+  {
+    "id": 2340,
+    "sku": "2001225",
+    "nombre": "LIMPIADOR CREMA ORIGINAL500 ML  750 GR",
+    "precio_actual": "1891",
+    "precio_nuevo": 1902
+  },
+  {
+    "id": 2341,
+    "sku": "2001115",
+    "nombre": "LIMPIADOR DE ACERO INOXIDABLE600 GR",
+    "precio_actual": "15235",
+    "precio_nuevo": 15316
+  },
+  {
+    "id": 2342,
+    "sku": "2001259",
+    "nombre": "LIMPIADOR DE METALES Y CROMADOS200 ML",
+    "precio_actual": "10529",
+    "precio_nuevo": 10588
+  },
+  {
+    "id": 2343,
+    "sku": "2001037",
+    "nombre": "LIMPIADOR DE PISO LAVANDA5 LT",
+    "precio_actual": "1597",
+    "precio_nuevo": 1608
+  },
+  {
+    "id": 2344,
+    "sku": "2001038",
+    "nombre": "LIMPIADOR DE PISO CITRUS5 LT",
+    "precio_actual": "1597",
+    "precio_nuevo": 1608
+  },
+  {
+    "id": 2345,
+    "sku": "2001287",
+    "nombre": "LIMPIADOR DE PISO DESINFECTANTE LAVANDA900 ML",
+    "precio_actual": "1042",
+    "precio_nuevo": 1046
+  },
+  {
+    "id": 2346,
+    "sku": "2001293",
+    "nombre": "LIMPIADOR DE PISO DESINFECTANTE FLORAL900 ML",
+    "precio_actual": "1042",
+    "precio_nuevo": 1046
+  },
+  {
+    "id": 2347,
+    "sku": "2001040",
+    "nombre": "LIMPIADOR DE PISO FRESCURA CITRICA900 ML",
+    "precio_actual": "1017",
+    "precio_nuevo": 1019
+  },
+  {
+    "id": 2348,
+    "sku": "2001041",
+    "nombre": "LIMPIADOR DE PISO LAVANDA900 ML",
+    "precio_actual": "1017",
+    "precio_nuevo": 1019
+  },
+  {
+    "id": 2349,
+    "sku": "2001042",
+    "nombre": "LIMPIADOR DE PISO PRIMAVERA5 LT",
+    "precio_actual": "5647",
+    "precio_nuevo": 5675
+  },
+  {
+    "id": 2350,
+    "sku": "2001043",
+    "nombre": "LIMPIADOR DE PISO LAVANDA5 LT",
+    "precio_actual": "5647",
+    "precio_nuevo": 5675
+  },
+  {
+    "id": 2351,
+    "sku": "2001245",
+    "nombre": "LIMPIADOR DE PISO DESINFECTANTE  FLORES DE PRIMAVERA900 ML",
+    "precio_actual": "2109",
+    "precio_nuevo": 2119
+  },
+  {
+    "id": 2352,
+    "sku": "2001246",
+    "nombre": "LIMPIADOR DE PISO DESINFECTANTE  FRESCURA DE LAVANDA900 ML",
+    "precio_actual": "2109",
+    "precio_nuevo": 2119
+  },
+  {
+    "id": 4008,
+    "sku": "2001251",
+    "nombre": "Limpiador de Piso con Desinfectante - Frescura Cítrica 900 ML",
+    "precio_actual": "2076",
+    "precio_nuevo": 2084
+  },
+  {
+    "id": 2354,
+    "sku": "2001324",
+    "nombre": "LIMPIADOR DE PISO DESINFECTANTE  FLORES DE PRIMAVERA4 LT",
+    "precio_actual": "6731",
+    "precio_nuevo": 6771
+  },
+  {
+    "id": 2355,
+    "sku": "2001325",
+    "nombre": "LIMPIADOR DE PISO DESINFECTANTE  FRESCURA DE LAVANDA4 LT",
+    "precio_actual": "6731",
+    "precio_nuevo": 6771
+  },
+  {
+    "id": 2356,
+    "sku": "2001289",
+    "nombre": "LIMPIADOR DE PISO DESINFECTANTE FLORAL4 LT",
+    "precio_actual": "4084",
+    "precio_nuevo": 4107
+  },
+  {
+    "id": 2357,
+    "sku": "2001294",
+    "nombre": "LIMPIADOR DE PISO DESINFECTANTE LAVANDA4 LT",
+    "precio_actual": "4084",
+    "precio_nuevo": 4107
+  },
+  {
+    "id": 2358,
+    "sku": "2001209",
+    "nombre": "LIMPIADOR DE PISO DESINFECTANTE LAVANDA4 LT",
+    "precio_actual": "5092",
+    "precio_nuevo": 5119
+  },
+  {
+    "id": 2359,
+    "sku": "2001210",
+    "nombre": "LIMPIADOR DE PISO DESINFECTANTE CITRICO4 LT",
+    "precio_actual": "5092",
+    "precio_nuevo": 5119
+  },
+  {
+    "id": 2360,
+    "sku": "2001196",
+    "nombre": "LIMPIADOR DE PISO VIVA LAVANDA5 LT",
+    "precio_actual": "9429",
+    "precio_nuevo": 9480
+  },
+  {
+    "id": 2361,
+    "sku": "2001044",
+    "nombre": "LIMPIADOR DE PISO PORCELANATO900 ML",
+    "precio_actual": "1731",
+    "precio_nuevo": 1741
+  },
+  {
+    "id": 2362,
+    "sku": "2001045",
+    "nombre": "LIMPIADOR DE PISO FLOTANTE LAVANDA900 ML",
+    "precio_actual": "2504",
+    "precio_nuevo": 2516
+  },
+  {
+    "id": 2363,
+    "sku": "2001220",
+    "nombre": "LIMPIADOR DE PISO FLOTANTE LAVANDA5 LT",
+    "precio_actual": "13655",
+    "precio_nuevo": 13730
+  },
+  {
+    "id": 2364,
+    "sku": "2001234",
+    "nombre": "LIMPIADOR DE PISO FLOTANTE LAVANDA900 ML",
+    "precio_actual": "2597",
+    "precio_nuevo": 2609
+  },
+  {
+    "id": 4021,
+    "sku": "2001402",
+    "nombre": "Limpiavidrios Biodegradable Bambú Doypack 500 ML",
+    "precio_actual": "1605",
+    "precio_nuevo": 1617
+  },
+  {
+    "id": 2367,
+    "sku": "2001290",
+    "nombre": "LIMPIAVIDRIOS BIODEGRADABLE CON GATILLO BAMBU500 ML",
+    "precio_actual": "2160",
+    "precio_nuevo": 2170
+  },
+  {
+    "id": 4019,
+    "sku": "2001403",
+    "nombre": "Limpiavidrios Biodegradable Bambú 5 LT",
+    "precio_actual": "6773",
+    "precio_nuevo": 6806
+  },
+  {
+    "id": 2368,
+    "sku": "2001047",
+    "nombre": "LIMPIAVIDRIOS MULTIUSO CON GATILLO500 ML",
+    "precio_actual": "1882",
+    "precio_nuevo": 1895
+  },
+  {
+    "id": 2369,
+    "sku": "2001048",
+    "nombre": "LIMPIAVIDRIOS MULTIUSO5 LT",
+    "precio_actual": "6882",
+    "precio_nuevo": 6919
+  },
+  {
+    "id": 2371,
+    "sku": "2001119",
+    "nombre": "LIMPIAVIDRIOS MULTIUSO5 LT",
+    "precio_actual": "6824",
+    "precio_nuevo": 6858
+  },
+  {
+    "id": 2372,
+    "sku": "2001095",
+    "nombre": "LIMPIAVIDRIOS5 LT",
+    "precio_actual": "2252",
+    "precio_nuevo": 2268
+  },
+  {
+    "id": 3989,
+    "sku": "2001404",
+    "nombre": "Limpiador Multiuso Biodegradable Bambú 5 LT",
+    "precio_actual": "6773",
+    "precio_nuevo": 6806
+  },
+  {
+    "id": 2373,
+    "sku": "2001339",
+    "nombre": "LIMPIADOR DESINFECTANTE MULTIUSO DE SUPERFICIES CON GATILLO CITRICO 500 ML",
+    "precio_actual": "2462",
+    "precio_nuevo": 2472
+  },
+  {
+    "id": 2375,
+    "sku": "2001337",
+    "nombre": "LIMPIADOR DESINFECTANTE MULTIUSO DE SUPERFICIES CITRICO 900 ML",
+    "precio_actual": "1244",
+    "precio_nuevo": 1247
+  },
+  {
+    "id": 2376,
+    "sku": "2001049",
+    "nombre": "LUSTRAMUEBLES LAVANDA250 ML",
+    "precio_actual": "1353",
+    "precio_nuevo": 1364
+  },
+  {
+    "id": 2377,
+    "sku": "2001204",
+    "nombre": "LUSTRAMUEBLES TRADICIONAL250 ML",
+    "precio_actual": "1597",
+    "precio_nuevo": 1604
+  },
+  {
+    "id": 2378,
+    "sku": "2001303",
+    "nombre": "LUSTRAMUEBLES LAVANDA250 ML",
+    "precio_actual": "1597",
+    "precio_nuevo": 1604
+  },
+  {
+    "id": 4033,
+    "sku": "2001410",
+    "nombre": "Lustramuebles Crema - Tradicional 500 ML",
+    "precio_actual": "2513",
+    "precio_nuevo": 2527
+  },
+  {
+    "id": 2379,
+    "sku": "2001099",
+    "nombre": "LUSTRAMUEBLES EN AEROSOL LAVANDA360 ML",
+    "precio_actual": "2605",
+    "precio_nuevo": 2624
+  },
+  {
+    "id": 2380,
+    "sku": "2001100",
+    "nombre": "LUSTRAMUEBLES EN AEROSOL NARANJA360 ML",
+    "precio_actual": "2605",
+    "precio_nuevo": 2624
+  },
+  {
+    "id": 2382,
+    "sku": "2001310",
+    "nombre": "LUSTRAMUEBLES LAVANDA5 LT",
+    "precio_actual": "15639",
+    "precio_nuevo": 15724
+  },
+  {
+    "id": 2383,
+    "sku": "2001050",
+    "nombre": "REMOVEDOR DE ABRILLANTADOR DE PISO FLOTANTE900 ML",
+    "precio_actual": "3681",
+    "precio_nuevo": 3704
+  },
+  {
+    "id": 2384,
+    "sku": "2001200",
+    "nombre": "REMOVEDOR DE ABRILLANTADOR Y CERA FACIL5 LT",
+    "precio_actual": "11378",
+    "precio_nuevo": 11443
+  },
+  {
+    "id": 2385,
+    "sku": "2001212",
+    "nombre": "REMOVEDOR AMONIACADO FURIA5 LT",
+    "precio_actual": "10630",
+    "precio_nuevo": 10691
+  },
+  {
+    "id": 2386,
+    "sku": "2001215",
+    "nombre": "RENOVADOR DE GOMA900 ML",
+    "precio_actual": "1193",
+    "precio_nuevo": 1201
+  },
+  {
+    "id": 2387,
+    "sku": "2001226",
+    "nombre": "SILICONA AUTOMOVIL VAINILLA480 ML",
+    "precio_actual": "2681",
+    "precio_nuevo": 2695
+  },
+  {
+    "id": 2388,
+    "sku": "2001260",
+    "nombre": "SILICONA AUTOMOVIL LAVANDA480 ML",
+    "precio_actual": "2681",
+    "precio_nuevo": 2695
+  },
+  {
+    "id": 2389,
+    "sku": "2001319",
+    "nombre": "RENOVADOR DE GOMA AUTOMOVIL650 ML",
+    "precio_actual": "2697",
+    "precio_nuevo": 2709
+  },
+  {
+    "id": 3626,
+    "sku": "2001380",
+    "nombre": "Cera Aerosol Automóvil 650 ML",
+    "precio_actual": "2689",
+    "precio_nuevo": 2700
+  },
+  {
+    "id": 4723,
+    "sku": "2001412",
+    "nombre": "Shampoo Automóvil 500 ML",
+    "precio_actual": "1034",
+    "precio_nuevo": 1041
+  },
+  {
+    "id": 2390,
+    "sku": "2001206",
+    "nombre": "SILICONA LIQUIDA900 ML",
+    "precio_actual": "1387",
+    "precio_nuevo": 1396
+  },
+  {
+    "id": 2391,
+    "sku": "2001054",
+    "nombre": "SILICONA LIQUIDA5 LT",
+    "precio_actual": "5345",
+    "precio_nuevo": 5377
+  },
+  {
+    "id": 2392,
+    "sku": "2001217",
+    "nombre": "SHAMPOO DE ALFOMBRAS Y TAPICES900 ML",
+    "precio_actual": "2462",
+    "precio_nuevo": 2478
+  },
+  {
+    "id": 2393,
+    "sku": "2001233",
+    "nombre": "VIRUTILLA LIQUIDA900 ML",
+    "precio_actual": "3412",
+    "precio_nuevo": 3432
+  },
+  {
+    "id": 3999,
+    "sku": "2001406",
+    "nombre": "Limpiador de Ductos de Basura Ecosafe 5LT",
+    "precio_actual": "10269",
+    "precio_nuevo": 10327
+  },
+  {
+    "id": 3749,
+    "sku": "2001424",
+    "nombre": "Destapador de Ductos y Cañerías Drano Max Gel 946 ML",
+    "precio_actual": "4891",
+    "precio_nuevo": 4914
+  },
+  {
+    "id": 2394,
+    "sku": "2001123",
+    "nombre": "DILUYENTE SINTETICO1 LT",
+    "precio_actual": "2286",
+    "precio_nuevo": 2303
+  },
+  {
+    "id": 2395,
+    "sku": "2001124",
+    "nombre": "AGUARRAS MINERAL1 LT",
+    "precio_actual": "2059",
+    "precio_nuevo": 2069
+  },
+  {
+    "id": 2396,
+    "sku": "2001125",
+    "nombre": "ACIDO MURIATICO1 LT",
+    "precio_actual": "958",
+    "precio_nuevo": 960
+  },
+  {
+    "id": 2397,
+    "sku": "2001237",
+    "nombre": "ACIDO MURIATICO5 LT",
+    "precio_actual": "3571",
+    "precio_nuevo": 3594
+  },
+  {
+    "id": 2399,
+    "sku": "2001127",
+    "nombre": "SODA CAUSTICA1 KG",
+    "precio_actual": "3277",
+    "precio_nuevo": 3299
+  },
+  {
+    "id": 2401,
+    "sku": "2001262",
+    "nombre": "CLORO PISCINA LIQUIDO10 LT",
+    "precio_actual": "6630",
+    "precio_nuevo": 6669
+  },
+  {
+    "id": 2402,
+    "sku": "2001263",
+    "nombre": "CLORO PISCINA EN TABLETAS 1 KG5 PASTILLAS x 200 GR",
+    "precio_actual": "2975",
+    "precio_nuevo": 2991
+  },
+  {
+    "id": 2403,
+    "sku": "4001002",
+    "nombre": "BOLSAS DE BASURA NEGRO PLANA 10 UND50 x 70 CM 30 µm",
+    "precio_actual": "479",
+    "precio_nuevo": 485
+  },
+  {
+    "id": 2404,
+    "sku": "4001003",
+    "nombre": "BOLSAS DE BASURA NEGRO PLANA 10 UND70 x 90 CM 30 µm",
+    "precio_actual": "840",
+    "precio_nuevo": 845
+  },
+  {
+    "id": 2405,
+    "sku": "4001004",
+    "nombre": "BOLSAS DE BASURA NEGRO PLANA 10 UND80 x 110 CM 30 µm",
+    "precio_actual": "1227",
+    "precio_nuevo": 1232
+  },
+  {
+    "id": 2406,
+    "sku": "4001172",
+    "nombre": "BOLSAS DE BASURA NEGRO PLANA 10 UND110 x 120 CM 60 µm",
+    "precio_actual": "3924",
+    "precio_nuevo": 3949
+  },
+  {
+    "id": 2407,
+    "sku": "4001006",
+    "nombre": "BOLSAS DE BASURA NEGRO PLANA 5 UND140 x 140 CM 60 µm",
+    "precio_actual": "2891",
+    "precio_nuevo": 2902
+  },
+  {
+    "id": 2408,
+    "sku": "4001206",
+    "nombre": "BOLSAS DE BASURA NEGRO PLANA 5 UND140 x 160 CM 60 µm",
+    "precio_actual": "3294",
+    "precio_nuevo": 3315
+  },
+  {
+    "id": 2409,
+    "sku": "4001092",
+    "nombre": "BOLSAS DE BASURA TRANSPARENTE 10 UND50 x 70 CM 30 µm",
+    "precio_actual": "504",
+    "precio_nuevo": 511
+  },
+  {
+    "id": 2410,
+    "sku": "4001093",
+    "nombre": "BOLSAS DE BASURA TRANSPARENTE 10 UND70 x 90 CM 30 µm",
+    "precio_actual": "899",
+    "precio_nuevo": 906
+  },
+  {
+    "id": 2411,
+    "sku": "4001094",
+    "nombre": "BOLSAS DE BASURA TRANSPARENTE 10 UND80 x 110 CM 30 µm",
+    "precio_actual": "1303",
+    "precio_nuevo": 1313
+  },
+  {
+    "id": 3550,
+    "sku": "4001354",
+    "nombre": "Bolsas de Basura Transparente Gruesa 10 UND 110 x 120 CM (Espesor 60 µm)",
+    "precio_actual": "4151",
+    "precio_nuevo": 4173
+  },
+  {
+    "id": 2412,
+    "sku": "4001102",
+    "nombre": "BOLSAS DE BASURA NEGRO ROLLO 20 UND50 x 55 CM 22 µm",
+    "precio_actual": "824",
+    "precio_nuevo": 827
+  },
+  {
+    "id": 2413,
+    "sku": "4001103",
+    "nombre": "BOLSAS DE BASURA NEGRO ROLLO 10 UND50 x 70 CM 22 µm",
+    "precio_actual": "622",
+    "precio_nuevo": 622
+  },
+  {
+    "id": 2414,
+    "sku": "4001104",
+    "nombre": "BOLSAS DE BASURA NEGRO ROLLO 10 UND70 x 90 CM 24 µm",
+    "precio_actual": "1126",
+    "precio_nuevo": 1134
+  },
+  {
+    "id": 2415,
+    "sku": "4001105",
+    "nombre": "BOLSAS DE BASURA NEGRO ROLLO 10 UND80 x 110 CM 26 µm",
+    "precio_actual": "1387",
+    "precio_nuevo": 1392
+  },
+  {
+    "id": 2416,
+    "sku": "4001263",
+    "nombre": "BOLSAS DE BASURA NEGRO ROLLO 10 UND80 x 120 CM 75 µm",
+    "precio_actual": "2731",
+    "precio_nuevo": 2745
+  },
+  {
+    "id": 2417,
+    "sku": "4001160",
+    "nombre": "BOLSAS DE BASURA NEGRO ROLLO 5 UND120 x 130 CM",
+    "precio_actual": "3832",
+    "precio_nuevo": 3851
+  },
+  {
+    "id": 2418,
+    "sku": "4001351",
+    "nombre": "BOLSAS DE BASURA NEGRO ROLLO 10 UND50 x 70 CM 16 µm",
+    "precio_actual": "429",
+    "precio_nuevo": 433
+  },
+  {
+    "id": 2419,
+    "sku": "4001352",
+    "nombre": "BOLSAS DE BASURA NEGRO ROLLO 10 UND70 x 90 CM 16 µm",
+    "precio_actual": "815",
+    "precio_nuevo": 817
+  },
+  {
+    "id": 2420,
+    "sku": "4001353",
+    "nombre": "BOLSAS DE BASURA NEGRO ROLLO 10 UND80 x 110 CM 22 µm",
+    "precio_actual": "1210",
+    "precio_nuevo": 1219
+  },
+  {
+    "id": 3533,
+    "sku": "4001360",
+    "nombre": "Bolsas de Basura Blanca con Asas Rollo 10 UND 50 x 65 CM (Espesor 15 µm)",
+    "precio_actual": "487",
+    "precio_nuevo": 488
+  },
+  {
+    "id": 3811,
+    "sku": "4001224",
+    "nombre": "Escobillón Básico Multiuso Económico con Mango Madera",
+    "precio_actual": "1538",
+    "precio_nuevo": 1544
+  },
+  {
+    "id": 3813,
+    "sku": "4001362",
+    "nombre": "Escobillón Básico Multiuso Económico con Mango Madera Impeke",
+    "precio_actual": "1580",
+    "precio_nuevo": 1593
+  },
+  {
+    "id": 3809,
+    "sku": "4001185",
+    "nombre": "Escobillón Básico Multiuso Bicolor con Mango Madera",
+    "precio_actual": "1849",
+    "precio_nuevo": 1860
+  },
+  {
+    "id": 3823,
+    "sku": "4001096",
+    "nombre": "Escobillón Interior Fibra Suave color Azul con Mango",
+    "precio_actual": "3025",
+    "precio_nuevo": 3038
+  },
+  {
+    "id": 3825,
+    "sku": "4001097",
+    "nombre": "Escobillón Interior Fibra Suave color Rojo con Mango",
+    "precio_actual": "3025",
+    "precio_nuevo": 3038
+  },
+  {
+    "id": 3827,
+    "sku": "4001108",
+    "nombre": "Escobillón Interior Fibra Suave color Verde con Mango",
+    "precio_actual": "3025",
+    "precio_nuevo": 3038
+  },
+  {
+    "id": 3829,
+    "sku": "4001235",
+    "nombre": "Escobillón Interior Multiuso Fibra Suave color Café con Mango",
+    "precio_actual": "2529",
+    "precio_nuevo": 2543
+  },
+  {
+    "id": 3815,
+    "sku": "4001129",
+    "nombre": "Escobillón Exterior Cerdas Duras con Mango",
+    "precio_actual": "4824",
+    "precio_nuevo": 4852
+  },
+  {
+    "id": 3819,
+    "sku": "4001322",
+    "nombre": "Escobillón Industrial Municipal Madera 30 CM",
+    "precio_actual": "3714",
+    "precio_nuevo": 3738
+  },
+  {
+    "id": 3821,
+    "sku": "4001355",
+    "nombre": "Escobillón Industrial Municipal Madera 45 CM",
+    "precio_actual": "6462",
+    "precio_nuevo": 6500
+  },
+  {
+    "id": 3817,
+    "sku": "4001119",
+    "nombre": "Escobillón Industrial Municipal 60 CM Mango Negro",
+    "precio_actual": "14739",
+    "precio_nuevo": 14820
+  },
+  {
+    "id": 3803,
+    "sku": "4001074",
+    "nombre": "Escoba de Rama 5 Costuras con Mango de Madera",
+    "precio_actual": "6983",
+    "precio_nuevo": 7020
+  },
+  {
+    "id": 4329,
+    "sku": "4001184",
+    "nombre": "Rastrillo Barre Hojas Metálico 22 Dientes con Mango Madera",
+    "precio_actual": "3563",
+    "precio_nuevo": 3584
+  },
+  {
+    "id": 4161,
+    "sku": "4001098",
+    "nombre": "Pala de Basura con Mango Metálico color Azul",
+    "precio_actual": "2454",
+    "precio_nuevo": 2471
+  },
+  {
+    "id": 4163,
+    "sku": "4001300",
+    "nombre": "Pala de Basura con Mango Plástico color Azul",
+    "precio_actual": "3605",
+    "precio_nuevo": 3626
+  },
+  {
+    "id": 4159,
+    "sku": "4001380",
+    "nombre": "Pala de Basura con Mango Madera color Rojo",
+    "precio_actual": "2580",
+    "precio_nuevo": 2594
+  },
+  {
+    "id": 4157,
+    "sku": "4001221",
+    "nombre": "Pala de Basura Vaivén con Mango Metálico color Roja",
+    "precio_actual": "8277",
+    "precio_nuevo": 8326
+  },
+  {
+    "id": 4165,
+    "sku": "4001013",
+    "nombre": "Pala de Basura con Mango Plástico color Negro",
+    "precio_actual": "756",
+    "precio_nuevo": 764
+  },
+  {
+    "id": 4067,
+    "sku": "4001026",
+    "nombre": "Mango Mopa Seca Aluminio",
+    "precio_actual": "4487",
+    "precio_nuevo": 4508
+  },
+  {
+    "id": 3919,
+    "sku": "4001069",
+    "nombre": "Horquilla Para Mopa Seca 60 CM",
+    "precio_actual": "2311",
+    "precio_nuevo": 2324
+  },
+  {
+    "id": 3921,
+    "sku": "4001070",
+    "nombre": "Horquilla Para Mopa Seca 90 CM",
+    "precio_actual": "2622",
+    "precio_nuevo": 2636
+  },
+  {
+    "id": 4116,
+    "sku": "4001022",
+    "nombre": "Mopa Seca Repuesto 60 CM",
+    "precio_actual": "2773",
+    "precio_nuevo": 2792
+  },
+  {
+    "id": 4118,
+    "sku": "4001023",
+    "nombre": "Mopa Seca Repuesto 90 CM",
+    "precio_actual": "3395",
+    "precio_nuevo": 3416
+  },
+  {
+    "id": 4069,
+    "sku": "4001017",
+    "nombre": "Mango de Escobillón y de Mopa Húmeda Doméstica",
+    "precio_actual": "655",
+    "precio_nuevo": 655
+  },
+  {
+    "id": 4100,
+    "sku": "4001018",
+    "nombre": "Mopa Húmeda Algodón Doméstica 200 GR",
+    "precio_actual": "1210",
+    "precio_nuevo": 1219
+  },
+  {
+    "id": 4106,
+    "sku": "4001349",
+    "nombre": "Mopa Húmeda Algodón Doméstica Impeke 200 GR",
+    "precio_actual": "1681",
+    "precio_nuevo": 1692
+  },
+  {
+    "id": 4102,
+    "sku": "4001264",
+    "nombre": "Mopa Húmeda Algodón Doméstica Clásica 300 GR XL",
+    "precio_actual": "3916",
+    "precio_nuevo": 3936
+  },
+  {
+    "id": 4104,
+    "sku": "4001207",
+    "nombre": "Mopa Húmeda Algodón Doméstica Clásica XL Extra Grande",
+    "precio_actual": "4143",
+    "precio_nuevo": 4166
+  },
+  {
+    "id": 3504,
+    "sku": "4001333",
+    "nombre": "Balde Económico Plástico con Manilla 11 LT",
+    "precio_actual": "2370",
+    "precio_nuevo": 2385
+  },
+  {
+    "id": 3507,
+    "sku": "4001176",
+    "nombre": "Balde Estrujador Clásico 14 LT",
+    "precio_actual": "6866",
+    "precio_nuevo": 6904
+  },
+  {
+    "id": 4061,
+    "sku": "4001021",
+    "nombre": "Mango Mopa Húmeda Industrial Aluminio",
+    "precio_actual": "4950",
+    "precio_nuevo": 4976
+  },
+  {
+    "id": 4094,
+    "sku": "4001019",
+    "nombre": "Mopa Húmeda Algodón 16 OZ",
+    "precio_actual": "2622",
+    "precio_nuevo": 2636
+  },
+  {
+    "id": 4098,
+    "sku": "4001020",
+    "nombre": "Mopa Húmeda Algodón 24 OZ",
+    "precio_actual": "3244",
+    "precio_nuevo": 3260
+  },
+  {
+    "id": 4096,
+    "sku": "4001213",
+    "nombre": "Mopa Húmeda Algodón 16 OZ VTX Pro",
+    "precio_actual": "3487",
+    "precio_nuevo": 3507
+  },
+  {
+    "id": 4063,
+    "sku": "4001065",
+    "nombre": "Mango Mopa Rectangular Microfibra Aluminio 45 CM",
+    "precio_actual": "9756",
+    "precio_nuevo": 9812
+  },
+  {
+    "id": 4065,
+    "sku": "4001071",
+    "nombre": "Mango Mopa Rectangular Microfibra Aluminio 60 CM",
+    "precio_actual": "11462",
+    "precio_nuevo": 11528
+  },
+  {
+    "id": 4112,
+    "sku": "4001251",
+    "nombre": "Mopa Seca Rectangular Microfibra 45 CM",
+    "precio_actual": "2933",
+    "precio_nuevo": 2948
+  },
+  {
+    "id": 4114,
+    "sku": "4001252",
+    "nombre": "Mopa Seca Rectangular Microfibra 60 CM",
+    "precio_actual": "4017",
+    "precio_nuevo": 4040
+  },
+  {
+    "id": 4108,
+    "sku": "4001066",
+    "nombre": "Mopa Húmeda Rectangular Microfibra 45 CM",
+    "precio_actual": "2933",
+    "precio_nuevo": 2948
+  },
+  {
+    "id": 4110,
+    "sku": "4001072",
+    "nombre": "Mopa Húmeda Rectangular Microfibra 60 CM",
+    "precio_actual": "4017",
+    "precio_nuevo": 4040
+  },
+  {
+    "id": 3610,
+    "sku": "4001027",
+    "nombre": "Carro Estrujador 20 LT",
+    "precio_actual": "30328",
+    "precio_nuevo": 30498
+  },
+  {
+    "id": 3612,
+    "sku": "4001028",
+    "nombre": "Carro Estrujador 33 LT",
+    "precio_actual": "41655",
+    "precio_nuevo": 41886
+  },
+  {
+    "id": 3614,
+    "sku": "4001091",
+    "nombre": "Carro Janitor Porta Insumos de Limpieza",
+    "precio_actual": "85017",
+    "precio_nuevo": 85488
+  },
+  {
+    "id": 3531,
+    "sku": "4001191",
+    "nombre": "Bolsa Amarilla Repuesto para Carro Janitor",
+    "precio_actual": "14975",
+    "precio_nuevo": 15054
+  },
+  {
+    "id": 4720,
+    "sku": "4001061",
+    "nombre": "Señalética Piso Húmedo Amarilla",
+    "precio_actual": "4328",
+    "precio_nuevo": 4352
+  },
+  {
+    "id": 3522,
+    "sku": "4001107",
+    "nombre": "Barre Agua Seca Piso 55 CM",
+    "precio_actual": "9261",
+    "precio_nuevo": 9311
+  },
+  {
+    "id": 3831,
+    "sku": "4001030",
+    "nombre": "Esponja Clásica",
+    "precio_actual": "151",
+    "precio_nuevo": 153
+  },
+  {
+    "id": 3835,
+    "sku": "4001211",
+    "nombre": "Esponja Clásica Pack 4 UND",
+    "precio_actual": "916",
+    "precio_nuevo": 920
+  },
+  {
+    "id": 3833,
+    "sku": "4001381",
+    "nombre": "Esponja Clásica Impeke Pack 4 UND",
+    "precio_actual": "815",
+    "precio_nuevo": 818
+  },
+  {
+    "id": 3838,
+    "sku": "4001182",
+    "nombre": "Esponja Spunita Antiadherente Clásica",
+    "precio_actual": "1538",
+    "precio_nuevo": 1545
+  },
+  {
+    "id": 3852,
+    "sku": "4001131",
+    "nombre": "Fibra Verde",
+    "precio_actual": "168",
+    "precio_nuevo": 166
+  },
+  {
+    "id": 3840,
+    "sku": "4001077",
+    "nombre": "Esponja de Acero para Ollas",
+    "precio_actual": "185",
+    "precio_nuevo": 187
+  },
+  {
+    "id": 4676,
+    "sku": "4001320",
+    "nombre": "Rollos de Acero Mago Pads 6 UND",
+    "precio_actual": "1218",
+    "precio_nuevo": 1229
+  },
+  {
+    "id": 3805,
+    "sku": "4001350",
+    "nombre": "Escobilla Lavavajillas Clásica Blanca",
+    "precio_actual": "3269",
+    "precio_nuevo": 3285
+  },
+  {
+    "id": 3807,
+    "sku": "4001132",
+    "nombre": "Escobilla Plástica tipo Plancha",
+    "precio_actual": "1008",
+    "precio_nuevo": 1014
+  },
+  {
+    "id": 4316,
+    "sku": "4001010",
+    "nombre": "Plumero Multiuso 6 Colores",
+    "precio_actual": "1008",
+    "precio_nuevo": 1014
+  },
+  {
+    "id": 4318,
+    "sku": "4001222",
+    "nombre": "Plumero Multiuso 6 Colores Electroestático",
+    "precio_actual": "3361",
+    "precio_nuevo": 3384
+  },
+  {
+    "id": 4314,
+    "sku": "4001382",
+    "nombre": "Plumero Microfibra",
+    "precio_actual": "2403",
+    "precio_nuevo": 2420
+  },
+  {
+    "id": 4253,
+    "sku": "4001033",
+    "nombre": "Paño Microfibra Azul 40 x 40 CM",
+    "precio_actual": "555",
+    "precio_nuevo": 560
+  },
+  {
+    "id": 4251,
+    "sku": "4001067",
+    "nombre": "Paño Microfibra Amarillo 40 x 40 CM",
+    "precio_actual": "555",
+    "precio_nuevo": 560
+  },
+  {
+    "id": 4255,
+    "sku": "4001068",
+    "nombre": "Paño Microfibra Rosado 40 x 40 CM",
+    "precio_actual": "555",
+    "precio_nuevo": 560
+  },
+  {
+    "id": 4257,
+    "sku": "4001118",
+    "nombre": "Paño Microfibra Verde 40 x 40 CM",
+    "precio_actual": "555",
+    "precio_nuevo": 560
+  },
+  {
+    "id": 4269,
+    "sku": "4001035",
+    "nombre": "Paño Sacudir Estándar Naranjo 30 x 40 CM",
+    "precio_actual": "311",
+    "precio_nuevo": 310
+  },
+  {
+    "id": 4267,
+    "sku": "4001080",
+    "nombre": "Paño Sacudir Estándar Blanco 30 x 40 CM",
+    "precio_actual": "311",
+    "precio_nuevo": 310
+  },
+  {
+    "id": 4271,
+    "sku": "4001236",
+    "nombre": "Paño Sacudir Naranjo 40 x 35 CM",
+    "precio_actual": "395",
+    "precio_nuevo": 399
+  },
+  {
+    "id": 4259,
+    "sku": "4001034",
+    "nombre": "Paño Multiuso Amarillo 40 x 40 CM",
+    "precio_actual": "218",
+    "precio_nuevo": 218
+  },
+  {
+    "id": 4263,
+    "sku": "4001239",
+    "nombre": "Paño Multiuso Amarillo Ultra 38 x 38 CM 1 UND",
+    "precio_actual": "370",
+    "precio_nuevo": 371
+  },
+  {
+    "id": 4261,
+    "sku": "4001250",
+    "nombre": "Paño Multiuso Amarillo Tradicional 36 x 36 CM 3 UND",
+    "precio_actual": "2361",
+    "precio_nuevo": 2371
+  },
+  {
+    "id": 4265,
+    "sku": "4001338",
+    "nombre": "Paño Multiuso Amarillo en Rollo 20 UND",
+    "precio_actual": "5916",
+    "precio_nuevo": 5951
+  },
+  {
+    "id": 4249,
+    "sku": "4001114",
+    "nombre": "Paño Esponja Absorbente Virutex Colores 3 UND",
+    "precio_actual": "2479",
+    "precio_nuevo": 2495
+  },
+  {
+    "id": 4245,
+    "sku": "4001238",
+    "nombre": "Paño Esponja Absorbente Natural Compostable Colores 6 UND",
+    "precio_actual": "3765",
+    "precio_nuevo": 3790
+  },
+  {
+    "id": 4247,
+    "sku": "4001248",
+    "nombre": "Paño Esponja Absorbente Natural Rosado 6 UND",
+    "precio_actual": "2387",
+    "precio_nuevo": 2396
+  },
+  {
+    "id": 4289,
+    "sku": "40973",
+    "nombre": "Paños de Limpieza Reutilizables MAX 50 690 HJS",
+    "precio_actual": "40202",
+    "precio_nuevo": 40429
+  },
+  {
+    "id": 4295,
+    "sku": "40959",
+    "nombre": "Paños de Limpieza Reutilizables MAX 70 88 HJS",
+    "precio_actual": "8504",
+    "precio_nuevo": 8555
+  },
+  {
+    "id": 4293,
+    "sku": "40975",
+    "nombre": "Paños de Limpieza Reutilizables MAX 70 750 HJS",
+    "precio_actual": "49059",
+    "precio_nuevo": 49335
+  },
+  {
+    "id": 4291,
+    "sku": "40974",
+    "nombre": "Paños de Limpieza Reutilizables MAX 60 890 HJS",
+    "precio_actual": "36647",
+    "precio_nuevo": 36852
+  },
+  {
+    "id": 4287,
+    "sku": "4001348",
+    "nombre": "Paño de Cocina 100% Algodón Pack 4 UND Colores Surtidos",
+    "precio_actual": "5176",
+    "precio_nuevo": 5201
+  },
+  {
+    "id": 4275,
+    "sku": "4001242",
+    "nombre": "Paño Toalla Desinfectante Easy Clean Aroma Limón 35 UND",
+    "precio_actual": "3437",
+    "precio_nuevo": 3452
+  },
+  {
+    "id": 4279,
+    "sku": "4001243",
+    "nombre": "Paño Toalla Desinfectante Easy Clean Aroma Limón 50 UND",
+    "precio_actual": "3059",
+    "precio_nuevo": 3074
+  },
+  {
+    "id": 4273,
+    "sku": "4001168",
+    "nombre": "Paño Toalla Desinfectante Aroma Limón 90 UND",
+    "precio_actual": "4353",
+    "precio_nuevo": 4379
+  },
+  {
+    "id": 4277,
+    "sku": "4001356",
+    "nombre": "Paño Toalla Desinfectante Easy Clean Aroma Limón 400 UND",
+    "precio_actual": "10899",
+    "precio_nuevo": 10961
+  },
+  {
+    "id": 4285,
+    "sku": "4001212",
+    "nombre": "Paño Toalla Desinfectante Wipes Aroma Frescura Cítrica 50 UND",
+    "precio_actual": "1975",
+    "precio_nuevo": 1982
+  },
+  {
+    "id": 4281,
+    "sku": "4001192",
+    "nombre": "Paño Toalla Desinfectante Wipes Aroma Frescura Cítrica 40 UND",
+    "precio_actual": "1975",
+    "precio_nuevo": 1982
+  },
+  {
+    "id": 4283,
+    "sku": "4001203",
+    "nombre": "Paño Toalla Desinfectante Wipes Aroma Frescura Cítrica 400 UND",
+    "precio_actual": "14639",
+    "precio_nuevo": 14724
+  },
+  {
+    "id": 4145,
+    "sku": "4001099",
+    "nombre": "Pad Blanco 17\" 5 UND - Pools (Americano)",
+    "precio_actual": "29176",
+    "precio_nuevo": 29341
+  },
+  {
+    "id": 4155,
+    "sku": "4001100",
+    "nombre": "Pad Rojo 17\" 5 UND - Pools (Americano)",
+    "precio_actual": "29176",
+    "precio_nuevo": 29341
+  },
+  {
+    "id": 4151,
+    "sku": "4001101",
+    "nombre": "Pad Negro 17\" 5 UND - Pools (Americano)",
+    "precio_actual": "29176",
+    "precio_nuevo": 29341
+  },
+  {
+    "id": 4143,
+    "sku": "4001330",
+    "nombre": "Pad Blanco 17\" 5 UND - Genérico",
+    "precio_actual": "26370",
+    "precio_nuevo": 26520
+  },
+  {
+    "id": 4153,
+    "sku": "4001331",
+    "nombre": "Pad Rojo 17\" 5 UND - Genérico",
+    "precio_actual": "26370",
+    "precio_nuevo": 26520
+  },
+  {
+    "id": 4149,
+    "sku": "4001332",
+    "nombre": "Pad Negro 17\" 5 UND - Genérico",
+    "precio_actual": "26370",
+    "precio_nuevo": 26520
+  },
+  {
+    "id": 4147,
+    "sku": "4001335",
+    "nombre": "Pad Café 17\"  5 UND - Genérico",
+    "precio_actual": "26370",
+    "precio_nuevo": 26520
+  },
+  {
+    "id": 4867,
+    "sku": "4001036",
+    "nombre": "Trapero Osnaburgo 60 x 60 CM",
+    "precio_actual": "714",
+    "precio_nuevo": 716
+  },
+  {
+    "id": 4864,
+    "sku": "4001181",
+    "nombre": "Trapero Multiuso Danzarina Simple con Ojal Amarillo",
+    "precio_actual": "437",
+    "precio_nuevo": 435
+  },
+  {
+    "id": 4846,
+    "sku": "4001183",
+    "nombre": "Trapero Algodón Rosado Simple con Ojal 50 x 50 CM",
+    "precio_actual": "1109",
+    "precio_nuevo": 1112
+  },
+  {
+    "id": 4842,
+    "sku": "4001037",
+    "nombre": "Trapero Algodón Blanco Simple con Ojal 50 x 70 CM",
+    "precio_actual": "748",
+    "precio_nuevo": 749
+  },
+  {
+    "id": 4844,
+    "sku": "4001247",
+    "nombre": "Trapero Algodón Blanco Simple con Ojal 50 x 70 CM Virutex",
+    "precio_actual": "1748",
+    "precio_nuevo": 1758
+  },
+  {
+    "id": 4840,
+    "sku": "4001038",
+    "nombre": "Trapero Algodón Blanco Doble con Ojal 50 x 35 CM",
+    "precio_actual": "857",
+    "precio_nuevo": 858
+  },
+  {
+    "id": 4838,
+    "sku": "4001249",
+    "nombre": "Trapero Algodón Amarillo Doble con Ojal 50 x 50 CM",
+    "precio_actual": "1681",
+    "precio_nuevo": 1694
+  },
+  {
+    "id": 4857,
+    "sku": "4001089",
+    "nombre": "Trapero Microfibra Doble con Ojal Amarillo 40 x 40 CM",
+    "precio_actual": "1210",
+    "precio_nuevo": 1215
+  },
+  {
+    "id": 4862,
+    "sku": "4001173",
+    "nombre": "Trapero Microfibra Doble con Ojal Verde 40 x 40 CM",
+    "precio_actual": "1210",
+    "precio_nuevo": 1215
+  },
+  {
+    "id": 4860,
+    "sku": "4001179",
+    "nombre": "Trapero Microfibra Doble con Ojal Rosado 40 x 40 CM",
+    "precio_actual": "1210",
+    "precio_nuevo": 1215
+  },
+  {
+    "id": 4854,
+    "sku": "4001088",
+    "nombre": "Trapero Húmedo para Piso Flotante - Lavanda 10 UND x 1 Pqte",
+    "precio_actual": "2034",
+    "precio_nuevo": 2042
+  },
+  {
+    "id": 4850,
+    "sku": "4001166",
+    "nombre": "Trapero Húmedo Desinfectante para todo tipo de Piso - Limón 10 UND x 1 Pqte",
+    "precio_actual": "2807",
+    "precio_nuevo": 2826
+  },
+  {
+    "id": 4848,
+    "sku": "4001208",
+    "nombre": "Trapero Húmedo Desinfectante Multiuso - Naranja Citrus 8 UND x 1 Pqte",
+    "precio_actual": "2992",
+    "precio_nuevo": 3005
+  },
+  {
+    "id": 4852,
+    "sku": "4001361",
+    "nombre": "Trapero Húmedo Multiuso - Limón 10 UND x 1 Pqte",
+    "precio_actual": "1773",
+    "precio_nuevo": 1783
+  },
+  {
+    "id": 4764,
+    "sku": "4001169",
+    "nombre": "Termómetro Infrarrojo sin Contacto DT-8826",
+    "precio_actual": "4420",
+    "precio_nuevo": 4446
+  },
+  {
+    "id": 3884,
+    "sku": "4001231",
+    "nombre": "Guante Algodón Pigmentado 2 Hebras",
+    "precio_actual": "277",
+    "precio_nuevo": 281
+  },
+  {
+    "id": 4089,
+    "sku": "4001048",
+    "nombre": "Mascarillas Desechables 3 Pliegues 50 UND Celeste",
+    "precio_actual": "1126",
+    "precio_nuevo": 1133
+  },
+  {
+    "id": 3687,
+    "sku": "4001232",
+    "nombre": "Cubre Calzado de Polietileno Azul 100 UND",
+    "precio_actual": "1874",
+    "precio_nuevo": 1888
+  },
+  {
+    "id": 3689,
+    "sku": "4001049",
+    "nombre": "Cubre Calzado de Tela con Antideslizante Azul 100 UND",
+    "precio_actual": "3109",
+    "precio_nuevo": 3130
+  },
+  {
+    "id": 4071,
+    "sku": "4001051",
+    "nombre": "Manguilla Polietileno Blanco 100 UND",
+    "precio_actual": "2050",
+    "precio_nuevo": 2061
+  },
+  {
+    "id": 3878,
+    "sku": "4001052",
+    "nombre": "Gorro Clip Blanco 100 UND",
+    "precio_actual": "1546",
+    "precio_nuevo": 1557
+  },
+  {
+    "id": 3880,
+    "sku": "4001275",
+    "nombre": "Gorro Clip Negro 100 UND",
+    "precio_actual": "1849",
+    "precio_nuevo": 1856
+  },
+  {
+    "id": 3882,
+    "sku": "4001125",
+    "nombre": "Gorro Redecilla Negra 100 UND",
+    "precio_actual": "4924",
+    "precio_nuevo": 4955
+  },
+  {
+    "id": 4298,
+    "sku": "4001053",
+    "nombre": "Pechera Plástica Blanca 100 UND",
+    "precio_actual": "4143",
+    "precio_nuevo": 4168
+  },
+  {
+    "id": 3517,
+    "sku": "4001056",
+    "nombre": "Barra T Limpiavidrios 35 CM",
+    "precio_actual": "2160",
+    "precio_nuevo": 2168
+  },
+  {
+    "id": 3519,
+    "sku": "4001055",
+    "nombre": "Barra T Limpiavidrios 45 CM",
+    "precio_actual": "2311",
+    "precio_nuevo": 2324
+  },
+  {
+    "id": 4336,
+    "sku": "4001058",
+    "nombre": "Repuesto Chiporro Limpiavidrios 35 CM",
+    "precio_actual": "2714",
+    "precio_nuevo": 2730
+  },
+  {
+    "id": 4338,
+    "sku": "4001057",
+    "nombre": "Repuesto Chiporro Limpiavidrios 45 CM",
+    "precio_actual": "2874",
+    "precio_nuevo": 2886
+  },
+  {
+    "id": 4742,
+    "sku": "4001060",
+    "nombre": "Squeegee Limpiavidrios Completo 35 CM",
+    "precio_actual": "2471",
+    "precio_nuevo": 2480
+  },
+  {
+    "id": 4744,
+    "sku": "4001059",
+    "nombre": "Squeegee Limpiavidrios Completo 45 CM",
+    "precio_actual": "2622",
+    "precio_nuevo": 2636
+  },
+  {
+    "id": 4327,
+    "sku": "4001219",
+    "nombre": "Raspador de Vidrio y Piso con Mango",
+    "precio_actual": "3345",
+    "precio_nuevo": 3363
+  },
+  {
+    "id": 4340,
+    "sku": "4001220",
+    "nombre": "Repuesto Cuchillas Scrap para Raspador de Vidrio/Piso 10 UND",
+    "precio_actual": "1664",
+    "precio_nuevo": 1673
+  },
+  {
+    "id": 3844,
+    "sku": "4001120",
+    "nombre": "Extensión Telescópica Aluminio 1,2 MT",
+    "precio_actual": "7311",
+    "precio_nuevo": 7355
+  },
+  {
+    "id": 3846,
+    "sku": "4001121",
+    "nombre": "Extensión Telescópica Aluminio 4,5 MT",
+    "precio_actual": "18605",
+    "precio_nuevo": 18704
+  },
+  {
+    "id": 4755,
+    "sku": "4001270",
+    "nombre": "Tapete Urinario Aromático color Rojo Pack 5 UND",
+    "precio_actual": "5882",
+    "precio_nuevo": 5915
+  },
+  {
+    "id": 4753,
+    "sku": "4001272",
+    "nombre": "Tapete Urinario Aromático color Azul Pack 5 UND",
+    "precio_actual": "5882",
+    "precio_nuevo": 5915
+  },
+  {
+    "id": 4751,
+    "sku": "4001009",
+    "nombre": "Tapete Liso Aromático para Urinario Colores",
+    "precio_actual": "1277",
+    "precio_nuevo": 1282
+  },
+  {
+    "id": 4733,
+    "sku": "4001011",
+    "nombre": "Sopapo Grande Goma Gruesa con Mango Madera",
+    "precio_actual": "1689",
+    "precio_nuevo": 1700
+  },
+  {
+    "id": 3917,
+    "sku": "4001012",
+    "nombre": "Hisopo Plástico",
+    "precio_actual": "1084",
+    "precio_nuevo": 1090
+  },
+  {
+    "id": 3915,
+    "sku": "4001217",
+    "nombre": "Hisopo Cepillo Sanitario Plástico con Base",
+    "precio_actual": "4672",
+    "precio_nuevo": 4697
+  },
+  {
+    "id": 4232,
+    "sku": "4001078",
+    "nombre": "Pastilla Estanque WC Cloro 1 KG - 50 Tabletas de 20 GR",
+    "precio_actual": "3798",
+    "precio_nuevo": 3824
+  },
+  {
+    "id": 4229,
+    "sku": "4001087",
+    "nombre": "Pastilla Estanque WC 3 UND",
+    "precio_actual": "3126",
+    "precio_nuevo": 3145
+  },
+  {
+    "id": 4234,
+    "sku": "2001211",
+    "nombre": "Pastilla Taza Canasto WC 1 UND",
+    "precio_actual": "899",
+    "precio_nuevo": 903
+  },
+  {
+    "id": 3983,
+    "sku": "2001356",
+    "nombre": "Limpiador Adhesivo WC Lavanda 3 UND",
+    "precio_actual": "1429",
+    "precio_nuevo": 1441
+  },
+  {
+    "id": 3560,
+    "sku": "4001230",
+    "nombre": "Botella Plástica Polietileno Blanca con Tapa para Atomizador 1 LT",
+    "precio_actual": "630",
+    "precio_nuevo": 633
+  },
+  {
+    "id": 3873,
+    "sku": "4001075",
+    "nombre": "Gatillo Atomizador Repuesto",
+    "precio_actual": "824",
+    "precio_nuevo": 827
+  },
+  {
+    "id": 3797,
+    "sku": "4001083",
+    "nombre": "Embudo Plástico Blanco 12,5 CM",
+    "precio_actual": "2269",
+    "precio_nuevo": 2278
+  },
+  {
+    "id": 3951,
+    "sku": "4001337",
+    "nombre": "Jarro Graduado Transparente 1 LT",
+    "precio_actual": "916",
+    "precio_nuevo": 920
+  },
+  {
+    "id": 3492,
+    "sku": "6001001",
+    "nombre": "Aspiradora Industrial Polvo Agua 15 LT",
+    "precio_actual": "100202",
+    "precio_nuevo": 100760
+  },
+  {
+    "id": 3494,
+    "sku": "6001002",
+    "nombre": "Aspiradora Industrial Polvo Agua 30 LT",
+    "precio_actual": "107042",
+    "precio_nuevo": 107640
+  },
+  {
+    "id": 3447,
+    "sku": "6001003",
+    "nombre": "Abrillantadora Industrial 17\" con Kit Cepillos y Portapad",
+    "precio_actual": "550739",
+    "precio_nuevo": 553800
+  },
+  {
+    "id": 3655,
+    "sku": "4001340",
+    "nombre": "Contenedor de Basura Plástico 12,5 LT con Pedal Color Gris",
+    "precio_actual": "7605",
+    "precio_nuevo": 7644
+  },
+  {
+    "id": 3657,
+    "sku": "4001341",
+    "nombre": "Contenedor de Basura Plástico 25 LT con Pedal Color Gris",
+    "precio_actual": "7992",
+    "precio_nuevo": 8034
+  },
+  {
+    "id": 3673,
+    "sku": "4001133-V",
+    "nombre": "Contenedor de Basura con Tapa Push 60 LT Verde",
+    "precio_actual": "16277",
+    "precio_nuevo": 16364
+  },
+  {
+    "id": 3671,
+    "sku": "4001133-R",
+    "nombre": "Contenedor de Basura con Tapa Push 60 LT Rojo",
+    "precio_actual": "16277",
+    "precio_nuevo": 16364
+  },
+  {
+    "id": 3667,
+    "sku": "4001133-Z",
+    "nombre": "Contenedor de Basura con Tapa Push 60 LT Azul",
+    "precio_actual": "16277",
+    "precio_nuevo": 16364
+  },
+  {
+    "id": 3669,
+    "sku": "4001133-G",
+    "nombre": "Contenedor de Basura con Tapa Push 60 LT Gris",
+    "precio_actual": "16277",
+    "precio_nuevo": 16364
+  },
+  {
+    "id": 3661,
+    "sku": "4001336-V",
+    "nombre": "Contenedor de Basura con Tapa 120 LT con 2 Ruedas | Verde",
+    "precio_actual": "31798",
+    "precio_nuevo": 31974
+  },
+  {
+    "id": 3659,
+    "sku": "4001336-G",
+    "nombre": "Contenedor de Basura con Tapa 120 LT con 2 Ruedas | Gris Oscuro",
+    "precio_actual": "31798",
+    "precio_nuevo": 31974
+  },
+  {
+    "id": 3665,
+    "sku": "4001290-V",
+    "nombre": "Contenedor de Basura con Tapa 240 LT con 2 Ruedas | Verde",
+    "precio_actual": "45067",
+    "precio_nuevo": 45315
+  },
+  {
+    "id": 3663,
+    "sku": "4001290-G",
+    "nombre": "Contenedor de Basura con Tapa 240 LT con 2 Ruedas | Gris Oscuro",
+    "precio_actual": "45067",
+    "precio_nuevo": 45315
+  },
+  {
+    "id": 2421,
+    "sku": "3001004",
+    "nombre": "PAPEL FOTOCOPIA CARTA500 HJ  75 GR",
+    "precio_actual": "4731",
+    "precio_nuevo": 4755
+  },
+  {
+    "id": 2422,
+    "sku": "3001015",
+    "nombre": "PAPEL FOTOCOPIA OFICIO500 HJ  75 GR",
+    "precio_actual": "5588",
+    "precio_nuevo": 5619
+  },
+  {
+    "id": 2423,
+    "sku": "3001016",
+    "nombre": "PAPEL FOTOCOPIA CARTA500 HJ  75 GR",
+    "precio_actual": "4076",
+    "precio_nuevo": 4097
+  },
+  {
+    "id": 2424,
+    "sku": "3001017",
+    "nombre": "PAPEL FOTOCOPIA OFICIO500 HJ  75 GR",
+    "precio_actual": "4824",
+    "precio_nuevo": 4846
+  },
+  {
+    "id": 4188,
+    "sku": "3001022",
+    "nombre": "Papel Fotocopia - Carta 500 HJS / 75 GR Pix",
+    "precio_actual": "3630",
+    "precio_nuevo": 3651
+  },
+  {
+    "id": 2425,
+    "sku": "3001018",
+    "nombre": "PAPEL FOTOCOPIA A4500 HJ  75 GR",
+    "precio_actual": "4899",
+    "precio_nuevo": 4924
+  },
+  {
+    "id": 4184,
+    "sku": "3001021",
+    "nombre": "Papel Fotocopia - A4 500 HJS / 75 GR Excellent",
+    "precio_actual": "5109",
+    "precio_nuevo": 5134
+  },
+  {
+    "id": 3473,
+    "sku": "33022",
+    "nombre": "Anotador de Madera con Apretador Simple Oficio",
+    "precio_actual": "1958",
+    "precio_nuevo": 1967
+  },
+  {
+    "id": 2426,
+    "sku": "33023",
+    "nombre": "ANOTADOR PVC NEGRO CON APRETADOR SIMPLEOFICIO",
+    "precio_actual": "2504",
+    "precio_nuevo": 2514
+  },
+  {
+    "id": 2427,
+    "sku": "33024",
+    "nombre": "ANOTADOR PVC NEGRO CON APRETADOR DOBLEOFICIO",
+    "precio_actual": "3025",
+    "precio_nuevo": 3045
+  },
+  {
+    "id": 2428,
+    "sku": "15623",
+    "nombre": "ARCHIVADOR ANCHO BURDEO CARTA",
+    "precio_actual": "2681",
+    "precio_nuevo": 2698
+  },
+  {
+    "id": 2429,
+    "sku": "11575",
+    "nombre": "ARCHIVADOR ANCHO BURDEO OFICIO",
+    "precio_actual": "2605",
+    "precio_nuevo": 2618
+  },
+  {
+    "id": 2430,
+    "sku": "22323",
+    "nombre": "ARCHIVADOR ANCHOCARTA",
+    "precio_actual": "2084",
+    "precio_nuevo": 2100
+  },
+  {
+    "id": 2431,
+    "sku": "20078",
+    "nombre": "ARCHIVADOR ANCHOOFICIO",
+    "precio_actual": "2084",
+    "precio_nuevo": 2100
+  },
+  {
+    "id": 2432,
+    "sku": "22324",
+    "nombre": "ARCHIVADOR ANCHOLETRA",
+    "precio_actual": "2084",
+    "precio_nuevo": 2100
+  },
+  {
+    "id": 2433,
+    "sku": "30301",
+    "nombre": "ARCHIVADOR PRESENTACION 1 PULGADA BLANCOCARTA",
+    "precio_actual": "3992",
+    "precio_nuevo": 4013
+  },
+  {
+    "id": 2434,
+    "sku": "30302",
+    "nombre": "ARCHIVADOR PRESENTACION 2 PULGADAS BLANCOCARTA",
+    "precio_actual": "4303",
+    "precio_nuevo": 4330
+  },
+  {
+    "id": 2435,
+    "sku": "30303",
+    "nombre": "ARCHIVADOR PRESENTACION 1 PULGADA BLANCOOFICIO",
+    "precio_actual": "4168",
+    "precio_nuevo": 4195
+  },
+  {
+    "id": 2436,
+    "sku": "30304",
+    "nombre": "ARCHIVADOR PRESENTACION 2 PULGADAS BLANCOOFICIO",
+    "precio_actual": "4563",
+    "precio_nuevo": 4591
+  },
+  {
+    "id": 4028,
+    "sku": "36658",
+    "nombre": "Lomo Adhesivo para Archivador color Blanco 10 UND",
+    "precio_actual": "899",
+    "precio_nuevo": 904
+  },
+  {
+    "id": 2437,
+    "sku": "11594",
+    "nombre": "CARPETA PIGMENTADA CARTON AZULOFICIO",
+    "precio_actual": "328",
+    "precio_nuevo": 333
+  },
+  {
+    "id": 2438,
+    "sku": "581",
+    "nombre": "CARPETA PIGMENTADA CARTON ROJOOFICIO",
+    "precio_actual": "328",
+    "precio_nuevo": 333
+  },
+  {
+    "id": 2439,
+    "sku": "580",
+    "nombre": "CARPETA PIGMENTADA CARTON VERDEOFICIO",
+    "precio_actual": "328",
+    "precio_nuevo": 333
+  },
+  {
+    "id": 2440,
+    "sku": "28090",
+    "nombre": "BANDERITAS ADHESIVAS 4 COLORES NEON40 HJS X COLOR",
+    "precio_actual": "2765",
+    "precio_nuevo": 2783
+  },
+  {
+    "id": 2441,
+    "sku": "25536",
+    "nombre": "BARRA ADHESIVA PEGAMENTO8 GR",
+    "precio_actual": "336",
+    "precio_nuevo": 341
+  },
+  {
+    "id": 2442,
+    "sku": "25537",
+    "nombre": "BARRA ADHESIVA PEGAMENTO21 GR",
+    "precio_actual": "538",
+    "precio_nuevo": 544
+  },
+  {
+    "id": 2443,
+    "sku": "24286",
+    "nombre": "BARRA ADHESIVA PEGAMENTO36 GR",
+    "precio_actual": "924",
+    "precio_nuevo": 933
+  },
+  {
+    "id": 3513,
+    "sku": "UH1002",
+    "nombre": "Barra Adhesiva Pegamento UHU 21 GR",
+    "precio_actual": "975",
+    "precio_nuevo": 982
+  },
+  {
+    "id": 3515,
+    "sku": "UH1001",
+    "nombre": "Barra Adhesiva Pegamento UHU 40 GR",
+    "precio_actual": "1504",
+    "precio_nuevo": 1514
+  },
+  {
+    "id": 2446,
+    "sku": "26194",
+    "nombre": "COLA FRIA120 GR",
+    "precio_actual": "597",
+    "precio_nuevo": 603
+  },
+  {
+    "id": 2447,
+    "sku": "26200",
+    "nombre": "COLA FRIA500 GR",
+    "precio_actual": "2017",
+    "precio_nuevo": 2032
+  },
+  {
+    "id": 2448,
+    "sku": "27540",
+    "nombre": "CAJA DE ARCHIVOINTERMEDIA",
+    "precio_actual": "1866",
+    "precio_nuevo": 1876
+  },
+  {
+    "id": 2449,
+    "sku": "27539",
+    "nombre": "CAJA DE ARCHIVOSTANDARD",
+    "precio_actual": "1622",
+    "precio_nuevo": 1630
+  },
+  {
+    "id": 2450,
+    "sku": "30607",
+    "nombre": "CAJA DE ARCHIVOAMERICANA",
+    "precio_actual": "4084",
+    "precio_nuevo": 4111
+  },
+  {
+    "id": 2451,
+    "sku": "33130",
+    "nombre": "CAJA DE ARCHIVOMEGABOX",
+    "precio_actual": "4168",
+    "precio_nuevo": 4187
+  },
+  {
+    "id": 2452,
+    "sku": "11589",
+    "nombre": "CARPETA PVC PLASTICA AZULCARTA",
+    "precio_actual": "1084",
+    "precio_nuevo": 1086
+  },
+  {
+    "id": 2453,
+    "sku": "11584",
+    "nombre": "CARPETA PVC PLASTICA AZULOFICIO",
+    "precio_actual": "1227",
+    "precio_nuevo": 1237
+  },
+  {
+    "id": 2454,
+    "sku": "31157",
+    "nombre": "CARPETA VINILO LOMO AZULOFICIO",
+    "precio_actual": "866",
+    "precio_nuevo": 872
+  },
+  {
+    "id": 2455,
+    "sku": "11771",
+    "nombre": "CARPETA ARCHIVADOR PLASTIFICADO AZULSIN GUSANO",
+    "precio_actual": "832",
+    "precio_nuevo": 836
+  },
+  {
+    "id": 2456,
+    "sku": "575",
+    "nombre": "CARPETA ARCHIVADOR PLASTIFICADO AZULCON GUSANO",
+    "precio_actual": "950",
+    "precio_nuevo": 952
+  },
+  {
+    "id": 3600,
+    "sku": "27910",
+    "nombre": "Carpeta Archivador Plastificado sin Gusano Rojo",
+    "precio_actual": "504",
+    "precio_nuevo": 508
+  },
+  {
+    "id": 3598,
+    "sku": "27911",
+    "nombre": "Carpeta Archivador Plastificado sin Gusano Azul",
+    "precio_actual": "504",
+    "precio_nuevo": 508
+  },
+  {
+    "id": 3596,
+    "sku": "28830",
+    "nombre": "Carpeta Archivador Plastificado sin Gusano Amarillo",
+    "precio_actual": "521",
+    "precio_nuevo": 523
+  },
+  {
+    "id": 3602,
+    "sku": "28832",
+    "nombre": "Carpeta Archivador Plastificado sin Gusano Verde",
+    "precio_actual": "521",
+    "precio_nuevo": 523
+  },
+  {
+    "id": 3592,
+    "sku": "27907",
+    "nombre": "Carpeta Archivador Plastificado con Gusano Rojo",
+    "precio_actual": "639",
+    "precio_nuevo": 642
+  },
+  {
+    "id": 3589,
+    "sku": "28827",
+    "nombre": "Carpeta Archivador Plastificado con Gusano Amarillo",
+    "precio_actual": "639",
+    "precio_nuevo": 642
+  },
+  {
+    "id": 3594,
+    "sku": "27909",
+    "nombre": "Carpeta Archivador Plastificado con Gusano Verde",
+    "precio_actual": "639",
+    "precio_nuevo": 642
+  },
+  {
+    "id": 2457,
+    "sku": "967",
+    "nombre": "CARPETA CARTON OFICIO CON ELASTICOAZUL",
+    "precio_actual": "1176",
+    "precio_nuevo": 1185
+  },
+  {
+    "id": 2458,
+    "sku": "30555",
+    "nombre": "CARPETA CARTON OFICIO CON ELASTICOVERDE",
+    "precio_actual": "1176",
+    "precio_nuevo": 1185
+  },
+  {
+    "id": 2459,
+    "sku": "11577",
+    "nombre": "CARPETA COLGANTE KRAFTBPLASTICA",
+    "precio_actual": "361",
+    "precio_nuevo": 363
+  },
+  {
+    "id": 2460,
+    "sku": "11576",
+    "nombre": "CARPETA COLGANTE KRAFTBMETAL",
+    "precio_actual": "395",
+    "precio_nuevo": 398
+  },
+  {
+    "id": 2461,
+    "sku": "17973",
+    "nombre": "VISORES PARA CARPETAS COLGANTES50 UND",
+    "precio_actual": "2303",
+    "precio_nuevo": 2316
+  },
+  {
+    "id": 2462,
+    "sku": "30702",
+    "nombre": "CARPETA SCHNELL PRESENTADOR EN L VINILO TRANSPARENTEA4",
+    "precio_actual": "504",
+    "precio_nuevo": 503
+  },
+  {
+    "id": 3636,
+    "sku": "35043",
+    "nombre": "Cinta Adhesiva Cristal Transparente 18 MM x 30 MT",
+    "precio_actual": "571",
+    "precio_nuevo": 579
+  },
+  {
+    "id": 2463,
+    "sku": "107046",
+    "nombre": "CINTA ADHESIVA TRANSPARENTE ECONOMICA PACK 12 UND18 MM x 30 MT",
+    "precio_actual": "1815",
+    "precio_nuevo": 1827
+  },
+  {
+    "id": 2465,
+    "sku": "CA20005002",
+    "nombre": "CINTA EMBALAJE CAFE48 MM x 40 MT",
+    "precio_actual": "521",
+    "precio_nuevo": 527
+  },
+  {
+    "id": 2466,
+    "sku": "CA20005003",
+    "nombre": "CINTA EMBALAJE TRANSPARENTE48 MM x 40 MT",
+    "precio_actual": "521",
+    "precio_nuevo": 527
+  },
+  {
+    "id": 2467,
+    "sku": "CA20006997",
+    "nombre": "CINTA DE ENMASCARAR MASKING TAPE24 MM x 40 MT",
+    "precio_actual": "849",
+    "precio_nuevo": 855
+  },
+  {
+    "id": 2468,
+    "sku": "CA20006999",
+    "nombre": "CINTA DE ENMASCARAR MASKING TAPE48 MM x 40 MT",
+    "precio_actual": "1639",
+    "precio_nuevo": 1645
+  },
+  {
+    "id": 2469,
+    "sku": "CA20005031",
+    "nombre": "FILM STRETCH TRANSPARENTE 165 MT 50 CM ANCHO 18 KG 20 MICRONES",
+    "precio_actual": "5807",
+    "precio_nuevo": 5836
+  },
+  {
+    "id": 2470,
+    "sku": "CA20005038",
+    "nombre": "FILM STRETCH NEGRO 165 MT 50 CM ANCHO 18 KG 20 MICRONES",
+    "precio_actual": "5807",
+    "precio_nuevo": 5836
+  },
+  {
+    "id": 2471,
+    "sku": "A202016",
+    "nombre": "CLIP DOBLE NEGRO 12 UND15 MM",
+    "precio_actual": "471",
+    "precio_nuevo": 473
+  },
+  {
+    "id": 2472,
+    "sku": "A202017",
+    "nombre": "CLIP DOBLE NEGRO 12 UND19 MM",
+    "precio_actual": "613",
+    "precio_nuevo": 617
+  },
+  {
+    "id": 2473,
+    "sku": "A202018",
+    "nombre": "CLIP DOBLE NEGRO 12 UND25 MM",
+    "precio_actual": "950",
+    "precio_nuevo": 952
+  },
+  {
+    "id": 2474,
+    "sku": "A202019",
+    "nombre": "CLIP DOBLE NEGRO 12 UND32 MM",
+    "precio_actual": "1328",
+    "precio_nuevo": 1339
+  },
+  {
+    "id": 2475,
+    "sku": "A202020",
+    "nombre": "CLIP DOBLE NEGRO 12 UND41 MM",
+    "precio_actual": "1807",
+    "precio_nuevo": 1814
+  },
+  {
+    "id": 2476,
+    "sku": "A202021",
+    "nombre": "CLIP DOBLE NEGRO 12 UND51 MM",
+    "precio_actual": "3227",
+    "precio_nuevo": 3247
+  },
+  {
+    "id": 2477,
+    "sku": "11720",
+    "nombre": "CLIPS PUNTA REDONDA 33 MM1 KG",
+    "precio_actual": "5697",
+    "precio_nuevo": 5733
+  },
+  {
+    "id": 2478,
+    "sku": "11716",
+    "nombre": "CLIPS PUNTA REDONDA 33 MM100 UND",
+    "precio_actual": "361",
+    "precio_nuevo": 365
+  },
+  {
+    "id": 2479,
+    "sku": "11718",
+    "nombre": "CLIPS PUNTA REDONDA 50 MM GIGANTES50 UND",
+    "precio_actual": "1017",
+    "precio_nuevo": 1023
+  },
+  {
+    "id": 3677,
+    "sku": "30313",
+    "nombre": "Corchetera Mini Bicolor",
+    "precio_actual": "2277",
+    "precio_nuevo": 2292
+  },
+  {
+    "id": 2480,
+    "sku": "11677",
+    "nombre": "CORCHETERA PLASTICA MEDIANA NEGRA",
+    "precio_actual": "5076",
+    "precio_nuevo": 5107
+  },
+  {
+    "id": 2481,
+    "sku": "16534",
+    "nombre": "CORCHETERA METALICA NEGRA",
+    "precio_actual": "8319",
+    "precio_nuevo": 8366
+  },
+  {
+    "id": 2482,
+    "sku": "30715",
+    "nombre": "CORCHETERA METALICA HEAVY DUTY SOFT TOUCH 200 HJS",
+    "precio_actual": "34983",
+    "precio_nuevo": 35177
+  },
+  {
+    "id": 2483,
+    "sku": "11702",
+    "nombre": "CAJA CORCHETE 2665000 UND",
+    "precio_actual": "790",
+    "precio_nuevo": 793
+  },
+  {
+    "id": 2484,
+    "sku": "12263",
+    "nombre": "CAJA CORCHETES 23101000 UND",
+    "precio_actual": "1126",
+    "precio_nuevo": 1134
+  },
+  {
+    "id": 2485,
+    "sku": "26853",
+    "nombre": "CUADERNO UNIVERSITARIO TRIPLE MAT 7 MM150 HJS",
+    "precio_actual": "3882",
+    "precio_nuevo": 3902
+  },
+  {
+    "id": 2486,
+    "sku": "13297",
+    "nombre": "CUADERNO UNIVERSITARIO MAT 7 MM100 HJS",
+    "precio_actual": "1655",
+    "precio_nuevo": 1668
+  },
+  {
+    "id": 2487,
+    "sku": "32552",
+    "nombre": "CUADERNO UNIVERSITARIO MAT 7 MM100 HJS",
+    "precio_actual": "1084",
+    "precio_nuevo": 1091
+  },
+  {
+    "id": 2489,
+    "sku": "30609",
+    "nombre": "CUADERNO COLLEGE LISO 7 MM100 HJS",
+    "precio_actual": "1168",
+    "precio_nuevo": 1177
+  },
+  {
+    "id": 3681,
+    "sku": "22451",
+    "nombre": "Cuaderno College Liso Croquis 80 HJS",
+    "precio_actual": "697",
+    "precio_nuevo": 698
+  },
+  {
+    "id": 3679,
+    "sku": "22454",
+    "nombre": "Cuaderno College Liso Composición de 80 HJS",
+    "precio_actual": "697",
+    "precio_nuevo": 698
+  },
+  {
+    "id": 2490,
+    "sku": "11656",
+    "nombre": "BLOCK OFICIO MAT 7MM80 HJS",
+    "precio_actual": "1983",
+    "precio_nuevo": 1990
+  },
+  {
+    "id": 2491,
+    "sku": "11653",
+    "nombre": "BLOCK CARTA MAT 7MM80 HJS",
+    "precio_actual": "1782",
+    "precio_nuevo": 1792
+  },
+  {
+    "id": 2492,
+    "sku": "11646",
+    "nombre": "BLOCK ESCOLAR ESPIRAL 7MM80 HJS",
+    "precio_actual": "1336",
+    "precio_nuevo": 1340
+  },
+  {
+    "id": 2493,
+    "sku": "24252",
+    "nombre": "CUCHILLO CARTONERO CHICO CRIEL Y GOMA",
+    "precio_actual": "1345",
+    "precio_nuevo": 1348
+  },
+  {
+    "id": 2494,
+    "sku": "24208",
+    "nombre": "CUCHILLO CARTONERO GRANDE CRIEL Y GOMA",
+    "precio_actual": "1739",
+    "precio_nuevo": 1753
+  },
+  {
+    "id": 2495,
+    "sku": "31875",
+    "nombre": "CUCHILLO CARTONERO GRANDE CRIEL Y GOMA18 MM",
+    "precio_actual": "1933",
+    "precio_nuevo": 1948
+  },
+  {
+    "id": 2496,
+    "sku": "31880",
+    "nombre": "REPUESTO PARA CUCHILLO CARTONERO9 MM",
+    "precio_actual": "513",
+    "precio_nuevo": 515
+  },
+  {
+    "id": 2497,
+    "sku": "31881",
+    "nombre": "REPUESTO PARA CUCHILLO CARTONERO18 MM",
+    "precio_actual": "739",
+    "precio_nuevo": 745
+  },
+  {
+    "id": 2498,
+    "sku": "A301003",
+    "nombre": "DEDO GOMA N 12 COLORES6 UND",
+    "precio_actual": "958",
+    "precio_nuevo": 961
+  },
+  {
+    "id": 2499,
+    "sku": "376000",
+    "nombre": "DESTACADORAMARILLO",
+    "precio_actual": "882",
+    "precio_nuevo": 883
+  },
+  {
+    "id": 2500,
+    "sku": "376002",
+    "nombre": "DESTACADORVERDE",
+    "precio_actual": "882",
+    "precio_nuevo": 883
+  },
+  {
+    "id": 2506,
+    "sku": "28224",
+    "nombre": "DESTACADORAMARILLO",
+    "precio_actual": "672",
+    "precio_nuevo": 674
+  },
+  {
+    "id": 2507,
+    "sku": "28226",
+    "nombre": "DESTACADORVERDE",
+    "precio_actual": "672",
+    "precio_nuevo": 674
+  },
+  {
+    "id": 2508,
+    "sku": "28225",
+    "nombre": "DESTACADORROSADO",
+    "precio_actual": "672",
+    "precio_nuevo": 674
+  },
+  {
+    "id": 3745,
+    "sku": "28227",
+    "nombre": "Destacador Plano Celeste Torre",
+    "precio_actual": "672",
+    "precio_nuevo": 674
+  },
+  {
+    "id": 3738,
+    "sku": "36331",
+    "nombre": "Destacador Colón Punta Biselada Amarillo",
+    "precio_actual": "328",
+    "precio_nuevo": 333
+  },
+  {
+    "id": 3740,
+    "sku": "36332",
+    "nombre": "Destacador Colón Punta Biselada Naranjo",
+    "precio_actual": "328",
+    "precio_nuevo": 333
+  },
+  {
+    "id": 3742,
+    "sku": "36333",
+    "nombre": "Destacador Colón Punta Biselada Verde",
+    "precio_actual": "328",
+    "precio_nuevo": 333
+  },
+  {
+    "id": 2509,
+    "sku": "A205003",
+    "nombre": "DISPENSADOR CINTA MEDIANO NEGRO",
+    "precio_actual": "3555",
+    "precio_nuevo": 3576
+  },
+  {
+    "id": 2510,
+    "sku": "A205008",
+    "nombre": "DISPENSADOR CINTA EMBALAJE",
+    "precio_actual": "6824",
+    "precio_nuevo": 6858
+  },
+  {
+    "id": 2511,
+    "sku": "A110001",
+    "nombre": "FUNDA PLASTICA CARTA10 UND",
+    "precio_actual": "403",
+    "precio_nuevo": 409
+  },
+  {
+    "id": 2512,
+    "sku": "A110002",
+    "nombre": "FUNDA PLASTICA OFICIO10 UND",
+    "precio_actual": "454",
+    "precio_nuevo": 454
+  },
+  {
+    "id": 2513,
+    "sku": "A110003",
+    "nombre": "FUNDA PLASTICA CARTA100 UND",
+    "precio_actual": "2311",
+    "precio_nuevo": 2325
+  },
+  {
+    "id": 2514,
+    "sku": "A110004",
+    "nombre": "FUNDA PLASTICA OFICIO100 UND",
+    "precio_actual": "2723",
+    "precio_nuevo": 2734
+  },
+  {
+    "id": 2515,
+    "sku": "A504011",
+    "nombre": "GOMA DE BORRAR MEDIANA MIGA 1 UND",
+    "precio_actual": "252",
+    "precio_nuevo": 254
+  },
+  {
+    "id": 2516,
+    "sku": "A504009",
+    "nombre": "GOMA DE BORRAR MEDIANA PLASTICA 1 UND",
+    "precio_actual": "202",
+    "precio_nuevo": 201
+  },
+  {
+    "id": 2517,
+    "sku": "31265",
+    "nombre": "GOMA DE BORRAR SOFT CHICA1 UND",
+    "precio_actual": "143",
+    "precio_nuevo": 144
+  },
+  {
+    "id": 2518,
+    "sku": "31266",
+    "nombre": "GOMA DE BORRAR SOFT GRANDE1 UND",
+    "precio_actual": "218",
+    "precio_nuevo": 224
+  },
+  {
+    "id": 2519,
+    "sku": "A306001",
+    "nombre": "TAMPON DACTILAR NEGRO",
+    "precio_actual": "3160",
+    "precio_nuevo": 3178
+  },
+  {
+    "id": 2520,
+    "sku": "BLSG7B",
+    "nombre": "LAPIZ SUPER GEL 07 MMNEGRO",
+    "precio_actual": "1151",
+    "precio_nuevo": 1161
+  },
+  {
+    "id": 2521,
+    "sku": "BLSG7L",
+    "nombre": "LAPIZ SUPER GEL 07 MMAZUL",
+    "precio_actual": "1151",
+    "precio_nuevo": 1161
+  },
+  {
+    "id": 2522,
+    "sku": "BLSG7R",
+    "nombre": "LAPIZ SUPER GEL 07 MMROJO",
+    "precio_actual": "1151",
+    "precio_nuevo": 1161
+  },
+  {
+    "id": 2523,
+    "sku": "15846",
+    "nombre": "LAPIZ GEL 07 MMAZUL",
+    "precio_actual": "723",
+    "precio_nuevo": 730
+  },
+  {
+    "id": 2524,
+    "sku": "15847",
+    "nombre": "LAPIZ GEL 07 MMNEGRO",
+    "precio_actual": "723",
+    "precio_nuevo": 730
+  },
+  {
+    "id": 2525,
+    "sku": "15848",
+    "nombre": "LAPIZ GEL 07 MMROJO",
+    "precio_actual": "723",
+    "precio_nuevo": 730
+  },
+  {
+    "id": 2526,
+    "sku": "824450",
+    "nombre": "LAPIZ PASTA PUNTA MEDIA CRISTAL AZUL",
+    "precio_actual": "269",
+    "precio_nuevo": 270
+  },
+  {
+    "id": 2527,
+    "sku": "824452",
+    "nombre": "LAPIZ PASTA PUNTA MEDIA CRISTAL NEGRO",
+    "precio_actual": "269",
+    "precio_nuevo": 270
+  },
+  {
+    "id": 2528,
+    "sku": "824453",
+    "nombre": "LAPIZ PASTA PUNTA MEDIA CRISTAL ROJO",
+    "precio_actual": "269",
+    "precio_nuevo": 270
+  },
+  {
+    "id": 2529,
+    "sku": "824454",
+    "nombre": "LAPIZ PASTA PUNTA MEDIA CRISTAL VERDE",
+    "precio_actual": "269",
+    "precio_nuevo": 270
+  },
+  {
+    "id": 2530,
+    "sku": "936709",
+    "nombre": "LAPIZ PASTA PUNTA FINA ORANGEAZUL",
+    "precio_actual": "303",
+    "precio_nuevo": 307
+  },
+  {
+    "id": 2531,
+    "sku": "936710",
+    "nombre": "LAPIZ PASTA PUNTA FINA ORANGENEGRO",
+    "precio_actual": "303",
+    "precio_nuevo": 307
+  },
+  {
+    "id": 2532,
+    "sku": "936711",
+    "nombre": "LAPIZ PASTA PUNTA FINA ORANGEROJO",
+    "precio_actual": "303",
+    "precio_nuevo": 307
+  },
+  {
+    "id": 2533,
+    "sku": "BPTPML",
+    "nombre": "LAPIZ PASTA PUNTA MEDIA BEPETEAZUL",
+    "precio_actual": "227",
+    "precio_nuevo": 225
+  },
+  {
+    "id": 2534,
+    "sku": "BPTPMB",
+    "nombre": "LAPIZ PASTA PUNTA MEDIA BEPETENEGRO",
+    "precio_actual": "227",
+    "precio_nuevo": 225
+  },
+  {
+    "id": 2535,
+    "sku": "BPTPMR",
+    "nombre": "LAPIZ PASTA PUNTA MEDIA BEPETEROJO",
+    "precio_actual": "227",
+    "precio_nuevo": 225
+  },
+  {
+    "id": 2536,
+    "sku": "33213",
+    "nombre": "LAPIZ BOLIGRAFO 07MM 4 COLORES EN 1",
+    "precio_actual": "1672",
+    "precio_nuevo": 1680
+  },
+  {
+    "id": 2537,
+    "sku": "24166",
+    "nombre": "LAPIZES DE COLORES HEXAGONALES12 UND",
+    "precio_actual": "1496",
+    "precio_nuevo": 1500
+  },
+  {
+    "id": 4049,
+    "sku": "32108",
+    "nombre": "Lápices de Colores Hexagonales Jumbo 12 Und",
+    "precio_actual": "2059",
+    "precio_nuevo": 2070
+  },
+  {
+    "id": 2538,
+    "sku": "27351",
+    "nombre": "LAPIZES MARCADORES DE COLORES PUNTA DELGADA12 UND",
+    "precio_actual": "1328",
+    "precio_nuevo": 1335
+  },
+  {
+    "id": 4045,
+    "sku": "36570",
+    "nombre": "Lápices Marcadores de Colores Jumbo 12 Und",
+    "precio_actual": "1891",
+    "precio_nuevo": 1903
+  },
+  {
+    "id": 4039,
+    "sku": "35160",
+    "nombre": "Lápices Crayones de Cera Jumbo Colón 12 Colores",
+    "precio_actual": "1134",
+    "precio_nuevo": 1142
+  },
+  {
+    "id": 4037,
+    "sku": "JV1013",
+    "nombre": "Lápices Crayones de Cera Jumbo 12 Colores",
+    "precio_actual": "1840",
+    "precio_nuevo": 1849
+  },
+  {
+    "id": 2542,
+    "sku": "26829",
+    "nombre": "LIBRO DE ASISTENCIA 50 HJS",
+    "precio_actual": "2630",
+    "precio_nuevo": 2647
+  },
+  {
+    "id": 2543,
+    "sku": "26830",
+    "nombre": "LIBRO DE ASISTENCIA 100 HJS",
+    "precio_actual": "3916",
+    "precio_nuevo": 3933
+  },
+  {
+    "id": 2544,
+    "sku": "11604",
+    "nombre": "LIBRO DE ASISTENCIA TAPA DURA50 HJS",
+    "precio_actual": "5160",
+    "precio_nuevo": 5188
+  },
+  {
+    "id": 2545,
+    "sku": "11605",
+    "nombre": "LIBRO DE ASISTENCIA TAPA DURA100 HJS",
+    "precio_actual": "7017",
+    "precio_nuevo": 7058
+  },
+  {
+    "id": 2546,
+    "sku": "30011",
+    "nombre": "LIBRO DE ACTA200 HJS",
+    "precio_actual": "6000",
+    "precio_nuevo": 6035
+  },
+  {
+    "id": 2547,
+    "sku": "11614",
+    "nombre": "LIBRO DE ACTA TAPA DURA200 HJS",
+    "precio_actual": "10252",
+    "precio_nuevo": 10306
+  },
+  {
+    "id": 3979,
+    "sku": "30010",
+    "nombre": "Libro de Acta Tapa Dura 400 HJS",
+    "precio_actual": "11504",
+    "precio_nuevo": 11570
+  },
+  {
+    "id": 3981,
+    "sku": "35312",
+    "nombre": "Libro de Correspondencia Torre 100 HJS",
+    "precio_actual": "3210",
+    "precio_nuevo": 3228
+  },
+  {
+    "id": 2548,
+    "sku": "A303002",
+    "nombre": "MAGIC CLIP METALICO 50 UND 48 MM",
+    "precio_actual": "1739",
+    "precio_nuevo": 1749
+  },
+  {
+    "id": 2549,
+    "sku": "A303003",
+    "nombre": "MAGIC CLIP METALICO 50 UND 64 MM",
+    "precio_actual": "1857",
+    "precio_nuevo": 1868
+  },
+  {
+    "id": 2550,
+    "sku": "A303004",
+    "nombre": "MAGIC CLIPPER PARA 48 Y 64 MM",
+    "precio_actual": "1924",
+    "precio_nuevo": 1937
+  },
+  {
+    "id": 2551,
+    "sku": "32819",
+    "nombre": "MINAS REPUESTO BLISTER 2 REPUESTOS DE 20 UND05 MM",
+    "precio_actual": "840",
+    "precio_nuevo": 849
+  },
+  {
+    "id": 2552,
+    "sku": "32820",
+    "nombre": "MINAS REPUESTO BLISTER 2 REPUESTOS DE 20 UND07 MM",
+    "precio_actual": "840",
+    "precio_nuevo": 849
+  },
+  {
+    "id": 2553,
+    "sku": "18385",
+    "nombre": "NOTAS ADHESIVAS AMARILLO PASTEL 75 x 75 CM 100 HJS",
+    "precio_actual": "891",
+    "precio_nuevo": 896
+  },
+  {
+    "id": 2554,
+    "sku": "28097",
+    "nombre": "NOTAS ADHESIVAS MINI CUBO 5X5 CM 250 HJS",
+    "precio_actual": "2613",
+    "precio_nuevo": 2625
+  },
+  {
+    "id": 2555,
+    "sku": "28096",
+    "nombre": "NOTAS ADHESIVAS CUBO 76 X 76 CM 400 HJS",
+    "precio_actual": "4538",
+    "precio_nuevo": 4560
+  },
+  {
+    "id": 4133,
+    "sku": "36648",
+    "nombre": "Notas Adhesivas Amarillas 7,6 x 7,6 CM 100 HJS",
+    "precio_actual": "538",
+    "precio_nuevo": 539
+  },
+  {
+    "id": 2556,
+    "sku": "23942",
+    "nombre": "PERFORADORA NEGRA P9 40 HJS",
+    "precio_actual": "6782",
+    "precio_nuevo": 6820
+  },
+  {
+    "id": 2557,
+    "sku": "11689",
+    "nombre": "PERFORADORA NEGRA P7 20 HJS",
+    "precio_actual": "5731",
+    "precio_nuevo": 5765
+  },
+  {
+    "id": 2558,
+    "sku": "35290",
+    "nombre": "PORTA LAPICES MALLA METALICO NEGRO",
+    "precio_actual": "1042",
+    "precio_nuevo": 1047
+  },
+  {
+    "id": 2559,
+    "sku": "35295",
+    "nombre": "BANDEJA DE DOCUMENTOS MALLA METALICA 2 NIVELES NEGRO",
+    "precio_actual": "8042",
+    "precio_nuevo": 8089
+  },
+  {
+    "id": 2560,
+    "sku": "35296",
+    "nombre": "BASURERO PAPELERO REDONDO MALLA METALICO NEGRO",
+    "precio_actual": "4025",
+    "precio_nuevo": 4044
+  },
+  {
+    "id": 3583,
+    "sku": "A201002",
+    "nombre": "Caja de Seguridad Metálica con Llave color Negro",
+    "precio_actual": "11563",
+    "precio_nuevo": 11625
+  },
+  {
+    "id": 2561,
+    "sku": "32037",
+    "nombre": "TERMOLAMINADORA PLASTIFICADORA VISION G15 HD",
+    "precio_actual": "44303",
+    "precio_nuevo": 44548
+  },
+  {
+    "id": 2562,
+    "sku": "32039",
+    "nombre": "TERMOLAMINADORA PLASTIFICADORA VISION G50 HD",
+    "precio_actual": "135882",
+    "precio_nuevo": 136634
+  },
+  {
+    "id": 2563,
+    "sku": "32040",
+    "nombre": "LAMINAS PARA PLASTIFICAR 125 MICRAS 100 UNDCARTA",
+    "precio_actual": "13798",
+    "precio_nuevo": 13874
+  },
+  {
+    "id": 2564,
+    "sku": "32042",
+    "nombre": "LAMINAS PARA PLASTIFICAR 125 MICRAS 100 UNDOFICIO",
+    "precio_actual": "17597",
+    "precio_nuevo": 17692
+  },
+  {
+    "id": 2565,
+    "sku": "109607",
+    "nombre": "CARGADOR DE PILAS AA  AAA  4 PILAS AA",
+    "precio_actual": "20345",
+    "precio_nuevo": 20456
+  },
+  {
+    "id": 2566,
+    "sku": "109609",
+    "nombre": "PILAS AA RECARGABLES 2500 MAH4 UND",
+    "precio_actual": "12261",
+    "precio_nuevo": 12330
+  },
+  {
+    "id": 2567,
+    "sku": "109612",
+    "nombre": "PILAS AAA RECARGABLES 900 MAH4 UND",
+    "precio_actual": "12261",
+    "precio_nuevo": 12330
+  },
+  {
+    "id": 2568,
+    "sku": "102209",
+    "nombre": "PILAS AA ALCALINAS 15V4 UND",
+    "precio_actual": "3773",
+    "precio_nuevo": 3791
+  },
+  {
+    "id": 2569,
+    "sku": "102439",
+    "nombre": "PILAS AAA ALCALINAS 15V4 UND",
+    "precio_actual": "3773",
+    "precio_nuevo": 3791
+  },
+  {
+    "id": 2570,
+    "sku": "103031",
+    "nombre": "PILAS C ALCALINAS 15V2 UND",
+    "precio_actual": "3664",
+    "precio_nuevo": 3684
+  },
+  {
+    "id": 2571,
+    "sku": "103032",
+    "nombre": "PILAS D ALCALINAS 15V2 UND",
+    "precio_actual": "4555",
+    "precio_nuevo": 4576
+  },
+  {
+    "id": 2572,
+    "sku": "103033",
+    "nombre": "PILA BATERIA ALCALINA 9V1 UND",
+    "precio_actual": "3882",
+    "precio_nuevo": 3902
+  },
+  {
+    "id": 2573,
+    "sku": "AAX5ALC",
+    "nombre": "PILAS AA ALCALINAS 15V MAXIMUM POWER5 UND",
+    "precio_actual": "1563",
+    "precio_nuevo": 1570
+  },
+  {
+    "id": 2574,
+    "sku": "AAAX5AL",
+    "nombre": "PILAS AAA ALCALINAS 15V MAXIMUM POWER5 UND",
+    "precio_actual": "1563",
+    "precio_nuevo": 1570
+  },
+  {
+    "id": 2575,
+    "sku": "CX2ALC",
+    "nombre": "PILAS C ALCALINAS 15V MAXIMUM POWER2 UND",
+    "precio_actual": "2445",
+    "precio_nuevo": 2458
+  },
+  {
+    "id": 4309,
+    "sku": "300185",
+    "nombre": "Pilas Litio CR2032 3V Energizer 5 UND",
+    "precio_actual": "2471",
+    "precio_nuevo": 2487
+  },
+  {
+    "id": 2577,
+    "sku": "A302001",
+    "nombre": "PORTA CLIPS MAGNETICO CUADRADONEGRO",
+    "precio_actual": "975",
+    "precio_nuevo": 983
+  },
+  {
+    "id": 2578,
+    "sku": "30200",
+    "nombre": "PORTAMINAS MIX COLORES07 MM",
+    "precio_actual": "975",
+    "precio_nuevo": 983
+  },
+  {
+    "id": 2579,
+    "sku": "32786",
+    "nombre": "PORTAMINAS TECNICO METALICO NEGRO  MINAS05 MM",
+    "precio_actual": "2261",
+    "precio_nuevo": 2276
+  },
+  {
+    "id": 2580,
+    "sku": "32787",
+    "nombre": "PORTAMINAS TECNICO METALICO NEGRO  MINAS07 MM",
+    "precio_actual": "2261",
+    "precio_nuevo": 2276
+  },
+  {
+    "id": 2581,
+    "sku": "31640",
+    "nombre": "REGLA METALICA30 CM",
+    "precio_actual": "1235",
+    "precio_nuevo": 1239
+  },
+  {
+    "id": 2582,
+    "sku": "28662",
+    "nombre": "REGLA PLASTICA30 CM",
+    "precio_actual": "630",
+    "precio_nuevo": 634
+  },
+  {
+    "id": 2583,
+    "sku": "A207002",
+    "nombre": "SACACORCHETE NEGRO",
+    "precio_actual": "790",
+    "precio_nuevo": 798
+  },
+  {
+    "id": 2584,
+    "sku": "A207003",
+    "nombre": "SACACORCHETE PALANCA NEGRO",
+    "precio_actual": "1454",
+    "precio_nuevo": 1465
+  },
+  {
+    "id": 2586,
+    "sku": "A509004",
+    "nombre": "SACAPUNTA METALICO ACHAFLANADO",
+    "precio_actual": "185",
+    "precio_nuevo": 190
+  },
+  {
+    "id": 2587,
+    "sku": "28672",
+    "nombre": "SACAPUNTA PLASTICO CON DEPOSITO ESTRELLA COLORES SURTIDOS",
+    "precio_actual": "916",
+    "precio_nuevo": 921
+  },
+  {
+    "id": 4682,
+    "sku": "SB1145",
+    "nombre": "Sacapuntas Plástico con Depósito",
+    "precio_actual": "1101",
+    "precio_nuevo": 1107
+  },
+  {
+    "id": 2588,
+    "sku": "30661",
+    "nombre": "SEPARADOR CARTULINA 10 POSICIONESCARTA",
+    "precio_actual": "1235",
+    "precio_nuevo": 1245
+  },
+  {
+    "id": 2589,
+    "sku": "30663",
+    "nombre": "SEPARADOR CARTULINA 10 POSICIONESOFICIO",
+    "precio_actual": "1269",
+    "precio_nuevo": 1277
+  },
+  {
+    "id": 2590,
+    "sku": "31183",
+    "nombre": "SEPARADOR CARTULINA ALFABETICOOFICIO",
+    "precio_actual": "1992",
+    "precio_nuevo": 2006
+  },
+  {
+    "id": 2591,
+    "sku": "31289",
+    "nombre": "TIJERA OFICINA ERGONOMICA16 CM",
+    "precio_actual": "1513",
+    "precio_nuevo": 1524
+  },
+  {
+    "id": 2592,
+    "sku": "31387",
+    "nombre": "TIJERA OFICINA ERGONOMICA19 CM",
+    "precio_actual": "1840",
+    "precio_nuevo": 1849
+  },
+  {
+    "id": 2593,
+    "sku": "31293",
+    "nombre": "TIJERA ESCOLAR 5",
+    "precio_actual": "395",
+    "precio_nuevo": 400
+  },
+  {
+    "id": 2594,
+    "sku": "30570",
+    "nombre": "BORRADOR DE PIZARRA MAGNETICOAZUL",
+    "precio_actual": "555",
+    "precio_nuevo": 555
+  },
+  {
+    "id": 2595,
+    "sku": "19590",
+    "nombre": "ACOCLIP FASTENER METALICO PLATEADO 50 UND",
+    "precio_actual": "2193",
+    "precio_nuevo": 2205
+  },
+  {
+    "id": 2598,
+    "sku": "145005",
+    "nombre": "SOBRE AMERICANO BLANCO 10 X 23 CM10 UND",
+    "precio_actual": "471",
+    "precio_nuevo": 476
+  },
+  {
+    "id": 2599,
+    "sku": "145028",
+    "nombre": "SOBRE SACO REVISTA CARTA BLANCO 23 X 30 CM10 UND",
+    "precio_actual": "1563",
+    "precio_nuevo": 1570
+  },
+  {
+    "id": 2600,
+    "sku": "145023",
+    "nombre": "SOBRE SACO OFICIO BLANCO 25 X 36 CM 10 UND",
+    "precio_actual": "2034",
+    "precio_nuevo": 2044
+  },
+  {
+    "id": 2601,
+    "sku": "145045",
+    "nombre": "SOBRE AMERICANO KRAFT 10 X 23 CM10 UND",
+    "precio_actual": "571",
+    "precio_nuevo": 573
+  },
+  {
+    "id": 2602,
+    "sku": "132030",
+    "nombre": "SOBRE SACO REVISTA CARTA KRAFT 23 X 30 CM10 UND",
+    "precio_actual": "1563",
+    "precio_nuevo": 1570
+  },
+  {
+    "id": 2603,
+    "sku": "132023",
+    "nombre": "SOBRE SACO OFICIO KRAFT 25 X 36 CM10 UND",
+    "precio_actual": "1824",
+    "precio_nuevo": 1834
+  },
+  {
+    "id": 2604,
+    "sku": "201020",
+    "nombre": "BOLSA ELASTICOS BLANCOS50 GR",
+    "precio_actual": "479",
+    "precio_nuevo": 484
+  },
+  {
+    "id": 2605,
+    "sku": "801020",
+    "nombre": "BLOCK TACO BLANCO500 HJS",
+    "precio_actual": "1387",
+    "precio_nuevo": 1393
+  },
+  {
+    "id": 2606,
+    "sku": "28184",
+    "nombre": "MARCADOR PERMANENTE PUNTA REDONDANEGRO",
+    "precio_actual": "647",
+    "precio_nuevo": 650
+  },
+  {
+    "id": 2607,
+    "sku": "28185",
+    "nombre": "MARCADOR PERMANENTE PUNTA REDONDAAZUL",
+    "precio_actual": "647",
+    "precio_nuevo": 650
+  },
+  {
+    "id": 2608,
+    "sku": "28186",
+    "nombre": "MARCADOR PERMANENTE PUNTA REDONDAROJO",
+    "precio_actual": "647",
+    "precio_nuevo": 650
+  },
+  {
+    "id": 2609,
+    "sku": "28188",
+    "nombre": "MARCADOR PERMANENTE PUNTA BISELADANEGRO",
+    "precio_actual": "647",
+    "precio_nuevo": 650
+  },
+  {
+    "id": 4076,
+    "sku": "36334",
+    "nombre": "Marcador Permanente Punta Redonda Colón Azul",
+    "precio_actual": "378",
+    "precio_nuevo": 381
+  },
+  {
+    "id": 4078,
+    "sku": "36335",
+    "nombre": "Marcador Permanente Punta Redonda Colón Negro",
+    "precio_actual": "378",
+    "precio_nuevo": 381
+  },
+  {
+    "id": 4080,
+    "sku": "36336",
+    "nombre": "Marcador Permanente Punta Redonda Colón Rojo",
+    "precio_actual": "378",
+    "precio_nuevo": 381
+  },
+  {
+    "id": 2610,
+    "sku": "SCA6600B",
+    "nombre": "MARCADOR PERMANENTE PUNTA BISELADA JUMBONEGRO",
+    "precio_actual": "5378",
+    "precio_nuevo": 5410
+  },
+  {
+    "id": 2611,
+    "sku": "28192",
+    "nombre": "MARCADOR PERMANENTE PUNTA FINANEGRO",
+    "precio_actual": "546",
+    "precio_nuevo": 549
+  },
+  {
+    "id": 2612,
+    "sku": "28193",
+    "nombre": "MARCADOR PERMANENTE PUNTA FINAAZUL",
+    "precio_actual": "546",
+    "precio_nuevo": 549
+  },
+  {
+    "id": 2613,
+    "sku": "28194",
+    "nombre": "MARCADOR PERMANENTE PUNTA FINAROJO",
+    "precio_actual": "546",
+    "precio_nuevo": 549
+  },
+  {
+    "id": 2614,
+    "sku": "28201",
+    "nombre": "MARCADOR PIZARRA PUNTA REDONDANEGRO",
+    "precio_actual": "773",
+    "precio_nuevo": 782
+  },
+  {
+    "id": 2615,
+    "sku": "28202",
+    "nombre": "MARCADOR PIZARRA PUNTA REDONDAAZUL",
+    "precio_actual": "773",
+    "precio_nuevo": 782
+  },
+  {
+    "id": 2616,
+    "sku": "28203",
+    "nombre": "MARCADOR PIZARRA PUNTA REDONDAROJO",
+    "precio_actual": "773",
+    "precio_nuevo": 782
+  },
+  {
+    "id": 2617,
+    "sku": "28204",
+    "nombre": "MARCADOR PIZARRA PUNTA REDONDAVERDE",
+    "precio_actual": "773",
+    "precio_nuevo": 782
+  },
+  {
+    "id": 4082,
+    "sku": "36337",
+    "nombre": "Marcador Pizarra Punta Redonda Colón Azul",
+    "precio_actual": "378",
+    "precio_nuevo": 381
+  },
+  {
+    "id": 4084,
+    "sku": "36338",
+    "nombre": "Marcador Pizarra Punta Redonda Colón Negro",
+    "precio_actual": "378",
+    "precio_nuevo": 381
+  },
+  {
+    "id": 4086,
+    "sku": "36339",
+    "nombre": "Marcador Pizarra Punta Redonda Colón Rojo",
+    "precio_actual": "378",
+    "precio_nuevo": 381
+  },
+  {
+    "id": 2619,
+    "sku": "WBMATML",
+    "nombre": "MARCADOR PIZARRA METALICO RECARGABLE PUNTA REDONDAAZUL",
+    "precio_actual": "2076",
+    "precio_nuevo": 2086
+  },
+  {
+    "id": 2620,
+    "sku": "WBMATMB",
+    "nombre": "MARCADOR PIZARRA METALICO RECARGABLE PUNTA REDONDANEGRO",
+    "precio_actual": "2076",
+    "precio_nuevo": 2086
+  },
+  {
+    "id": 2621,
+    "sku": "WBMATMR",
+    "nombre": "MARCADOR PIZARRA METALICO RECARGABLE PUNTA REDONDAROJO",
+    "precio_actual": "2076",
+    "precio_nuevo": 2086
+  },
+  {
+    "id": 2622,
+    "sku": "WBMATMG",
+    "nombre": "MARCADOR PIZARRA METALICO RECARGABLE PUNTA REDONDAVERDE",
+    "precio_actual": "2076",
+    "precio_nuevo": 2086
+  },
+  {
+    "id": 2623,
+    "sku": "C1124",
+    "nombre": "TINTA TIMBRES 801 25 MLNEGRO",
+    "precio_actual": "2924",
+    "precio_nuevo": 2937
+  },
+  {
+    "id": 2624,
+    "sku": "C1125",
+    "nombre": "TINTA TIMBRES 801 25 MLAZUL",
+    "precio_actual": "2924",
+    "precio_nuevo": 2937
+  },
+  {
+    "id": 2625,
+    "sku": "C1126",
+    "nombre": "TINTA TIMBRES 801 25 MLROJO",
+    "precio_actual": "2924",
+    "precio_nuevo": 2937
+  },
+  {
+    "id": 2626,
+    "sku": "756",
+    "nombre": "LAPIZ CORRECTOR7 ML",
+    "precio_actual": "1017",
+    "precio_nuevo": 1020
+  },
+  {
+    "id": 2627,
+    "sku": "28232",
+    "nombre": "LAPIZ CORRECTOR COLORES7 ML",
+    "precio_actual": "1235",
+    "precio_nuevo": 1239
+  },
+  {
+    "id": 2629,
+    "sku": "29877",
+    "nombre": "CINTA CORRECTORA",
+    "precio_actual": "1210",
+    "precio_nuevo": 1221
+  },
+  {
+    "id": 2630,
+    "sku": "25478",
+    "nombre": "LAPIZ GRAFITO N 24 UND",
+    "precio_actual": "1050",
+    "precio_nuevo": 1056
+  },
+  {
+    "id": 4041,
+    "sku": "30658",
+    "nombre": "Lápices Grafito Hexagonales HB N° 2 - Pack 12 UND",
+    "precio_actual": "950",
+    "precio_nuevo": 952
+  },
+  {
+    "id": 4043,
+    "sku": "35327",
+    "nombre": "Lápices Grafito Hexagonales HB N° 2 - Pack 50 UND",
+    "precio_actual": "4891",
+    "precio_nuevo": 4918
+  },
+  {
+    "id": 2631,
+    "sku": "24236",
+    "nombre": "PUSH PINS COLORES SURTIDOS100 UND",
+    "precio_actual": "1529",
+    "precio_nuevo": 1538
+  },
+  {
+    "id": 2632,
+    "sku": "24239",
+    "nombre": "CHINCHES DORADOS100 UND",
+    "precio_actual": "630",
+    "precio_nuevo": 634
+  },
+  {
+    "id": 2633,
+    "sku": "A301005",
+    "nombre": "LLAVEROS CON PLACAS IDENTIFICACION DE COLORES10 UND",
+    "precio_actual": "1454",
+    "precio_nuevo": 1462
+  },
+  {
+    "id": 2634,
+    "sku": "30226",
+    "nombre": "PISTOLA DE SILICONA 10W",
+    "precio_actual": "4126",
+    "precio_nuevo": 4146
+  },
+  {
+    "id": 4726,
+    "sku": "25489",
+    "nombre": "Silicona Líquida 30 ML",
+    "precio_actual": "647",
+    "precio_nuevo": 650
+  },
+  {
+    "id": 2635,
+    "sku": "31947",
+    "nombre": "SET GEOMETRIA PLASTICO 4 PIEZAS",
+    "precio_actual": "983",
+    "precio_nuevo": 990
+  },
+  {
+    "id": 2636,
+    "sku": "31234",
+    "nombre": "COMPAS CON PORTALAPIZ ESCOLAR",
+    "precio_actual": "773",
+    "precio_nuevo": 777
+  },
+  {
+    "id": 2637,
+    "sku": "30290",
+    "nombre": "PALOS HELADO NATURAL50 UND",
+    "precio_actual": "706",
+    "precio_nuevo": 707
+  },
+  {
+    "id": 2638,
+    "sku": "30227",
+    "nombre": "BARRAS DE SILICONA 10UND TRANSPARENTE  1 UND GLITTER25 CM LARGO",
+    "precio_actual": "1807",
+    "precio_nuevo": 1816
+  },
+  {
+    "id": 2639,
+    "sku": "972",
+    "nombre": "TEMPERA 12 COLORES FORMATO XL",
+    "precio_actual": "1647",
+    "precio_nuevo": 1656
+  },
+  {
+    "id": 2640,
+    "sku": "1148",
+    "nombre": "ACUARELA 12 COLORES",
+    "precio_actual": "1597",
+    "precio_nuevo": 1602
+  },
+  {
+    "id": 2641,
+    "sku": "31727",
+    "nombre": "SET PINCELES REDONDOS N 2 6 10",
+    "precio_actual": "1042",
+    "precio_nuevo": 1047
+  },
+  {
+    "id": 2642,
+    "sku": "30177",
+    "nombre": "SET PINCELES PLANOS N 2 6 10",
+    "precio_actual": "1084",
+    "precio_nuevo": 1086
+  },
+  {
+    "id": 2643,
+    "sku": "30588",
+    "nombre": "MEZCLADOR 6 CAV PLASTICO BLANCO",
+    "precio_actual": "387",
+    "precio_nuevo": 389
+  },
+  {
+    "id": 2644,
+    "sku": "25540",
+    "nombre": "PLASTICINAS 12 COLORES216 GR",
+    "precio_actual": "1160",
+    "precio_nuevo": 1169
+  },
+  {
+    "id": 2645,
+    "sku": "17879",
+    "nombre": "PAPEL LUSTRE 12 COLORES 10X10 CM24 HJS",
+    "precio_actual": "303",
+    "precio_nuevo": 308
+  },
+  {
+    "id": 2646,
+    "sku": "30740",
+    "nombre": "BLOCK DE DIBUJO MEDIUM N 9920 HJS",
+    "precio_actual": "1395",
+    "precio_nuevo": 1405
+  },
+  {
+    "id": 3528,
+    "sku": "17871",
+    "nombre": "Block de Dibujo Liceo 60 Imagia 20 HJS",
+    "precio_actual": "866",
+    "precio_nuevo": 872
+  },
+  {
+    "id": 2647,
+    "sku": "21734",
+    "nombre": "BOLSON GOMA EVA 6 PLIEGOS 6 COLORES20 x 30 CM",
+    "precio_actual": "1479",
+    "precio_nuevo": 1489
+  },
+  {
+    "id": 3876,
+    "sku": "29674",
+    "nombre": "Goma Eva Glitter 6 Pliegos Autoadhesivos 6 Colores 20 x 30 CM",
+    "precio_actual": "2647",
+    "precio_nuevo": 2664
+  },
+  {
+    "id": 2648,
+    "sku": "17894",
+    "nombre": "BOLSON CARTULINA 18 PLIEGOS 14 COLORES265 x 375 CM",
+    "precio_actual": "1647",
+    "precio_nuevo": 1656
+  },
+  {
+    "id": 3616,
+    "sku": "36696",
+    "nombre": "Cartulina 14 Pliegos 12 Colores 26,5 x 37,5 CM",
+    "precio_actual": "1210",
+    "precio_nuevo": 1221
+  },
+  {
+    "id": 3619,
+    "sku": "22568",
+    "nombre": "Cartulina Metálica 10 Pliegos 7 Colores 25 x 35 CM",
+    "precio_actual": "1462",
+    "precio_nuevo": 1467
+  },
+  {
+    "id": 2649,
+    "sku": "22566",
+    "nombre": "BOLSON PAPEL ENTRETENIDO 9 PLIEGOS 18 DISENOS25 x 325 CM",
+    "precio_actual": "1647",
+    "precio_nuevo": 1654
+  },
+  {
+    "id": 4180,
+    "sku": "36698",
+    "nombre": "Papel Entretenido 9 Pliegos 18 Diseños 24 x 32 CM",
+    "precio_actual": "1134",
+    "precio_nuevo": 1142
+  },
+  {
+    "id": 4224,
+    "sku": "36699",
+    "nombre": "Papel Lustre 14 Pliegos 12 Colores 26,5 x 37,5 CM",
+    "precio_actual": "1134",
+    "precio_nuevo": 1142
+  },
+  {
+    "id": 4226,
+    "sku": "23350",
+    "nombre": "Papel Volantín Imagia 10 Pliegos 7 Colores 50,8 x 76,8 CM",
+    "precio_actual": "1462",
+    "precio_nuevo": 1467
+  },
+  {
+    "id": 2650,
+    "sku": "32239",
+    "nombre": "DESTRUCTORA DE DOCUMENTOS 6 HOJAS CORTE TIRAMODELO HOSC",
+    "precio_actual": "42588",
+    "precio_nuevo": 42822
+  },
+  {
+    "id": 4716,
+    "sku": "PA604",
+    "nombre": "Set de Globos Lisos de Colores Surtidos 12 UND",
+    "precio_actual": "950",
+    "precio_nuevo": 952
+  },
+  {
+    "id": 4718,
+    "sku": "PA164",
+    "nombre": "Set de Velas Espirales Colores Surtidos 24 UND",
+    "precio_actual": "555",
+    "precio_nuevo": 555
+  },
+  {
+    "id": 2651,
+    "sku": "110019",
+    "nombre": "CALCULADORA DE BOLSILLO 8 DIGITOS NEGRAHL4A",
+    "precio_actual": "2622",
+    "precio_nuevo": 2634
+  },
+  {
+    "id": 2652,
+    "sku": "110031",
+    "nombre": "CALCULADORA DE MESA 8 DIGITOS BLANCAMW8VWE",
+    "precio_actual": "6311",
+    "precio_nuevo": 6344
+  },
+  {
+    "id": 2653,
+    "sku": "106840",
+    "nombre": "CALCULADORA DE MESA 12 DIGITOS NEGRAMX12B",
+    "precio_actual": "7605",
+    "precio_nuevo": 7645
+  },
+  {
+    "id": 4126,
+    "sku": "XTM-310BK",
+    "nombre": "Mouse Óptico Inalámbrico Xtech XTM-310 color Negro",
+    "precio_actual": "5882",
+    "precio_nuevo": 5917
+  },
+  {
+    "id": 2655,
+    "sku": "9001015",
+    "nombre": "WIRELESS MOBILE MOUSE KMW330NEGRO",
+    "precio_actual": "7235",
+    "precio_nuevo": 7273
+  },
+  {
+    "id": 4123,
+    "sku": "KMW-500BK",
+    "nombre": "Mouse Óptico Inalámbrico Ergonómico Klipxtreme KMW-500 Negro",
+    "precio_actual": "13798",
+    "precio_nuevo": 13874
+  },
+  {
+    "id": 3962,
+    "sku": "XTK-309S",
+    "nombre": "Kit Mouse y Teclado Inalámbrico Xtech XTK-309S",
+    "precio_actual": "19437",
+    "precio_nuevo": 19544
+  },
+  {
+    "id": 2657,
+    "sku": "K75235CL",
+    "nombre": "KIT MOUSE Y TECLADO INALAMBRICO PRO FIT LOW PROFILENEGRO",
+    "precio_actual": "31706",
+    "precio_nuevo": 31885
+  },
+  {
+    "id": 2658,
+    "sku": "9001003",
+    "nombre": "KEYBOARD WRIST PAD APOYA MUNECA GEL CON BASE ANTIDESLIZANTENEGRO",
+    "precio_actual": "9378",
+    "precio_nuevo": 9429
+  },
+  {
+    "id": 2659,
+    "sku": "9001004",
+    "nombre": "MOUSE PAD APOYA MUNECA GEL CON BASE ANTIDESLIZANTENEGRO",
+    "precio_actual": "5840",
+    "precio_nuevo": 5875
+  },
+  {
+    "id": 4121,
+    "sku": "L57822A",
+    "nombre": "Mouse Pad Apoya Muñeca Gel con Base Antideslizante Negro Kensington",
+    "precio_actual": "7790",
+    "precio_nuevo": 7830
+  },
+  {
+    "id": 4759,
+    "sku": "KNP-110",
+    "nombre": "Teclado Numérico Inalámbrico Klipxtreme Zypher Negro",
+    "precio_actual": "13017",
+    "precio_nuevo": 13088
+  },
+  {
+    "id": 2661,
+    "sku": "9001006",
+    "nombre": "BASE SOPORTE PARA NOTEBOOK DE 12A 17 EASY RISERNEGRO",
+    "precio_actual": "25739",
+    "precio_nuevo": 25884
+  },
+  {
+    "id": 2662,
+    "sku": "9001007",
+    "nombre": "CABLE HDMI MACHOMACHO3 MT",
+    "precio_actual": "3798",
+    "precio_nuevo": 3824
+  },
+  {
+    "id": 2663,
+    "sku": "9001010",
+    "nombre": "PENDRIVE USB 32 TYPEC FLASHDRIVE DATATRAVELER 7064 GB",
+    "precio_actual": "5328",
+    "precio_nuevo": 5358
+  },
+  {
+    "id": 4303,
+    "sku": "DTKN-64GB",
+    "nombre": "Pendrive USB 3.2 Flashdrive DataTraveler Kyson de 64GB",
+    "precio_actual": "8966",
+    "precio_nuevo": 9015
+  },
+  {
+    "id": 4301,
+    "sku": "DTXM-64GB",
+    "nombre": "Pendrive USB 3.2 Flashdrive DataTraveler Exodia de 64GB",
+    "precio_actual": "8672",
+    "precio_nuevo": 8725
+  },
+  {
+    "id": 2666,
+    "sku": "9001020",
+    "nombre": "PENDRIVE USB 32 FLASHDRIVE DATATRAVELER EXODIA128 GB",
+    "precio_actual": "9933",
+    "precio_nuevo": 9985
+  },
+  {
+    "id": 2667,
+    "sku": "9001012",
+    "nombre": "DISCO DURO EXTERNO ELEMENTS 25 USB 302 TB",
+    "precio_actual": "91798",
+    "precio_nuevo": 92305
+  },
+  {
+    "id": 2668,
+    "sku": "K39121WW",
+    "nombre": "HUB USB 30 4 PUERTOS UH4000",
+    "precio_actual": "19429",
+    "precio_nuevo": 19538
+  },
+  {
+    "id": 2669,
+    "sku": "K39124WW",
+    "nombre": "HUB USBC 2 PUERTOS USBA Y 2 PUERTOS USBC CH1000",
+    "precio_actual": "39571",
+    "precio_nuevo": 39790
+  },
+  {
+    "id": 2670,
+    "sku": "LS1008",
+    "nombre": "SWITCH TPLINK LS1008 SERIES 8 PORT 10100MBPSWHITE",
+    "precio_actual": "9277",
+    "precio_nuevo": 9326
+  },
+  {
+    "id": 2671,
+    "sku": "9001017",
+    "nombre": "MOCHILA PARA NOTEBOOK HASTA 156 NEGRAHARKER",
+    "precio_actual": "18084",
+    "precio_nuevo": 18185
+  },
+  {
+    "id": 2672,
+    "sku": "9001018",
+    "nombre": "MONITOR LED 22 FHD 1090x1080 60HzLS22A336NHLXZS",
+    "precio_actual": "109429",
+    "precio_nuevo": 110037
+  },
+  {
+    "id": 4740,
+    "sku": "XTA-375",
+    "nombre": "Soporte de TV de 32\" a 70\" Xtech con Inclinación 10° | XTA-375",
+    "precio_actual": "12059",
+    "precio_nuevo": 12123
+  },
+  {
+    "id": 4736,
+    "sku": "KPM-310",
+    "nombre": "Soporte Monitor de 13\" a 32\" Doble Brazo KPM-310",
+    "precio_actual": "41050",
+    "precio_nuevo": 41282
+  },
+  {
+    "id": 4738,
+    "sku": "KMM-301",
+    "nombre": "Soporte Monitor de 13\" a 32\" y Laptop hasta 15,6\" KMM-301",
+    "precio_actual": "55151",
+    "precio_nuevo": 55456
+  },
+  {
+    "id": 2677,
+    "sku": "K97601WW",
+    "nombre": "AURALES CLASICOS CON MICROFONO USBANEGRO",
+    "precio_actual": "15597",
+    "precio_nuevo": 15679
+  },
+  {
+    "id": 4130,
+    "sku": "DCP-L2540DW",
+    "nombre": "Multifuncional Láser Brother DCP-L2540DW Blanco y Negro",
+    "precio_actual": "255983",
+    "precio_nuevo": 257400
+  },
+  {
+    "id": 4128,
+    "sku": "DCP-T730DW",
+    "nombre": "Multifuncional Inkbenefit Tank Color Brother DCP-T730DW",
+    "precio_actual": "276664",
+    "precio_nuevo": 278199
+  },
+  {
+    "id": 2680,
+    "sku": "TN2370",
+    "nombre": "TONER ORIGINAL NEGRO PARA 2600 PAGINASTN2370",
+    "precio_actual": "87378",
+    "precio_nuevo": 87864
+  },
+  {
+    "id": 2681,
+    "sku": "DR2340",
+    "nombre": "TAMBOR ORIGINAL PARA 12000 PAGINASDR2340",
+    "precio_actual": "119176",
+    "precio_nuevo": 119835
+  },
+  {
+    "id": 2682,
+    "sku": "BT6001BK",
+    "nombre": "TINTA ORIGINAL NEGRO 108 MLBT6001 BK",
+    "precio_actual": "11126",
+    "precio_nuevo": 11191
+  },
+  {
+    "id": 2683,
+    "sku": "BT5001C",
+    "nombre": "TINTA ORIGINAL CYAN 48 MLBT5001 C",
+    "precio_actual": "9689",
+    "precio_nuevo": 9744
+  },
+  {
+    "id": 2684,
+    "sku": "BT5001M",
+    "nombre": "TINTA ORIGINAL MAGENTA 48 MLBT5001 M",
+    "precio_actual": "9689",
+    "precio_nuevo": 9744
+  },
+  {
+    "id": 2685,
+    "sku": "BT5001Y",
+    "nombre": "TINTA ORIGINAL YELLOW 48 MLBT5001 Y",
+    "precio_actual": "9689",
+    "precio_nuevo": 9744
+  },
+  {
+    "id": 4771,
+    "sku": "BTD100BK",
+    "nombre": "Tinta Original Brother BTD100BK Negro 108 ML",
+    "precio_actual": "10731",
+    "precio_nuevo": 10794
+  },
+  {
+    "id": 4773,
+    "sku": "BTD100C",
+    "nombre": "Tinta Original Brother BTD100C Cyan 48,8 ML",
+    "precio_actual": "9681",
+    "precio_nuevo": 9738
+  },
+  {
+    "id": 4775,
+    "sku": "BTD100M",
+    "nombre": "Tinta Original Brother BTD100M Magenta 48,8 ML",
+    "precio_actual": "9681",
+    "precio_nuevo": 9738
+  },
+  {
+    "id": 4777,
+    "sku": "BTD100Y",
+    "nombre": "Tinta Original Brother BTD100Y Yellow 48,8 ML",
+    "precio_actual": "9681",
+    "precio_nuevo": 9738
+  },
+  {
+    "id": 4783,
+    "sku": "LC402XLBK",
+    "nombre": "Tinta Original Brother LC402XLBK Black",
+    "precio_actual": "51529",
+    "precio_nuevo": 51818
+  },
+  {
+    "id": 4779,
+    "sku": "LC402CS",
+    "nombre": "Tinta Original Brother LC402CS Cyan",
+    "precio_actual": "22555",
+    "precio_nuevo": 22681
+  },
+  {
+    "id": 4781,
+    "sku": "LC402MS",
+    "nombre": "Tinta Original Brother LC402MS Magenta",
+    "precio_actual": "22555",
+    "precio_nuevo": 22681
+  },
+  {
+    "id": 4785,
+    "sku": "LC402YS",
+    "nombre": "Tinta Original Brother LC402YS Yellow",
+    "precio_actual": "22555",
+    "precio_nuevo": 22681
+  },
+  {
+    "id": 4795,
+    "sku": "HP964XL-BL",
+    "nombre": "Tinta Original HP 964XL Black",
+    "precio_actual": "70723",
+    "precio_nuevo": 71116
+  },
+  {
+    "id": 4797,
+    "sku": "HP964XL-CY",
+    "nombre": "Tinta Original HP 964XL Cyan",
+    "precio_actual": "55882",
+    "precio_nuevo": 56192
+  },
+  {
+    "id": 4799,
+    "sku": "HP964XL-MA",
+    "nombre": "Tinta Original HP 964XL Magenta",
+    "precio_actual": "55882",
+    "precio_nuevo": 56192
+  },
+  {
+    "id": 4801,
+    "sku": "HP964XL-YW",
+    "nombre": "Tinta Original HP 964XL Yellow",
+    "precio_actual": "55882",
+    "precio_nuevo": 56192
+  },
+  {
+    "id": 4787,
+    "sku": "T664120-AL",
+    "nombre": "Tinta Original Epson T664120-AL Negro",
+    "precio_actual": "10059",
+    "precio_nuevo": 10114
+  },
+  {
+    "id": 4789,
+    "sku": "T664220-AL",
+    "nombre": "Tinta Original Epson T664220-AL Cyan",
+    "precio_actual": "10059",
+    "precio_nuevo": 10114
+  },
+  {
+    "id": 4791,
+    "sku": "T664320-AL",
+    "nombre": "Tinta Original Epson T664320-AL Magenta",
+    "precio_actual": "10059",
+    "precio_nuevo": 10114
+  },
+  {
+    "id": 4793,
+    "sku": "T664420-AL",
+    "nombre": "Tinta Original Epson T664420-AL Yellow",
+    "precio_actual": "10059",
+    "precio_nuevo": 10114
+  },
+  {
+    "id": 2686,
+    "sku": "56152",
+    "nombre": "APOYA PIES NEGRO",
+    "precio_actual": "29983",
+    "precio_nuevo": 30153
+  },
+  {
+    "id": 3565,
+    "sku": "XTA-110",
+    "nombre": "Cable de Seguridad Laptops con Combinación de 4 Dígitos",
+    "precio_actual": "7261",
+    "precio_nuevo": 7305
+  },
+  {
+    "id": 2689,
+    "sku": "AM160GEN46",
+    "nombre": "SILLA EJECUTIVA NEGRATURIN",
+    "precio_actual": "104101",
+    "precio_nuevo": 104676
+  },
+  {
+    "id": 4728,
+    "sku": "XTF-OC414",
+    "nombre": "Silla Ejecutiva Negra Avignon con Cabecera",
+    "precio_actual": "179807",
+    "precio_nuevo": 180804
+  },
+  {
+    "id": 2691,
+    "sku": "8001001",
+    "nombre": "LUBRICANTE ANTICORROSIVO MULTIUSO WD40155 GR",
+    "precio_actual": "6546",
+    "precio_nuevo": 6582
+  },
+  {
+    "id": 3469,
+    "sku": "8001080",
+    "nombre": "Ampolleta Led PAR16 GU-10 5.5W 4000°K - Luz Blanca Neutra",
+    "precio_actual": "908",
+    "precio_nuevo": 910
+  },
+  {
+    "id": 2692,
+    "sku": "8001002",
+    "nombre": "AMPOLLETA LED BOLA E27 95WLUZ CALIDA",
+    "precio_actual": "739",
+    "precio_nuevo": 748
+  },
+  {
+    "id": 2693,
+    "sku": "8001003",
+    "nombre": "AMPOLLETA LED BOLA E27 95WLUZ FRIA",
+    "precio_actual": "739",
+    "precio_nuevo": 748
+  },
+  {
+    "id": 2694,
+    "sku": "8001004",
+    "nombre": "TUBO LED VIDRIO T8 9W 6000K 60CMLUZ FRIA",
+    "precio_actual": "1487",
+    "precio_nuevo": 1495
+  },
+  {
+    "id": 2695,
+    "sku": "8001005",
+    "nombre": "TUBO LED VIDRIO T8 18W 6000K 120CMLUZ FRIA",
+    "precio_actual": "1714",
+    "precio_nuevo": 1722
+  },
+  {
+    "id": 2696,
+    "sku": "8001028",
+    "nombre": "PANEL LED REDONDO SOBREPUESTO 12WLUZ FRIA",
+    "precio_actual": "3235",
+    "precio_nuevo": 3250
+  },
+  {
+    "id": 2697,
+    "sku": "8001030",
+    "nombre": "PANEL LED REDONDO SOBREPUESTO 18WLUZ FRIA",
+    "precio_actual": "4042",
+    "precio_nuevo": 4062
+  },
+  {
+    "id": 2698,
+    "sku": "8001006",
+    "nombre": "CINTA AISLADORA ELECTRICA NEGRA18 MM x 10 MT",
+    "precio_actual": "664",
+    "precio_nuevo": 666
+  },
+  {
+    "id": 2699,
+    "sku": "8001007",
+    "nombre": "CINTA TELA MULTIUSO GRIS EXTRA POWER48 MM x 25 MT",
+    "precio_actual": "6311",
+    "precio_nuevo": 6344
+  },
+  {
+    "id": 2700,
+    "sku": "8001008",
+    "nombre": "CINTA DE MONTAJE DOBLE FAZ POWERBOND ULTRA FUERTE 100KGMT19 MM x 15 MT",
+    "precio_actual": "4420",
+    "precio_nuevo": 4441
+  },
+  {
+    "id": 2701,
+    "sku": "8001009",
+    "nombre": "GANCHOS ADHESIVOS POWERSTRIPS BLANCOS CHICOS 075KG MAX3 UND",
+    "precio_actual": "3395",
+    "precio_nuevo": 3410
+  },
+  {
+    "id": 2702,
+    "sku": "8001010",
+    "nombre": "GANCHOS ADHESIVOS POWERSTRIPS BLANCOS GRANDES 15KG MAX2 UND",
+    "precio_actual": "4025",
+    "precio_nuevo": 4044
+  },
+  {
+    "id": 2703,
+    "sku": "8001011",
+    "nombre": "ADHESIVO INSTANTANEO2 ML",
+    "precio_actual": "2395",
+    "precio_nuevo": 2411
+  },
+  {
+    "id": 2705,
+    "sku": "8001012",
+    "nombre": "ALARGADOR MULTIPLE DE 6 TOMAS COLOR NEGRO CON INTERRUPTOR3 MT",
+    "precio_actual": "7731",
+    "precio_nuevo": 7771
+  },
+  {
+    "id": 2706,
+    "sku": "8001031",
+    "nombre": "ALARGADOR SIMPLE NARANJO 10A 2P  T10 MT",
+    "precio_actual": "11513",
+    "precio_nuevo": 11578
+  },
+  {
+    "id": 2707,
+    "sku": "8001032",
+    "nombre": "ALARGADOR SIMPLE NARANJO 10A 2P  T20 MT",
+    "precio_actual": "18924",
+    "precio_nuevo": 19032
+  },
+  {
+    "id": 2709,
+    "sku": "8001034",
+    "nombre": "ENCHUFE HEMBRA 10A  2P  T",
+    "precio_actual": "1731",
+    "precio_nuevo": 1745
+  },
+  {
+    "id": 2711,
+    "sku": "8001035",
+    "nombre": "ENCENDEDOR DE COCINA TUBO LARGO",
+    "precio_actual": "2050",
+    "precio_nuevo": 2062
+  },
+  {
+    "id": 3975,
+    "sku": "8001057",
+    "nombre": "Lentes de Seguridad Blackbull B200 color Claro",
+    "precio_actual": "588",
+    "precio_nuevo": 592
+  },
+  {
+    "id": 4757,
+    "sku": "8001062",
+    "nombre": "Tapones de Oídos de Silicona Naranjo con Cordón Blackbull",
+    "precio_actual": "227",
+    "precio_nuevo": 232
+  },
+  {
+    "id": 3634,
+    "sku": "8001019",
+    "nombre": "Chaleco Reflectante Alta Visibilidad Doble Cinta color Amarillo Talla L/XL",
+    "precio_actual": "2588",
+    "precio_nuevo": 2601
+  },
+  {
+    "id": 3621,
+    "sku": "8001022",
+    "nombre": "Casco de Seguridad Proseg con Arnés Blanco",
+    "precio_actual": "2807",
+    "precio_nuevo": 2823
+  },
+  {
+    "id": 3691,
+    "sku": "8001083",
+    "nombre": "Cubre Nuca color Naranjo para Casco",
+    "precio_actual": "773",
+    "precio_nuevo": 780
+  },
+  {
+    "id": 3888,
+    "sku": "8001091-XL",
+    "nombre": "Guante Cabritilla Legend Cromo Blanco sin Forro Talla XL",
+    "precio_actual": "1487",
+    "precio_nuevo": 1495
+  },
+  {
+    "id": 3906,
+    "sku": "8001092-L",
+    "nombre": "Guante Legend Mechanic Pro Verde Talla L",
+    "precio_actual": "7529",
+    "precio_nuevo": 7572
+  },
+  {
+    "id": 3585,
+    "sku": "8001056",
+    "nombre": "Capa de Agua PVC Blackbull color Azul",
+    "precio_actual": "4975",
+    "precio_nuevo": 5002
+  },
+  {
+    "id": 3953,
+    "sku": "8001060",
+    "nombre": "Jockey Legionario Legend color Beige",
+    "precio_actual": "3950",
+    "precio_nuevo": 3972
+  },
+  {
+    "id": 3639,
+    "sku": "8001054",
+    "nombre": "Cinta Delimitadora de Peligro 350 MT XTR",
+    "precio_actual": "6992",
+    "precio_nuevo": 7026
+  },
+  {
+    "id": 3653,
+    "sku": "8001025",
+    "nombre": "Cono de Seguridad PVC Naranjo Doble Cinta Reflectante 28\" / 70 CM",
+    "precio_actual": "7882",
+    "precio_nuevo": 7930
+  },
+  {
+    "id": 3562,
+    "sku": "8001026",
+    "nombre": "Botiquín Primeros Auxilios",
+    "precio_actual": "8748",
+    "precio_nuevo": 8793
+  },
+  {
+    "id": 3842,
+    "sku": "8001037",
+    "nombre": "Espátula Metálica 2,5 CM con Mango Madera",
+    "precio_actual": "1261",
+    "precio_nuevo": 1269
+  },
+  {
+    "id": 4311,
+    "sku": "8001049",
+    "nombre": "Piso Escalera Plegable Metálico Fuerte 2 Peldaños",
+    "precio_actual": "24975",
+    "precio_nuevo": 25116
+  },
+  {
+    "id": 3453,
+    "sku": "7001055",
+    "nombre": "Agua Mineral con Gas 500 ML",
+    "precio_actual": "538",
+    "precio_nuevo": 540
+  },
+  {
+    "id": 3455,
+    "sku": "7001056",
+    "nombre": "Agua Mineral sin Gas 500 ML",
+    "precio_actual": "538",
+    "precio_nuevo": 540
+  },
+  {
+    "id": 2712,
+    "sku": "7001003",
+    "nombre": "AZUCAR1 KG",
+    "precio_actual": "1748",
+    "precio_nuevo": 1757
+  },
+  {
+    "id": 3498,
+    "sku": "7001150",
+    "nombre": "Azúcar Coliseo 1 KG",
+    "precio_actual": "1042",
+    "precio_nuevo": 1048
+  },
+  {
+    "id": 3500,
+    "sku": "7001151",
+    "nombre": "Azúcar Coliseo 5 KG",
+    "precio_actual": "6504",
+    "precio_nuevo": 6541
+  },
+  {
+    "id": 2713,
+    "sku": "7001065",
+    "nombre": "AZUCAR EN SACHET 60 BOLSITASCAJA 300 GR",
+    "precio_actual": "2345",
+    "precio_nuevo": 2360
+  },
+  {
+    "id": 2714,
+    "sku": "7001120",
+    "nombre": "AZUCAR EN SACHET1000 UND x 5 GR",
+    "precio_actual": "14739",
+    "precio_nuevo": 14820
+  },
+  {
+    "id": 2715,
+    "sku": "7001072",
+    "nombre": "CAFE INSTANTANEO CAJA SACHET VAINILLA LATTE 148 GR8 SOBRES",
+    "precio_actual": "4109",
+    "precio_nuevo": 4135
+  },
+  {
+    "id": 2716,
+    "sku": "7001073",
+    "nombre": "CAFE INSTANTANEO CAJA SACHET CAPPUCCINO 140 GR10 SOBRES",
+    "precio_actual": "3496",
+    "precio_nuevo": 3519
+  },
+  {
+    "id": 2717,
+    "sku": "7001052",
+    "nombre": "CAFE INSTANTANEO TRADICION CAJA 96 SACHET DE 18 GR CU",
+    "precio_actual": "14462",
+    "precio_nuevo": 14545
+  },
+  {
+    "id": 2718,
+    "sku": "7001004",
+    "nombre": "CAFE INSTANTANEO FINA SELECCION  FRASCO VIDRIO200 GR",
+    "precio_actual": "13521",
+    "precio_nuevo": 13594
+  },
+  {
+    "id": 3578,
+    "sku": "7001144",
+    "nombre": "Café Instantáneo Tradición Tarro 50 GR",
+    "precio_actual": "3429",
+    "precio_nuevo": 3448
+  },
+  {
+    "id": 2719,
+    "sku": "7001068",
+    "nombre": "CAFE INSTANTANEO TRADICION TARRO170 GR",
+    "precio_actual": "8798",
+    "precio_nuevo": 8845
+  },
+  {
+    "id": 2720,
+    "sku": "7001006",
+    "nombre": "CAFE INSTANTANEO TRADICION TARRO400 GR",
+    "precio_actual": "15059",
+    "precio_nuevo": 15141
+  },
+  {
+    "id": 2721,
+    "sku": "7001070",
+    "nombre": "CAFE INSTANTANEO DESCAFEINADO  TARRO170 GR",
+    "precio_actual": "8319",
+    "precio_nuevo": 8365
+  },
+  {
+    "id": 2722,
+    "sku": "7001007",
+    "nombre": "CAFE INSTANTANEO PRIMERA SELECCION TARRO150 GR",
+    "precio_actual": "6840",
+    "precio_nuevo": 6880
+  },
+  {
+    "id": 2723,
+    "sku": "7001130",
+    "nombre": "CAFE GRANO CAFE CARIBE ITALIANISSIMO500 GR",
+    "precio_actual": "16092",
+    "precio_nuevo": 16182
+  },
+  {
+    "id": 2724,
+    "sku": "7001131",
+    "nombre": "CAFE MOLIDO CAFE CARIBE ITALIANISSIMO250 GR",
+    "precio_actual": "8042",
+    "precio_nuevo": 8087
+  },
+  {
+    "id": 2725,
+    "sku": "7001110",
+    "nombre": "CAFE MOLIDO SUPER MOKA250 GR",
+    "precio_actual": "5983",
+    "precio_nuevo": 6017
+  },
+  {
+    "id": 2726,
+    "sku": "7001071",
+    "nombre": "CHOCOLATE CACAO DULCE EN POLVO TARRO400 GR",
+    "precio_actual": "5739",
+    "precio_nuevo": 5774
+  },
+  {
+    "id": 2727,
+    "sku": "7001076",
+    "nombre": "CAFE 16 CAPSULAS NESCAFELATTE MACCHIATO VAINILLA",
+    "precio_actual": "6017",
+    "precio_nuevo": 6047
+  },
+  {
+    "id": 2728,
+    "sku": "7001077",
+    "nombre": "CAFE 16 CAPSULAS NESCAFECAPPUCCINO",
+    "precio_actual": "6017",
+    "precio_nuevo": 6047
+  },
+  {
+    "id": 2729,
+    "sku": "7001078",
+    "nombre": "CAFE 16 CAPSULAS NESCAFEESPRESSO INTENSO",
+    "precio_actual": "6017",
+    "precio_nuevo": 6047
+  },
+  {
+    "id": 2730,
+    "sku": "7001079",
+    "nombre": "CAFE 16 CAPSULAS NESCAFEAMERICANO",
+    "precio_actual": "6017",
+    "precio_nuevo": 6047
+  },
+  {
+    "id": 2731,
+    "sku": "7001090",
+    "nombre": "CAFETERA NESCAFEGENIO S BLANCA",
+    "precio_actual": "93681",
+    "precio_nuevo": 94204
+  },
+  {
+    "id": 2732,
+    "sku": "7001085",
+    "nombre": "BEBIDA LATA COCA COLA ORIGINAL PACK 6 UND220 ML",
+    "precio_actual": "3546",
+    "precio_nuevo": 3566
+  },
+  {
+    "id": 2733,
+    "sku": "7001086",
+    "nombre": "BEBIDA LATA COCA COLA SIN AZUCAR PACK 6 UND220 ML",
+    "precio_actual": "3546",
+    "precio_nuevo": 3563
+  },
+  {
+    "id": 2734,
+    "sku": "7001087",
+    "nombre": "BEBIDA LATA SPRITE SIN AZUCAR PACK 6 UND220 ML",
+    "precio_actual": "3546",
+    "precio_nuevo": 3563
+  },
+  {
+    "id": 2735,
+    "sku": "7001012",
+    "nombre": "BEBIDA LATA COCA COLA ORIGINAL PACK 6 UND350 ML",
+    "precio_actual": "5328",
+    "precio_nuevo": 5358
+  },
+  {
+    "id": 2736,
+    "sku": "7001013",
+    "nombre": "BEBIDA LATA COCA COLA SIN AZUCAR PACK 6 UND350 ML",
+    "precio_actual": "5311",
+    "precio_nuevo": 5343
+  },
+  {
+    "id": 2737,
+    "sku": "7001088",
+    "nombre": "BEBIDA LATA SPRITE NORMAL PACK 6 UND350 ML",
+    "precio_actual": "5328",
+    "precio_nuevo": 5358
+  },
+  {
+    "id": 2738,
+    "sku": "7001083",
+    "nombre": "BEBIDA LATA SPRITE SIN AZUCAR PACK 6 UND350 ML",
+    "precio_actual": "5311",
+    "precio_nuevo": 5343
+  },
+  {
+    "id": 2739,
+    "sku": "7001117",
+    "nombre": "BEBIDA LATA FANTA SIN AZUCAR PACK 6 UND350 ML",
+    "precio_actual": "5311",
+    "precio_nuevo": 5343
+  },
+  {
+    "id": 2740,
+    "sku": "7001092",
+    "nombre": "JUGO NECTAR DE NARANJA BOTELLA VIDRIO  PACK 6 UND300 ML",
+    "precio_actual": "6487",
+    "precio_nuevo": 6527
+  },
+  {
+    "id": 3956,
+    "sku": "7001133",
+    "nombre": "Jugo Néctar de Naranja Sin Azúcar 1,5 LT",
+    "precio_actual": "1765",
+    "precio_nuevo": 1777
+  },
+  {
+    "id": 3958,
+    "sku": "7001134",
+    "nombre": "Jugo Néctar de Piña Sin Azúcar 1,5 LT",
+    "precio_actual": "1765",
+    "precio_nuevo": 1777
+  },
+  {
+    "id": 2741,
+    "sku": "7001024",
+    "nombre": "LECHE BLANCA SEMI DESCREMADA1 LT",
+    "precio_actual": "1462",
+    "precio_nuevo": 1470
+  },
+  {
+    "id": 2742,
+    "sku": "7001026",
+    "nombre": "LECHE BLANCA SEMI DESCREMADA SIN LACTOSA1 LT",
+    "precio_actual": "1630",
+    "precio_nuevo": 1638
+  },
+  {
+    "id": 2743,
+    "sku": "7001082",
+    "nombre": "LECHE BLANCA DESCREMADA1 LT",
+    "precio_actual": "1378",
+    "precio_nuevo": 1388
+  },
+  {
+    "id": 2744,
+    "sku": "7001027",
+    "nombre": "ENDULZANTE LIQUIDO TRADICIONAL270 ML",
+    "precio_actual": "1538",
+    "precio_nuevo": 1544
+  },
+  {
+    "id": 2745,
+    "sku": "7001057",
+    "nombre": "ENDULZANTE LIQUIDO SUCRALOSA270 ML",
+    "precio_actual": "3479",
+    "precio_nuevo": 3496
+  },
+  {
+    "id": 2746,
+    "sku": "7001084",
+    "nombre": "ENDULZANTE LIQUIDO STEVIA270 ML",
+    "precio_actual": "4303",
+    "precio_nuevo": 4326
+  },
+  {
+    "id": 2747,
+    "sku": "7001067",
+    "nombre": "ENDULZANTE LIQUIDO SUCRALOSA CEROK250 ML",
+    "precio_actual": "2790",
+    "precio_nuevo": 2802
+  },
+  {
+    "id": 2748,
+    "sku": "7001028",
+    "nombre": "ENDULZANTE LIQUIDO STEVIA  SUCRALOSA CEROK250 ML",
+    "precio_actual": "3252",
+    "precio_nuevo": 3273
+  },
+  {
+    "id": 2749,
+    "sku": "7001121",
+    "nombre": "ENDULZANTE SUCRALOSA EN SACHET1000 UND x 05 GR",
+    "precio_actual": "18613",
+    "precio_nuevo": 18720
+  },
+  {
+    "id": 2750,
+    "sku": "7001122",
+    "nombre": "ENDULZANTE STEVIA EN SACHET1000 UND x 05 GR",
+    "precio_actual": "23269",
+    "precio_nuevo": 23400
+  },
+  {
+    "id": 2751,
+    "sku": "7001029",
+    "nombre": "GALLETA DONUTS CHOCOLATE BLANCO100 GR",
+    "precio_actual": "1261",
+    "precio_nuevo": 1271
+  },
+  {
+    "id": 2752,
+    "sku": "7001030",
+    "nombre": "GALLETA DONUTS CHOCOLATE NEGRO100 GR",
+    "precio_actual": "1261",
+    "precio_nuevo": 1271
+  },
+  {
+    "id": 2753,
+    "sku": "7001031",
+    "nombre": "GALLETA FRAC CHOCOLATE130 GR",
+    "precio_actual": "681",
+    "precio_nuevo": 682
+  },
+  {
+    "id": 2754,
+    "sku": "7001032",
+    "nombre": "GALLETA KUKY CLASICA120 GR",
+    "precio_actual": "1277",
+    "precio_nuevo": 1282
+  },
+  {
+    "id": 2755,
+    "sku": "7001034",
+    "nombre": "GALLETA TRITON VAINILLA126 GR",
+    "precio_actual": "891",
+    "precio_nuevo": 894
+  },
+  {
+    "id": 2756,
+    "sku": "7001035",
+    "nombre": "GALLETA VINO155 GR",
+    "precio_actual": "849",
+    "precio_nuevo": 852
+  },
+  {
+    "id": 2757,
+    "sku": "7001118",
+    "nombre": "GALLETA MANTEQUILLA140 GR",
+    "precio_actual": "992",
+    "precio_nuevo": 995
+  },
+  {
+    "id": 2758,
+    "sku": "7001119",
+    "nombre": "GALLETA LIMON120 GR",
+    "precio_actual": "874",
+    "precio_nuevo": 880
+  },
+  {
+    "id": 2759,
+    "sku": "7001115",
+    "nombre": "TE HIERBAS SURTIDO100 BOLSAS",
+    "precio_actual": "5765",
+    "precio_nuevo": 5794
+  },
+  {
+    "id": 2760,
+    "sku": "7001036",
+    "nombre": "TE HIERBAS SURTIDO20 BOLSAS",
+    "precio_actual": "1000",
+    "precio_nuevo": 1003
+  },
+  {
+    "id": 2761,
+    "sku": "7001048",
+    "nombre": "TE HIERBAS MANZANILLA20 BOLSAS",
+    "precio_actual": "1042",
+    "precio_nuevo": 1048
+  },
+  {
+    "id": 2762,
+    "sku": "7001049",
+    "nombre": "TE HIERBAS MENTA20 BOLSAS",
+    "precio_actual": "1042",
+    "precio_nuevo": 1048
+  },
+  {
+    "id": 2763,
+    "sku": "7001103",
+    "nombre": "TE HIERBAS OCHO HIERBAS20 BOLSAS",
+    "precio_actual": "1042",
+    "precio_nuevo": 1048
+  },
+  {
+    "id": 2764,
+    "sku": "7001112",
+    "nombre": "TE HIERBAS BOLDO20 BOLSAS",
+    "precio_actual": "891",
+    "precio_nuevo": 892
+  },
+  {
+    "id": 2765,
+    "sku": "7001125",
+    "nombre": "TE HIERBAS MATICO20 BOLSAS",
+    "precio_actual": "891",
+    "precio_nuevo": 892
+  },
+  {
+    "id": 2766,
+    "sku": "7001037",
+    "nombre": "TE NEGRO CEYLAN PREMIUM100 BOLSAS",
+    "precio_actual": "6092",
+    "precio_nuevo": 6129
+  },
+  {
+    "id": 2767,
+    "sku": "7001108",
+    "nombre": "TE NEGRO CEYLAN LINEA ORO100 BOLSAS",
+    "precio_actual": "3882",
+    "precio_nuevo": 3900
+  },
+  {
+    "id": 2768,
+    "sku": "7001047",
+    "nombre": "TE NEGRO YELLOW LABEL100 BOLSAS",
+    "precio_actual": "6975",
+    "precio_nuevo": 7012
+  },
+  {
+    "id": 2769,
+    "sku": "7001126",
+    "nombre": "TE VERDE PREMIUM50 BOLSAS",
+    "precio_actual": "2429",
+    "precio_nuevo": 2440
+  },
+  {
+    "id": 2770,
+    "sku": "7001113",
+    "nombre": "TE NEGRO CON SABOR A CANELA20 BOLSAS",
+    "precio_actual": "1437",
+    "precio_nuevo": 1448
+  },
+  {
+    "id": 2771,
+    "sku": "7001116",
+    "nombre": "TE NEGRO EARL GREY20 BOLSAS",
+    "precio_actual": "1664",
+    "precio_nuevo": 1671
+  },
+  {
+    "id": 2773,
+    "sku": "7001127",
+    "nombre": "ACEITE VEGETAL1 LT",
+    "precio_actual": "3176",
+    "precio_nuevo": 3198
+  },
+  {
+    "id": 2774,
+    "sku": "7001050",
+    "nombre": "ACEITE DE OLIVA EXTRA VIRGEN500 ML",
+    "precio_actual": "8160",
+    "precio_nuevo": 8206
+  },
+  {
+    "id": 2775,
+    "sku": "7001080",
+    "nombre": "ACEITE DE OLIVA NATURA EXTRA VIRGEN500 ML",
+    "precio_actual": "10050",
+    "precio_nuevo": 10107
+  },
+  {
+    "id": 2776,
+    "sku": "7001039",
+    "nombre": "SUCEDANEO DE LIMON250 ML",
+    "precio_actual": "824",
+    "precio_nuevo": 825
+  },
+  {
+    "id": 2777,
+    "sku": "7001105",
+    "nombre": "SALSA DE SOYA320 ML",
+    "precio_actual": "1420",
+    "precio_nuevo": 1429
+  },
+  {
+    "id": 2778,
+    "sku": "7001107",
+    "nombre": "ACETO BALSAMICO500 ML",
+    "precio_actual": "3328",
+    "precio_nuevo": 3343
+  },
+  {
+    "id": 2779,
+    "sku": "7001040",
+    "nombre": "SAL1 KG",
+    "precio_actual": "605",
+    "precio_nuevo": 610
+  },
+  {
+    "id": 2780,
+    "sku": "7001041",
+    "nombre": "SAL125 GR",
+    "precio_actual": "723",
+    "precio_nuevo": 724
+  },
+  {
+    "id": 2781,
+    "sku": "7001123",
+    "nombre": "SAL EN SACHET2000 UND x 1 GR",
+    "precio_actual": "12412",
+    "precio_nuevo": 12480
+  },
+  {
+    "id": 2782,
+    "sku": "7001042",
+    "nombre": "FRUGELE GOMITAS430 GR",
+    "precio_actual": "3244",
+    "precio_nuevo": 3264
+  },
+  {
+    "id": 3695,
+    "sku": "7001140",
+    "nombre": "Cucharas de Acero Inoxidable 6 UND",
+    "precio_actual": "2101",
+    "precio_nuevo": 2109
+  },
+  {
+    "id": 3697,
+    "sku": "7001141",
+    "nombre": "Cucharas de Té de Acero Inoxidable 6 UND",
+    "precio_actual": "1445",
+    "precio_nuevo": 1455
+  },
+  {
+    "id": 4761,
+    "sku": "7001142",
+    "nombre": "Tenedores de Acero Inoxidable 6 UND",
+    "precio_actual": "2101",
+    "precio_nuevo": 2109
+  },
+  {
+    "id": 3702,
+    "sku": "7001143",
+    "nombre": "Cuchillos de Acero Inoxidable 6 UND",
+    "precio_actual": "2647",
+    "precio_nuevo": 2661
+  },
+  {
+    "id": 2783,
+    "sku": "7001043",
+    "nombre": "CUCHARAS PLASTICAS DESECHABLES BLANCAS100 UND",
+    "precio_actual": "1681",
+    "precio_nuevo": 1691
+  },
+  {
+    "id": 2784,
+    "sku": "7001044",
+    "nombre": "TENEDORES PLASTICOS DESECHABLES BLANCAS100 UND",
+    "precio_actual": "1681",
+    "precio_nuevo": 1691
+  },
+  {
+    "id": 2785,
+    "sku": "7001099",
+    "nombre": "CUCHILLOS  PLASTICOS DESECHABLES BLANCOS100 UND",
+    "precio_actual": "1681",
+    "precio_nuevo": 1691
+  },
+  {
+    "id": 2786,
+    "sku": "7001095",
+    "nombre": "CUCHARAS DE MADERA ECOLOGICAS 17 CM100 UND",
+    "precio_actual": "3647",
+    "precio_nuevo": 3671
+  },
+  {
+    "id": 2787,
+    "sku": "7001096",
+    "nombre": "TENEDORES DE MADERA ECOLOGICOS 16 CM100 UND",
+    "precio_actual": "3647",
+    "precio_nuevo": 3671
+  },
+  {
+    "id": 2788,
+    "sku": "7001097",
+    "nombre": "CUCHILLOS DE MADERA ECOLOGICOS 17 CM100 UND",
+    "precio_actual": "3647",
+    "precio_nuevo": 3671
+  },
+  {
+    "id": 2789,
+    "sku": "7001114",
+    "nombre": "PLATOS DE CARTON BLANCOS 17 CM100 UND",
+    "precio_actual": "3261",
+    "precio_nuevo": 3276
+  },
+  {
+    "id": 2790,
+    "sku": "7001045",
+    "nombre": "VASO DESECHABLE POLIPAPEL 50 UND240 ML  8 OZ",
+    "precio_actual": "3126",
+    "precio_nuevo": 3147
+  },
+  {
+    "id": 2791,
+    "sku": "7001046",
+    "nombre": "VASO DESECHABLE POLIPAPEL 50 UND360 ML  12 OZ",
+    "precio_actual": "4303",
+    "precio_nuevo": 4326
+  },
+  {
+    "id": 2792,
+    "sku": "7001060",
+    "nombre": "TAPA PLASTICA NEGRA 50 UND PARA VASO DESECHABLE240 ML  8 OZ",
+    "precio_actual": "1958",
+    "precio_nuevo": 1967
+  },
+  {
+    "id": 2793,
+    "sku": "7001061",
+    "nombre": "TAPA PLASTICA NEGRA 50 UND PARA VASO DESECHABLE360 ML  12 OZ",
+    "precio_actual": "2286",
+    "precio_nuevo": 2295
+  },
+  {
+    "id": 2794,
+    "sku": "7001062",
+    "nombre": "CUBRE VASO CARTON 100 UND PARA VASO DESECHABLE240 ML  8 OZ",
+    "precio_actual": "4429",
+    "precio_nuevo": 4457
+  },
+  {
+    "id": 2795,
+    "sku": "7001063",
+    "nombre": "CUBRE VASO CARTON 100 UND PARA VASO DESECHABLE360 ML  12 OZ",
+    "precio_actual": "4639",
+    "precio_nuevo": 4664
+  },
+  {
+    "id": 2796,
+    "sku": "7001064",
+    "nombre": "PALITO REVOLVEDOR DE MADERA ECOLOGICO1000 UND",
+    "precio_actual": "5017",
+    "precio_nuevo": 5047
+  },
+  {
+    "id": 2797,
+    "sku": "7001124",
+    "nombre": "PAPEL ALUMINIO4 MT",
+    "precio_actual": "1252",
+    "precio_nuevo": 1256
+  },
+  {
+    "id": 4177,
+    "sku": "7001152",
+    "nombre": "Papel Aluminio 100 MT Alufoil",
+    "precio_actual": "16286",
+    "precio_nuevo": 16374
+  },
+  {
+    "id": 3854,
+    "sku": "7001132",
+    "nombre": "Film Plástico 15 MT Aluplast",
+    "precio_actual": "832",
+    "precio_nuevo": 834
+  },
+  {
+    "id": 3856,
+    "sku": "7001153",
+    "nombre": "Film Plástico 300 MT Aluplast",
+    "precio_actual": "9193",
+    "precio_nuevo": 9245
+  },
+  {
+    "id": 2798,
+    "sku": "7001059",
+    "nombre": "HERVIDOR DE AGUA 17 LT MODELO HA2000 NEGRO",
+    "precio_actual": "16353",
+    "precio_nuevo": 16442
+  }
+]
